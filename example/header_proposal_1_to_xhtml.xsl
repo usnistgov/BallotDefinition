@@ -33,23 +33,20 @@
 	</xsl:template>
 	<xsl:template match="bd:BallotStyle">
 		<div class="ballot">
-			<h1>
-				<xsl:variable name="currentStyle" select="bd:GpUnitIds"/>
-				<xsl:value-of select="/bd:ElectionConfiguration/bd:GpUnit[@ObjectId = $currentStyle]/bd:Name"/>
+			<h1>				
+				<xsl:value-of select="/bd:ElectionConfiguration/bd:GpUnit[@ObjectId = current()/bd:GpUnitIds]/bd:Name"/>
 			</h1>
 			<xsl:apply-templates select="bd:OrderedContent"/>
 		</div>
 	</xsl:template>
 	<xsl:template match="bd:OrderedContent[@xsi:type='OrderedContest']">
-		<div class="contest">
-			<xsl:variable name="mine" select="./bd:ContestId"/>
-			<xsl:apply-templates select="/bd:ElectionConfiguration/bd:Election/bd:Contest[@ObjectId = $mine]"/>
+		<div class="contest">			
+			<xsl:apply-templates select="/bd:ElectionConfiguration/bd:Election/bd:Contest[@ObjectId = current()/bd:ContestId]"/>
 		</div>
 	</xsl:template>
 	<xsl:template match="bd:OrderedContent[@xsi:type='OrderedHeader']">
-		<div class="header">
-			<xsl:variable name="mine" select="./bd:HeaderId"/>
-			<xsl:apply-templates select="/bd:ElectionConfiguration/bd:Header[@ObjectId = $mine]"/>
+		<div class="header">			
+			<xsl:apply-templates select="/bd:ElectionConfiguration/bd:Header[@ObjectId = current()/bd:HeaderId]"/>
 		</div>
 	</xsl:template>
 	<xsl:template match="bd:Header">
