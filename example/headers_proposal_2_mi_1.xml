@@ -1,0 +1,143 @@
+<?xml-stylesheet type="text/xsl" href="./header_proposal_2_to_xhtml.xsl"?>
+<ElectionConfiguration xmlns="NIST_V1_ballot_definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="NIST_V1_ballot_definition.xsd ../NIST_V1_ballot_definition.xsd">
+	<Election>
+		<BallotStyle>
+			<GpUnitIds>ru-beaverton-p1</GpUnitIds>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc1</ContestId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc2</ContestId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc3</ContestId>
+			</OrderedContent>
+		</BallotStyle>
+		<BallotStyle>
+			<GpUnitIds>ru-bentley-p1</GpUnitIds>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc3</ContestId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc4</ContestId>
+			</OrderedContent>
+		</BallotStyle>
+		<Contest ObjectId="cc1" xsi:type="CandidateContest">
+			<BallotTitle>
+				<Text Language="en">Council Member</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-beaverton</ElectoralDistrictId>
+			<HeaderIds>he-nonpartisan he-city</HeaderIds>
+			<Name>City Council Member</Name>
+			<VotesAllowed>3</VotesAllowed>
+		</Contest>
+		<Contest ObjectId="cc2" xsi:type="CandidateContest">
+			<BallotTitle>
+				<Text Language="en">Mayor</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-beaverton</ElectoralDistrictId>
+			<HeaderIds>he-nonpartisan he-city</HeaderIds>
+			<Name>Mayor</Name>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<Contest ObjectId="cc3" xsi:type="BallotMeasureContest">
+			<BallotTitle>
+				<Text Language="en">GALDWIN COUNTY ANIMAL SHELTER</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-beaverton</ElectoralDistrictId>
+			<HeaderIds>he-proposal he-county</HeaderIds>
+			<Name>Animal Shelter</Name>
+			<SummaryText>
+				<Text Language="en">Shall the tax limiation...</Text>
+			</SummaryText>
+		</Contest>
+		<Contest ObjectId="cc4" xsi:type="BallotMeasureContest">
+			<BallotTitle>
+				<Text Language="en">FILE MILAGE PROPOSAL</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-bentley</ElectoralDistrictId>
+				<HeaderIds>he-proposal he-township</HeaderIds>
+			<Name>File Milage Proposal</Name>
+			<SummaryText>
+				<Text Language="en">Shall the tax limiation...</Text>
+			</SummaryText>
+		</Contest>
+		<ElectionScopeId>ru-michigan</ElectionScopeId>
+		<Name>
+			<Text Language="en">General Election</Text>
+		</Name>
+		<StartDate>2018-01-29</StartDate>
+		<EndDate>2018-01-29</EndDate>
+		<Type>general</Type>
+	</Election>
+	<Format>precinct-level</Format>
+	<GeneratedDate>2018-01-29T00:00:00Z</GeneratedDate>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-michigan">
+		<ComposingGpUnitIds>ru-beaverton</ComposingGpUnitIds>
+		<Name>Michigan</Name>
+		<Type>state</Type>
+	</GpUnit>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-beaverton">
+		<ComposingGpUnitIds>ru-beaverton-p1</ComposingGpUnitIds>
+		<Name>Beaverton</Name>
+		<Type>city</Type>
+	</GpUnit>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-beaverton-p1">
+		<Name>City of Beaverton, Precinct 1</Name>
+		<Type>precinct</Type>
+	</GpUnit>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-bentley">
+		<ComposingGpUnitIds>ru-bentley-p1</ComposingGpUnitIds>
+		<Name>Bentley</Name>
+		<Type>township</Type>
+	</GpUnit>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-bentley-p1">
+		<Name>Bentley Township, Precinct 1</Name>
+		<Type>precinct</Type>
+	</GpUnit>
+	<Header ObjectId="he-nonpartisan">
+		<Name>
+			<Text>
+				<Content>NONPARTISAN SECTION</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-city">
+		<Name>
+			<Text>
+				<Content>CITY</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-proposal">
+		<Name>
+			<Text>
+				<Content>PROPOSAL SECTION</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-township">
+		<Name>
+			<Text>
+				<Content>TOWNSHIP</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-county">
+		<Name>
+			<Text>
+				<Content>COUNTY</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Issuer>State of Michigan</Issuer>
+	<IssuerAbbreviation>MI</IssuerAbbreviation>
+	<SequenceStart>0</SequenceStart>
+	<SequenceEnd>0</SequenceEnd>
+	<VendorApplicationId>MI POC</VendorApplicationId>
+</ElectionConfiguration>
