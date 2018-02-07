@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Users/john/Documents/GitHub/JDziurlaj/BallotDefinition/example/formatting_contest_transformation.xsl"?>
+<ElectionConfiguration xmlns="NIST_V1_ballot_definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="NIST_V1_ballot_definition.xsd ../NIST_V1_ballot_definition.xsd">
+	<Election>
+		<Contest xsi:type="BallotMeasureContest" ObjectId="bmc1">
+			<ElectoralDistrictId>gpu1</ElectoralDistrictId>
+			<Name>Proposed Charter Amendment</Name>
+			<FullText>
+				<Text>
+					<Content><![CDATA[An Amendment to the Charter of the County of Summit to adopt Article VIII to consolidate information technology and data processing operations in Summit County government by creating a County Information Technology Board and a Department of Information Technology. <br/>
+								<br/>
+								<b>Shall the proposed charter amendment be adopted?</b>
+							</body>]]></Content>
+					<MimeType>text/html</MimeType>
+				</Text>
+			</FullText>
+		</Contest>
+		<Contest xsi:type="BallotMeasureContest" ObjectId="bmc2">
+			<ElectoralDistrictId>gpu1</ElectoralDistrictId>
+			<Name>Proposed Charter Amendment 2</Name>
+			<FullText>
+				<Text>
+					<Content>An Amendment to the Charter of the County of Summit to adopt Article VIII to consolidate information technology and data processing operations in Summit County government by creating a County Information Technology Board and a Department of Information Technology.  
+
+Shall the proposed charter amendment be adopted?</Content>
+					<MimeType>text/plain</MimeType>
+				</Text>
+			</FullText>
+		</Contest>
+		<Contest xsi:type="BallotMeasureContest" ObjectId="bmc3">
+			<ElectoralDistrictId>gpu1</ElectoralDistrictId>
+			<Name>Proposed Charter Amendment 2</Name>
+			<FullText>
+				<Text>
+					<Content>An Amendment to the Charter of the County of Summit to adopt Article VIII to consolidate information technology and data processing operations in Summit County government by creating a County Information Technology Board and a Department of Information Technology.
+
+**Shall the proposed charter amendment be adopted?**</Content>
+					<MimeType>text/markdown</MimeType>
+				</Text>
+			</FullText>
+		</Contest>
+		<ElectionScopeId>gpu1</ElectionScopeId>
+		<Name>
+			<Text Language="en">General Election</Text>
+		</Name>
+		<StartDate>2014-11-04</StartDate>
+		<EndDate>2014-11-04</EndDate>
+		<Type>general</Type>
+	</Election>
+	<Format>summary-contest</Format>
+	<GeneratedDate>2018-02-02T00:00:00Z</GeneratedDate>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="gpu1">
+		<Name>Summit County</Name>
+		<Type>county</Type>
+	</GpUnit>
+	<Issuer>Ballot Definition Working Group</Issuer>
+	<IssuerAbbreviation>BD</IssuerAbbreviation>
+	<SequenceStart>0</SequenceStart>
+	<SequenceEnd>0</SequenceEnd>
+	<VendorApplicationId>BD POC</VendorApplicationId>
+</ElectionConfiguration>
