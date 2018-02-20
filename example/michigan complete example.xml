@@ -1,0 +1,129 @@
+<?xml-stylesheet type="text/xsl" href="..\xsl\header_proposal_1_to_xhtml.xsl"?>
+<ElectionConfiguration xmlns="NIST_V2_ballot_definition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="NIST_V2_ballot_definition.xsd file:///C:/Users/john/Prometheus/Generated_Code/NIST_V2_ballot_definition.xsd">
+	<Election>
+		<BallotStyle>
+			<GpUnitIds>ru-beaverton-p1</GpUnitIds>
+			<OrderedContent xsi:type="OrderedHeader">
+				<HeaderId>he-nonpartisan</HeaderId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedHeader">
+				<HeaderId>he-city</HeaderId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc1</ContestId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc2</ContestId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedHeader">
+				<HeaderId>he-proposal</HeaderId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedHeader">
+				<HeaderId>he-county</HeaderId>
+			</OrderedContent>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc3</ContestId>
+			</OrderedContent>
+		</BallotStyle>
+		<Candidate ObjectId="can1">
+			<BallotName>
+				<Text Language="en">Timothy D. Danielak</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can2">
+			<BallotName>
+				<Text Language="en">Carl L. Jefferson</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can3">
+			<BallotName>
+				<Text Language="en">Terry A McCartney</Text>
+			</BallotName>
+		</Candidate>
+		<Contest ObjectId="cc1" xsi:type="CandidateContest">
+			<BallotTitle>
+				<Text Language="en">Council Member</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-beaverton</ElectoralDistrictId>
+			<Name>City Council Member</Name>
+			<VotesAllowed>3</VotesAllowed>
+		</Contest>
+		<Contest ObjectId="cc2" xsi:type="CandidateContest">
+			<BallotTitle>
+				<Text Language="en">Mayor</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-beaverton</ElectoralDistrictId>
+			<Name>Mayor</Name>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<Contest ObjectId="cc3" xsi:type="BallotMeasureContest">
+			<BallotTitle>
+				<Text Language="en">GALDWIN COUNTY ANIMAL SHELTER</Text>
+			</BallotTitle>
+			<ElectoralDistrictId>ru-beaverton</ElectoralDistrictId>
+			<Name>Animal Shelter</Name>
+			<SummaryText>
+				<Text Language="en">Shall the tax limiation...</Text>
+			</SummaryText>
+		</Contest>
+		<ElectionScopeId>ru-michigan</ElectionScopeId>
+		<Name>
+			<Text Language="en">General Election</Text>
+		</Name>
+		<StartDate>2018-01-29</StartDate>
+		<EndDate>2018-01-29</EndDate>
+		<Type>general</Type>
+	</Election>
+	<Format>precinct-level</Format>
+	<GeneratedDate>2018-01-29T00:00:00Z</GeneratedDate>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-michigan">
+		<ComposingGpUnitIds>ru-beaverton</ComposingGpUnitIds>
+		<Name>Michigan</Name>
+		<Type>state</Type>
+	</GpUnit>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-beaverton">
+		<Name>Beaverton</Name>
+		<Type>city</Type>
+	</GpUnit>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-beaverton-p1">
+		<Name>Precinct 1</Name>
+		<Type>precinct</Type>
+	</GpUnit>
+	<Header ObjectId="he-nonpartisan">
+		<Name>
+			<Text>
+				<Content>NONPARTISAN SECTION</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-city">
+		<Name>
+			<Text>
+				<Content>CITY</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-proposal">
+		<Name>
+			<Text>
+				<Content>PROPOSAL SECTION</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Header ObjectId="he-county">
+		<Name>
+			<Text>
+				<Content>COUNTY</Content>
+				<MimeType>text/plain</MimeType>
+			</Text>
+		</Name>
+	</Header>
+	<Issuer>State of Michigan</Issuer>
+	<IssuerAbbreviation>MI</IssuerAbbreviation>
+	<SequenceStart>0</SequenceStart>
+	<SequenceEnd>0</SequenceEnd>
+	<VendorApplicationId>MI POC</VendorApplicationId>
+</ElectionConfiguration>
