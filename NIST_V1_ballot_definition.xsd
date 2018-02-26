@@ -292,7 +292,6 @@
       <xsd:element name="ElectoralDistrictId" type="xsd:IDREF"/>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded"/>
       <xsd:element name="HasRotation" type="xsd:boolean" minOccurs="0"/>
-      <xsd:element name="HeaderIds" type="xsd:IDREFS" minOccurs="0"/>
       <xsd:element name="Name" type="xsd:string"/>
       <xsd:element name="SequenceOrder" type="xsd:integer" minOccurs="0"/>
       <xsd:element name="SubUnitsReported" type="xsd:integer" minOccurs="0"/>
@@ -380,6 +379,7 @@
   </xsd:complexType>
   <xsd:complexType name="Header">
     <xsd:sequence>
+      <xsd:element name="Identifier" type="xsd:string"/>
       <xsd:element name="Name" type="InternationalizedFormattedText"/>
     </xsd:sequence>
     <xsd:attribute name="ObjectId" type="xsd:ID" use="required"/>
@@ -448,6 +448,7 @@
       <xsd:extension base="OrderedContent">
         <xsd:sequence>
           <xsd:element name="ContestId" type="xsd:IDREF"/>
+          <xsd:element name="HeaderIds" type="xsd:IDREFS" minOccurs="0"/>
           <xsd:element name="OrderedBallotSelectionIds" type="xsd:IDREFS" minOccurs="0"/>
         </xsd:sequence>
       </xsd:extension>
