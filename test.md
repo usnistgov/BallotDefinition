@@ -1,91 +1,339 @@
 # Table of Contents
-- TOC
+- Table of Contents
   - Enumerations
-    - [BallotMeasureType](#_17_0_2_4_f71035d_1426549604222_56408_2487)
-    - [CandidatePostElectionStatus](#_17_0_2_4_78e0236_1389797791548_146399_4136)
-    - [CandidatePreElectionStatus](#_17_0_2_4_f71035d_1427223542780_950918_2213)
-    - [CountItemStatus](#_17_0_2_4_78e0236_1389797161173_369293_4078)
-    - [CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228)
-    - [DayType](#_18_0_2_6340208_1425647845906_917814_4818)
-    - [DeviceType](#_17_0_2_4_78e0236_1389798087342_91702_4210)
-    - [ElectionType](#_17_0_2_4_78e0236_1389734457182_720347_3938)
-    - [GeoSpatialFormat](#_17_0_2_4_f71035d_1425325534467_889921_2544)
-    - [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613)
-    - [OfficeTermType](#_17_0_2_4_f71035d_1425314816880_411605_2504)
-    - [ReportDetailLevel](#_17_0_2_4_d420315_1392318380928_311473_2471)
-    - [ReportingUnitType](#_17_0_2_4_f71035d_1431607637366_785815_2242)
-    - [ResultsStatus](#_17_0_2_4_78e0236_1389734128637_37089_3895)
-    - [VoteVariation](#_17_0_2_4_78e0236_1389798224990_11192_4272)
+    - *The **[BallotMeasureType](#_17_0_2_4_f71035d_1426549604222_56408_2487)** Enumeration*
+    - *The **[CandidatePostElectionStatus](#_17_0_2_4_78e0236_1389797791548_146399_4136)** Enumeration*
+    - *The **[CandidatePreElectionStatus](#_17_0_2_4_f71035d_1427223542780_950918_2213)** Enumeration*
+    - *The **[CountItemStatus](#_17_0_2_4_78e0236_1389797161173_369293_4078)** Enumeration*
+    - *The **[CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228)** Enumeration*
+    - *The **[DayType](#_18_0_2_6340208_1425647845906_917814_4818)** Enumeration*
+    - *The **[DeviceType](#_17_0_2_4_78e0236_1389798087342_91702_4210)** Enumeration*
+    - *The **[ElectionType](#_17_0_2_4_78e0236_1389734457182_720347_3938)** Enumeration*
+    - *The **[GeoSpatialFormat](#_17_0_2_4_f71035d_1425325534467_889921_2544)** Enumeration*
+    - *The **[IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613)** Enumeration*
+    - *The **[OfficeTermType](#_17_0_2_4_f71035d_1425314816880_411605_2504)** Enumeration*
+    - *The **[ReportDetailLevel](#_17_0_2_4_d420315_1392318380928_311473_2471)** Enumeration*
+    - *The **[ReportingUnitType](#_17_0_2_4_f71035d_1431607637366_785815_2242)** Enumeration*
+    - *The **[ResultsStatus](#_17_0_2_4_78e0236_1389734128637_37089_3895)** Enumeration*
+    - *The **[VoteVariation](#_17_0_2_4_78e0236_1389798224990_11192_4272)** Enumeration*
   - Classes
-    - [AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565)
-    - [AnnotatedUri](#_18_0_2_6340208_1498658436378_308208_4565)
-    - [BallotCounts](#_17_0_2_4_78e0236_1397156576157_466818_2461)
-    - [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783)
-    - [BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926)
-    - [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906)
-    - [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360)
-    - [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440)
-    - [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806)
-    - [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562)
-    - [Coalition](#_18_0_2_6340208_1425647247631_162984_4712)
-    - [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637)
-    - [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400)
-    - [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835)
-    - [CountStatus](#_17_0_2_4_f71035d_1430412663878_61362_2269)
-    - [DeviceClass](#_18_0_2_6340208_1425911626288_420556_4530)
-    - [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209)
-    - [ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433)
-    - [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300)
-    - [ExternalIdentifier](#_17_0_2_4_f71035d_1430405712653_451634_2410)
-    - [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380)
-    - [Hours](#_18_0_2_6340208_1427122205989_885563_4602)
-    - [HtmlColorString](#_17_0_2_4_f71035d_1428586849773_722256_2252)
-    - [InternationalizedText](#_17_0_2_4_f71035d_1428953680097_700602_2220)
-    - [LanguageString](#_17_0_2_4_f71035d_1428953680095_709464_2219)
-    - [LatLng](#_17_0_2_4_f71035d_1443104838926_393729_2222)
-    - [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518)
-    - [OfficeGroup](#_17_0_2_4_f71035d_1433183615993_866714_2239)
-    - [OrderedContest](#_17_0_3_43401a7_1394476416139_808596_3142)
-    - [OtherCounts](#_18_0_2_6340208_1508176198256_527421_4561)
-    - [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460)
-    - [PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144)
-    - [PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826)
-    - [PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)
-    - [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567)
-    - [ReportingDevice](#_17_0_2_4_78e0236_1389798013459_389380_4178)
-    - [ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593)
-    - [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554)
-    - [Schedule](#_18_0_2_6340208_1427122121448_198970_4547)
-    - [ShortString](#_18_0_2_6340208_1499878618645_537953_4560)
-    - [SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188)
-    - [SpatialExtent](#_17_0_2_4_f71035d_1409080246279_778720_2209)
-    - [Term](#_17_0_2_4_f71035d_1428489072598_282236_2217)
-    - [TimeWithZone](#_18_0_2_6340208_1427385616970_86952_4407)
-    - [VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489)
-# Classes
-# <a name="_18_0_2_6340208_1497553224568_429892_4565"></a>AnnotatedString
-Used as a type for character strings; it adds a 16-character annotation to a character string.
+    - *The **[AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565)** Class*
+    - *The **[AnnotatedUri](#_18_0_2_6340208_1498658436378_308208_4565)** Class*
+    - *The **[BallotCounts](#_17_0_2_4_78e0236_1397156576157_466818_2461)** Class*
+    - *The **[BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783)** Class*
+    - *The **[BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926)** Class*
+    - *The **[BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906)** Class*
+    - *The **[BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360)** Class*
+    - *The **[Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440)** Class*
+    - *The **[CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806)** Class*
+    - *The **[CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562)** Class*
+    - *The **[Coalition](#_18_0_2_6340208_1425647247631_162984_4712)** Class*
+    - *The **[ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637)** Class*
+    - *The **[Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400)** Class*
+    - *The **[Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835)** Class*
+    - *The **[CountStatus](#_17_0_2_4_f71035d_1430412663878_61362_2269)** Class*
+    - *The **[DeviceClass](#_18_0_2_6340208_1425911626288_420556_4530)** Class*
+    - *The **[Election](#_17_0_2_4_f71035d_1426101822599_430942_2209)** Class*
+    - *The **[ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433)** Class*
+    - *The **[ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300)** Class*
+    - *The **[ExternalIdentifier](#_17_0_2_4_f71035d_1430405712653_451634_2410)** Class*
+    - *The **[GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380)** Class*
+    - *The **[Hours](#_18_0_2_6340208_1427122205989_885563_4602)** Class*
+    - *The **[HtmlColorString](#_17_0_2_4_f71035d_1428586849773_722256_2252)** Class*
+    - *The **[InternationalizedText](#_17_0_2_4_f71035d_1428953680097_700602_2220)** Class*
+    - *The **[LanguageString](#_17_0_2_4_f71035d_1428953680095_709464_2219)** Class*
+    - *The **[LatLng](#_17_0_2_4_f71035d_1443104838926_393729_2222)** Class*
+    - *The **[Office](#_17_0_5_1_43401a7_1400623830572_164081_3518)** Class*
+    - *The **[OfficeGroup](#_17_0_2_4_f71035d_1433183615993_866714_2239)** Class*
+    - *The **[OrderedContest](#_17_0_3_43401a7_1394476416139_808596_3142)** Class*
+    - *The **[OtherCounts](#_18_0_2_6340208_1508176198256_527421_4561)** Class*
+    - *The **[Party](#_17_0_2_4_78e0236_1389366278128_412819_2460)** Class*
+    - *The **[PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144)** Class*
+    - *The **[PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826)** Class*
+    - *The **[PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)** Class*
+    - *The **[Person](#_17_0_5_1_43401a7_1400623980732_100904_3567)** Class*
+    - *The **[ReportingDevice](#_17_0_2_4_78e0236_1389798013459_389380_4178)** Class*
+    - *The **[ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593)** Class*
+    - *The **[RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554)** Class*
+    - *The **[Schedule](#_18_0_2_6340208_1427122121448_198970_4547)** Class*
+    - *The **[ShortString](#_18_0_2_6340208_1499878618645_537953_4560)** Class*
+    - *The **[SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188)** Class*
+    - *The **[SpatialExtent](#_17_0_2_4_f71035d_1409080246279_778720_2209)** Class*
+    - *The **[Term](#_17_0_2_4_f71035d_1428489072598_282236_2217)** Class*
+    - *The **[TimeWithZone](#_18_0_2_6340208_1427385616970_86952_4407)** Class*
+    - *The **[VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489)** Class*
+# Enumerations
+![alt text]()
 
+
+ENDIMG
+# <a name="_17_0_2_4_f71035d_1426549604222_56408_2487"></a>*The **BallotMeasureType** Enumeration*
+    
+Name | Value
+---- | -----
+`ballot-measure`|For a standard “yes” or “no” question on the ballot.
+`initiative`|For an initiative.
+`recall`|
+`referendum`|For a referendum.
+`other`|Used when the type of ballot measure is not included in this enumeration.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389797791548_146399_4136"></a>*The **CandidatePostElectionStatus** Enumeration*
+    
+Name | Value
+---- | -----
+`advanced-to-runoff`|For candidates who have advanced to a runoff.
+`projected-winner`|For a projected contest winner.
+`winner`|For the official contest winner or one of “n” contest winners for n-of-m voting.
+`withdrawn`|For candidates who have withdrawn from the contest.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_f71035d_1427223542780_950918_2213"></a>*The **CandidatePreElectionStatus** Enumeration*
+    
+Name | Value
+---- | -----
+`filed`|For candidates who have filed with the election authority but not necessarily qualified.
+`qualified`|For candidates who are qualified by the election authority to be on the ballot for a contest.
+`withdrawn`|For candidates who have withdrawn from the contest.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389797161173_369293_4078"></a>*The **CountItemStatus** Enumeration*
+    
+Name | Value
+---- | -----
+`completed`|For counts that are complete.
+`in-process`|For counts that are in process
+`not-processed`|When the counting has not started or is not underway.
+`unknown`|When the status of the counting is unknown.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389798097477_664878_4228"></a>*The **CountItemType** Enumeration*
+    
+Name | Value
+---- | -----
+`absentee`|For any/all types of absentee, generally when absentee is not broken out into specific types. 
+`absentee-fwab`|A type of absentee; for Federal Write-in Absentee Ballots.
+`absentee-in-person`|A type of absentee; for absentee ballots cast in-person, e.g., at a county office. 
+`absentee-mail`|A type of absentee; for postal mail absentee ballots. 
+`early`|For ballots cast during early voting periods.
+`election-day`|For ballots cast on election day.
+`provisional`|For challenged ballots.
+`total`|For the total of all ballot types.
+`uocava`|For ballots from UOCAVA (Uniform and Overseas Citizens Assistance in Voting Act) voters. 
+`write-in`|For write-ins on ballots.
+`other`|Used when the type of counting item is not included in this enumeration.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_18_0_2_6340208_1425647845906_917814_4818"></a>*The **DayType** Enumeration*
+    
+Name | Value
+---- | -----
+`all`|Used for all days of the week.
+`sunday`|
+`monday`|
+`tuesday`|
+`wednesday`|
+`thursday`|
+`friday`|
+`saturday`|
+`weekday`|Used for any day of the week.
+`weekend`|Used for both Saturday and Sunday.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389798087342_91702_4210"></a>*The **DeviceType** Enumeration*
+    
+Name | Value
+---- | -----
+`electronic`|For DRE (Direct Record Electronic) and touchscreen devices such as tablets.
+`lever`|For lever machines.
+`manual-count`|For hand-counted paper ballots.
+`mixed-systems`|For devices, e.g., that print voter choices on an optical scan ballot (hybrid of a DRE and an optical scan system)
+`opscan-central`|For an optical scanner used at a central office with no opportunity for voter correction of mistakes.
+`opscan-precinct`|For an optical scanner used at a precinct or other location where voter correction of mistakes such as overvotes is possible.
+`punch-card`|For punch card devices.
+`unknown`|Used when the type of device is unknown.
+`other`|Used when the device type is not listed in this enumeration.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389734457182_720347_3938"></a>*The **ElectionType** Enumeration*
+    
+Name | Value
+---- | -----
+`general`|For the election held typically on the national day for elections (e.g., the Tuesday after the 1st Monday in November).
+`partisan-primary-closed`|For a primary election that is for a specific party where voter eligibility is based on registration.
+`partisan-primary-open`|For a primary election that is for a specific party where voter declares desired party or chooses in private.
+`primary`|For a primary election, type not specified such as nonpartisan.
+`runoff`|For an election to decide a prior contest that ended with no candidate receiving a majority of the votes.
+`special`|For an election held out of sequence for special circumstances, e.g., to fill a vacated office.
+`other`|Used when the election type is not listed in this enumeration.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_f71035d_1425325534467_889921_2544"></a>*The **GeoSpatialFormat** Enumeration*
+    
+Name | Value
+---- | -----
+`geo-json`|For GeoJSON open standard format.
+`gml`|For Geography Markup Language format.
+`kml`|For Keyhole Markup Language format.
+`shp`|For the shape file format associated with Esri.
+`wkt`|For Well-known Text format.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_f71035d_1425061188508_163854_2613"></a>*The **IdentifierType** Enumeration*
+    
+Name | Value
+---- | -----
+`fips`|For FIPS codes.
+`local-level`|For a code that is specific to a county or other similar locality.
+`national-level`|For a code that is used at the national level other than “fips” or “ocd-id”.
+`ocd-id`|For Open Civic Data identifiers.
+`state-level`|For a code that is specific to a state.
+`other`|Used when the type of code is not included in this enumeration.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_f71035d_1425314816880_411605_2504"></a>*The **OfficeTermType** Enumeration*
+    
+Name | Value
+---- | -----
+`full-term`|When the officeholder’s term began at the beginning of the full term of the office, e.g., 6 years for U.S. Senate.
+`unexpired-term`|When the officeholder’s term began at some date after the beginning of the full term of the office, generally because the previous officeholder vacated the office before the fullterm expired.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_d420315_1392318380928_311473_2471"></a>*The **ReportDetailLevel** Enumeration*
+    
+Name | Value
+---- | -----
+`precinct-level`|For reports that contain counts from precincts in the reporting jurisdiction.
+`summary-contest`|For reports that contain only aggregated counts.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>*The **ReportingUnitType** Enumeration*
+    
+Name | Value
+---- | -----
+`ballot-batch`|Used for reporting batches of ballots that may cross precinct boundaries.
+`ballot-style-area`|Used for a ballot style areas generally composed of precincts
+`borough`|Used in CT, NJ, PA, other states, and New York City for boroughs. For AK and LA, see county.
+`city`|Used for a city that reports results and/or for the district that encompasses it.
+`city-council`|Used for city council districts.
+`combined-precinct`|Used for one or more precincts that have been combined for the purposes of reporting.  Used for “Ward” if “Ward” is used interchangeably with “CombinedPrecinct”.
+`congressional`|Used for U.S. Congressional districts.
+`country`|
+`county`|Used for a county and/or for the district that encompasses it.  In AK, used for counties that are called boroughs.  In LA, used for parishes.
+`county-council`|Used for county council districts.
+`drop-box`|Used for a dropbox for absentee ballots.
+`judicial`|Used for judicial districts.
+`municipality`|Used as applicable for various units such as towns, townships, villages that report votes and/or for the district that encompasses it.
+`polling-place`|Used for a polling place.
+`precinct`|Used also for “Ward” or “District” when these terms are used interchangeably with “Precinct”.
+`school`|Used for a school district. 
+`special`|Used for a special district.
+`split-precinct`|Used for splits of precincts.
+`state`|Used for a state and/or for the district that encompasses it.
+`state-house`|Used for a state house or assembly district. 
+`state-senate`|Used for a state senate district.
+`town`|Used in some New England states as a type of municipality that reports votes and/or for the district that encompasses it.
+`township`|Used in some mid-western states as a type of municipality that reports votes and/or for the district that encompasses it.
+`utility`|Used for a utility district.
+`village`|Used as a type of municipality that reports votes and/or for the district that encompasses it.
+`vote-center`|Used for a vote center.
+`ward`|Used for combinations or groupings of precincts or other units.
+`water`|Used for a water district.
+`other`|Used for other types of reporting units not included in this enumeration.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389734128637_37089_3895"></a>*The **ResultsStatus** Enumeration*
+    
+Name | Value
+---- | -----
+`certified`|For results that have been certified by the election authority.
+`correction`|For results that are a correction to an earlier report.
+`pre-election`|For a pre-election data. 
+`recount`|For results that are a recount of an earlier election.
+`unofficial-complete`|For results that are unofficial and complete, e.g., the complete election night results.
+`unofficial-partial`|For results that are unofficial and partial, e.g., partial election night results.
+  ![alt text]()
+
+
+ENDIMG
+# <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>*The **VoteVariation** Enumeration*
+    
+Name | Value
+---- | -----
+`1-of-m`|For 1 of M voting.
+`approval`|For approval voting.
+`borda`|For the Borda count voting.
+`cumulative`|For cumulative voting.
+`majority`|For majority voting.
+`n-of-m`|For N of M voting.
+`plurality`|For plurality voting.
+`proportional`|For proportional voting.
+`range`|For range voting.
+`rcv`|For ranked choice voting.
+`super-majority`|For super majority voting.
+`other`|Used when the vote variation type is not included in this enumeration.
+  # Classes
+# <a name="_18_0_2_6340208_1497553224568_429892_4565"></a>*The **AnnotatedString** Class*
+Used as a type for character strings; it adds a 16-character annotation to a character string.
+ 
+Content 
+```
+
+```
+Annotation 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|An annotation of up to 16 characters associated with a character string.
 `Content`|1|`string`|
-# <a name="_18_0_2_6340208_1498658436378_308208_4565"></a>AnnotatedUri
+# <a name="_18_0_2_6340208_1498658436378_308208_4565"></a>*The **AnnotatedUri** Class*
 
+Content 
+```
 
+```
+Annotation 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|
 `Content`|1|`anyURI`|
-# <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>BallotCounts
+# <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>*The **BallotCounts** Class*
 
-
+ 
+BallotsCast 
+BallotsOutstanding 
+BallotsRejected 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `BallotsCast`|0..1|`integer`|
 `BallotsOutstanding`|0..1|`integer`|
 `BallotsRejected`|0..1|`integer`|
-# <a name="_17_0_2_4_78e0236_1389366932057_929676_2783"></a>BallotMeasureContest
+# <a name="_17_0_2_4_78e0236_1389366932057_929676_2783"></a>*The **BallotMeasureContest** Class*
 <html>
   <head>
 		<style>
@@ -110,7 +358,17 @@ If the type of ballot measure is not listed in enumeration <a href="#_17_0_2_4_f
 
 </body>
 </html>
-
+ 
+ 
+ConStatement 
+EffectOfAbstain 
+FullText 
+InfoUri 
+PassageThreshold 
+ProStatement 
+SummaryText 
+Type 
+OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `ConStatement`|0..1|`InternationalizedText`|For a statement on the ballot associated with a “no” vote.
@@ -122,7 +380,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ProStatement`|0..1|`InternationalizedText`|For a statement on the ballot associated with a “yes” vote.
 `SummaryText`|0..1|`InternationalizedText`|For a summary on the ballot of the ballot measure.
 `Type`|0..1|`BallotMeasureType`|For indicating the type of ballot measure.
-# <a name="_17_0_2_4_78e0236_1389372163799_981952_2926"></a>BallotMeasureSelection
+# <a name="_17_0_2_4_78e0236_1389372163799_981952_2926"></a>*The **BallotMeasureSelection** Class*
 <html>
   <head>
 		<style>
@@ -137,11 +395,13 @@ For a ballot selection in a ballot measure contest. Because judicial or other re
 
 </body>
 </html>
-
+ 
+ 
+Selection 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Selection`|1|`InternationalizedText`|Contains the text used to indicate a vote for or against the ballot measure, e.g., “yes”, “no”.
-# <a name="_17_0_2_4_78e0236_1389372124445_11077_2906"></a>BallotSelection
+# <a name="_17_0_2_4_78e0236_1389372124445_11077_2906"></a>*The **BallotSelection** Class*
 <html>
   <head>
 		<style>
@@ -186,12 +446,14 @@ BallotSelection includes <a href="#_17_0_2_4_78e0236_1389372026000_187007_2862">
 
 </body>
 </html>
-
+ 
+ 
+SequenceOrder 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{VoteCounts}`|0..*|`VoteCounts`|For associating votes with a ballot selection in a contest.
 `SequenceOrder`|0..1|`integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
-# <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>BallotStyle
+# <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>*The **BallotStyle** Class*
 <html>
   <head>
 		<style>
@@ -236,7 +498,12 @@ When including <a href="#_17_0_2_4_f71035d_1430405712653_451634_2410">ExternalId
 
 </body>
 </html>
-
+ 
+ 
+Party 
+ExternalIdentifier 
+ 
+ImageUri 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{OrderedContest}`|0..*|`OrderedContest`|For associating contests in the order as listed on ballot.
@@ -244,7 +511,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style. 
 `ImageUri`|0..*|`anyURI`|URI for a ballot image.
 `Party`|0..*|`Party`|Unique identifier for one or more Party instances.  For associating one or more parties with the ballot style.
-# <a name="_17_0_2_4_78e0236_1389366272694_544359_2440"></a>Candidate
+# <a name="_17_0_2_4_78e0236_1389366272694_544359_2440"></a>*The **Candidate** Class*
 <html>
   <head>
 		<style>
@@ -279,7 +546,17 @@ Candidate uses the <a href="#_17_0_2_4_78e0236_1389366597377_433664_2698">Party<
 
 </body>
 </html>
-
+ 
+Party 
+BallotName 
+ExternalIdentifier 
+FileDate 
+IsIncumbent 
+Person 
+IsTopTicket 
+PostElectionStatus 
+PreElectionStatus 
+ 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{ContactInformation}`|0..1|`ContactInformation`|
@@ -292,7 +569,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Person`|0..1|`Person`|For associating more detailed information about the candidate.  
 `PostElectionStatus`|0..1|`CandidatePostElectionStatus`|Final status of the candidate, e.g., winner, withdrawn, etc.
 `PreElectionStatus`|0..1|`CandidatePreElectionStatus`|Registration status of the candidate, e.g., filed, qualified, etc.
-# <a name="_17_0_2_4_78e0236_1389366970084_183781_2806"></a>CandidateContest
+# <a name="_17_0_2_4_78e0236_1389366970084_183781_2806"></a>*The **CandidateContest** Class*
 <html>
   <head>
 		<style>
@@ -327,7 +604,13 @@ Note that when using the <a href="#_17_0_2_4_d420315_1392145640524_831493_2562">
 
 </body>
 </html>
-
+ 
+ 
+PrimaryParty 
+NumberElected 
+NumberRunoff 
+Office 
+VotesAllowed 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `NumberElected`|0..1|`integer`|Number of candidates that are elected in the contest (“n” of n-of-m).
@@ -335,7 +618,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Office`|0..*|`Office`|For associating office descriptions.
 `PrimaryParty`|0..*|`Party`|For associating parties with the contest.
 `VotesAllowed`|1|`integer`|Maximum number of votes per voter in this contest.
-# <a name="_17_0_2_4_d420315_1392145640524_831493_2562"></a>CandidateSelection
+# <a name="_17_0_2_4_d420315_1392145640524_831493_2562"></a>*The **CandidateSelection** Class*
 <html>
   <head>
 		<style>
@@ -360,13 +643,17 @@ When multiple candidates are referenced for a ticket and the ordering of the can
 
 </body>
 </html>
-
+ 
+ 
+EndorsementParty 
+Candidate 
+IsWriteIn 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Candidate`|0..*|`Candidate`|For associating a candidate with the candidate selection on the ballot and for cases where the ballot selection is for multiple candidates, e.g., a ticket.
 `EndorsementParty`|0..*|`Party`|For associating one or more endorsing parties with the candidate selection.
 `IsWriteIn`|0..1|`boolean`|Indicates whether the candidate is a write-in, e.g., true or false.  Assumed to be false if not present.
-# <a name="_18_0_2_6340208_1425647247631_162984_4712"></a>Coalition
+# <a name="_18_0_2_6340208_1425647247631_162984_4712"></a>*The **Coalition** Class*
 <html>
   <head>
 		<style>
@@ -401,12 +688,15 @@ If there are no associated <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400
 
 </body>
 </html>
-
+ 
+ 
+Party 
+Contest 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Contest`|0..*|`Contest`|For associating contests with the coalition.
 `Party`|0..*|`Party`|For associating parties with the coalition.
-# <a name="_17_0_5_1_43401a7_1400624327407_326048_3637"></a>ContactInformation
+# <a name="_17_0_5_1_43401a7_1400624327407_326048_3637"></a>*The **ContactInformation** Class*
 <html>
   <head>
 		<style>
@@ -451,7 +741,20 @@ ContactInformation includes <a href="#_17_0_2_4_f71035d_1443104838926_393729_222
 
 </body>
 </html>
-
+ 
+ 
+AddressLine 
+Directions 
+Email 
+Fax 
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
+Name 
+Phone 
+ 
+Uri 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Schedule}`|0..*|`Schedule`|For associating a schedule with the contact.
@@ -464,7 +767,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Name`|0..1|`RichText`|Name associated with the contact.
 `Phone`|0..*|`AnnotatedString`|Phone number associated with the contact.
 `Uri`|0..*|`AnnotatedUri`|URI associated with the contact.
-# <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>Contest
+# <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>*The **Contest** Class*
 <html>
   <head>
 		<style>
@@ -584,7 +887,22 @@ When including &lt;ExternalIdentifiers&gt;, if the type is not listed in enumera
 
 </body>
 </html>
-
+ 
+ElectoralDistrict 
+ 
+Abbreviation 
+BallotSubTitle 
+BallotTitle 
+ 
+CountStatus 
+ExternalIdentifier 
+HasRotation 
+Name 
+SequenceOrder 
+SubUnitsReported 
+TotalSubUnits 
+VoteVariation 
+OtherVoteVariation 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{BallotSelection}`|0..*|`BallotSelection`|For associating a ballot selection for the contest, i.e., a candidate, a ballot measure.
@@ -628,7 +946,7 @@ For use when <a href="mdel://_17_0_2_4_78e0236_1389798198604_276106_4268">VoteVa
 `SubUnitsReported`|0..1|`integer`|Number of subunits, e.g., precincts, that have completed reporting votes for this contest.
 `TotalSubUnits`|0..1|`integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
 `VoteVariation`|0..1|`VoteVariation`|Vote variation associated with the contest, e.g., n-of-m.
-# <a name="_17_0_2_4_78e0236_1389367291663_284973_2835"></a>Counts
+# <a name="_17_0_2_4_78e0236_1389367291663_284973_2835"></a>*The **Counts** Class*
 <html>
   <head>
 		<style>
@@ -698,7 +1016,12 @@ If the type of count item is not listed in enumeration <a href="#_17_0_2_4_78e02
 
 </body>
 </html>
-
+ 
+GpUnit 
+DeviceClass 
+IsSuppressedForPrivacy 
+Type 
+OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `DeviceClass`|0..1|`DeviceClass`|
@@ -732,7 +1055,7 @@ Used when <a href="mdel://_17_0_2_4_f71035d_1401285906925_720136_2261">Type</a> 
 </body>
 </html>
 `Type`|1|`CountItemType`|The type of count being used as a filter on the vote counts, e.g., election day, early voting, etc.
-# <a name="_17_0_2_4_f71035d_1430412663878_61362_2269"></a>CountStatus
+# <a name="_17_0_2_4_f71035d_1430412663878_61362_2269"></a>*The **CountStatus** Class*
 <html>
   <head>
 		<style>
@@ -758,7 +1081,10 @@ If the type of count item is not listed in enumeration <a href="#_17_0_2_4_78e02
 
 </body>
 </html>
-
+ 
+Status 
+Type 
+OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `OtherType`|0..1|`string`|<html>
@@ -804,7 +1130,7 @@ The type of item, from the <a href="mdel://_17_0_2_4_78e0236_1389798097477_66487
 
 </body>
 </html>
-# <a name="_18_0_2_6340208_1425911626288_420556_4530"></a>DeviceClass
+# <a name="_18_0_2_6340208_1425911626288_420556_4530"></a>*The **DeviceClass** Class*
 <html>
   <head>
 		<style>
@@ -830,7 +1156,11 @@ If manual counting of ballots is being employed, use the <a href="#_17_0_2_4_78e
 
 </body>
 </html>
-
+ 
+Manufacturer 
+Model 
+Type 
+OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Manufacturer`|0..1|`string`|Manufacturer of the device.
@@ -850,7 +1180,7 @@ Used when <a href="mdel://_17_0_2_4_f71035d_1401285959630_42686_2265">Type</a> i
 </body>
 </html>
 `Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
-# <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>Election
+# <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
 <html>
   <head>
 		<style>
@@ -885,7 +1215,20 @@ Election includes a required association end <a href="#_17_0_2_4_f71035d_1426102
 
 </body>
 </html>
-
+ 
+CountStatus 
+ElectionScope 
+ 
+ 
+ 
+ExternalIdentifier 
+ContactInformation 
+Name 
+StartDate 
+EndDate 
+Type 
+OtherType 
+ 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Contest}`|0..*|`Contest`|For defining contests associated with the election.
@@ -927,7 +1270,7 @@ Used when <a href="mdel://_17_0_2_4_f71035d_1426101886743_683410_2236">Type</a> 
 </html>
 `StartDate`|1|`date`|Calendar start date of the election, e.g., “2018-11-04”.
 `Type`|1|`ElectionType`|Enumerated type of election, e.g., partisan-primary, open-primary, etc.
-# <a name="_18_0_2_6340208_1441311877439_710008_4433"></a>ElectionAdministration
+# <a name="_18_0_2_6340208_1441311877439_710008_4433"></a>*The **ElectionAdministration** Class*
 <html>
   <head>
 		<style>
@@ -952,13 +1295,16 @@ ElectionAdministration includes <a href="#_17_0_5_1_43401a7_1400624327407_326048
 
 </body>
 </html>
-
+ 
+Name 
+ 
+ElectionOfficialPerson 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{ContactInformation}`|0..1|`ContactInformation`|For including various contact information.
 `ElectionOfficialPerson`|0..*|`Person`|Unique identifier for one or more <Person> elements defined for the election authority.
 `Name`|0..1|`RichText`|Name of the election authority.
-# <a name="_17_0_2_4_78e0236_1389366195564_913164_2300"></a>ElectionReport
+# <a name="_17_0_2_4_78e0236_1389366195564_913164_2300"></a>*The **ElectionReport** Class*
 <html>
   <head>
 		<style>
@@ -977,7 +1323,7 @@ For defining items pertaining to the status and format of the report and when it
     </p>
 
     <p>
-ElectionReport references the major elements that are not necessarily specific to an election and that therefore can exist in a pre-election report: <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>, <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> and <a href="#_17_0_2_4_f71035d_1433183615993_866714_2239">OfficeGroup</a>, <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a>, <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a>, and <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a>. 
+ElectionReport references the major elements that are not necessarily specific to an election and that therefore can exist in a pre-election report: <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>, <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> and <a href="#_17_0_2_4_f71035d_1433183615993_866714_2239">OfficeGroup</a>, <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a>, <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a>, and <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a>.
 
     </p>
 
@@ -993,7 +1339,30 @@ When a particular ordering of items such as offices or political parties are imp
 
 </body>
 </html>
-
+ 
+ 
+```
+<b>What can blue do for you today?</b>
+```
+ 
+ExternalIdentifier 
+GeneratedDate 
+Format 
+Issuer 
+IssuerAbbreviation 
+IsTest 
+Notes 
+SequenceStart 
+SequenceEnd 
+Status 
+ 
+TestType 
+ 
+ 
+Person 
+ 
+VendorApplicationId 
+ 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Election}`|0..*|`Election`|For associating elections with the report.
@@ -1014,7 +1383,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Status`|1|`ResultsStatus`|Status of the election report, e.g., test mode, unofficial, etc.
 `TestType`|0..1|`string`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
 `VendorApplicationId`|1|`string`|An identifier of the vendor application generating the election report, e.g., X-EMS version 3.1.a.
-# <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>ExternalIdentifier
+# <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>*The **ExternalIdentifier** Class*
 <html>
   <head>
 		<style>
@@ -1040,7 +1409,14 @@ For elements that link to ExternalIdentifier instances, if the type is not liste
 
 </body>
 </html>
-
+ 
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
+Value 
+Type 
+OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
@@ -1060,30 +1436,42 @@ Used when <a href="mdel://_17_0_2_4_f71035d_1430405763078_743585_2433">Identifie
 </html>
 `Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
 `Value`|1|`string`|The identifier used by the jurisdiction.
-# <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>GpUnit
+# <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
 Class/element for describing a geo-politically bounded area of geography such as a city, district, or jurisdiction, or a precinct or split-precinct, or specific vote-capture device, for the purpose of associating contest vote counts and ballot counts (and other information) with the reporting unit. Reporting units can link to each other to form a hierarchicallly-oriented model of a state's (or a county's, etc.) jurisdictions, districts, and precincts.
-
+ 
+ExternalIdentifier 
+Name 
+ComposingGpUnit 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `ComposingGpUnit`|0..*|`GpUnit`|Unique identifier for one or more GpUnit instances.  For creating a reference to another GpUnit that is contained with the parent GpUnit.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the GpUnit, e.g., a district’s or county’s code.
 `Name`|0..1|`string`|Name of the geopolitical unit. 
-# <a name="_18_0_2_6340208_1427122205989_885563_4602"></a>Hours
+# <a name="_18_0_2_6340208_1427122205989_885563_4602"></a>*The **Hours** Class*
 Hours is used to specify a specific day and hours on that day, including the time zone.  Multiple occurrences of Hours can be used if the schedule includes a range of days and hours.
-
+ 
+Day 
+StartTime 
+EndTime 
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Day`|0..1|`DayType`|Day of week or weekend.
 `EndTime`|1|`TimeWithZone`|End time of the schedule.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `StartTime`|1|`TimeWithZone`|Start time of the schedule.
-# <a name="_17_0_2_4_f71035d_1428586849773_722256_2252"></a>HtmlColorString
+# <a name="_17_0_2_4_f71035d_1428586849773_722256_2252"></a>*The **HtmlColorString** Class*
 
-
+ 
+ 
+pattern 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`String`|
-# <a name="_17_0_2_4_f71035d_1428953680097_700602_2220"></a>InternationalizedText
+# <a name="_17_0_2_4_f71035d_1428953680097_700602_2220"></a>*The **InternationalizedText** Class*
 <html>
   <head>
 		<style>
@@ -1163,28 +1551,43 @@ Values for language are from ISO 639 [12] and include:
 
 </body>
 </html>
-
+ 
+Text 
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Text`|1..*|`LanguageString`|A string of text, i.e., possibly non-English.
-# <a name="_17_0_2_4_f71035d_1428953680095_709464_2219"></a>LanguageString
+# <a name="_17_0_2_4_f71035d_1428953680095_709464_2219"></a>*The **LanguageString** Class*
 
+Content 
+```
 
+```
+Language 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Content`|1|`string`|
 `Language`|1|`language`|A string of text, i.e., possibly non-English.
-# <a name="_17_0_2_4_f71035d_1443104838926_393729_2222"></a>LatLng
+# <a name="_17_0_2_4_f71035d_1443104838926_393729_2222"></a>*The **LatLng** Class*
 
-
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
+Latitude 
+Longitude 
+Source 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Latitude`|1|`float`|Latitude of the contact location.
 `Longitude`|1|`float`|Longitude of the contact location.
 `Source`|0..1|`string`|System used to perform the lookup from location name to lat/lng, e.g., the name of a geocoding service.
-# <a name="_17_0_5_1_43401a7_1400623830572_164081_3518"></a>Office
+# <a name="_17_0_5_1_43401a7_1400623830572_164081_3518"></a>*The **Office** Class*
 <html>
   <head>
 		<style>
@@ -1219,7 +1622,16 @@ Office includes an optional <a href="#_17_0_5_1_43401a7_1400701616170_933421_368
 
 </body>
 </html>
-
+ 
+Description 
+ElectoralDistrict 
+ExternalIdentifier 
+ 
+OfficeHolderPerson 
+ContactInformation 
+FilingDeadline 
+IsPartisan 
+Name 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Term}`|0..1|`Term`|For including office term-related information.
@@ -1257,7 +1669,7 @@ Links to one or more <a href="mdel://_17_0_5_1_43401a7_1400623980732_100904_3567
 
 </body>
 </html>
-# <a name="_17_0_2_4_f71035d_1433183615993_866714_2239"></a>OfficeGroup
+# <a name="_17_0_2_4_f71035d_1433183615993_866714_2239"></a>*The **OfficeGroup** Class*
 <html>
   <head>
 		<style>
@@ -1272,7 +1684,14 @@ Used to assign a name to a grouping of office definitions. It includes reference
 
 </body>
 </html>
-
+ 
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
+ 
+SubOfficeGroup 
+Name 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Office}`|0..*|`Office`|<html>
@@ -1305,7 +1724,7 @@ For defining a nested hierarchy of <a href="mdel://_17_0_5_1_43401a7_14006238305
 
 </body>
 </html>
-# <a name="_17_0_3_43401a7_1394476416139_808596_3142"></a>OrderedContest
+# <a name="_17_0_3_43401a7_1394476416139_808596_3142"></a>*The **OrderedContest** Class*
 <html>
   <head>
 		<style>
@@ -1320,7 +1739,9 @@ Associates a reference to a contest with references to the contest&rsquo;s ballo
 
 </body>
 </html>
-
+ 
+Contest 
+OrderedBallotSelection 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Contest`|1|`Contest`|<html>
@@ -1351,9 +1772,13 @@ Links to one or more <a href="mdel://_17_0_2_4_78e0236_1389372124445_11077_2906"
 
 </body>
 </html>
-# <a name="_18_0_2_6340208_1508176198256_527421_4561"></a>OtherCounts
+# <a name="_18_0_2_6340208_1508176198256_527421_4561"></a>*The **OtherCounts** Class*
 
-
+DeviceClass 
+Overvotes 
+Undervotes 
+WriteIns 
+ 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{GpUnit}`|1|`GpUnit`|
@@ -1361,7 +1786,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Overvotes`|0..1|`integer`|
 `Undervotes`|0..1|`integer`|
 `WriteIns`|0..1|`integer`|
-# <a name="_17_0_2_4_78e0236_1389366278128_412819_2460"></a>Party
+# <a name="_17_0_2_4_78e0236_1389366278128_412819_2460"></a>*The **Party** Class*
 <html>
   <head>
 		<style>
@@ -1396,7 +1821,14 @@ The &lt;Color&gt; element specifies a 6-digit RGB code displayable using HTML.
 
 </body>
 </html>
-
+ 
+Abbreviation 
+Color 
+ExternalIdentifier 
+IsWriteIn 
+LogoUri 
+Name 
+LeaderPerson 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Abbreviation`|0..1|`string`|Short name for the party, e.g., “DEM”.
@@ -1406,12 +1838,13 @@ Attribute | Multiplicity | Type | Attribute Description
 `LeaderPerson`|0..*|`Person`|
 `LogoUri`|0..1|`anyURI`|A URI to the party’s graphical logo.
 `Name`|1|`InternationalizedText`|Official full name of the party, e.g., “Republican”; can appear on the ballot.
-# <a name="_17_0_2_4_d420315_1393514218965_55008_3144"></a>PartyContest
+# <a name="_17_0_2_4_d420315_1393514218965_55008_3144"></a>*The **PartyContest** Class*
 For a contest that involves choosing a party, typically for a straight party selection on the ballot.
-
+ 
+ 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1394566839296_58362_2826"></a>PartyRegistration
+# <a name="_17_0_2_4_78e0236_1394566839296_58362_2826"></a>*The **PartyRegistration** Class*
 <html>
   <head>
 		<style>
@@ -1426,7 +1859,9 @@ For tracking the number of registered voters per party per geopolitical unit, i.
 
 </body>
 </html>
-
+ 
+Count 
+Party 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Count`|1|`integer`|A count for tracking the number of registered voters.
@@ -1444,7 +1879,7 @@ Link to a <a href="mdel://_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a>
 
 </body>
 </html>
-# <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>PartySelection
+# <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>*The **PartySelection** Class*
 <html>
   <head>
 		<style>
@@ -1459,7 +1894,9 @@ For a ballot selection involving a party such as for a straight party selection 
 
 </body>
 </html>
-
+ 
+ 
+Party 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Party`|1..*|`Party`|<html>
@@ -1476,7 +1913,7 @@ Link to one or more <a href="mdel://_17_0_2_4_78e0236_1389366278128_412819_2460"
 
 </body>
 </html>
-# <a name="_17_0_5_1_43401a7_1400623980732_100904_3567"></a>Person
+# <a name="_17_0_5_1_43401a7_1400623980732_100904_3567"></a>*The **Person** Class*
 <html>
   <head>
 		<style>
@@ -1502,7 +1939,21 @@ Multiple occurrences of the &lt;MiddleName&gt; element can be used as needed, e.
 
 </body>
 </html>
-
+ 
+Party 
+ 
+DateOfBirth 
+ExternalIdentifier 
+FirstName 
+FullName 
+Gender 
+LastName 
+MiddleName 
+Nickname 
+Prefix 
+Profession 
+Suffix 
+Title 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{ContactInformation}`|0..*|`ContactInformation`|For associating contact information with the person.
@@ -1532,7 +1983,7 @@ Links to a <a href="mdel://_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a
 `Profession`|0..1|`InternationalizedText`|Person’s profession.
 `Suffix`|0..1|`RichText`|A suffix associated with the person, e.g., Jr.
 `Title`|0..1|`InternationalizedText`|A title associated with the person.
-# <a name="_17_0_2_4_78e0236_1389798013459_389380_4178"></a>ReportingDevice
+# <a name="_17_0_2_4_78e0236_1389798013459_389380_4178"></a>*The **ReportingDevice** Class*
 <html>
   <head>
 		<style>
@@ -1557,12 +2008,15 @@ It identifies a specific vote-capture device by using the <a href="#_17_0_2_4_d4
 
 </body>
 </html>
-
+ 
+ 
+DeviceClass 
+SerialNumber 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `DeviceClass`|0..1|`DeviceClass`|For filtering the vote counts by device type, model, and manufacturer.
 `SerialNumber`|0..1|`RichText`|A serial number or otherwise identifier associated with the device.
-# <a name="_17_0_2_4_f71035d_1400606476166_735297_2593"></a>ReportingUnit
+# <a name="_17_0_2_4_f71035d_1400606476166_735297_2593"></a>*The **ReportingUnit** Class*
 <html>
   <head>
 		<style>
@@ -1617,7 +2071,23 @@ The <a href="#_17_0_2_4_f71035d_1441207733430_83517_2240">IsDistricted</a> boole
 
 </body>
 </html>
-
+ 
+ 
+CountStatus 
+Authority 
+IsDistricted 
+IsMailOnly 
+ 
+Number 
+SubUnitsReported 
+ContactInformation 
+ 
+TotalSubUnits 
+Type 
+OtherType 
+ 
+VotersParticipated 
+VotersRegistered 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{SpatialDimension}`|0..1|`SpatialDimension`|For describing the reporting unit’s spatial extent (a polygon that shows the related area).
@@ -1661,7 +2131,7 @@ For use when <a href="mdel://_17_0_2_4_78e0236_1389713376966_77071_2393">Reporti
 `Type`|1|`ReportingUnitType`|Enumerated type of reporting unit, e.g., state, county, district, precinct, etc. 
 `VotersParticipated`|0..1|`integer`|Number of voters who have participated in the election, i.e., shown up at the polls, including those who did not cast ballots.
 `VotersRegistered`|0..1|`integer`|Number of registered voters residing within the boundaries of the geopolitical unit. 
-# <a name="_18_0_2_6340208_1425646217522_163181_4554"></a>RetentionContest
+# <a name="_18_0_2_6340208_1425646217522_163181_4554"></a>*The **RetentionContest** Class*
 <html>
   <head>
 		<style>
@@ -1687,7 +2157,10 @@ This element uses <a href="#_17_0_2_4_78e0236_1389366932057_929676_2783">BallotM
 
 </body>
 </html>
-
+ 
+ 
+Office 
+Candidate 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Candidate`||`Candidate`|<html>
@@ -1718,7 +2191,7 @@ Link to an <a href="mdel://_17_0_5_1_43401a7_1400623830572_164081_3518">Office</
 
 </body>
 </html>
-# <a name="_18_0_2_6340208_1427122121448_198970_4547"></a>Schedule
+# <a name="_18_0_2_6340208_1427122121448_198970_4547"></a>*The **Schedule** Class*
 <html>
   <head>
 		<style>
@@ -1733,7 +2206,17 @@ For defining a schedule associated with a particular election office or location
 
 </body>
 </html>
-
+ 
+IsOnlyByAppointment 
+IsOrByAppointment 
+ 
+IsSubjectToChange 
+Label 
+```
+For use as needed and compatibility with the VIP schema.
+```
+StartDate 
+EndDate 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Hours}`|0..*|`Hours`|For specifying a range of hours for a schedule.
@@ -1743,13 +2226,15 @@ Attribute | Multiplicity | Type | Attribute Description
 `IsSubjectToChange`|0..1|`boolean`|If an appointment may be subject to change; assumed to be “no” if not present.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `StartDate`|0..1|`date`|For the starting date of the schedule.
-# <a name="_18_0_2_6340208_1499878618645_537953_4560"></a>ShortString
+# <a name="_18_0_2_6340208_1499878618645_537953_4560"></a>*The **ShortString** Class*
 
-
+ 
+ 
+maxLength 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `maxLength`||`int`|
-# <a name="_17_0_2_4_f71035d_1407165065674_39189_2188"></a>SpatialDimension
+# <a name="_17_0_2_4_f71035d_1407165065674_39189_2188"></a>*The **SpatialDimension** Class*
 <html>
   <head>
 		<style>
@@ -1764,7 +2249,9 @@ For defining the spatial layout of a <a href="#_17_0_2_4_78e0236_1389366233346_4
 
 </body>
 </html>
-
+ 
+MapUri 
+ 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{SpatialExtent}`|0..1|`SpatialExtent`|<html>
@@ -1795,7 +2282,7 @@ Typically a URL to a map of the <a href="mdel://_17_0_2_4_78e0236_1389366233346_
 
 </body>
 </html>
-# <a name="_17_0_2_4_f71035d_1409080246279_778720_2209"></a>SpatialExtent
+# <a name="_17_0_2_4_f71035d_1409080246279_778720_2209"></a>*The **SpatialExtent** Class*
 <html>
   <head>
 		<style>
@@ -1810,12 +2297,14 @@ Typically a URL to a map of the <a href="mdel://_17_0_2_4_78e0236_1389366233346_
 
 </body>
 </html>
-
+ 
+Coordinates 
+Format 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Coordinates`|1|`RichText`|The data coordinates constituting the spatial extent.
 `Format`|1|`GeoSpatialFormat`|Enumerated type for the format used, e.g., gml, kml, wkt, etc.
-# <a name="_17_0_2_4_f71035d_1428489072598_282236_2217"></a>Term
+# <a name="_17_0_2_4_f71035d_1428489072598_282236_2217"></a>*The **Term** Class*
 <html>
   <head>
 		<style>
@@ -1830,20 +2319,29 @@ Enumeration for the status of the election results in the <a href="#_17_0_2_4_78
 
 </body>
 </html>
+ 
+StartDate 
+EndDate 
+Label 
+```
 
+```
+Type 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `EndDate`|0..1|`date`|
 `Label`|0..1|`string`|
 `StartDate`|0..1|`date`|
 `Type`|0..1|`OfficeTermType`|
-# <a name="_18_0_2_6340208_1427385616970_86952_4407"></a>TimeWithZone
+# <a name="_18_0_2_6340208_1427385616970_86952_4407"></a>*The **TimeWithZone** Class*
 
-
+ 
+ 
+pattern 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`string`|
-# <a name="_17_0_2_4_78e0236_1397156604549_15838_2489"></a>VoteCounts
+# <a name="_17_0_2_4_78e0236_1397156604549_15838_2489"></a>*The **VoteCounts** Class*
 <html>
   <head>
 		<style>
@@ -1858,789 +2356,12 @@ For reporting on vote counts for ballot selections in a contest. VoteCounts incl
 
 </body>
 </html>
-
+ 
+ 
+Count 
+Round 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Count`|1|`float`|Count of contest votes cast; can include a fractional component in special cases. 
 `Round`|0..1|`integer`|
-# Enumerations
-![alt text]()
 
-
-ENDIMG
-# <a name="_17_0_2_4_f71035d_1426549604222_56408_2487"></a>BallotMeasureType
-    
-Name | Value
----- | -----
-`ballot-measure`|For a standard “yes” or “no” question on the ballot.
-`initiative`|For an initiative.
-`recall`|
-`referendum`|For a referendum.
-`other`|Used when the type of ballot measure is not included in this enumeration.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389797791548_146399_4136"></a>CandidatePostElectionStatus
-    
-Name | Value
----- | -----
-`advanced-to-runoff`|For candidates who have advanced to a runoff.
-`projected-winner`|For a projected contest winner.
-`winner`|For the official contest winner or one of “n” contest winners for n-of-m voting.
-`withdrawn`|For candidates who have withdrawn from the contest.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_f71035d_1427223542780_950918_2213"></a>CandidatePreElectionStatus
-    
-Name | Value
----- | -----
-`filed`|For candidates who have filed with the election authority but not necessarily qualified.
-`qualified`|For candidates who are qualified by the election authority to be on the ballot for a contest.
-`withdrawn`|For candidates who have withdrawn from the contest.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389797161173_369293_4078"></a>CountItemStatus
-    
-Name | Value
----- | -----
-`completed`|For counts that are complete.
-`in-process`|For counts that are in process
-`not-processed`|When the counting has not started or is not underway.
-`unknown`|When the status of the counting is unknown.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389798097477_664878_4228"></a>CountItemType
-    
-Name | Value
----- | -----
-`absentee`|For any/all types of absentee, generally when absentee is not broken out into specific types. 
-`absentee-fwab`|A type of absentee; for Federal Write-in Absentee Ballots.
-`absentee-in-person`|A type of absentee; for absentee ballots cast in-person, e.g., at a county office. 
-`absentee-mail`|A type of absentee; for postal mail absentee ballots. 
-`early`|For ballots cast during early voting periods.
-`election-day`|For ballots cast on election day.
-`provisional`|For challenged ballots.
-`total`|For the total of all ballot types.
-`uocava`|For ballots from UOCAVA (Uniform and Overseas Citizens Assistance in Voting Act) voters. 
-`write-in`|For write-ins on ballots.
-`other`|Used when the type of counting item is not included in this enumeration.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_18_0_2_6340208_1425647845906_917814_4818"></a>DayType
-    
-Name | Value
----- | -----
-`all`|Used for all days of the week.
-`sunday`|
-`monday`|
-`tuesday`|
-`wednesday`|
-`thursday`|
-`friday`|
-`saturday`|
-`weekday`|Used for any day of the week.
-`weekend`|Used for both Saturday and Sunday.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389798087342_91702_4210"></a>DeviceType
-    
-Name | Value
----- | -----
-`electronic`|For DRE (Direct Record Electronic) and touchscreen devices such as tablets.
-`lever`|For lever machines.
-`manual-count`|For hand-counted paper ballots.
-`mixed-systems`|For devices, e.g., that print voter choices on an optical scan ballot (hybrid of a DRE and an optical scan system)
-`opscan-central`|For an optical scanner used at a central office with no opportunity for voter correction of mistakes.
-`opscan-precinct`|For an optical scanner used at a precinct or other location where voter correction of mistakes such as overvotes is possible.
-`punch-card`|For punch card devices.
-`unknown`|Used when the type of device is unknown.
-`other`|Used when the device type is not listed in this enumeration.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389734457182_720347_3938"></a>ElectionType
-    
-Name | Value
----- | -----
-`general`|For the election held typically on the national day for elections (e.g., the Tuesday after the 1st Monday in November).
-`partisan-primary-closed`|For a primary election that is for a specific party where voter eligibility is based on registration.
-`partisan-primary-open`|For a primary election that is for a specific party where voter declares desired party or chooses in private.
-`primary`|For a primary election, type not specified such as nonpartisan.
-`runoff`|For an election to decide a prior contest that ended with no candidate receiving a majority of the votes.
-`special`|For an election held out of sequence for special circumstances, e.g., to fill a vacated office.
-`other`|Used when the election type is not listed in this enumeration.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_f71035d_1425325534467_889921_2544"></a>GeoSpatialFormat
-    
-Name | Value
----- | -----
-`geo-json`|For GeoJSON open standard format.
-`gml`|For Geography Markup Language format.
-`kml`|For Keyhole Markup Language format.
-`shp`|For the shape file format associated with Esri.
-`wkt`|For Well-known Text format.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_f71035d_1425061188508_163854_2613"></a>IdentifierType
-    
-Name | Value
----- | -----
-`fips`|For FIPS codes.
-`local-level`|For a code that is specific to a county or other similar locality.
-`national-level`|For a code that is used at the national level other than “fips” or “ocd-id”.
-`ocd-id`|For Open Civic Data identifiers.
-`state-level`|For a code that is specific to a state.
-`other`|Used when the type of code is not included in this enumeration.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_f71035d_1425314816880_411605_2504"></a>OfficeTermType
-    
-Name | Value
----- | -----
-`full-term`|When the officeholder’s term began at the beginning of the full term of the office, e.g., 6 years for U.S. Senate.
-`unexpired-term`|When the officeholder’s term began at some date after the beginning of the full term of the office, generally because the previous officeholder vacated the office before the fullterm expired.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_d420315_1392318380928_311473_2471"></a>ReportDetailLevel
-    
-Name | Value
----- | -----
-`precinct-level`|For reports that contain counts from precincts in the reporting jurisdiction.
-`summary-contest`|For reports that contain only aggregated counts.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>ReportingUnitType
-    
-Name | Value
----- | -----
-`ballot-batch`|Used for reporting batches of ballots that may cross precinct boundaries.
-`ballot-style-area`|Used for a ballot style areas generally composed of precincts
-`borough`|Used in CT, NJ, PA, other states, and New York City for boroughs. For AK and LA, see county.
-`city`|Used for a city that reports results and/or for the district that encompasses it.
-`city-council`|Used for city council districts.
-`combined-precinct`|Used for one or more precincts that have been combined for the purposes of reporting.  Used for “Ward” if “Ward” is used interchangeably with “CombinedPrecinct”.
-`congressional`|Used for U.S. Congressional districts.
-`country`|
-`county`|Used for a county and/or for the district that encompasses it.  In AK, used for counties that are called boroughs.  In LA, used for parishes.
-`county-council`|Used for county council districts.
-`drop-box`|Used for a dropbox for absentee ballots.
-`judicial`|Used for judicial districts.
-`municipality`|Used as applicable for various units such as towns, townships, villages that report votes and/or for the district that encompasses it.
-`polling-place`|Used for a polling place.
-`precinct`|Used also for “Ward” or “District” when these terms are used interchangeably with “Precinct”.
-`school`|Used for a school district. 
-`special`|Used for a special district.
-`split-precinct`|Used for splits of precincts.
-`state`|Used for a state and/or for the district that encompasses it.
-`state-house`|Used for a state house or assembly district. 
-`state-senate`|Used for a state senate district.
-`town`|Used in some New England states as a type of municipality that reports votes and/or for the district that encompasses it.
-`township`|Used in some mid-western states as a type of municipality that reports votes and/or for the district that encompasses it.
-`utility`|Used for a utility district.
-`village`|Used as a type of municipality that reports votes and/or for the district that encompasses it.
-`vote-center`|Used for a vote center.
-`ward`|Used for combinations or groupings of precincts or other units.
-`water`|Used for a water district.
-`other`|Used for other types of reporting units not included in this enumeration.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389734128637_37089_3895"></a>ResultsStatus
-    
-Name | Value
----- | -----
-`certified`|For results that have been certified by the election authority.
-`correction`|For results that are a correction to an earlier report.
-`pre-election`|For a pre-election data. 
-`recount`|For results that are a recount of an earlier election.
-`unofficial-complete`|For results that are unofficial and complete, e.g., the complete election night results.
-`unofficial-partial`|For results that are unofficial and partial, e.g., partial election night results.
-  ![alt text]()
-
-
-ENDIMG
-# <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>VoteVariation
-    
-Name | Value
----- | -----
-`1-of-m`|For 1 of M voting.
-`approval`|For approval voting.
-`borda`|For the Borda count voting.
-`cumulative`|For cumulative voting.
-`majority`|For majority voting.
-`n-of-m`|For N of M voting.
-`plurality`|For plurality voting.
-`proportional`|For proportional voting.
-`range`|For range voting.
-`rcv`|For ranked choice voting.
-`super-majority`|For super majority voting.
-`other`|Used when the vote variation type is not included in this enumeration.
-  # Table of Contents
-- TOC
-  - Enumerations
-  - Classes
-    - [Array](#_17_0_2_4_78e0236_1389733484661_358463_3381)
-# Classes
-# <a name="_17_0_2_4_78e0236_1389733484661_358463_3381"></a>Array
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# Enumerations
-# Table of Contents
-- TOC
-  - Enumerations
-  - Classes
-    - [AGGREGATE](#_17_0_2_4_78e0236_1389733486714_480102_3465)
-    - [ARRAY](#_17_0_2_4_78e0236_1389733486717_126126_3471)
-    - [BAG](#_17_0_2_4_78e0236_1389733486717_494732_3472)
-    - [BINARY](#_17_0_2_4_78e0236_1389733486715_484583_3466)
-    - [BOOLEAN](#_17_0_2_4_78e0236_1389733486715_479247_3467)
-    - [GENERIC_ENTITY](#_17_0_2_4_78e0236_1389733486718_280819_3473)
-    - [INTEGER](#_17_0_2_4_78e0236_1389733486716_673592_3469)
-    - [LIST](#_17_0_2_4_78e0236_1389733486715_549906_3468)
-    - [LOGICAL](#_17_0_2_4_78e0236_1389733486714_484973_3463)
-    - [NUMBER](#_17_0_2_4_78e0236_1389733486716_206327_3470)
-    - [REAL](#_17_0_2_4_78e0236_1389733486718_571809_3474)
-    - [SET](#_17_0_2_4_78e0236_1389733486714_730777_3464)
-    - [STRING](#_17_0_2_4_78e0236_1389733486713_729576_3462)
-# Classes
-# <a name="_17_0_2_4_78e0236_1389733486714_480102_3465"></a>AGGREGATE
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486717_126126_3471"></a>ARRAY
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486717_494732_3472"></a>BAG
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486715_484583_3466"></a>BINARY
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486715_479247_3467"></a>BOOLEAN
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486718_280819_3473"></a>GENERIC_ENTITY
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486716_673592_3469"></a>INTEGER
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486715_549906_3468"></a>LIST
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486714_484973_3463"></a>LOGICAL
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486716_206327_3470"></a>NUMBER
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486718_571809_3474"></a>REAL
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486714_730777_3464"></a>SET
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733486713_729576_3462"></a>STRING
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# Enumerations
-# Table of Contents
-- TOC
-  - Enumerations
-  - Classes
-    - [anySimpleType](#_17_0_2_4_78e0236_1389733484704_780190_3430)
-    - [anyType](#_17_0_2_4_78e0236_1389733484698_421758_3418)
-    - [anyURI](#_17_0_2_4_78e0236_1389733484699_771735_3421)
-    - [base64Binary](#_17_0_2_4_78e0236_1389733484694_526234_3412)
-    - [boolean](#_17_0_2_4_78e0236_1389733484709_72835_3437)
-    - [byte](#_17_0_2_4_78e0236_1389733484696_569147_3415)
-    - [date](#_17_0_2_4_78e0236_1389733484695_950073_3414)
-    - [dateTime](#_17_0_2_4_78e0236_1389733484691_275387_3406)
-    - [dayTimeDuration](#_17_0_2_4_78e0236_1389733484692_259230_3409)
-    - [decimal](#_17_0_2_4_78e0236_1389733484707_765513_3434)
-    - [double](#_17_0_2_4_78e0236_1389733484681_69371_3391)
-    - [duration](#_17_0_2_4_78e0236_1389733484682_628991_3392)
-    - [ENTITIES](#_17_0_2_4_78e0236_1389733484692_667105_3408)
-    - [ENTITY](#_17_0_2_4_78e0236_1389733484701_545196_3425)
-    - [float](#_17_0_2_4_78e0236_1389733484690_726252_3405)
-    - [gDay](#_17_0_2_4_78e0236_1389733484702_618400_3426)
-    - [gMonth](#_17_0_2_4_78e0236_1389733484686_309394_3399)
-    - [gMonthDay](#_17_0_2_4_78e0236_1389733484689_406587_3403)
-    - [gYear](#_17_0_2_4_78e0236_1389733484686_973909_3398)
-    - [gYearMonth](#_17_0_2_4_78e0236_1389733484701_726131_3424)
-    - [hexBinary](#_17_0_2_4_78e0236_1389733484688_526156_3401)
-    - [ID](#_17_0_2_4_78e0236_1389733484682_115730_3393)
-    - [IDREF](#_17_0_2_4_78e0236_1389733484698_63794_3420)
-    - [IDREFS](#_17_0_2_4_78e0236_1389733484700_317660_3422)
-    - [int](#_17_0_2_4_78e0236_1389733484703_236474_3428)
-    - [integer](#_17_0_2_4_78e0236_1389733484684_962828_3396)
-    - [language](#_17_0_2_4_78e0236_1389733484688_705605_3402)
-    - [long](#_17_0_2_4_78e0236_1389733484696_920665_3416)
-    - [Name](#_17_0_2_4_78e0236_1389733484684_671168_3395)
-    - [NCName](#_17_0_2_4_78e0236_1389733484687_643733_3400)
-    - [negativeInteger](#_17_0_2_4_78e0236_1389733484700_370943_3423)
-    - [NMTOKEN](#_17_0_2_4_78e0236_1389733484689_75975_3404)
-    - [nonNegativeInteger](#_17_0_2_4_78e0236_1389733484685_653521_3397)
-    - [nonPositiveInteger](#_17_0_2_4_78e0236_1389733484705_671757_3432)
-    - [normalizedString](#_17_0_2_4_78e0236_1389733484695_985594_3413)
-    - [Notation](#_17_0_2_4_78e0236_1389733484705_212065_3431)
-    - [positiveInteger](#_17_0_2_4_78e0236_1389733484706_284527_3433)
-    - [precisionDecimal](#_17_0_2_4_78e0236_1389733484708_421725_3436)
-    - [QName](#_17_0_2_4_78e0236_1389733484693_457603_3410)
-    - [short](#_17_0_2_4_78e0236_1389733484702_668356_3427)
-    - [string](#_17_0_2_4_78e0236_1389733484691_67945_3407)
-    - [time](#_17_0_2_4_78e0236_1389733484698_553774_3419)
-    - [token](#_17_0_2_4_78e0236_1389733484681_672518_3390)
-    - [unsignedByte](#_17_0_2_4_78e0236_1389733484707_597220_3435)
-    - [unsignedInt](#_17_0_2_4_78e0236_1389733484704_325090_3429)
-    - [unsignedLong](#_17_0_2_4_78e0236_1389733484697_489833_3417)
-    - [unsignedShort](#_17_0_2_4_78e0236_1389733484683_113657_3394)
-    - [yearMonthDuration](#_17_0_2_4_78e0236_1389733484693_920822_3411)
-# Classes
-# <a name="_17_0_2_4_78e0236_1389733484704_780190_3430"></a>anySimpleType
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484698_421758_3418"></a>anyType
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484699_771735_3421"></a>anyURI
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-weight:normal;font-style:normal;font-variant:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">A 
-    W3C standard data type for hyperlinks. The W3C definition of xsd:anyURI is 
-    in </span><span style="font-variant:normal;font-weight:normal;font-style:normal;color:#000BFF;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">http://www.w3.org/TR/xmlschema-2/</span><span style="font-variant:normal;font-weight:normal;font-style:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">.</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484694_526234_3412"></a>base64Binary
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">The 
-    data is encoded using base64. (see IETF </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;"><em>RFC 
-    1421 </em></span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">for 
-    the base64 algorithm and </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;color:#000BFF;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">http://www.w3.org/TR/xmlschema-2/#base64Binary</span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">)</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484709_72835_3437"></a>boolean
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484696_569147_3415"></a>byte
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484695_950073_3414"></a>date
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484691_275387_3406"></a>dateTime
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-weight:normal;font-style:normal;font-variant:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">The 
-    W3C standard data type for the current date and time is xsd:dateTime. (See </span><span style="font-variant:normal;font-weight:normal;font-style:normal;color:#000BFF;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">http://www.w3.org/TR/NOTE-datetime-970915.html</span><span style="font-variant:normal;font-weight:normal;font-style:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">.) 
-    The following formats from the W3C specification are recommended for 258X 
-    files:    
-<br>Complete date plus hours, minutes and seconds:    
-<br>YYYY-MM-DDThh:mm:ssTZD (e.g. 1997-07-16T19:20:30.4536+01:00)    
-<br>Complete date plus hours, minutes, seconds and a decimal fraction of a 
-    Second:    
-<br>YYYY-MM-DDThh:mm:ss.sTZD (e.g. 1997-07-16T19:20:30.45+01:00)    
-<br>where:    
-<br>YYYY = four-digit year    
-<br>MM = two-digit month (01=January, etc.)    
-<br>DD = two-digit day of month (01 through 31)    
-<br>Hh = two digits of hour (00 through 23) (am/pm NOT allowed)    
-<br>Mm = two digits of minute (00 through 59)    
-<br>Ss = two digits of second (00 through 59)    
-<br>S = one or more digits representing a decimal fraction of a second    
-<br>TZD = time zone designator (Z or +hh:mm or –hh:mm)</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484692_259230_3409"></a>dayTimeDuration
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484707_765513_3434"></a>decimal
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484681_69371_3391"></a>double
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-weight:normal;font-style:normal;font-variant:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">A 
-    W3C standard data type for a binary floating-point number. The W3C 
-    definition of xsd:double is in </span><span style="font-variant:normal;font-style:normal;font-weight:normal;color:#000BFF;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">http://www.w3.org/TR/xmlschema-2/</span><span style="font-variant:normal;font-style:normal;font-weight:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">.    
-<br>The xsd:double is a number where the value can be positive, negative, 
-    integer or floating point, with at least 7 digits of precision. Numbers 
-    are assumed to be positive but can be explicitly designated as positive by 
-    preceding the number with a ‘+’ (ASCII decimal 43) character. Negative 
-    numbers must be explicitly designated as negative by a preceding ‘–‘ 
-    (ASCII decimal 45) character. An internal representation of an IEEE double 
-    precision floating-point number is assumed. This range of values for IEEE 
-    doubles is defined as 3.4x10-38 </span><span style="font-size:7px;">≤ </span><span style="font-variant:normal;font-style:normal;font-weight:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">value 
-    </span><span style="font-size:7px;">≤ </span><span style="font-variant:normal;font-style:normal;font-weight:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">3.4x10+38. 
-    The format for representing a double is the same as the format used in the 
-    computer languages C, Perl, Python, or TCL. For example, all the following 
-    are legal numbers:    
-<br>1.005 ; 0.01; .01; -2.334e-33; .224e-2</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484682_628991_3392"></a>duration
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484692_667105_3408"></a>ENTITIES
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484701_545196_3425"></a>ENTITY
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484690_726252_3405"></a>float
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484702_618400_3426"></a>gDay
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484686_309394_3399"></a>gMonth
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484689_406587_3403"></a>gMonthDay
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484686_973909_3398"></a>gYear
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484701_726131_3424"></a>gYearMonth
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484688_526156_3401"></a>hexBinary
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484682_115730_3393"></a>ID
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484698_63794_3420"></a>IDREF
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484700_317660_3422"></a>IDREFS
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484703_236474_3428"></a>int
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484684_962828_3396"></a>integer
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484688_705605_3402"></a>language
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484696_920665_3416"></a>long
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484684_671168_3395"></a>Name
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484687_643733_3400"></a>NCName
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484700_370943_3423"></a>negativeInteger
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484689_75975_3404"></a>NMTOKEN
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484685_653521_3397"></a>nonNegativeInteger
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">A 
-    W3C standard data type for non-negative integer numbers. The W3C 
-    definition of xsd:nonNegativeInteger is in </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;color:#000BFF;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">http://www.w3.org/TR/xmlschema-2/</span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">.    
-<br>The range of values allowed are 0 </span><span style="font-size:7px;">≤ </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">value 
-    </span><span style="font-size:7px;">≤ </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">2147483647 
-    (the non-negative values that fit in a 32 bit signed integer).</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484705_671757_3432"></a>nonPositiveInteger
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484695_985594_3413"></a>normalizedString
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484705_212065_3431"></a>Notation
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484706_284527_3433"></a>positiveInteger
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">A 
-    W3C standard data type for positive integer numbers. The W3C definition of 
-    xsd:positiveInteger is in </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;color:#000BFF;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">http://www.w3.org/TR/xmlschema-2/</span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">.    
-<br>The range of values allowed are 1 </span><span style="font-size:7px;">≤ </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">value 
-    </span><span style="font-size:7px;">≤ </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">2147483647 
-    (the positive values that fit in a 32 bit signed integer).</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484708_421725_3436"></a>precisionDecimal
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484693_457603_3410"></a>QName
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484702_668356_3427"></a>short
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484691_67945_3407"></a>string
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">A 
-    W3C standard data type for a Unicode character string. The characters are 
-    from the UTF-8 character set as defined in </span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;color:#000BFF;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">http://www.ietf.org/rfc/rfc2279.txt</span><span style="font-style:normal;font-variant:normal;line-height:normal;font-weight:normal;font-size:7px;font-family:Arial, Verdana, Helvetica, sans-serif;">.</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484698_553774_3419"></a>time
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484681_672518_3390"></a>token
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484707_597220_3435"></a>unsignedByte
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-
-  <body>
-    <span style="font-weight:normal;font-style:normal;font-variant:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">The 
-    W3C standard for an unsigned byte (an unsigned 8 bit integer with a value 
-    between 0- 255.) The W3C definition of xsd:unsignedByte is in </span><span style="font-variant:normal;font-weight:normal;font-style:normal;color:#000BFF;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">http://www.w3.org/TR/xmlschema-2/</span><span style="font-variant:normal;font-weight:normal;font-style:normal;line-height:normal;font-family:Arial, Verdana, Helvetica, sans-serif;font-size:7px;">.</span>
-  </body>
-
-</html>
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484704_325090_3429"></a>unsignedInt
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484697_489833_3417"></a>unsignedLong
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484683_113657_3394"></a>unsignedShort
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# <a name="_17_0_2_4_78e0236_1389733484693_920822_3411"></a>yearMonthDuration
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-# Enumerations
