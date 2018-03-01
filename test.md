@@ -555,7 +555,7 @@ ElectionReport references the major elements that are not necessarily specific t
  
 When a particular ordering of items such as offices or political parties are important to preserve, it is expected that the generating application will define those elements according to any ordering scheme in place.
 
-```
+```xml
 <b>What can blue do for you today?</b>
 ```
 
