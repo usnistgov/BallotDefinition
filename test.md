@@ -504,11 +504,11 @@ Attribute | Multiplicity | Type | Attribute Description
 `BallotSubTitle`|0..1|`InternationalizedText`|Subtitle of the contest as it appears on the ballot.
 `BallotTitle`|0..1|`InternationalizedText`|Title of the contest as it appears on the ballot.
 `CountStatus`|0..*|`CountStatus`|For providing various counting status associated with the contest.
-`ElectoralDistrict`|1|`ReportingUnit`|Link to a GpUnit instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
+`ElectoralDistrict`|1|`ReportingUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the contest.
 `HasRotation`|0..1|`boolean`|Boolean to indicate whether the selections in the contest are rotated. Assumed to be “no” if not present.
 `Name`|1|`RichText`|Name of the contest, not necessarily as it appears on the ballot.
-`OtherVoteVariation`|0..1|`string`|For use when VoteVariation is other.
+`OtherVoteVariation`|0..1|`string`|For use when [VoteVariation](#_17_0_2_4_78e0236_1389798198604_276106_4268) is other.
 `SequenceOrder`|0..1|`integer`|Orderering for listing the contest for purposes of results display. If not present, no order is assumed.
 `SubUnitsReported`|0..1|`integer`|Number of subunits, e.g., precincts, that have completed reporting votes for this contest.
 `TotalSubUnits`|0..1|`integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
@@ -531,9 +531,9 @@ If the type of count item is not listed in enumeration [CountItemType](#_17_0_2_
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `DeviceClass`|0..1|`DeviceClass`|
-`GpUnit`|1|`GpUnit`|Link to a GpUnit instance. For associating counts with a geopolitical unit, e.g., a precinct, a county, a township, etc.
+`GpUnit`|1|`GpUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating counts with a geopolitical unit, e.g., a precinct, a county, a township, etc.
 `IsSuppressedForPrivacy`|0..1|`boolean`|Boolean to indicate if votes are suppressed for voter privacy, e.g., true or false. Assumed to be false if not present.
-`OtherType`|0..1|`string`|Used when Type is other.
+`OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285906925_720136_2261) is other.
 `Type`|1|`CountItemType`|The type of count being used as a filter on the vote counts, e.g., election day, early voting, etc.
 # <a name="_17_0_2_4_f71035d_1430412663878_61362_2269"></a>*The **CountStatus** Class*
 
@@ -543,9 +543,9 @@ If the type of count item is not listed in enumeration [CountItemType](#_17_0_2_
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`OtherType`|0..1|`string`|Used when ypeType is other.
-`Status`|1|`CountItemStatus`|The status of the count, from the CountItemStatus enumeration.
-`Type`|1|`CountItemType`|The type of item, from the CountItemType enumeration.
+`OtherType`|0..1|`string`|Used when [ype](#_17_0_2_4_f71035d_1426077318387_348887_2615)Type is other.
+`Status`|1|`CountItemStatus`|The status of the count, from the [CountItemStatus](#_17_0_2_4_78e0236_1389797161173_369293_4078) enumeration.
+`Type`|1|`CountItemType`|The type of item, from the [CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228) enumeration.
 # <a name="_18_0_2_6340208_1425911626288_420556_4530"></a>*The **DeviceClass** Class*
 
 For filtering vote counts by various attributes associated with devices. [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) includes Device, and SummaryCounts and [VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489) include Device as a result of it being included from superclass [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835).
@@ -556,7 +556,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Manufacturer`|0..1|`string`|Manufacturer of the device.
 `Model`|0..1|`string`|Manufacturer’s device model, used to filter on, e.g., a specific model of DRE or other device type.
-`OtherType`|0..1|`string`|Used when Type is other.
+`OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285959630_42686_2265) is other.
 `Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
 # <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
 
@@ -574,11 +574,11 @@ Attribute | Multiplicity | Type | Attribute Description
 `{BallotCounts}`|0..*|`BallotCounts`|
 `ContactInformation`|0..1|`ContactInformation`|For associating various contact information with the election.
 `CountStatus`|0..*|`CountStatus`|For providing various counting status on types of ballots or other items.
-`ElectionScope`|1|`ReportingUnit`|Unique identifier for a GpUnit element. For associating the election with a reporting unit that represents the geographical scope of the election, e.g., a state, a county, etc.
+`ElectionScope`|1|`ReportingUnit`|Unique identifier for a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) element. For associating the election with a reporting unit that represents the geographical scope of the election, e.g., a state, a county, etc.
 `EndDate`|1|`date`|Calendar end date of the election; for a typical one-day election, the end date is the same as the start date.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the election.
 `Name`|1|`InternationalizedText`|For including a name for the election; the name could be the same name as appears on the ballot.
-`OtherType`|0..1|`string`|Used when Type is other.
+`OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1426101886743_683410_2236) is other.
 `StartDate`|1|`date`|Calendar start date of the election, e.g., “2018-11-04”.
 `Type`|1|`ElectionType`|Enumerated type of election, e.g., partisan-primary, open-primary, etc.
 # <a name="_18_0_2_6340208_1441311877439_710008_4433"></a>*The **ElectionAdministration** Class*
@@ -637,7 +637,7 @@ For use as needed and compatibility with the VIP schema.
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
-`OtherType`|0..1|`string`|Used when IdentifierType value is other.
+`OtherType`|0..1|`string`|Used when [IdentifierType](#_17_0_2_4_f71035d_1430405763078_743585_2433) value is other.
 `Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
 `Value`|1|`string`|The identifier used by the jurisdiction.
 # <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
@@ -734,12 +734,12 @@ Attribute | Multiplicity | Type | Attribute Description
 `{Term}`|0..1|`Term`|For including office term-related information.
 `ContactInformation`|0..1|`ContactInformation`|For associating various contact information with the office.
 `Description`|0..1|`InternationalizedText`|
-`ElectoralDistrict`|0..1|`ReportingUnit`|Link to a GpUnit instance. For associating the office with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
+`ElectoralDistrict`|0..1|`ReportingUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating the office with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the office.
 `FilingDeadline`|0..1|`date`|Date and time when a candidate must have filed for the contest for the office.
 `IsPartisan`|0..1|`boolean`|Boolean to indicate whether the office is partisan, e.g., true or false. If not present, assumption is true.
 `Name`|1|`InternationalizedText`|Name of the office; can appear on the ballot.
-`OfficeHolderPerson`|0..*|`Person`|Links to one or more Person instances defined for the office holder.
+`OfficeHolderPerson`|0..*|`Person`|Links to one or more [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) instances defined for the office holder.
 # <a name="_17_0_2_4_f71035d_1433183615993_866714_2239"></a>*The **OfficeGroup** Class*
 
 Used to assign a name to a grouping of office definitions. It includes references to [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes OfficeGroup.
@@ -750,18 +750,18 @@ For use as needed and compatibility with the VIP schema.
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`{Office}`|0..*|`Office`|Link to one or more Office instances.
+`{Office}`|0..*|`Office`|Link to one or more [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Name`|1|`string`|Name of the office grouping.
-`SubOfficeGroup`|0..*|`OfficeGroup`|For defining a nested hierarchy of Office instance groupings.
+`SubOfficeGroup`|0..*|`OfficeGroup`|For defining a nested hierarchy of [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance groupings.
 # <a name="_17_0_3_43401a7_1394476416139_808596_3142"></a>*The **OrderedContest** Class*
 
 Associates a reference to a contest with references to the contest’s ballot selections. [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) includes OrderedContest for each contest on the ballot. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of references to [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) instances via [OrderedBallotSelection](#_17_0_3_43401a7_1394477871277_951066_3270) in the order as on the ballot for the associated geopolitical unit.
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Contest`|1|`Contest`|Unique identifier for a Contest element. For associating a contest on the ballot.
-`OrderedBallotSelection`|0..*|`BallotSelection`|Links to one or more BallotSelection elements. For associating ballot selections with the contest.
+`Contest`|1|`Contest`|Unique identifier for a [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) element. For associating a contest on the ballot.
+`OrderedBallotSelection`|0..*|`BallotSelection`|Links to one or more [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) elements. For associating ballot selections with the contest.
 # <a name="_18_0_2_6340208_1508176198256_527421_4561"></a>*The **OtherCounts** Class*
 
 
@@ -803,14 +803,14 @@ For tracking the number of registered voters per party per geopolitical unit, i.
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Count`|1|`integer`|A count for tracking the number of registered voters.
-`Party`|1|`Party`|Link to a Party instance. For associating a political party.
+`Party`|1|`Party`|Link to a [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instance. For associating a political party.
 # <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>*The **PartySelection** Class*
 
 For a ballot selection involving a party such as for a straight party selection on the ballot. It inherits the attributes of [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Party`|1..*|`Party`|Link to one or more Party instances. For associating one or more parties with the party selection.
+`Party`|1..*|`Party`|Link to one or more [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instances. For associating one or more parties with the party selection.
 # <a name="_17_0_5_1_43401a7_1400623980732_100904_3567"></a>*The **Person** Class*
 
 For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Person. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) and [ElectionAdminsitration](#_18_0_2_6340208_1441311877439_710008_4433) and [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) reference Person. Person optionally references [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) for associating contact information.
@@ -828,7 +828,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `LastName`|0..1|`RichText`|Person’s last (family) name.
 `MiddleName`|0..*|`RichText`|Person’s middle name.
 `Nickname`|0..1|`RichText`|Nickname associated with the person.
-`Party`|0..1|`Party`|Links to a Party instance. For associating a political party with the person.
+`Party`|0..1|`Party`|Links to a [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instance. For associating a political party with the person.
 `Prefix`|0..1|`RichText`|A prefix associated with the person, e.g., Mr.
 `Profession`|0..1|`InternationalizedText`|Person’s profession.
 `Suffix`|0..1|`RichText`|A suffix associated with the person, e.g., Jr.
@@ -860,13 +860,13 @@ Attribute | Multiplicity | Type | Attribute Description
 `{SpatialDimension}`|0..1|`SpatialDimension`|For describing the reporting unit’s spatial extent (a polygon that shows the related area).
 `{PartyRegistration}`|0..*|`PartyRegistration`|For associating a count of registered voters per party with the geopolitical unit.
 `{ElectionAdministration}`|0..1|`ElectionAdministration`|For use when the reporting unit serves as the authority in the election.
-`Authority`|0..*|`Person`|A link to one or more Person instances describing an authority responsible for the reporting unit.
+`Authority`|0..*|`Person`|A link to one or more [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) instances describing an authority responsible for the reporting unit.
 `ContactInformation`|0..1|`ContactInformation`|For associating contact information with the reporting unit.
 `CountStatus`|0..*|`CountStatus`|For providing various counting status on types of ballots or other items.
 `IsDistricted`|0..1|`boolean`|Boolean to indicate whether the reporting unit is a district; assumed to be “no” if not present.
 `IsMailOnly`|0..1|`boolean`|Boolean to indicate whether the reporting unit handles only mail-in or absentee ballot elections, assumed to be “no” if not present.
 `Number`|0..1|`string`|A number associated with the reporting unit; for compatibility with VIP.
-`OtherType`|0..1|`string`|For use when ReportingUnitType value is other.
+`OtherType`|0..1|`string`|For use when [ReportingUnitType](#_17_0_2_4_78e0236_1389713376966_77071_2393) value is other.
 `SubUnitsReported`|0..1|`integer`|Number of associated subunits such as precincts that have completed reporting.
 `TotalSubUnits`|0..1|`integer`|Total number of associated subunits such as precincts.
 `Type`|1|`ReportingUnitType`|Enumerated type of reporting unit, e.g., state, county, district, precinct, etc.
@@ -880,8 +880,8 @@ This element uses [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Candidate`||`Candidate`|Link to a Candidate instance. For associating a candidate with the retention contest.
-`Office`|0..1|`Office`|Link to an Office instance. For associating an office description with the retention contest.
+`Candidate`||`Candidate`|Link to a [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instance. For associating a candidate with the retention contest.
+`Office`|0..1|`Office`|Link to an [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance. For associating an office description with the retention contest.
 # <a name="_18_0_2_6340208_1427122121448_198970_4547"></a>*The **Schedule** Class*
 
 For defining a schedule associated with a particular election office or location. [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) includes Schedule.
@@ -912,8 +912,8 @@ For defining the spatial layout of a [GpUnit](#_17_0_2_4_78e0236_1389366233346_4
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`{SpatialExtent}`|0..1|`SpatialExtent`|For associating a GpUnit element’s spatial extent information.
-`MapUri`|0..1|`anyURI`|Typically a URL to a map of the GpUnit.
+`{SpatialExtent}`|0..1|`SpatialExtent`|For associating a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) element’s spatial extent information.
+`MapUri`|0..1|`anyURI`|Typically a URL to a map of the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
 # <a name="_17_0_2_4_f71035d_1409080246279_778720_2209"></a>*The **SpatialExtent** Class*
 
 [SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188) includes SpatialExtent for defining a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance’s spatial extent data and the format used for the spatial extent.
