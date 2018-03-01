@@ -258,26 +258,26 @@ Name | Value
 
 Used as a type for character strings; it adds a 16-character annotation to a character string.
 
-```
-
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|An annotation of up to 16 characters associated with a character string.
 `Content`|1|`string`|
+
+```
+
+```
 ### <a name="_18_0_2_6340208_1498658436378_308208_4565"></a>*The **AnnotatedUri** Class*
 
 
-
-```
-
-```
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|
 `Content`|1|`anyURI`|
+
+```
+
+```
 ### <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>*The **BallotCounts** Class*
 
 
@@ -410,10 +410,6 @@ ContactInformation includes [LatLng](#_17_0_2_4_f71035d_1443104838926_393729_222
  
 [Email](#_17_0_5_1_43401a7_1400668036651_743620_3650), [Fax](#_17_0_5_1_43401a7_1400668021448_721992_3646), and [Phone](#_17_0_5_1_43401a7_1400667951215_637516_3638) are of type [AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565), which permits up to a 16-character annotation to be associated with the data.
 
-```
-For use as needed and compatibility with the VIP schema.
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Schedule}`|0..*|`Schedule`|For associating a schedule with the contact.
@@ -426,6 +422,10 @@ Attribute | Multiplicity | Type | Attribute Description
 `Name`|0..1|`RichText`|Name associated with the contact.
 `Phone`|0..*|`AnnotatedString`|Phone number associated with the contact.
 `Uri`|0..*|`AnnotatedUri`|URI associated with the contact.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>*The **Contest** Class*
 
 For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Contest.
@@ -555,6 +555,27 @@ ElectionReport references the major elements that are not necessarily specific t
  
 When a particular ordering of items such as offices or political parties are important to preserve, it is expected that the generating application will define those elements according to any ordering scheme in place.
 
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+`{Election}`|0..*|`Election`|For associating elections with the report.
+`{Office}`|0..*|`Office`|For associating offices with the report.
+`{Party}`|0..*|`Party`|For associating parties with the report.
+`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
+`{OfficeGroup}`|0..*|`OfficeGroup`|For associating a name for a grouping of offices with the report.
+`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
+`Format`|1|`ReportDetailLevel`|Detail level of the report, e.g., contest summary, precinct level results, etc.
+`GeneratedDate`|1|`dateTime`|Identifies the date and time that the election report was generated.
+`Issuer`|1|`RichText`|Identification of the report issuer.
+`IssuerAbbreviation`|1|`RichText`|An abbreviation of the report issuer such as the 2-character U.S. Census Bureau abbreviation of the state whose results are being reported, e.g., AL, TX, MN, etc.
+`IsTest`|0..1|`boolean`|Used to indicate whether the report is a test report. Assumed to be “no” if not present.
+`Notes`|0..1|`RichText`|For including an arbitrary message with the report.
+`Person`|0..*|`Person`|For associating persons with the report.
+`SequenceEnd`|1|`integer`|The upper bound of the sequence; e.g., “1” if there is only 1 report, “2” if there are two reports in the sequence, etc.
+`SequenceStart`|1|`integer`|The report’s number as part of a sequence of reports, used with   so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc. Starts with “1”.
+`Status`|1|`ResultsStatus`|Status of the election report, e.g., test mode, unofficial, etc.
+`TestType`|0..1|`string`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
+`VendorApplicationId`|1|`string`|An identifier of the vendor application generating the election report, e.g., X-EMS version 3.1.a.
+
 ```xsd
 <xsd:complexType name="ElectionReport">
    <xsd:sequence>
@@ -604,36 +625,11 @@ When a particular ordering of items such as offices or political parties are imp
    </xsd:sequence>
 </xsd:complexType>
 ```
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`{Election}`|0..*|`Election`|For associating elections with the report.
-`{Office}`|0..*|`Office`|For associating offices with the report.
-`{Party}`|0..*|`Party`|For associating parties with the report.
-`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
-`{OfficeGroup}`|0..*|`OfficeGroup`|For associating a name for a grouping of offices with the report.
-`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
-`Format`|1|`ReportDetailLevel`|Detail level of the report, e.g., contest summary, precinct level results, etc.
-`GeneratedDate`|1|`dateTime`|Identifies the date and time that the election report was generated.
-`Issuer`|1|`RichText`|Identification of the report issuer.
-`IssuerAbbreviation`|1|`RichText`|An abbreviation of the report issuer such as the 2-character U.S. Census Bureau abbreviation of the state whose results are being reported, e.g., AL, TX, MN, etc.
-`IsTest`|0..1|`boolean`|Used to indicate whether the report is a test report. Assumed to be “no” if not present.
-`Notes`|0..1|`RichText`|For including an arbitrary message with the report.
-`Person`|0..*|`Person`|For associating persons with the report.
-`SequenceEnd`|1|`integer`|The upper bound of the sequence; e.g., “1” if there is only 1 report, “2” if there are two reports in the sequence, etc.
-`SequenceStart`|1|`integer`|The report’s number as part of a sequence of reports, used with   so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc. Starts with “1”.
-`Status`|1|`ResultsStatus`|Status of the election report, e.g., test mode, unofficial, etc.
-`TestType`|0..1|`string`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
-`VendorApplicationId`|1|`string`|An identifier of the vendor application generating the election report, e.g., X-EMS version 3.1.a.
 ### <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>*The **ExternalIdentifier** Class*
 
 For associating a jurisdiction’s codes, i.e., identifiers, with objects such as candidates, offices, or geopolitical units such as counties, towns, precincts, etc. Multiple occurrences of the ExternalIdentifier sub-element can be used to associate multiple codes, e.g., if there is a desire to associate multiple codes with a particular object such as FIPS (Federal Information Processing Standard) codes as well as OCD-IDs (Open Civic Data Identifiers).
  
 For elements that link to ExternalIdentifier instances, if the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1430405763078_743585_2433), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
@@ -641,6 +637,10 @@ Attribute | Multiplicity | Type | Attribute Description
 `OtherType`|0..1|`string`|Used when [IdentifierType](#_17_0_2_4_f71035d_1430405763078_743585_2433) value is other.
 `Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
 `Value`|1|`string`|The identifier used by the jurisdiction.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
 
 Class/element for describing a geo-politically bounded area of geography such as a city, district, or jurisdiction, or a precinct or split-precinct, or specific vote-capture device, for the purpose of associating contest vote counts and ballot counts (and other information) with the reporting unit. Reporting units can link to each other to form a hierarchicallly-oriented model of a state's (or a county's, etc.) jurisdictions, districts, and precincts.
@@ -654,16 +654,16 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Hours is used to specify a specific day and hours on that day, including the time zone. Multiple occurrences of Hours can be used if the schedule includes a range of days and hours.
 
-```
-For use as needed and compatibility with the VIP schema.
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Day`|0..1|`DayType`|Day of week or weekend.
 `EndTime`|1|`TimeWithZone`|End time of the schedule.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `StartTime`|1|`TimeWithZone`|Start time of the schedule.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_17_0_2_4_f71035d_1428586849773_722256_2252"></a>*The **HtmlColorString** Class*
 
 
@@ -688,33 +688,29 @@ Values for language are from ISO 639 [12] and include:
 • ja – Japanese
 • ko – Korean
 
-```
-For use as needed and compatibility with the VIP schema.
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Text`|1..*|`LanguageString`|A string of text, i.e., possibly non-English.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_17_0_2_4_f71035d_1428953680095_709464_2219"></a>*The **LanguageString** Class*
 
 
-
-```
-
-```
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Content`|1|`string`|
 `Language`|1|`language`|A string of text, i.e., possibly non-English.
+
+```
+
+```
 ### <a name="_17_0_2_4_f71035d_1443104838926_393729_2222"></a>*The **LatLng** Class*
 
 
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
@@ -722,6 +718,10 @@ Attribute | Multiplicity | Type | Attribute Description
 `Latitude`|1|`float`|Latitude of the contact location.
 `Longitude`|1|`float`|Longitude of the contact location.
 `Source`|0..1|`string`|System used to perform the lookup from location name to lat/lng, e.g., the name of a geocoding service.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_17_0_5_1_43401a7_1400623830572_164081_3518"></a>*The **Office** Class*
 
 For defining an office and associated information associated with a contest and/or a district. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Office. [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806) and [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554) reference Office.
@@ -745,16 +745,16 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Used to assign a name to a grouping of office definitions. It includes references to [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes OfficeGroup.
 
-```
-For use as needed and compatibility with the VIP schema.
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Office}`|0..*|`Office`|Link to one or more [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Name`|1|`string`|Name of the office grouping.
 `SubOfficeGroup`|0..*|`OfficeGroup`|For defining a nested hierarchy of [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance groupings.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_17_0_3_43401a7_1394476416139_808596_3142"></a>*The **OrderedContest** Class*
 
 Associates a reference to a contest with references to the contest’s ballot selections. [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) includes OrderedContest for each contest on the ballot. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of references to [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) instances via [OrderedBallotSelection](#_17_0_3_43401a7_1394477871277_951066_3270) in the order as on the ballot for the associated geopolitical unit.
@@ -887,10 +887,6 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For defining a schedule associated with a particular election office or location. [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) includes Schedule.
 
-```
-For use as needed and compatibility with the VIP schema.
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Hours}`|0..*|`Hours`|For specifying a range of hours for a schedule.
@@ -900,6 +896,10 @@ Attribute | Multiplicity | Type | Attribute Description
 `IsSubjectToChange`|0..1|`boolean`|If an appointment may be subject to change; assumed to be “no” if not present.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `StartDate`|0..1|`date`|For the starting date of the schedule.
+
+```
+For use as needed and compatibility with the VIP schema.
+```
 ### <a name="_18_0_2_6340208_1499878618645_537953_4560"></a>*The **ShortString** Class*
 
 
@@ -927,16 +927,16 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Enumeration for the status of the election results in the [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) class.
 
-```
-
-```
-
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `EndDate`|0..1|`date`|
 `Label`|0..1|`string`|
 `StartDate`|0..1|`date`|
 `Type`|0..1|`OfficeTermType`|
+
+```
+
+```
 ### <a name="_18_0_2_6340208_1427385616970_86952_4407"></a>*The **TimeWithZone** Class*
 
 
@@ -952,4 +952,3 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Count`|1|`float`|Count of contest votes cast; can include a fractional component in special cases.
 `Round`|0..1|`integer`|
-
