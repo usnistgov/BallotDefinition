@@ -119,15 +119,15 @@ ENDIMG
     
 Name | Value
 ---- | -----
-`absentee`|For any/all types of absentee, generally when absentee is not broken out into specific types. 
+`absentee`|For any/all types of absentee, generally when absentee is not broken out into specific types.
 `absentee-fwab`|A type of absentee; for Federal Write-in Absentee Ballots.
-`absentee-in-person`|A type of absentee; for absentee ballots cast in-person, e.g., at a county office. 
-`absentee-mail`|A type of absentee; for postal mail absentee ballots. 
+`absentee-in-person`|A type of absentee; for absentee ballots cast in-person, e.g., at a county office.
+`absentee-mail`|A type of absentee; for postal mail absentee ballots.
 `early`|For ballots cast during early voting periods.
 `election-day`|For ballots cast on election day.
 `provisional`|For challenged ballots.
 `total`|For the total of all ballot types.
-`uocava`|For ballots from UOCAVA (Uniform and Overseas Citizens Assistance in Voting Act) voters. 
+`uocava`|For ballots from UOCAVA (Uniform and Overseas Citizens Assistance in Voting Act) voters.
 `write-in`|For write-ins on ballots.
 `other`|Used when the type of counting item is not included in this enumeration.
   ![alt text]()
@@ -240,21 +240,21 @@ Name | Value
 `borough`|Used in CT, NJ, PA, other states, and New York City for boroughs. For AK and LA, see county.
 `city`|Used for a city that reports results and/or for the district that encompasses it.
 `city-council`|Used for city council districts.
-`combined-precinct`|Used for one or more precincts that have been combined for the purposes of reporting.  Used for “Ward” if “Ward” is used interchangeably with “CombinedPrecinct”.
+`combined-precinct`|Used for one or more precincts that have been combined for the purposes of reporting. Used for “Ward” if “Ward” is used interchangeably with “CombinedPrecinct”.
 `congressional`|Used for U.S. Congressional districts.
 `country`|
-`county`|Used for a county and/or for the district that encompasses it.  In AK, used for counties that are called boroughs.  In LA, used for parishes.
+`county`|Used for a county and/or for the district that encompasses it. In AK, used for counties that are called boroughs. In LA, used for parishes.
 `county-council`|Used for county council districts.
 `drop-box`|Used for a dropbox for absentee ballots.
 `judicial`|Used for judicial districts.
 `municipality`|Used as applicable for various units such as towns, townships, villages that report votes and/or for the district that encompasses it.
 `polling-place`|Used for a polling place.
 `precinct`|Used also for “Ward” or “District” when these terms are used interchangeably with “Precinct”.
-`school`|Used for a school district. 
+`school`|Used for a school district.
 `special`|Used for a special district.
 `split-precinct`|Used for splits of precincts.
 `state`|Used for a state and/or for the district that encompasses it.
-`state-house`|Used for a state house or assembly district. 
+`state-house`|Used for a state house or assembly district.
 `state-senate`|Used for a state senate district.
 `town`|Used in some New England states as a type of municipality that reports votes and/or for the district that encompasses it.
 `township`|Used in some mid-western states as a type of municipality that reports votes and/or for the district that encompasses it.
@@ -274,7 +274,7 @@ Name | Value
 ---- | -----
 `certified`|For results that have been certified by the election authority.
 `correction`|For results that are a correction to an earlier report.
-`pre-election`|For a pre-election data. 
+`pre-election`|For a pre-election data.
 `recount`|For results that are a recount of an earlier election.
 `unofficial-complete`|For results that are unofficial and complete, e.g., the complete election night results.
 `unofficial-partial`|For results that are unofficial and partial, e.g., partial election night results.
@@ -301,74 +301,39 @@ Name | Value
   # Classes
 # <a name="_18_0_2_6340208_1497553224568_429892_4565"></a>*The **AnnotatedString** Class*
 Used as a type for character strings; it adds a 16-character annotation to a character string.
- 
-Content 
+
 ```
 
 ```
-Annotation 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|An annotation of up to 16 characters associated with a character string.
 `Content`|1|`string`|
 # <a name="_18_0_2_6340208_1498658436378_308208_4565"></a>*The **AnnotatedUri** Class*
 
-Content 
+
 ```
 
 ```
-Annotation 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|
 `Content`|1|`anyURI`|
 # <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>*The **BallotCounts** Class*
 
- 
-BallotsCast 
-BallotsOutstanding 
-BallotsRejected 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `BallotsCast`|0..1|`integer`|
 `BallotsOutstanding`|0..1|`integer`|
 `BallotsRejected`|0..1|`integer`|
 # <a name="_17_0_2_4_78e0236_1389366932057_929676_2783"></a>*The **BallotMeasureContest** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For ballot measure (i.e., referenda or a tax measure) and judicial retention contests. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a>.
+For ballot measure (i.e., referenda or a tax measure) and judicial retention contests. It inherits the attributes of Contest.
+ 
+If the type of ballot measure is not listed in enumeration BallotMeasureType, use other and include the type (that is not listed in the enumeration) in OtherType.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-If the type of ballot measure is not listed in enumeration <a href="#_17_0_2_4_f71035d_1426550181692_978243_2516">BallotMeasureType</a>, use other and include the type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1426550214099_344315_2520">OtherType</a>.
-
-    </p>
-
-</body>
-</html>
- 
- 
-ConStatement 
-EffectOfAbstain 
-FullText 
-InfoUri 
-PassageThreshold 
-ProStatement 
-SummaryText 
-Type 
-OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `ConStatement`|0..1|`InternationalizedText`|For a statement on the ballot associated with a “no” vote.
@@ -381,236 +346,66 @@ Attribute | Multiplicity | Type | Attribute Description
 `SummaryText`|0..1|`InternationalizedText`|For a summary on the ballot of the ballot measure.
 `Type`|0..1|`BallotMeasureType`|For indicating the type of ballot measure.
 # <a name="_17_0_2_4_78e0236_1389372163799_981952_2926"></a>*The **BallotMeasureSelection** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For a ballot selection in a ballot measure contest. Because judicial or other retention contests are often treated like ballot measure contests, this element can be used also for retention contests. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389372163799_981952_2926">BallotSelection</a>.
+For a ballot selection in a ballot measure contest. Because judicial or other retention contests are often treated like ballot measure contests, this element can be used also for retention contests. It inherits the attributes of BallotSelection.
 
-    </p>
-
-</body>
-</html>
- 
- 
-Selection 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Selection`|1|`InternationalizedText`|Contains the text used to indicate a vote for or against the ballot measure, e.g., “yes”, “no”.
 # <a name="_17_0_2_4_78e0236_1389372124445_11077_2906"></a>*The **BallotSelection** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used for the ballot selections in a contest (e.g., for candidates, for ballot measures) and to generally link them to vote counts. <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a> includes BallotSelection.
-
-    </p>
-
-    <p>
+Used for the ballot selections in a contest (e.g., for candidates, for ballot measures) and to generally link them to vote counts. Contest includes BallotSelection.
 BallotSelection is an abstract class with three subclasses that get used according to the type of contest:
+•BallotMeasureSelection, used if the contest type is for a ballot measure, including for retentions
+•CandidateSelection, used if the contest type is for one or more candidates, to link the ballot selection to the candidate instances and endorsement parties; and
+•PartySelection, used if the contest type is for a party, e.g., for a straight party contest.
+BallotSelection includes VoteCounts for associating vote counts with the ballot selection.
+SequenceOrder is included to specify an ordering for the ballot selections for purposes of display only. The original ballot ordering can be preserved, however, by using the BallotStyle class.
 
-    </p>
-
-    <p>
-•<a href="#_17_0_2_4_78e0236_1389372163799_981952_2926">BallotMeasureSelection</a>, used if the contest type is for a ballot measure, including for retentions
-
-    </p>
-
-    <p>
-•<a href="#_17_0_2_4_d420315_1392145640524_831493_2562">CandidateSelection</a>, used if the contest type is for one or more candidates, to link the ballot selection to the candidate instances and endorsement parties; and
-
-    </p>
-
-    <p>
-•<a href="#_17_0_2_4_f71035d_1426519980658_594892_2511">PartySelection</a>, used if the contest type is for a party, e.g., for a straight party contest.
-
-    </p>
-
-    <p>
-BallotSelection includes <a href="#_17_0_2_4_78e0236_1389372026000_187007_2862">VoteCounts</a> for associating vote counts with the ballot selection.
-
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_f71035d_1426296042287_22607_2200">SequenceOrder</a> is included to specify an ordering for the ballot selections for purposes of display only. The original ballot ordering can be preserved, however, by using the <a href="#_17_0_2_4_78e0236_1389366224561_797289_2360">BallotStyle</a> class.
-
-    </p>
-
-</body>
-</html>
- 
- 
-SequenceOrder 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{VoteCounts}`|0..*|`VoteCounts`|For associating votes with a ballot selection in a contest.
 `SequenceOrder`|0..1|`integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 # <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>*The **BallotStyle** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining a ballot style composed of contests and their ballot selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to the a precinct or other geopolitical unit that the ballot is unique to. <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a> includes BallotStyle.
+For defining a ballot style composed of contests and their ballot selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to the a precinct or other geopolitical unit that the ballot is unique to. Election includes BallotStyle.
+ 
+BallotStyle references OrderedContest to include contests on that ballot style and the ballot selections associated with each contest. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of OrderedContest in the order as on the ballot for the associated geopolitical unit.
+ 
+BallotStyle references one or more GpUnit instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct GpUnit instances can be included.
+ 
+When including ExternalIdentifier, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-BallotStyle references <a href="#_17_0_3_43401a7_1394476416139_808596_3142">OrderedContest</a> to include contests on that ballot style and the ballot selections associated with each contest. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of <a href="#_17_0_3_43401a7_1394476416139_808596_3142">OrderedContest</a> in the order as on the ballot for the associated geopolitical unit.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-BallotStyle references one or more <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instances can be included.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-When including <a href="#_17_0_2_4_f71035d_1430405712653_451634_2410">ExternalIdentifier</a>, if the type is not listed in enumeration <a href="#_17_0_2_4_f71035d_1425061188508_163854_2613">IdentifierType</a>, use other and include the type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1430405732252_109247_2429">OtherType</a>.
-
-    </p>
-
-</body>
-</html>
- 
- 
-Party 
-ExternalIdentifier 
- 
-ImageUri 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{OrderedContest}`|0..*|`OrderedContest`|For associating contests in the order as listed on ballot.
-`{GpUnit}`|1..*|`GpUnit`|Unique identifier for one or more GpUnit instances.  For associating specific geopolitical units with the ballot style.
-`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style. 
+`{GpUnit}`|1..*|`GpUnit`|Unique identifier for one or more GpUnit instances. For associating specific geopolitical units with the ballot style.
+`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style.
 `ImageUri`|0..*|`anyURI`|URI for a ballot image.
-`Party`|0..*|`Party`|Unique identifier for one or more Party instances.  For associating one or more parties with the ballot style.
+`Party`|0..*|`Party`|Unique identifier for one or more Party instances. For associating one or more parties with the ballot style.
 # <a name="_17_0_2_4_78e0236_1389366272694_544359_2440"></a>*The **Candidate** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining information about a candidate in a contest. <a href="#_17_0_2_4_d420315_1392145640524_831493_2562">CandidateSelection</a> references <a href="#_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a> instances to associate one or more candidates with a ballot selection. <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a> includes Candidate.
+For defining information about a candidate in a contest. CandidateSelection references Candidate instances to associate one or more candidates with a ballot selection. Election includes Candidate.
+ 
+Candidate uses the Party association to reference the candidate’s political party. If the candidate is endorsed by other parties for a particular contest, the endorsing parties are referenced using the CandidateSelection attribute.
+ 
+ExternalIdentifier can be used to associate an ID with the candidate. If the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Candidate uses the <a href="#_17_0_2_4_78e0236_1389366597377_433664_2698">Party</a> association to reference the candidate&rsquo;s political party. If the candidate is endorsed by other parties for a particular contest, the endorsing parties are referenced using the <a href="#_17_0_2_4_d420315_1392145640524_831493_2562">CandidateSelection</a> attribute.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_f71035d_1430405890311_465205_2454">ExternalIdentifier</a> can be used to associate an ID with the candidate. If the type is not listed in enumeration <a href="#_17_0_2_4_f71035d_1425061188508_163854_2613">IdentifierType</a>, use other and include the type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1430405732252_109247_2429">OtherType</a>.
-
-    </p>
-
-</body>
-</html>
- 
-Party 
-BallotName 
-ExternalIdentifier 
-FileDate 
-IsIncumbent 
-Person 
-IsTopTicket 
-PostElectionStatus 
-PreElectionStatus 
- 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{ContactInformation}`|0..1|`ContactInformation`|
-`BallotName`|1|`InternationalizedText`|For the candidate’s name as listed on the ballot. 
+`BallotName`|1|`InternationalizedText`|For the candidate’s name as listed on the ballot.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating codes with the candidate.
 `FileDate`|0..1|`date`|Date when the candidate filed for the contest.
 `IsIncumbent`|0..1|`boolean`|Boolean to indicate whether the candidate is the incumbent for the office associated with the contest. Assumed to be “no” if not present.
 `IsTopTicket`|0..1|`boolean`|Boolean to indicate whether the candidate is the top of a ticket that includes multiple candidates. Assumed to be “no” if not present.
 `Party`|0..1|`Party`|For associating a party with the candidate.
-`Person`|0..1|`Person`|For associating more detailed information about the candidate.  
+`Person`|0..1|`Person`|For associating more detailed information about the candidate.
 `PostElectionStatus`|0..1|`CandidatePostElectionStatus`|Final status of the candidate, e.g., winner, withdrawn, etc.
 `PreElectionStatus`|0..1|`CandidatePreElectionStatus`|Registration status of the candidate, e.g., filed, qualified, etc.
 # <a name="_17_0_2_4_78e0236_1389366970084_183781_2806"></a>*The **CandidateContest** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For a contest that involves selecting one or more candidates. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a>. 
+For a contest that involves selecting one or more candidates. It inherits the attributes of Contest.
+ 
+This class optionally references Office and Party. If the candidate contest is associated with a ticket (of candidates) and each candidate in the ticket is associated with a separate office, the association to Office can reference each of the separate offices. For example, if the contest is for the state governor ticket but Governor and Lieutenant (Lt.) Governor are both separate offices, the association references first to the Office instance defined for the Governor’s office and then to the Lt. Governor’s office. In this case, it is expected that the generating application will list the multiple references according to a jurisdiction-defined ordering scheme, e.g., Governor first and Lt. Governor second.
+ 
+Note that when using the CandidateSelection class to associate the candidates with a ballot selection for the contest, the order of the candidates should match the order of offices. Again, using the example of the state governor ticket, if the offices are listed with Governor first and Lt. Governor second, then the order of the candidates in the BallotSelection instance should be identical, with the Governor candidate first and the Lt. Governor candidate second.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-This class optionally references <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> and <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a>. If the candidate contest is associated with a ticket (of candidates) and each candidate in the ticket is associated with a separate office, the <a href="#_17_0_5_1_43401a7_1400624734486_732685_3699">association to Office</a> can reference each of the separate offices. For example, if the contest is for the state governor ticket but Governor and Lieutenant (Lt.) Governor are both separate offices, the association references first to the <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> instance defined for the Governor&rsquo;s office and then to the Lt. Governor&rsquo;s office. In this case, it is expected that the generating application will list the multiple references according to a jurisdiction-defined ordering scheme, e.g., Governor first and Lt. Governor second.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Note that when using the <a href="#_17_0_2_4_d420315_1392145640524_831493_2562">CandidateSelection</a> class to associate the candidates with a ballot selection for the contest, the order of the candidates should match the order of offices. Again, using the example of the state governor ticket, if the offices are listed with Governor first and Lt. Governor second, then the order of the candidates in the <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a> instance should be identical, with the Governor candidate first and the Lt. Governor candidate second.
-
-    </p>
-
-</body>
-</html>
- 
- 
-PrimaryParty 
-NumberElected 
-NumberRunoff 
-Office 
-VotesAllowed 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `NumberElected`|0..1|`integer`|Number of candidates that are elected in the contest (“n” of n-of-m).
@@ -619,142 +414,39 @@ Attribute | Multiplicity | Type | Attribute Description
 `PrimaryParty`|0..*|`Party`|For associating parties with the contest.
 `VotesAllowed`|1|`integer`|Maximum number of votes per voter in this contest.
 # <a name="_17_0_2_4_d420315_1392145640524_831493_2562"></a>*The **CandidateSelection** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For the ballot selections in a candidate contest, including for write-ins. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a>. References to multiple <a href="#_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a> instances can be included if necessary, e.g., when the ballot selection would be for a ticket of candidates (unless the ticket itself is defined as a candidate).
+For the ballot selections in a candidate contest, including for write-ins. It inherits the attributes of BallotSelection. References to multiple Candidate instances can be included if necessary, e.g., when the ballot selection would be for a ticket of candidates (unless the ticket itself is defined as a candidate).
+EndorsementParty is used to reference any associated endorsement parties other than the specific party of the candidate (Candidate references Party for that purpose). For example, if a candidate of one party is also endorsed by a second party, use EndorsementParty to reference the second party. A second example would be for ballot fusion as used in some states, where the same candidate is listed multiple times in the same contest, but with different endorsement parties.
+When multiple candidates are referenced for a ticket and the ordering of the candidates is important to preserve, it is expected that the generating application will list the references to Candidate instances according to the ordering scheme in place. For example, if the contest is for a ticket in which each candidate is associated with a different office, then the order of the candidates should match the same ordering of the <Office> element references within <OfficeIds> in the <Contest xsi:type="CandidateContest" ... /> element.
 
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_d420315_1391370669921_519404_2559">EndorsementParty</a> is used to reference any associated endorsement parties other than the specific party of the candidate (<a href="#_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a> references <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a> for that purpose). For example, if a candidate of one party is also endorsed by a second party, use <a href="#_17_0_2_4_d420315_1391370669921_519404_2559">EndorsementParty</a> to reference the second party. A second example would be for ballot fusion as used in some states, where the same candidate is listed multiple times in the same contest, but with different endorsement parties.
-
-    </p>
-
-    <p>
-When multiple candidates are referenced for a ticket and the ordering of the candidates is important to preserve, it is expected that the generating application will list the references to <a href="#_17_0_2_4_d420315_1392145686219_781480_2594">Candidate</a> instances according to the ordering scheme in place. For example, if the contest is for a ticket in which each candidate is associated with a different office, then the order of the candidates should match the same ordering of the &lt;Office&gt; element references within &lt;OfficeIds&gt; in the &lt;Contest xsi:type=&quot;CandidateContest&quot; ... /&gt; element.
-
-    </p>
-
-</body>
-</html>
- 
- 
-EndorsementParty 
-Candidate 
-IsWriteIn 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Candidate`|0..*|`Candidate`|For associating a candidate with the candidate selection on the ballot and for cases where the ballot selection is for multiple candidates, e.g., a ticket.
 `EndorsementParty`|0..*|`Party`|For associating one or more endorsing parties with the candidate selection.
-`IsWriteIn`|0..1|`boolean`|Indicates whether the candidate is a write-in, e.g., true or false.  Assumed to be false if not present.
+`IsWriteIn`|0..1|`boolean`|Indicates whether the candidate is a write-in, e.g., true or false. Assumed to be false if not present.
 # <a name="_18_0_2_6340208_1425647247631_162984_4712"></a>*The **Coalition** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining a coalition, i.e., a collection of parties organized for the purpose of endorsing a candidates in a contest. It inherits the attributes and elements of <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a>.
+For defining a coalition, i.e., a collection of parties organized for the purpose of endorsing a candidates in a contest. It inherits the attributes and elements of Party.
+ 
+Coalition instances themselves are composed of multiple Party references along with a reference to an associated Contests.
+ 
+If there are no associated Contests, a general default is that the coalition endorses the associated parties.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Coalition instances themselves are composed of multiple <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a> references along with a reference to an associated <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contests</a>.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-If there are no associated <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contests</a>, a general default is that the coalition endorses the associated parties.
-
-    </p>
-
-</body>
-</html>
- 
- 
-Party 
-Contest 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Contest`|0..*|`Contest`|For associating contests with the coalition.
 `Party`|0..*|`Party`|For associating parties with the coalition.
 # <a name="_17_0_5_1_43401a7_1400624327407_326048_3637"></a>*The **ContactInformation** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining contact information about objects such as persons, boards of authorities, organizations, etc. <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a>, <a href="#_18_0_2_6340208_1441311877439_710008_4433">ElectionAdministration</a>, <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a>, <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>, and <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> include ContactInformation.
+For defining contact information about objects such as persons, boards of authorities, organizations, etc. Election, ElectionAdministration, Person, GpUnit, and Office include ContactInformation.
+ 
+To include an address for the contact, use multiple occurrences of AddressLine. It is expected that the generating application will list the name of the person/organization in the first occurrence of AddressLine, with subsequent ordered occurrences for street address, city, state, zip code, etc. Directions can be used to supply any additional address-related information that may appear in multiple languages.
+ 
+ContactInformation includes LatLng so as to associate latitude/longitude with the contact address.
+ 
+Email, Fax, and Phone are of type AnnotatedString, which permits up to a 16-character annotation to be associated with the data.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-To include an address for the contact, use multiple occurrences of <a href="#_18_0_2_6340208_1425645912998_115448_4529">AddressLine</a>. It is expected that the generating application will list the name of the person/organization in the first occurrence of <a href="#_18_0_2_6340208_1425645912998_115448_4529">AddressLine</a>, with subsequent ordered occurrences for street address, city, state, zip code, etc. <a href="#_17_0_2_4_f71035d_1443105112875_46223_2290">Directions</a> can be used to supply any additional address-related information that may appear in multiple languages.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-ContactInformation includes <a href="#_17_0_2_4_f71035d_1443104838926_393729_2222">LatLng</a> so as to associate latitude/longitude with the contact address.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-<a href="#_17_0_5_1_43401a7_1400668036651_743620_3650">Email</a>, <a href="#_17_0_5_1_43401a7_1400668021448_721992_3646">Fax</a>, and <a href="#_17_0_5_1_43401a7_1400667951215_637516_3638">Phone</a> are of type <a href="#_18_0_2_6340208_1497553224568_429892_4565">AnnotatedString</a>, which permits up to a 16-character annotation to be associated with the data.
-
-    </p>
-
-</body>
-</html>
- 
- 
-AddressLine 
-Directions 
-Email 
-Fax 
-Label 
 ```
 For use as needed and compatibility with the VIP schema.
 ```
-Name 
-Phone 
- 
-Uri 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Schedule}`|0..*|`Schedule`|For associating a schedule with the contact.
@@ -768,141 +460,29 @@ Attribute | Multiplicity | Type | Attribute Description
 `Phone`|0..*|`AnnotatedString`|Phone number associated with the contact.
 `Uri`|0..*|`AnnotatedUri`|URI associated with the contact.
 # <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>*The **Contest** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a> includes Contest.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
+For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. Election includes Contest.
+ 
 Contest is an abstract class with four subclasses that get used according to the type of contest:
+ 
+•BallotMeasureContest, used for a contest involving a ballot measure
+• CandidateContest, used for a contest involving one or more candidates for an office
+• PartyContest, used for a contest for a straight party selection on the ballot
+• RetentionContest, used for a judicial or other type of retention contest
+ 
+Contest includes BallotSelection to link the selections on the ballot to the contest, e.g., to link one or more candidates to a candidate contest. Like Contest, BallotSelection is also an abstract class and has subclasses that essentially correspond to those of Contest, as follows:
+ 
+• BallotMeasureContest includes BallotMeasureSelection
+• CandidateContest includes CandidateSelection
+• PartyContest includes PartySelection
+• RetentionContest includes BallotMeasureSelection
+ 
+Contest includes a required <ElectoralDistrictId> reference to a <GpUnit> defined for the geographical scope of the contest. For example, in a state senate contest, <ElectoralDistrictId> would reference a <GpUnit xsi:type="ReportingUnit"> element defined for the district associated with the contest. <Office> also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same <GpUnit> defined for the state or county, etc., can be re-used.
+ 
+<Contest> includes <SummaryCounts> for providing a summary of miscellaneous counts associated with the contest, including total number of ballots cast containing the contest, total number of overvotes, undervotes, or write-ins. The summary counts can be associated with the contest as a whole, or with precincts or other lower-level reporting units by using multiple occurrences of <SummaryCounts> (see sections 4.2.8 and 4.2.23).
+ 
+<SequenceOrder> is used for results display ordering, i.e., to display contests according to a particular ordering. For example, “100” may indicate a U.S. Senatorial contest, “200” may indicate a U.S. Congressional contest, etc. <SequenceOrder> is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the <BallotStyle> element, which associates ballot styles with their corresponding precincts or other geopolitical units (see section 4.2.3).
+When including <ExternalIdentifiers>, if the type is not listed in enumeration <IdentifierType>, use other and include the type (that is not listed in the enumeration) in <OtherType>.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-•<a href="#_17_0_2_4_78e0236_1389366932057_929676_2783">BallotMeasureContest</a>, used for a contest involving a ballot measure
-
-    </p>
-
-    <p>
-• <a href="#_17_0_2_4_78e0236_1389366970084_183781_2806">CandidateContest</a>, used for a contest involving one or more candidates for an office
-
-    </p>
-
-    <p>
-• <a href="#_17_0_2_4_d420315_1393514218965_55008_3144">PartyContest</a>, used for a contest for a straight party selection on the ballot
-
-    </p>
-
-    <p>
-• <a href="#_18_0_2_6340208_1425646217522_163181_4554">RetentionContest</a>, used for a judicial or other type of retention contest
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a> includes <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a> to link the selections on the ballot to the contest, e.g., to link one or more candidates to a candidate contest. Like Contest, <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a> is also an abstract class and has subclasses that essentially correspond to those of Contest, as follows:
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-• <a href="#_17_0_2_4_78e0236_1389366932057_929676_2783">BallotMeasureContest</a> includes <a href="#_17_0_2_4_78e0236_1389372163799_981952_2926">BallotMeasureSelection</a>
-
-    </p>
-
-    <p>
-• <a href="#_17_0_2_4_78e0236_1389366970084_183781_2806">CandidateContest</a> includes <a href="#_17_0_2_4_d420315_1392145640524_831493_2562">CandidateSelection</a>
-
-    </p>
-
-    <p>
-• <a href="#_17_0_2_4_d420315_1393514218965_55008_3144">PartyContest</a> includes <a href="#_17_0_2_4_f71035d_1426519980658_594892_2511">PartySelection</a>
-
-    </p>
-
-    <p>
-• <a href="#_18_0_2_6340208_1425646217522_163181_4554">RetentionContest</a> includes <a href="#_17_0_2_4_78e0236_1389372163799_981952_2926">BallotMeasureSelection</a>
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Contest includes a required &lt;ElectoralDistrictId&gt; reference to a &lt;GpUnit&gt; defined for the geographical scope of the contest. For example, in a state senate contest, &lt;ElectoralDistrictId&gt; would reference a &lt;GpUnit xsi:type=&quot;ReportingUnit&quot;&gt; element defined for the district associated with the contest. &lt;Office&gt; also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same &lt;GpUnit&gt; defined for the state or county, etc., can be re-used.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-&lt;Contest&gt; includes &lt;SummaryCounts&gt; for providing a summary of miscellaneous counts associated with the contest, including total number of ballots cast containing the contest, total number of overvotes, undervotes, or write-ins. The summary counts can be associated with the contest as a whole, or with precincts or other lower-level reporting units by using multiple occurrences of &lt;SummaryCounts&gt; (see sections 4.2.8 and 4.2.23).
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-&lt;SequenceOrder&gt; is used for results display ordering, i.e., to display contests according to a particular ordering. For example, &ldquo;100&rdquo; may indicate a U.S. Senatorial contest, &ldquo;200&rdquo; may indicate a U.S. Congressional contest, etc. &lt;SequenceOrder&gt; is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the &lt;BallotStyle&gt; element, which associates ballot styles with their corresponding precincts or other geopolitical units (see section 4.2.3).
-
-    </p>
-
-    <p>
-When including &lt;ExternalIdentifiers&gt;, if the type is not listed in enumeration &lt;IdentifierType&gt;, use other and include the type (that is not listed in the enumeration) in &lt;OtherType&gt;.
-
-    </p>
-
-</body>
-</html>
- 
-ElectoralDistrict 
- 
-Abbreviation 
-BallotSubTitle 
-BallotTitle 
- 
-CountStatus 
-ExternalIdentifier 
-HasRotation 
-Name 
-SequenceOrder 
-SubUnitsReported 
-TotalSubUnits 
-VoteVariation 
-OtherVoteVariation 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{BallotSelection}`|0..*|`BallotSelection`|For associating a ballot selection for the contest, i.e., a candidate, a ballot measure.
@@ -911,324 +491,64 @@ Attribute | Multiplicity | Type | Attribute Description
 `BallotSubTitle`|0..1|`InternationalizedText`|Subtitle of the contest as it appears on the ballot.
 `BallotTitle`|0..1|`InternationalizedText`|Title of the contest as it appears on the ballot.
 `CountStatus`|0..*|`CountStatus`|For providing various counting status associated with the contest.
-`ElectoralDistrict`|1|`ReportingUnit`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to a <a href="mdel://_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
-
-    </p>
-
-</body>
-</html>
+`ElectoralDistrict`|1|`ReportingUnit`|Link to a GpUnit instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the contest.
 `HasRotation`|0..1|`boolean`|Boolean to indicate whether the selections in the contest are rotated. Assumed to be “no” if not present.
 `Name`|1|`RichText`|Name of the contest, not necessarily as it appears on the ballot.
-`OtherVoteVariation`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For use when <a href="mdel://_17_0_2_4_78e0236_1389798198604_276106_4268">VoteVariation</a> is other.
-
-    </p>
-
-</body>
-</html>
-`SequenceOrder`|0..1|`integer`|Orderering for listing the contest for purposes of results display.  If not present, no order is assumed.
+`OtherVoteVariation`|0..1|`string`|For use when VoteVariation is other.
+`SequenceOrder`|0..1|`integer`|Orderering for listing the contest for purposes of results display. If not present, no order is assumed.
 `SubUnitsReported`|0..1|`integer`|Number of subunits, e.g., precincts, that have completed reporting votes for this contest.
 `TotalSubUnits`|0..1|`integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
 `VoteVariation`|0..1|`VoteVariation`|Vote variation associated with the contest, e.g., n-of-m.
 # <a name="_17_0_2_4_78e0236_1389367291663_284973_2835"></a>*The **Counts** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
 Counts is an abstract class with the following subclasses:
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-•&lt;SummaryCounts, for reporting on contest and geopolitical unit summary vote counts; and
-
-    </p>
-
-    <p>
-•<a href="#_17_0_2_4_78e0236_1397156604549_15838_2489">VoteCounts</a> for reporting on contest vote counts (see section 4.2.24).
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
+ 
+•<SummaryCounts, for reporting on contest and geopolitical unit summary vote counts; and
+•VoteCounts for reporting on contest vote counts (see section 4.2.24).
+ 
 These classes inherit the attributes of Counts.
+ 
+Counts provides the capability to filter vote counts by device characteristics or by various types of ballots or write-ins, or to link the counts to a GpUnit instance defined for, e.g., a precinct.
+ 
+The IsSuppressedForPrivacy boolean is used for cases when a jurisdiction has a requirement for suppressing a contest’s vote count when associated with a precinct and the count is so small as to potentially show how specific voters at the precinct’s polling place may have voted (typically under 10 votes). This is also a potential concern when filtering on device type or ballot type for a precinct; the accessible voting device will typically have relatively low counts. In some cases, jurisdictions suppress the votes for that contest/precinct/device/ballot type combination, but add them back to the contest totals, thus meeting the requirement for voter privacy. However, this results in the precinct counts not adding up to the aggregated totals, thus this boolean can be used to indicate which of the counts were suppressed.
+ 
+If the type of count item is not listed in enumeration CountItemType, use other and include the type (that is not listed in the enumeration) in OtherType.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Counts provides the capability to filter vote counts by device characteristics or by various types of ballots or write-ins, or to link the counts to a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instance defined for, e.g., a precinct.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-The <a href="#_17_0_2_4_f71035d_1443037119396_390572_2220">IsSuppressedForPrivacy</a> boolean is used for cases when a jurisdiction has a requirement for suppressing a contest&rsquo;s vote count when associated with a precinct and the count is so small as to potentially show how specific voters at the precinct&rsquo;s polling place may have voted (typically under 10 votes). This is also a potential concern when filtering on device type or ballot type for a precinct; the accessible voting device will typically have relatively low counts. In some cases, jurisdictions suppress the votes for that contest/precinct/device/ballot type combination, but add them back to the contest totals, thus meeting the requirement for voter privacy. However, this results in the precinct counts not adding up to the aggregated totals, thus this boolean can be used to indicate which of the counts were suppressed.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-If the type of count item is not listed in enumeration <a href="#_17_0_2_4_78e0236_1389798097477_664878_4228">CountItemType</a>, use other and include the type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1426077947627_227957_2665">OtherType</a>.
-
-    </p>
-
-</body>
-</html>
- 
-GpUnit 
-DeviceClass 
-IsSuppressedForPrivacy 
-Type 
-OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `DeviceClass`|0..1|`DeviceClass`|
-`GpUnit`|1|`GpUnit`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to a <a href="mdel://_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instance. For associating counts with a geopolitical unit, e.g., a precinct, a county, a township, etc.
-
-    </p>
-
-</body>
-</html>
+`GpUnit`|1|`GpUnit`|Link to a GpUnit instance. For associating counts with a geopolitical unit, e.g., a precinct, a county, a township, etc.
 `IsSuppressedForPrivacy`|0..1|`boolean`|Boolean to indicate if votes are suppressed for voter privacy, e.g., true or false. Assumed to be false if not present.
-`OtherType`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used when <a href="mdel://_17_0_2_4_f71035d_1401285906925_720136_2261">Type</a> is other.
-
-    </p>
-
-</body>
-</html>
+`OtherType`|0..1|`string`|Used when Type is other.
 `Type`|1|`CountItemType`|The type of count being used as a filter on the vote counts, e.g., election day, early voting, etc.
 # <a name="_17_0_2_4_f71035d_1430412663878_61362_2269"></a>*The **CountStatus** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For reporting on the counting status for various items such as ballot types or write-ins, e.g., whether for a certain type of ballot, the counts are in progress, not yet started, complete, etc.      
-<br><a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a>, <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a>, and <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> include CountStatus.
+For reporting on the counting status for various items such as ballot types or write-ins, e.g., whether for a certain type of ballot, the counts are in progress, not yet started, complete, etc. Contest, Election, and GpUnit include CountStatus.
+ 
+If the type of count item is not listed in enumeration CountItemType, use other and include the type (that is not listed in the enumeration) in OtherType.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-If the type of count item is not listed in enumeration <a href="#_17_0_2_4_78e0236_1389798097477_664878_4228">CountItemType</a>, use other and include the type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1426077858771_890955_2661">OtherType</a>.
-
-    </p>
-
-</body>
-</html>
- 
-Status 
-Type 
-OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`OtherType`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used when       
-<br><a href="mdel://_17_0_2_4_f71035d_1426077318387_348887_2615">ype</a>Type is other.
-
-    </p>
-
-</body>
-</html>
-`Status`|1|`CountItemStatus`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-The status of the count, from the <a href="mdel://_17_0_2_4_78e0236_1389797161173_369293_4078">CountItemStatus</a> enumeration.
-
-    </p>
-
-</body>
-</html>
-`Type`|1|`CountItemType`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-The type of item, from the <a href="mdel://_17_0_2_4_78e0236_1389798097477_664878_4228">CountItemType</a> enumeration.
-
-    </p>
-
-</body>
-</html>
+`OtherType`|0..1|`string`|Used when ypeType is other.
+`Status`|1|`CountItemStatus`|The status of the count, from the CountItemStatus enumeration.
+`Type`|1|`CountItemType`|The type of item, from the CountItemType enumeration.
 # <a name="_18_0_2_6340208_1425911626288_420556_4530"></a>*The **DeviceClass** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For filtering vote counts by various attributes associated with devices. <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> includes Device, and SummaryCounts and <a href="#_17_0_2_4_78e0236_1397156604549_15838_2489">VoteCounts</a> include Device as a result of it being included from superclass       
-<br><a href="#_17_0_2_4_78e0236_1389367291663_284973_2835">Counts</a>.
+For filtering vote counts by various attributes associated with devices. GpUnit includes Device, and SummaryCounts and VoteCounts include Device as a result of it being included from superclass Counts.
+ 
+If manual counting of ballots is being employed, use the DeviceType enumeration value manual-count.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-If manual counting of ballots is being employed, use the <a href="#_17_0_2_4_78e0236_1389798087342_91702_4210">DeviceType</a> enumeration value manual-count.
-
-    </p>
-
-</body>
-</html>
- 
-Manufacturer 
-Model 
-Type 
-OtherType 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Manufacturer`|0..1|`string`|Manufacturer of the device.
 `Model`|0..1|`string`|Manufacturer’s device model, used to filter on, e.g., a specific model of DRE or other device type.
-`OtherType`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used when <a href="mdel://_17_0_2_4_f71035d_1401285959630_42686_2265">Type</a> is other.
-
-    </p>
-
-</body>
-</html>
+`OtherType`|0..1|`string`|Used when Type is other.
 `Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
 # <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
 For defining the status of the election and associated information such as candidates, contests, and vote counts.
+ 
+Election includes links to the major instances that are specific to an election: BallotStyle, Candidate, and Contest.
+ 
+Election includes a required association end ElectionScope, which links to a GpUnit instance for the purpose of identifying the geographical scope of the election. For example, for an election within a county, ElectionScope would reference a GpUnit defined for the county. If it is desired to include election authority information, the GpUnit can include ElectionAdministration.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a> includes links to the major instances that are specific to an election: <a href="#_17_0_2_4_78e0236_1389366224561_797289_2360">BallotStyle</a>, <a href="#_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a>, and <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a>. 
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Election includes a required association end <a href="#_17_0_2_4_f71035d_1426102211616_609900_2331">ElectionScope</a>, which links to a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instance for the purpose of identifying the geographical scope of the election. For example, for an election within a county, <a href="#_17_0_2_4_f71035d_1426102211616_609900_2331">ElectionScope</a> would reference a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> defined for the county. If it is desired to include election authority information, the <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> can include <a href="#_18_0_2_6340208_1441311877439_710008_4433">ElectionAdministration</a>.
-
-    </p>
-
-</body>
-</html>
- 
-CountStatus 
-ElectionScope 
- 
- 
- 
-ExternalIdentifier 
-ContactInformation 
-Name 
-StartDate 
-EndDate 
-Type 
-OtherType 
- 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Contest}`|0..*|`Contest`|For defining contests associated with the election.
@@ -1237,138 +557,40 @@ Attribute | Multiplicity | Type | Attribute Description
 `{BallotCounts}`|0..*|`BallotCounts`|
 `ContactInformation`|0..1|`ContactInformation`|For associating various contact information with the election.
 `CountStatus`|0..*|`CountStatus`|For providing various counting status on types of ballots or other items.
-`ElectionScope`|1|`ReportingUnit`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Unique identifier for a <a href="mdel://_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> element. For associating the election with a reporting unit that represents the geographical scope of the election, e.g., a state, a county, etc.
-
-    </p>
-
-</body>
-</html>
+`ElectionScope`|1|`ReportingUnit`|Unique identifier for a GpUnit element. For associating the election with a reporting unit that represents the geographical scope of the election, e.g., a state, a county, etc.
 `EndDate`|1|`date`|Calendar end date of the election; for a typical one-day election, the end date is the same as the start date.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the election.
 `Name`|1|`InternationalizedText`|For including a name for the election; the name could be the same name as appears on the ballot.
-`OtherType`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used when <a href="mdel://_17_0_2_4_f71035d_1426101886743_683410_2236">Type</a> is other.
-
-    </p>
-
-</body>
-</html>
+`OtherType`|0..1|`string`|Used when Type is other.
 `StartDate`|1|`date`|Calendar start date of the election, e.g., “2018-11-04”.
 `Type`|1|`ElectionType`|Enumerated type of election, e.g., partisan-primary, open-primary, etc.
 # <a name="_18_0_2_6340208_1441311877439_710008_4433"></a>*The **ElectionAdministration** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used to provide various information about an election authority. <a href="#_17_0_2_4_f71035d_1400606476166_735297_2593">ReportingUnit</a> includes ElectionAdministration.
+Used to provide various information about an election authority. ReportingUnit includes ElectionAdministration.
+ 
+ElectionAdministration includes ContactInformation for the election authority and, using ElectionOfficialPerson references one or more Person instances defined for individuals/organizations associated with the election authority.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-ElectionAdministration includes <a href="#_17_0_5_1_43401a7_1400624327407_326048_3637">ContactInformation</a> for the election authority and, using <a href="#_18_0_2_6340208_1441312523523_377380_4513">ElectionOfficialPerson</a> references one or more <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a> instances defined for individuals/organizations associated with the election authority.
-
-    </p>
-
-</body>
-</html>
- 
-Name 
- 
-ElectionOfficialPerson 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{ContactInformation}`|0..1|`ContactInformation`|For including various contact information.
-`ElectionOfficialPerson`|0..*|`Person`|Unique identifier for one or more <Person> elements defined for the election authority.
+`ElectionOfficialPerson`|0..*|`Person`|Unique identifier for one or more   elements defined for the election authority.
 `Name`|0..1|`RichText`|Name of the election authority.
 # <a name="_17_0_2_4_78e0236_1389366195564_913164_2300"></a>*The **ElectionReport** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
 For defining items pertaining to the status and format of the report and when it was generated.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-ElectionReport references the major elements that are not necessarily specific to an election and that therefore can exist in a pre-election report: <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>, <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> and <a href="#_17_0_2_4_f71035d_1433183615993_866714_2239">OfficeGroup</a>, <a href="#_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a>, <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a>, and <a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a>.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
+ 
+ElectionReport references the major elements that are not necessarily specific to an election and that therefore can exist in a pre-election report: GpUnit, Office and OfficeGroup, Party, Person, and Election.
+ 
 When a particular ordering of items such as offices or political parties are important to preserve, it is expected that the generating application will define those elements according to any ordering scheme in place.
 
-    </p>
-
-</body>
-</html>
- 
- 
 ```
 <b>What can blue do for you today?</b>
 ```
- 
-ExternalIdentifier 
-GeneratedDate 
-Format 
-Issuer 
-IssuerAbbreviation 
-IsTest 
-Notes 
-SequenceStart 
-SequenceEnd 
-Status 
- 
-TestType 
- 
- 
-Person 
- 
-VendorApplicationId 
- 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Election}`|0..*|`Election`|For associating elections with the report.
 `{Office}`|0..*|`Office`|For associating offices with the report.
 `{Party}`|0..*|`Party`|For associating parties with the report.
-`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report. 
+`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
 `{OfficeGroup}`|0..*|`OfficeGroup`|For associating a name for a grouping of offices with the report.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
 `Format`|1|`ReportDetailLevel`|Detail level of the report, e.g., contest summary, precinct level results, etc.
@@ -1379,84 +601,40 @@ Attribute | Multiplicity | Type | Attribute Description
 `Notes`|0..1|`RichText`|For including an arbitrary message with the report.
 `Person`|0..*|`Person`|For associating persons with the report.
 `SequenceEnd`|1|`integer`|The upper bound of the sequence; e.g., “1” if there is only 1 report, “2” if there are two reports in the sequence, etc.
-`SequenceStart`|1|`integer`|The report’s number as part of a sequence of reports, used with <SequenceEnd> so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc.  Starts with “1”. 
+`SequenceStart`|1|`integer`|The report’s number as part of a sequence of reports, used with   so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc. Starts with “1”.
 `Status`|1|`ResultsStatus`|Status of the election report, e.g., test mode, unofficial, etc.
 `TestType`|0..1|`string`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
 `VendorApplicationId`|1|`string`|An identifier of the vendor application generating the election report, e.g., X-EMS version 3.1.a.
 # <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>*The **ExternalIdentifier** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For associating a jurisdiction&rsquo;s codes, i.e., identifiers, with objects such as candidates, offices, or geopolitical units such as counties, towns, precincts, etc. Multiple occurrences of the ExternalIdentifier sub-element can be used to associate multiple codes, e.g., if there is a desire to associate multiple codes with a particular object such as FIPS (Federal Information Processing Standard) codes as well as OCD-IDs (Open Civic Data Identifiers).
+For associating a jurisdiction’s codes, i.e., identifiers, with objects such as candidates, offices, or geopolitical units such as counties, towns, precincts, etc. Multiple occurrences of the ExternalIdentifier sub-element can be used to associate multiple codes, e.g., if there is a desire to associate multiple codes with a particular object such as FIPS (Federal Information Processing Standard) codes as well as OCD-IDs (Open Civic Data Identifiers).
+ 
+For elements that link to ExternalIdentifier instances, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-For elements that link to ExternalIdentifier instances, if the type is not listed in enumeration       
-<br><a href="#_17_0_2_4_f71035d_1430405763078_743585_2433">IdentifierType</a>, use other and include the type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1430405732252_109247_2429">OtherType</a>.
-
-    </p>
-
-</body>
-</html>
- 
-Label 
 ```
 For use as needed and compatibility with the VIP schema.
 ```
-Value 
-Type 
-OtherType 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
-`OtherType`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used when <a href="mdel://_17_0_2_4_f71035d_1430405763078_743585_2433">IdentifierType</a> value is other.
-
-    </p>
-
-</body>
-</html>
+`OtherType`|0..1|`string`|Used when IdentifierType value is other.
 `Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
 `Value`|1|`string`|The identifier used by the jurisdiction.
 # <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
 Class/element for describing a geo-politically bounded area of geography such as a city, district, or jurisdiction, or a precinct or split-precinct, or specific vote-capture device, for the purpose of associating contest vote counts and ballot counts (and other information) with the reporting unit. Reporting units can link to each other to form a hierarchicallly-oriented model of a state's (or a county's, etc.) jurisdictions, districts, and precincts.
- 
-ExternalIdentifier 
-Name 
-ComposingGpUnit 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`ComposingGpUnit`|0..*|`GpUnit`|Unique identifier for one or more GpUnit instances.  For creating a reference to another GpUnit that is contained with the parent GpUnit.
+`ComposingGpUnit`|0..*|`GpUnit`|Unique identifier for one or more GpUnit instances. For creating a reference to another GpUnit that is contained with the parent GpUnit.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the GpUnit, e.g., a district’s or county’s code.
-`Name`|0..1|`string`|Name of the geopolitical unit. 
+`Name`|0..1|`string`|Name of the geopolitical unit.
 # <a name="_18_0_2_6340208_1427122205989_885563_4602"></a>*The **Hours** Class*
-Hours is used to specify a specific day and hours on that day, including the time zone.  Multiple occurrences of Hours can be used if the schedule includes a range of days and hours.
- 
-Day 
-StartTime 
-EndTime 
-Label 
+Hours is used to specify a specific day and hours on that day, including the time zone. Multiple occurrences of Hours can be used if the schedule includes a range of days and hours.
+
 ```
 For use as needed and compatibility with the VIP schema.
 ```
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Day`|0..1|`DayType`|Day of week or weekend.
@@ -1465,122 +643,52 @@ Attribute | Multiplicity | Type | Attribute Description
 `StartTime`|1|`TimeWithZone`|Start time of the schedule.
 # <a name="_17_0_2_4_f71035d_1428586849773_722256_2252"></a>*The **HtmlColorString** Class*
 
- 
- 
-pattern 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`String`|
 # <a name="_17_0_2_4_f71035d_1428953680097_700602_2220"></a>*The **InternationalizedText** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
 For strings that can contain multi-national text, for use with text as shown on a ballot containing multi-national text. The Identifier attribute can be used to assign an identifier to the text as desired.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_f71035d_1428953680100_198341_2225">Text</a> uses the xsd:language type such that its language attribute must be set to a value that identifies the language.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
+ 
+Text uses the xsd:language type such that its language attribute must be set to a value that identifies the language.
+ 
 Values for language are from ISO 639 [12] and include:
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
+ 
 • en – English
-
-    </p>
-
-    <p>
 • en-US – U.S. English
-
-    </p>
-
-    <p>
 • en-GB – U.K. English
-
-    </p>
-
-    <p>
 • fr – French
-
-    </p>
-
-    <p>
 • es – Spanish
-
-    </p>
-
-    <p>
 • zh – Chinese
-
-    </p>
-
-    <p>
 • ja – Japanese
-
-    </p>
-
-    <p>
 • ko – Korean
 
-    </p>
-
-</body>
-</html>
- 
-Text 
-Label 
 ```
 For use as needed and compatibility with the VIP schema.
 ```
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Text`|1..*|`LanguageString`|A string of text, i.e., possibly non-English.
 # <a name="_17_0_2_4_f71035d_1428953680095_709464_2219"></a>*The **LanguageString** Class*
 
-Content 
+
 ```
 
 ```
-Language 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Content`|1|`string`|
 `Language`|1|`language`|A string of text, i.e., possibly non-English.
 # <a name="_17_0_2_4_f71035d_1443104838926_393729_2222"></a>*The **LatLng** Class*
 
-Label 
+
 ```
 For use as needed and compatibility with the VIP schema.
 ```
-Latitude 
-Longitude 
-Source 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
@@ -1588,197 +696,46 @@ Attribute | Multiplicity | Type | Attribute Description
 `Longitude`|1|`float`|Longitude of the contact location.
 `Source`|0..1|`string`|System used to perform the lookup from location name to lat/lng, e.g., the name of a geocoding service.
 # <a name="_17_0_5_1_43401a7_1400623830572_164081_3518"></a>*The **Office** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining an office and associated information associated with a contest and/or a district. <a href="#_17_0_2_4_78e0236_1389366195564_913164_2300">ElectionReport</a> includes Office. <a href="#_17_0_2_4_78e0236_1389366970084_183781_2806">CandidateContest</a> and <a href="#_18_0_2_6340208_1425646217522_163181_4554">RetentionContest</a> reference Office.
+For defining an office and associated information associated with a contest and/or a district. ElectionReport includes Office. CandidateContest and RetentionContest reference Office.
+ 
+Office includes Term for defining details about the term of an office such as start/end dates and the type of term. OfficeGroup is included from ElectionReport to assign a name to a grouping of office definitions.
+ 
+Office includes an optional ElectoralDistrict reference to a GpUnit for the purpose of identifying the geographical scope of the office. For example, for an office for a state senate seat, ElectoralDistrict would include a reference to the GpUnit defined for the district associated with that office.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Office includes <a href="#_17_0_2_4_f71035d_1428489072598_282236_2217">Term</a> for defining details about the term of an office such as start/end dates and the type of term. <a href="#_17_0_2_4_f71035d_1433183615993_866714_2239">OfficeGroup</a> is included from <a href="#_17_0_2_4_78e0236_1389366195564_913164_2300">ElectionReport</a> to assign a name to a grouping of office definitions.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Office includes an optional <a href="#_17_0_5_1_43401a7_1400701616170_933421_3684">ElectoralDistrict</a> reference to a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> for the purpose of identifying the geographical scope of the office. For example, for an office for a state senate seat, <a href="#_17_0_5_1_43401a7_1400701616170_933421_3684">ElectoralDistrict</a> would include a reference to the <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> defined for the district associated with that office.
-
-    </p>
-
-</body>
-</html>
- 
-Description 
-ElectoralDistrict 
-ExternalIdentifier 
- 
-OfficeHolderPerson 
-ContactInformation 
-FilingDeadline 
-IsPartisan 
-Name 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Term}`|0..1|`Term`|For including office term-related information.
 `ContactInformation`|0..1|`ContactInformation`|For associating various contact information with the office.
 `Description`|0..1|`InternationalizedText`|
-`ElectoralDistrict`|0..1|`ReportingUnit`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to a <a href="mdel://_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instance. For associating the office with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
-
-    </p>
-
-</body>
-</html>
+`ElectoralDistrict`|0..1|`ReportingUnit`|Link to a GpUnit instance. For associating the office with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the office.
-`FilingDeadline`|0..1|`date`|Date and time when a candidate must have filed for the contest for the office. 
-`IsPartisan`|0..1|`boolean`|Boolean to indicate whether the office is partisan, e.g., true or false.  If not present, assumption is true.
+`FilingDeadline`|0..1|`date`|Date and time when a candidate must have filed for the contest for the office.
+`IsPartisan`|0..1|`boolean`|Boolean to indicate whether the office is partisan, e.g., true or false. If not present, assumption is true.
 `Name`|1|`InternationalizedText`|Name of the office; can appear on the ballot.
-`OfficeHolderPerson`|0..*|`Person`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Links to one or more <a href="mdel://_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a> instances defined for the office holder.
-
-    </p>
-
-</body>
-</html>
+`OfficeHolderPerson`|0..*|`Person`|Links to one or more Person instances defined for the office holder.
 # <a name="_17_0_2_4_f71035d_1433183615993_866714_2239"></a>*The **OfficeGroup** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used to assign a name to a grouping of office definitions. It includes references to <a href="#_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> instances and a name to identify the grouping of references, e.g., &ldquo;Judicial&rdquo; or &ldquo;Statewide&rdquo;, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. <a href="#_17_0_2_4_78e0236_1389366195564_913164_2300">ElectionReport</a> includes OfficeGroup.
+Used to assign a name to a grouping of office definitions. It includes references to Office instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. ElectionReport includes OfficeGroup.
 
-    </p>
-
-</body>
-</html>
- 
-Label 
 ```
 For use as needed and compatibility with the VIP schema.
 ```
- 
-SubOfficeGroup 
-Name 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`{Office}`|0..*|`Office`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to one or more <a href="mdel://_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> instances.
-
-    </p>
-
-</body>
-</html>
+`{Office}`|0..*|`Office`|Link to one or more Office instances.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Name`|1|`string`|Name of the office grouping.
-`SubOfficeGroup`|0..*|`OfficeGroup`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining a nested hierarchy of <a href="mdel://_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> instance groupings.
-
-    </p>
-
-</body>
-</html>
+`SubOfficeGroup`|0..*|`OfficeGroup`|For defining a nested hierarchy of Office instance groupings.
 # <a name="_17_0_3_43401a7_1394476416139_808596_3142"></a>*The **OrderedContest** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Associates a reference to a contest with references to the contest&rsquo;s ballot selections. <a href="#_17_0_2_4_78e0236_1389366224561_797289_2360">BallotStyle</a> includes OrderedContest for each contest on the ballot. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of references to <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a> instances via <a href="#_17_0_3_43401a7_1394477871277_951066_3270">OrderedBallotSelection</a> in the order as on the ballot for the associated geopolitical unit.
+Associates a reference to a contest with references to the contest’s ballot selections. BallotStyle includes OrderedContest for each contest on the ballot. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of references to BallotSelection instances via OrderedBallotSelection in the order as on the ballot for the associated geopolitical unit.
 
-    </p>
-
-</body>
-</html>
- 
-Contest 
-OrderedBallotSelection 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Contest`|1|`Contest`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Unique identifier for a <a href="mdel://_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a> element. For associating a contest on the ballot.
-
-    </p>
-
-</body>
-</html>
-`OrderedBallotSelection`|0..*|`BallotSelection`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Links to one or more <a href="mdel://_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a> elements. For associating ballot selections with the contest.
-
-    </p>
-
-</body>
-</html>
+`Contest`|1|`Contest`|Unique identifier for a Contest element. For associating a contest on the ballot.
+`OrderedBallotSelection`|0..*|`BallotSelection`|Links to one or more BallotSelection elements. For associating ballot selections with the contest.
 # <a name="_18_0_2_6340208_1508176198256_527421_4561"></a>*The **OtherCounts** Class*
 
-DeviceClass 
-Overvotes 
-Undervotes 
-WriteIns 
- 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{GpUnit}`|1|`GpUnit`|
@@ -1787,48 +744,12 @@ Attribute | Multiplicity | Type | Attribute Description
 `Undervotes`|0..1|`integer`|
 `WriteIns`|0..1|`integer`|
 # <a name="_17_0_2_4_78e0236_1389366278128_412819_2460"></a>*The **Party** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Used to describe a political party that can then be referenced in other elements. <a href="#_17_0_2_4_78e0236_1389366195564_913164_2300">ElectionReport</a> includes Party. <a href="#_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a>, <a href="#_17_0_2_4_d420315_1393514218965_55008_3144">PartyContest</a>, <a href="#_17_0_2_4_78e0236_1394566839296_58362_2826">PartyRegistration</a>, and <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a> reference Party.
+Used to describe a political party that can then be referenced in other elements. ElectionReport includes Party. Candidate, PartyContest, PartyRegistration, and Person reference Party.
+ 
+<Party> is an abstract element with one xsi:type:
+<Party xsi:type="Coalition">, used to define coalitions (see section 4.2.18.1)
+The <Color> element specifies a 6-digit RGB code displayable using HTML.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-&lt;Party&gt; is an abstract element with one xsi:type:
-
-    </p>
-
-    <p>
-&lt;Party xsi:type=&quot;Coalition&quot;&gt;, used to define coalitions (see section 4.2.18.1)
-
-    </p>
-
-    <p>
-The &lt;Color&gt; element specifies a 6-digit RGB code displayable using HTML.
-
-    </p>
-
-</body>
-</html>
- 
-Abbreviation 
-Color 
-ExternalIdentifier 
-IsWriteIn 
-LogoUri 
-Name 
-LeaderPerson 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Abbreviation`|0..1|`string`|Short name for the party, e.g., “DEM”.
@@ -1840,120 +761,27 @@ Attribute | Multiplicity | Type | Attribute Description
 `Name`|1|`InternationalizedText`|Official full name of the party, e.g., “Republican”; can appear on the ballot.
 # <a name="_17_0_2_4_d420315_1393514218965_55008_3144"></a>*The **PartyContest** Class*
 For a contest that involves choosing a party, typically for a straight party selection on the ballot.
- 
- 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 # <a name="_17_0_2_4_78e0236_1394566839296_58362_2826"></a>*The **PartyRegistration** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For tracking the number of registered voters per party per geopolitical unit, i.e., for reporting on the number of registered voters of a particular party in a district or other type of reporting unit. Referenced by <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>.
+For tracking the number of registered voters per party per geopolitical unit, i.e., for reporting on the number of registered voters of a particular party in a district or other type of reporting unit. Referenced by GpUnit.
 
-    </p>
-
-</body>
-</html>
- 
-Count 
-Party 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Count`|1|`integer`|A count for tracking the number of registered voters.
-`Party`|1|`Party`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to a <a href="mdel://_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a> instance. For associating a political party.
-
-    </p>
-
-</body>
-</html>
+`Party`|1|`Party`|Link to a Party instance. For associating a political party.
 # <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>*The **PartySelection** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For a ballot selection involving a party such as for a straight party selection on the ballot. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a>.
+For a ballot selection involving a party such as for a straight party selection on the ballot. It inherits the attributes of BallotSelection.
 
-    </p>
-
-</body>
-</html>
- 
- 
-Party 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Party`|1..*|`Party`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to one or more <a href="mdel://_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a> instances. For associating one or more parties with the party selection.
-
-    </p>
-
-</body>
-</html>
+`Party`|1..*|`Party`|Link to one or more Party instances. For associating one or more parties with the party selection.
 # <a name="_17_0_5_1_43401a7_1400623980732_100904_3567"></a>*The **Person** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. <a href="#_17_0_2_4_78e0236_1389366195564_913164_2300">ElectionReport</a> includes Person. <a href="#_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a> and <a href="#_18_0_2_6340208_1441311877439_710008_4433">ElectionAdminsitration</a> and       
-<br><a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> reference Person. Person optionally references <a href="#_17_0_5_1_43401a7_1400624327407_326048_3637">ContactInformation</a> for associating contact information.
+For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. ElectionReport includes Person. Candidate and ElectionAdminsitration and GpUnit reference Person. Person optionally references ContactInformation for associating contact information.
+ 
+Multiple occurrences of the <MiddleName> element can be used as needed, e.g., for names such as “John Andrew Winston Smith”.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-Multiple occurrences of the &lt;MiddleName&gt; element can be used as needed, e.g., for names such as &ldquo;John Andrew Winston Smith&rdquo;.
-
-    </p>
-
-</body>
-</html>
- 
-Party 
- 
-DateOfBirth 
-ExternalIdentifier 
-FirstName 
-FullName 
-Gender 
-LastName 
-MiddleName 
-Nickname 
-Prefix 
-Profession 
-Suffix 
-Title 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{ContactInformation}`|0..*|`ContactInformation`|For associating contact information with the person.
@@ -1965,258 +793,64 @@ Attribute | Multiplicity | Type | Attribute Description
 `LastName`|0..1|`RichText`|Person’s last (family) name.
 `MiddleName`|0..*|`RichText`|Person’s middle name.
 `Nickname`|0..1|`RichText`|Nickname associated with the person.
-`Party`|0..1|`Party`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Links to a <a href="mdel://_17_0_2_4_78e0236_1389366278128_412819_2460">Party</a> instance. For associating a political party with the person.
-
-    </p>
-
-</body>
-</html>
+`Party`|0..1|`Party`|Links to a Party instance. For associating a political party with the person.
 `Prefix`|0..1|`RichText`|A prefix associated with the person, e.g., Mr.
 `Profession`|0..1|`InternationalizedText`|Person’s profession.
 `Suffix`|0..1|`RichText`|A suffix associated with the person, e.g., Jr.
 `Title`|0..1|`InternationalizedText`|A title associated with the person.
 # <a name="_17_0_2_4_78e0236_1389798013459_389380_4178"></a>*The **ReportingDevice** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For reporting counts associated with a specific vote-capture device. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>.
+For reporting counts associated with a specific vote-capture device. It inherits the attributes of GpUnit.
+ 
+It identifies a specific vote-capture device by using the SerialNumber attribute, and then includes DeviceClass to identify other characteristics of the device such as manufacturer and model.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-It identifies a specific vote-capture device by using the <a href="#_17_0_2_4_d420315_1393446014406_394266_2688">SerialNumber</a> attribute, and then includes <a href="#_18_0_2_6340208_1425911626288_420556_4530">DeviceClass</a> to identify other characteristics of the device such as manufacturer and model.
-
-    </p>
-
-</body>
-</html>
- 
- 
-DeviceClass 
-SerialNumber 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `DeviceClass`|0..1|`DeviceClass`|For filtering the vote counts by device type, model, and manufacturer.
 `SerialNumber`|0..1|`RichText`|A serial number or otherwise identifier associated with the device.
 # <a name="_17_0_2_4_f71035d_1400606476166_735297_2593"></a>*The **ReportingUnit** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining a geopolitical unit such as state, county, township, precinct, etc., using the <a href="#_17_0_2_4_f71035d_1431607637366_785815_2242">ReportingUnitType</a> enumeration. It inherits the attributes of <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>.
+For defining a geopolitical unit such as state, county, township, precinct, etc., using the ReportingUnitType enumeration. It inherits the attributes of GpUnit.
+ 
+This class optionally references Person to associate one or more individuals, e.g., authorities, for the reporting unit. It also includes ContactInformation to provide contact addresses for the reporting unit, such as an address of a vote center.
+ 
+Election references this class so as to identify the geographical scope of the election. In this case, the GpUnit element defined for the scope of the election may include ElectionAdministration so as to include election authority-related information.
+ 
+The Type attribute uses the ReportingUnitType enumeration to specify the type of geopolitical geography being defined. ReportingUnitType contains the most common types of geographies, e.g., state, county, precinct, and so forth . If the reporting unit type is not listed in enumeration ReportingUnitType, use other and include the reporting unit type (that is not listed in the enumeration) in OtherType.
+ 
+The IsDistricted boolean can be used in a number of ways. It is not strictly necessary, as it is possible to identify districts by their Type attribute or by examining the Contest instance’s ElectoralDistrict reference, which links to the electoral district associated with the contest. However, if a district is defined but is not linked from a contest, or if the type of district is not listed in the ReportingUnitType enumeration and therefore OtherType is used, then IsDistricted is necessary to identify the GpUnit as a district. The IsDistricted boolean can also be used to signify that a GpUnit defined as a jurisdiction, e.g., a county, is also used as a district for, e.g., county-wide contests.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-This class optionally references <a href="#_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a> to associate one or more individuals, e.g., authorities, for the reporting unit. It also includes <a href="#_17_0_5_1_43401a7_1400624327407_326048_3637">ContactInformation</a> to provide contact addresses for the reporting unit, such as an address of a vote center.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-<a href="#_17_0_2_4_f71035d_1426101822599_430942_2209">Election</a> references this class so as to identify the geographical scope of the election. In this case, the <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> element defined for the scope of the election may include <a href="#_18_0_2_6340208_1441311877439_710008_4433">ElectionAdministration</a> so as to include election authority-related information.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-The <a href="#_17_0_2_4_78e0236_1389713376966_77071_2393">Type</a> attribute uses the <a href="#_17_0_2_4_f71035d_1431607637366_785815_2242">ReportingUnitType</a> enumeration to specify the type of geopolitical geography being defined. <a href="#_17_0_2_4_f71035d_1431607637366_785815_2242">ReportingUnitType</a> contains the most common types of geographies, e.g., state, county, precinct, and so forth . If the reporting unit type is not listed in enumeration <a href="#_17_0_2_4_f71035d_1431607637366_785815_2242">ReportingUnitType</a>, use other and include the reporting unit type (that is not listed in the enumeration) in <a href="#_17_0_2_4_f71035d_1426007519161_685921_2510">OtherType</a>.
-
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-The <a href="#_17_0_2_4_f71035d_1441207733430_83517_2240">IsDistricted</a> boolean can be used in a number of ways. It is not strictly necessary, as it is possible to identify districts by their <a href="#_17_0_2_4_78e0236_1389713376966_77071_2393">Type</a> attribute or by examining the <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a> instance&rsquo;s <a href="#_17_0_2_4_78e0236_1389366667508_703141_2753">ElectoralDistrict</a> reference, which links to the electoral district associated with the contest. However, if a district is defined but is not linked from a contest, or if the type of district is not listed in the <a href="#_17_0_2_4_f71035d_1431607637366_785815_2242">ReportingUnitType</a> enumeration and therefore <a href="#_17_0_2_4_f71035d_1426007519161_685921_2510">OtherType</a> is used, then <a href="#_17_0_2_4_f71035d_1441207733430_83517_2240">IsDistricted</a> is necessary to identify the <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> as a district. The <a href="#_17_0_2_4_f71035d_1441207733430_83517_2240">IsDistricted</a> boolean can also be used to signify that a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> defined as a jurisdiction, e.g., a county, is also used as a district for, e.g., county-wide contests.
-
-    </p>
-
-</body>
-</html>
- 
- 
-CountStatus 
-Authority 
-IsDistricted 
-IsMailOnly 
- 
-Number 
-SubUnitsReported 
-ContactInformation 
- 
-TotalSubUnits 
-Type 
-OtherType 
- 
-VotersParticipated 
-VotersRegistered 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{SpatialDimension}`|0..1|`SpatialDimension`|For describing the reporting unit’s spatial extent (a polygon that shows the related area).
 `{PartyRegistration}`|0..*|`PartyRegistration`|For associating a count of registered voters per party with the geopolitical unit.
 `{ElectionAdministration}`|0..1|`ElectionAdministration`|For use when the reporting unit serves as the authority in the election.
-`Authority`|0..*|`Person`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-A link to one or more <a href="mdel://_17_0_5_1_43401a7_1400623980732_100904_3567">Person</a> instances describing an authority responsible for the reporting unit.
-
-    </p>
-
-</body>
-</html>
+`Authority`|0..*|`Person`|A link to one or more Person instances describing an authority responsible for the reporting unit.
 `ContactInformation`|0..1|`ContactInformation`|For associating contact information with the reporting unit.
 `CountStatus`|0..*|`CountStatus`|For providing various counting status on types of ballots or other items.
-`IsDistricted`|0..1|`boolean`|Boolean to indicate whether the reporting unit is a district; assumed to be “no” if not present. 
+`IsDistricted`|0..1|`boolean`|Boolean to indicate whether the reporting unit is a district; assumed to be “no” if not present.
 `IsMailOnly`|0..1|`boolean`|Boolean to indicate whether the reporting unit handles only mail-in or absentee ballot elections, assumed to be “no” if not present.
 `Number`|0..1|`string`|A number associated with the reporting unit; for compatibility with VIP.
-`OtherType`|0..1|`string`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For use when <a href="mdel://_17_0_2_4_78e0236_1389713376966_77071_2393">ReportingUnitType</a> value is other.
-
-    </p>
-
-</body>
-</html>
-`SubUnitsReported`|0..1|`integer`|Number of associated subunits such as precincts that have completed reporting. 
-`TotalSubUnits`|0..1|`integer`|Total number of associated subunits such as precincts. 
-`Type`|1|`ReportingUnitType`|Enumerated type of reporting unit, e.g., state, county, district, precinct, etc. 
+`OtherType`|0..1|`string`|For use when ReportingUnitType value is other.
+`SubUnitsReported`|0..1|`integer`|Number of associated subunits such as precincts that have completed reporting.
+`TotalSubUnits`|0..1|`integer`|Total number of associated subunits such as precincts.
+`Type`|1|`ReportingUnitType`|Enumerated type of reporting unit, e.g., state, county, district, precinct, etc.
 `VotersParticipated`|0..1|`integer`|Number of voters who have participated in the election, i.e., shown up at the polls, including those who did not cast ballots.
-`VotersRegistered`|0..1|`integer`|Number of registered voters residing within the boundaries of the geopolitical unit. 
+`VotersRegistered`|0..1|`integer`|Number of registered voters residing within the boundaries of the geopolitical unit.
 # <a name="_18_0_2_6340208_1425646217522_163181_4554"></a>*The **RetentionContest** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For judicial retention or other types of retention contests. Retention contests can be treated essentially as ballot measure contests, however this element differs from       
-<br><a href="#_17_0_2_4_78e0236_1389366932057_929676_2783">BallotMeasureContest</a> in that it can include a reference to a candidate or the associated office.
+For judicial retention or other types of retention contests. Retention contests can be treated essentially as ballot measure contests, however this element differs from BallotMeasureContest in that it can include a reference to a candidate or the associated office.
+ 
+This element uses BallotMeasureContest as a superclass. Therefore, it inherits the attributes of Contest as well as BallotMeasureContest.
 
-    </p>
-
-    <p>
-&#160;
-
-    </p>
-
-    <p>
-This element uses <a href="#_17_0_2_4_78e0236_1389366932057_929676_2783">BallotMeasureContest</a> as a superclass. Therefore, it inherits the attributes of <a href="#_17_0_2_4_78e0236_1389366251994_876831_2400">Contest</a> as well as <a href="#_17_0_2_4_78e0236_1389366932057_929676_2783">BallotMeasureContest</a>.
-
-    </p>
-
-</body>
-</html>
- 
- 
-Office 
-Candidate 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Candidate`||`Candidate`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to a <a href="mdel://_17_0_2_4_78e0236_1389366272694_544359_2440">Candidate</a> instance. For associating a candidate with the retention contest.
-
-    </p>
-
-</body>
-</html>
-`Office`|0..1|`Office`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Link to an <a href="mdel://_17_0_5_1_43401a7_1400623830572_164081_3518">Office</a> instance. For associating an office description with the retention contest.
-
-    </p>
-
-</body>
-</html>
+`Candidate`||`Candidate`|Link to a Candidate instance. For associating a candidate with the retention contest.
+`Office`|0..1|`Office`|Link to an Office instance. For associating an office description with the retention contest.
 # <a name="_18_0_2_6340208_1427122121448_198970_4547"></a>*The **Schedule** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining a schedule associated with a particular election office or location. <a href="#_17_0_5_1_43401a7_1400624327407_326048_3637">ContactInformation</a> includes Schedule.
+For defining a schedule associated with a particular election office or location. ContactInformation includes Schedule.
 
-    </p>
-
-</body>
-</html>
- 
-IsOnlyByAppointment 
-IsOrByAppointment 
- 
-IsSubjectToChange 
-Label 
 ```
 For use as needed and compatibility with the VIP schema.
 ```
-StartDate 
-EndDate 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{Hours}`|0..*|`Hours`|For specifying a range of hours for a schedule.
@@ -2228,105 +862,31 @@ Attribute | Multiplicity | Type | Attribute Description
 `StartDate`|0..1|`date`|For the starting date of the schedule.
 # <a name="_18_0_2_6340208_1499878618645_537953_4560"></a>*The **ShortString** Class*
 
- 
- 
-maxLength 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `maxLength`||`int`|
 # <a name="_17_0_2_4_f71035d_1407165065674_39189_2188"></a>*The **SpatialDimension** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For defining the spatial layout of a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>, e.g., a map or a spatial extent (a polygon that shows the related area) for various purposes, including to visualize election results, to understand the composition of districts, or to determine whether <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instances are properly related. <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> includes SpatialDimension.
+For defining the spatial layout of a GpUnit, e.g., a map or a spatial extent (a polygon that shows the related area) for various purposes, including to visualize election results, to understand the composition of districts, or to determine whether GpUnit instances are properly related. GpUnit includes SpatialDimension.
 
-    </p>
-
-</body>
-</html>
- 
-MapUri 
- 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`{SpatialExtent}`|0..1|`SpatialExtent`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For associating a <a href="mdel://_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> element&rsquo;s spatial extent information.
-
-    </p>
-
-</body>
-</html>
-`MapUri`|0..1|`anyURI`|<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Typically a URL to a map of the <a href="mdel://_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a>.
-
-    </p>
-
-</body>
-</html>
+`{SpatialExtent}`|0..1|`SpatialExtent`|For associating a GpUnit element’s spatial extent information.
+`MapUri`|0..1|`anyURI`|Typically a URL to a map of the GpUnit.
 # <a name="_17_0_2_4_f71035d_1409080246279_778720_2209"></a>*The **SpatialExtent** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-<a href="#_17_0_2_4_f71035d_1407165065674_39189_2188">SpatialDimension</a> includes SpatialExtent for defining a <a href="#_17_0_2_4_78e0236_1389366233346_42391_2380">GpUnit</a> instance&rsquo;s spatial extent data and the format used for the spatial extent.
+SpatialDimension includes SpatialExtent for defining a GpUnit instance’s spatial extent data and the format used for the spatial extent.
 
-    </p>
-
-</body>
-</html>
- 
-Coordinates 
-Format 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Coordinates`|1|`RichText`|The data coordinates constituting the spatial extent.
 `Format`|1|`GeoSpatialFormat`|Enumerated type for the format used, e.g., gml, kml, wkt, etc.
 # <a name="_17_0_2_4_f71035d_1428489072598_282236_2217"></a>*The **Term** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-Enumeration for the status of the election results in the <a href="#_17_0_2_4_78e0236_1389366195564_913164_2300">ElectionReport</a> class.
+Enumeration for the status of the election results in the ElectionReport class.
 
-    </p>
-
-</body>
-</html>
- 
-StartDate 
-EndDate 
-Label 
 ```
 
 ```
-Type 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `EndDate`|0..1|`date`|
@@ -2335,33 +895,15 @@ Attribute | Multiplicity | Type | Attribute Description
 `Type`|0..1|`OfficeTermType`|
 # <a name="_18_0_2_6340208_1427385616970_86952_4407"></a>*The **TimeWithZone** Class*
 
- 
- 
-pattern 
+
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`string`|
 # <a name="_17_0_2_4_78e0236_1397156604549_15838_2489"></a>*The **VoteCounts** Class*
-<html>
-  <head>
-		<style>
-			p {padding:0px; margin:0px;}
-		</style>
-	</head>
-  <body>
-    <p>
-For reporting on vote counts for ballot selections in a contest. VoteCounts includes <a href="#_17_0_2_4_78e0236_1389367291663_284973_2835">Counts</a> as a superclass and therefore inherits the attributes from <a href="#_17_0_2_4_78e0236_1389367291663_284973_2835">Counts</a>, but it is included directly by <a href="#_17_0_2_4_78e0236_1389372124445_11077_2906">BallotSelection</a>.
+For reporting on vote counts for ballot selections in a contest. VoteCounts includes Counts as a superclass and therefore inherits the attributes from Counts, but it is included directly by BallotSelection.
 
-    </p>
-
-</body>
-</html>
- 
- 
-Count 
-Round 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`Count`|1|`float`|Count of contest votes cast; can include a fractional component in special cases. 
+`Count`|1|`float`|Count of contest votes cast; can include a fractional component in special cases.
 `Round`|0..1|`integer`|
 
