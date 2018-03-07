@@ -1,6 +1,75 @@
 # Table of Contents
 - Table of Contents
   - Enumerations
+  - Classes
+    - *The **[FormattedString](#_18_5_3_43701b0_1520436884164_879935_6225)** Class*
+    - *The **[Header](#_18_5_3_43701b0_1520434156371_106161_5177)** Class*
+    - *The **[InternationalizedFormattedText](#_18_5_3_43701b0_1520436920668_973439_6310)** Class*
+    - *The **[OrderedContent](#_18_5_3_43701b0_1520434015209_434672_4990)** Class*
+    - *The **[OrderedContest](#_18_5_3_43701b0_1520434015213_178025_4991)** Class*
+    - *The **[OrderedHeader](#_18_5_3_43701b0_1520434015204_49974_4989)** Class*
+# Enumerations
+# Classes
+### <a name="_18_5_3_43701b0_1520436884164_879935_6225"></a>*The **FormattedString** Class*
+![Image of FormattedString](test_files/_18_5_3_43701b0_1520436885263_98142_6240.jpg)
+
+
+
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+`{InternationalizedFormattedText}`||`InternationalizedFormattedText`|
+`Content`|1|`string`|
+`MimeType`|1|`string`|
+### <a name="_18_5_3_43701b0_1520434156371_106161_5177"></a>*The **Header** Class*
+![Image of Header](test_files/_18_5_3_43701b0_1520434156383_419192_5184.jpg)
+
+For defining a reusable set of headers.
+
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style.
+`Name`|1|`string`|
+### <a name="_18_5_3_43701b0_1520436920668_973439_6310"></a>*The **InternationalizedFormattedText** Class*
+![Image of InternationalizedFormattedText](test_files/_18_5_3_43701b0_1520436921803_529921_6319.jpg)
+
+
+
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+`Label`|0..1|`string`|
+`Text`|1..*|`FormattedString`|
+### <a name="_18_5_3_43701b0_1520434015209_434672_4990"></a>*The **OrderedContent** Class*
+![Image of OrderedContent](test_files/_18_5_3_43701b0_1520434016646_236480_5013.jpg)
+
+An abstract base class for content that can appear on a particular ballot style.
+ 
+OrderedContent is an abstract class with two subclasses that get used according to the type of content:
+OrderedHeader, used for the appearance of a contest independent header
+OrderedContent, used for the appearance of a contest, optionally with the inclusion of contest headers.
+ 
+
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+### <a name="_18_5_3_43701b0_1520434015213_178025_4991"></a>*The **OrderedContest** Class*
+![Image of OrderedContest](test_files/_18_5_3_43701b0_1520434016646_101105_5014.jpg)
+
+For the appearance of a contest on a given ballot style. If the contest is grouped by a set of headers, links to the header instances in their order of appearance.
+
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+`{Contest}`|1|`Contest`|
+`Header`|0..*|`Header`|
+### <a name="_18_5_3_43701b0_1520434015204_49974_4989"></a>*The **OrderedHeader** Class*
+![Image of OrderedHeader](test_files/_18_5_3_43701b0_1520434016642_636707_5012.jpg)
+
+For the appearance of a header on a particular ballot style
+
+Attribute | Multiplicity | Type | Attribute Description
+--------- | ------------ | ---- | ---------------------
+`Header`|1|`Header`|
+# Table of Contents
+- Table of Contents
+  - Enumerations
     - *The **[BallotMeasureType](#_17_0_2_4_f71035d_1426549604222_56408_2487)** Enumeration*
     - *The **[CandidatePostElectionStatus](#_17_0_2_4_78e0236_1389797791548_146399_4136)** Enumeration*
     - *The **[CandidatePreElectionStatus](#_17_0_2_4_f71035d_1427223542780_950918_2213)** Enumeration*
@@ -332,11 +401,11 @@ Attribute | Multiplicity | Type | Attribute Description
 `{VoteCounts}`|0..*|`VoteCounts`|For associating votes with a ballot selection in a contest.
 `SequenceOrder`|0..1|`integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 ### <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>*The **BallotStyle** Class*
-![Image of BallotStyle](test_files/_17_0_2_4_78e0236_1389799207465_976765_6435.jpg)
+![Image of BallotStyle](test_files/_18_5_3_43701b0_1520434059269_416669_5114.jpg)
 
-For defining a ballot style composed of contests and their ballot selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to the a precinct or other geopolitical unit that the ballot is unique to. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes BallotStyle.
+For defining a ballot style composed of ordered content (i.e. Headers or Contests) and their ballot selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to the a precinct or other geopolitical unit that the ballot is unique to. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes BallotStyle.
  
-BallotStyle references [OrderedContest](#_17_0_3_43401a7_1394476416139_808596_3142) to include contests on that ballot style and the ballot selections associated with each contest. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of [OrderedContest](#_17_0_3_43401a7_1394476416139_808596_3142) in the order as on the ballot for the associated geopolitical unit.
+BallotStyle references [OrderedContent](#_18_5_3_43701b0_1520434015209_434672_4990) to include content that appears on that ballot style. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of [OrderedContest](#_17_0_3_43401a7_1394476416139_808596_3142) in the order as on the ballot for the associated geopolitical unit.
  
 BallotStyle references one or more [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instances can be included.
  
@@ -346,6 +415,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{OrderedContest}`|0..*|`OrderedContest`|For associating contests in the order as listed on ballot.
 `{GpUnit}`|1..*|`GpUnit`|Unique identifier for one or more GpUnit instances. For associating specific geopolitical units with the ballot style.
+`{OrderedContent}`|1..*|`OrderedContent`|
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style.
 `ImageUri`|0..*|`anyURI`|URI for a ballot image.
 `Party`|0..*|`Party`|Unique identifier for one or more Party instances. For associating one or more parties with the ballot style.
@@ -439,7 +509,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>*The **Contest** Class*
-![Image of Contest](test_files/_17_0_2_4_78e0236_1389798977982_293750_5341.jpg)
+![Image of Contest](test_files/_18_5_3_43701b0_1520434045517_884187_5091.jpg)
 
 For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Contest.
  
@@ -530,7 +600,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285959630_42686_2265) is other.
 `Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
 ### <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
-![Image of Election](test_files/_17_0_2_4_f71035d_1426101822601_995748_2210.jpg)
+![Image of Election](test_files/_18_5_3_43701b0_1520434243214_911485_5295.jpg)
 
 For defining the status of the election and associated information such as candidates, contests, and vote counts.
  
@@ -566,7 +636,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ElectionOfficialPerson`|0..*|`Person`|Unique identifier for one or more   elements defined for the election authority.
 `Name`|0..1|`RichText`|Name of the election authority.
 ### <a name="_17_0_2_4_78e0236_1389366195564_913164_2300"></a>*The **ElectionReport** Class*
-![Image of ElectionReport](test_files/_17_0_2_4_78e0236_1389798977982_73815_5340.jpg)
+![Image of ElectionReport](test_files/_18_5_3_43701b0_1520434237106_658676_5267.jpg)
 
 For defining items pertaining to the status and format of the report and when it was generated.
  
@@ -581,6 +651,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `{Party}`|0..*|`Party`|For associating parties with the report.
 `{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
 `{OfficeGroup}`|0..*|`OfficeGroup`|For associating a name for a grouping of offices with the report.
+`{Header}`|0..*|`Header`|
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
 `Format`|1|`ReportDetailLevel`|Detail level of the report, e.g., contest summary, precinct level results, etc.
 `GeneratedDate`|1|`dateTime`|Identifies the date and time that the election report was generated.
