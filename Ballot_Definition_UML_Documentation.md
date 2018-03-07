@@ -70,7 +70,7 @@
     - *The **[VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489)** Class*
 # Enumerations
 ### <a name="_17_0_2_4_f71035d_1426549604222_56408_2487"></a>*The **BallotMeasureType** Enumeration*
-![Image of BallotMeasureType](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1426549604223_980638_2488.jpg)
+![Image of BallotMeasureType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1426549604223_980638_2488.jpg)
     
 Name | Value
 ---- | -----
@@ -80,7 +80,7 @@ Name | Value
 `referendum`|For a referendum.
 `other`|Used when the type of ballot measure is not included in this enumeration.
   ### <a name="_17_0_2_4_78e0236_1389797791548_146399_4136"></a>*The **CandidatePostElectionStatus** Enumeration*
-![Image of CandidatePostElectionStatus](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_58243_5353.jpg)
+![Image of CandidatePostElectionStatus](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_58243_5353.jpg)
     
 Name | Value
 ---- | -----
@@ -89,7 +89,7 @@ Name | Value
 `winner`|For the official contest winner or one of “n” contest winners for n-of-m voting.
 `withdrawn`|For candidates who have withdrawn from the contest.
   ### <a name="_17_0_2_4_f71035d_1427223542780_950918_2213"></a>*The **CandidatePreElectionStatus** Enumeration*
-![Image of CandidatePreElectionStatus](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1427223542789_361508_2214.jpg)
+![Image of CandidatePreElectionStatus](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1427223542789_361508_2214.jpg)
     
 Name | Value
 ---- | -----
@@ -97,7 +97,7 @@ Name | Value
 `qualified`|For candidates who are qualified by the election authority to be on the ballot for a contest.
 `withdrawn`|For candidates who have withdrawn from the contest.
   ### <a name="_17_0_2_4_78e0236_1389797161173_369293_4078"></a>*The **CountItemStatus** Enumeration*
-![Image of CountItemStatus](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_740364_5352.jpg)
+![Image of CountItemStatus](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_740364_5352.jpg)
     
 Name | Value
 ---- | -----
@@ -106,7 +106,7 @@ Name | Value
 `not-processed`|When the counting has not started or is not underway.
 `unknown`|When the status of the counting is unknown.
   ### <a name="_17_0_2_4_78e0236_1389798097477_664878_4228"></a>*The **CountItemType** Enumeration*
-![Image of CountItemType](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_781011_5347.jpg)
+![Image of CountItemType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_781011_5347.jpg)
     
 Name | Value
 ---- | -----
@@ -122,7 +122,7 @@ Name | Value
 `write-in`|For write-ins on ballots.
 `other`|Used when the type of counting item is not included in this enumeration.
   ### <a name="_18_0_2_6340208_1425647845906_917814_4818"></a>*The **DayType** Enumeration*
-![Image of DayType](Ballot Definition UML Documentation_files/_18_0_2_6340208_1425647845916_861367_4819.jpg)
+![Image of DayType](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1425647845916_861367_4819.jpg)
     
 Name | Value
 ---- | -----
@@ -137,7 +137,7 @@ Name | Value
 `weekday`|Used for any day of the week.
 `weekend`|Used for both Saturday and Sunday.
   ### <a name="_17_0_2_4_78e0236_1389798087342_91702_4210"></a>*The **DeviceType** Enumeration*
-![Image of DeviceType](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_639477_5345.jpg)
+![Image of DeviceType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_639477_5345.jpg)
     
 Name | Value
 ---- | -----
@@ -151,7 +151,7 @@ Name | Value
 `unknown`|Used when the type of device is unknown.
 `other`|Used when the device type is not listed in this enumeration.
   ### <a name="_17_0_2_4_78e0236_1389734457182_720347_3938"></a>*The **ElectionType** Enumeration*
-![Image of ElectionType](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_571622_5349.jpg)
+![Image of ElectionType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_571622_5349.jpg)
     
 Name | Value
 ---- | -----
@@ -163,7 +163,7 @@ Name | Value
 `special`|For an election held out of sequence for special circumstances, e.g., to fill a vacated office.
 `other`|Used when the election type is not listed in this enumeration.
   ### <a name="_17_0_2_4_f71035d_1425325534467_889921_2544"></a>*The **GeoSpatialFormat** Enumeration*
-![Image of GeoSpatialFormat](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1425325534469_261190_2545.jpg)
+![Image of GeoSpatialFormat](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1425325534469_261190_2545.jpg)
     
 Name | Value
 ---- | -----
@@ -173,7 +173,7 @@ Name | Value
 `shp`|For the shape file format associated with Esri.
 `wkt`|For Well-known Text format.
   ### <a name="_17_0_2_4_f71035d_1425061188508_163854_2613"></a>*The **IdentifierType** Enumeration*
-![Image of IdentifierType](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1425061188510_56434_2614.jpg)
+![Image of IdentifierType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1425061188510_56434_2614.jpg)
     
 Name | Value
 ---- | -----
@@ -184,21 +184,21 @@ Name | Value
 `state-level`|For a code that is specific to a state.
 `other`|Used when the type of code is not included in this enumeration.
   ### <a name="_17_0_2_4_f71035d_1425314816880_411605_2504"></a>*The **OfficeTermType** Enumeration*
-![Image of OfficeTermType](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1425314816883_792510_2505.jpg)
+![Image of OfficeTermType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1425314816883_792510_2505.jpg)
     
 Name | Value
 ---- | -----
 `full-term`|When the officeholder’s term began at the beginning of the full term of the office, e.g., 6 years for U.S. Senate.
 `unexpired-term`|When the officeholder’s term began at some date after the beginning of the full term of the office, generally because the previous officeholder vacated the office before the fullterm expired.
   ### <a name="_17_0_2_4_d420315_1392318380928_311473_2471"></a>*The **ReportDetailLevel** Enumeration*
-![Image of ReportDetailLevel](Ballot Definition UML Documentation_files/_17_0_2_4_d420315_1392318381019_76514_2472.jpg)
+![Image of ReportDetailLevel](Ballot_Definition_UML_Documentation_files/_17_0_2_4_d420315_1392318381019_76514_2472.jpg)
     
 Name | Value
 ---- | -----
 `precinct-level`|For reports that contain counts from precincts in the reporting jurisdiction.
 `summary-contest`|For reports that contain only aggregated counts.
   ### <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>*The **ReportingUnitType** Enumeration*
-![Image of ReportingUnitType](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1431607637380_196295_2243.jpg)
+![Image of ReportingUnitType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1431607637380_196295_2243.jpg)
     
 Name | Value
 ---- | -----
@@ -232,7 +232,7 @@ Name | Value
 `water`|Used for a water district.
 `other`|Used for other types of reporting units not included in this enumeration.
   ### <a name="_17_0_2_4_78e0236_1389734128637_37089_3895"></a>*The **ResultsStatus** Enumeration*
-![Image of ResultsStatus](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_795592_5348.jpg)
+![Image of ResultsStatus](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_795592_5348.jpg)
     
 Name | Value
 ---- | -----
@@ -243,7 +243,7 @@ Name | Value
 `unofficial-complete`|For results that are unofficial and complete, e.g., the complete election night results.
 `unofficial-partial`|For results that are unofficial and partial, e.g., partial election night results.
   ### <a name="_18_5_3_43701b0_1520437689648_555400_6739"></a>*The **StringFormattingMimeType** Enumeration*
-![Image of StringFormattingMimeType](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520437689652_168066_6740.jpg)
+![Image of StringFormattingMimeType](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520437689652_168066_6740.jpg)
     
 Name | Value
 ---- | -----
@@ -252,7 +252,7 @@ Name | Value
 `application/rtf`|
 `text/plain`|
   ### <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>*The **VoteVariation** Enumeration*
-![Image of VoteVariation](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_521336_5354.jpg)
+![Image of VoteVariation](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_521336_5354.jpg)
     
 Name | Value
 ---- | -----
@@ -270,7 +270,7 @@ Name | Value
 `other`|Used when the vote variation type is not included in this enumeration.
   # Classes
 ### <a name="_18_0_2_6340208_1497553224568_429892_4565"></a>*The **AnnotatedString** Class*
-![Image of AnnotatedString](Ballot Definition UML Documentation_files/_18_0_2_6340208_1497553224573_140163_4566.jpg)
+![Image of AnnotatedString](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1497553224573_140163_4566.jpg)
 
 Used as a type for character strings; it adds a 16-character annotation to a character string.
 
@@ -283,7 +283,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 ```
 ### <a name="_18_0_2_6340208_1498658436378_308208_4565"></a>*The **AnnotatedUri** Class*
-![Image of AnnotatedUri](Ballot Definition UML Documentation_files/_18_0_2_6340208_1498658436383_253730_4566.jpg)
+![Image of AnnotatedUri](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1498658436383_253730_4566.jpg)
 
 
 
@@ -296,7 +296,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 ```
 ### <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>*The **BallotCounts** Class*
-![Image of BallotCounts](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1397156576165_50958_2462.jpg)
+![Image of BallotCounts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1397156576165_50958_2462.jpg)
 
 
 
@@ -306,7 +306,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `BallotsOutstanding`|0..1|`integer`|
 `BallotsRejected`|0..1|`integer`|
 ### <a name="_17_0_2_4_78e0236_1389366932057_929676_2783"></a>*The **BallotMeasureContest** Class*
-![Image of BallotMeasureContest](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_80297_5351.jpg)
+![Image of BallotMeasureContest](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_80297_5351.jpg)
 
 For ballot measure (i.e., referenda or a tax measure) and judicial retention contests. It inherits the attributes of [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400).
  
@@ -324,7 +324,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `SummaryText`|0..1|`InternationalizedText`|For a summary on the ballot of the ballot measure.
 `Type`|0..1|`BallotMeasureType`|For indicating the type of ballot measure.
 ### <a name="_17_0_2_4_78e0236_1389372163799_981952_2926"></a>*The **BallotMeasureSelection** Class*
-![Image of BallotMeasureSelection](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_930954_5339.jpg)
+![Image of BallotMeasureSelection](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_930954_5339.jpg)
 
 For a ballot selection in a ballot measure contest. Because judicial or other retention contests are often treated like ballot measure contests, this element can be used also for retention contests. It inherits the attributes of [BallotSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926).
 
@@ -332,7 +332,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Selection`|1|`InternationalizedText`|Contains the text used to indicate a vote for or against the ballot measure, e.g., “yes”, “no”.
 ### <a name="_17_0_2_4_78e0236_1389372124445_11077_2906"></a>*The **BallotSelection** Class*
-![Image of BallotSelection](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_125024_5356.jpg)
+![Image of BallotSelection](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_125024_5356.jpg)
 
 Used for the ballot selections in a contest (e.g., for candidates, for ballot measures) and to generally link them to vote counts. [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) includes BallotSelection.
 BallotSelection is an abstract class with three subclasses that get used according to the type of contest:
@@ -347,7 +347,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `{VoteCounts}`|0..*|`VoteCounts`|For associating votes with a ballot selection in a contest.
 `SequenceOrder`|0..1|`integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 ### <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>*The **BallotStyle** Class*
-![Image of BallotStyle](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434059269_416669_5114.jpg)
+![Image of BallotStyle](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434059269_416669_5114.jpg)
 
 For defining a ballot style composed of ordered content (i.e. Headers or Contests) and their ballot selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to the a precinct or other geopolitical unit that the ballot is unique to. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes BallotStyle.
  
@@ -365,7 +365,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ImageUri`|0..*|`anyURI`|URI for a ballot image.
 `Party`|0..*|`Party`|Unique identifier for one or more Party instances. For associating one or more parties with the ballot style.
 ### <a name="_17_0_2_4_78e0236_1389366272694_544359_2440"></a>*The **Candidate** Class*
-![Image of Candidate](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_557229_5346.jpg)
+![Image of Candidate](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_557229_5346.jpg)
 
 For defining information about a candidate in a contest. [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562) references [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instances to associate one or more candidates with a ballot selection. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Candidate.
  
@@ -386,7 +386,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `PostElectionStatus`|0..1|`CandidatePostElectionStatus`|Final status of the candidate, e.g., winner, withdrawn, etc.
 `PreElectionStatus`|0..1|`CandidatePreElectionStatus`|Registration status of the candidate, e.g., filed, qualified, etc.
 ### <a name="_17_0_2_4_78e0236_1389366970084_183781_2806"></a>*The **CandidateContest** Class*
-![Image of CandidateContest](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_347543_5358.jpg)
+![Image of CandidateContest](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_347543_5358.jpg)
 
 For a contest that involves selecting one or more candidates. It inherits the attributes of [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400).
  
@@ -402,7 +402,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `PrimaryParty`|0..*|`Party`|For associating parties with the contest.
 `VotesAllowed`|1|`integer`|Maximum number of votes per voter in this contest.
 ### <a name="_17_0_2_4_d420315_1392145640524_831493_2562"></a>*The **CandidateSelection** Class*
-![Image of CandidateSelection](Ballot Definition UML Documentation_files/_17_0_2_4_d420315_1392145640527_433768_2563.jpg)
+![Image of CandidateSelection](Ballot_Definition_UML_Documentation_files/_17_0_2_4_d420315_1392145640527_433768_2563.jpg)
 
 For the ballot selections in a candidate contest, including for write-ins. It inherits the attributes of [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906). References to multiple [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instances can be included if necessary, e.g., when the ballot selection would be for a ticket of candidates (unless the ticket itself is defined as a candidate).
 [EndorsementParty](#_17_0_2_4_d420315_1391370669921_519404_2559) is used to reference any associated endorsement parties other than the specific party of the candidate ([Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) references [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) for that purpose). For example, if a candidate of one party is also endorsed by a second party, use [EndorsementParty](#_17_0_2_4_d420315_1391370669921_519404_2559) to reference the second party. A second example would be for ballot fusion as used in some states, where the same candidate is listed multiple times in the same contest, but with different endorsement parties.
@@ -414,7 +414,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `EndorsementParty`|0..*|`Party`|For associating one or more endorsing parties with the candidate selection.
 `IsWriteIn`|0..1|`boolean`|Indicates whether the candidate is a write-in, e.g., true or false. Assumed to be false if not present.
 ### <a name="_18_0_2_6340208_1425647247631_162984_4712"></a>*The **Coalition** Class*
-![Image of Coalition](Ballot Definition UML Documentation_files/_18_0_2_6340208_1425647247641_920572_4713.jpg)
+![Image of Coalition](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1425647247641_920572_4713.jpg)
 
 For defining a coalition, i.e., a collection of parties organized for the purpose of endorsing a candidates in a contest. It inherits the attributes and elements of [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460).
  
@@ -427,7 +427,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Contest`|0..*|`Contest`|For associating contests with the coalition.
 `Party`|0..*|`Party`|For associating parties with the coalition.
 ### <a name="_17_0_5_1_43401a7_1400624327407_326048_3637"></a>*The **ContactInformation** Class*
-![Image of ContactInformation](Ballot Definition UML Documentation_files/_17_0_5_1_43401a7_1400624327409_934516_3638.jpg)
+![Image of ContactInformation](Ballot_Definition_UML_Documentation_files/_17_0_5_1_43401a7_1400624327409_934516_3638.jpg)
 
 For defining contact information about objects such as persons, boards of authorities, organizations, etc. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209), [ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433), [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567), [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380), and [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) include ContactInformation.
  
@@ -454,7 +454,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>*The **Contest** Class*
-![Image of Contest](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434045517_884187_5091.jpg)
+![Image of Contest](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434045517_884187_5091.jpg)
 
 For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Contest.
  
@@ -497,7 +497,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `TotalSubUnits`|0..1|`integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
 `VoteVariation`|0..1|`VoteVariation`|Vote variation associated with the contest, e.g., n-of-m.
 ### <a name="_17_0_2_4_78e0236_1389367291663_284973_2835"></a>*The **Counts** Class*
-![Image of Counts](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_267901_5355.jpg)
+![Image of Counts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_267901_5355.jpg)
 
 Counts is an abstract class with the following subclasses:
  
@@ -520,7 +520,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285906925_720136_2261) is other.
 `Type`|1|`CountItemType`|The type of count being used as a filter on the vote counts, e.g., election day, early voting, etc.
 ### <a name="_17_0_2_4_f71035d_1430412663878_61362_2269"></a>*The **CountStatus** Class*
-![Image of CountStatus](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1430412663882_602578_2270.jpg)
+![Image of CountStatus](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1430412663882_602578_2270.jpg)
 
 For reporting on the counting status for various items such as ballot types or write-ins, e.g., whether for a certain type of ballot, the counts are in progress, not yet started, complete, etc. [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400), [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209), and [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) include CountStatus.
  
@@ -532,7 +532,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Status`|1|`CountItemStatus`|The status of the count, from the [CountItemStatus](#_17_0_2_4_78e0236_1389797161173_369293_4078) enumeration.
 `Type`|1|`CountItemType`|The type of item, from the [CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228) enumeration.
 ### <a name="_18_0_2_6340208_1425911626288_420556_4530"></a>*The **DeviceClass** Class*
-![Image of DeviceClass](Ballot Definition UML Documentation_files/_18_0_2_6340208_1425911626300_559547_4531.jpg)
+![Image of DeviceClass](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1425911626300_559547_4531.jpg)
 
 For filtering vote counts by various attributes associated with devices. [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) includes Device, and SummaryCounts and [VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489) include Device as a result of it being included from superclass [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835).
  
@@ -545,7 +545,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285959630_42686_2265) is other.
 `Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
 ### <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
-![Image of Election](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434243214_911485_5295.jpg)
+![Image of Election](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434243214_911485_5295.jpg)
 
 For defining the status of the election and associated information such as candidates, contests, and vote counts.
  
@@ -569,7 +569,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `StartDate`|1|`date`|Calendar start date of the election, e.g., “2018-11-04”.
 `Type`|1|`ElectionType`|Enumerated type of election, e.g., partisan-primary, open-primary, etc.
 ### <a name="_18_0_2_6340208_1441311877439_710008_4433"></a>*The **ElectionAdministration** Class*
-![Image of ElectionAdministration](Ballot Definition UML Documentation_files/_18_0_2_6340208_1441311877445_664685_4434.jpg)
+![Image of ElectionAdministration](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1441311877445_664685_4434.jpg)
 
 Used to provide various information about an election authority. [ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593) includes ElectionAdministration.
  
@@ -581,7 +581,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ElectionOfficialPerson`|0..*|`Person`|Unique identifier for one or more   elements defined for the election authority.
 `Name`|0..1|`RichText`|Name of the election authority.
 ### <a name="_17_0_2_4_78e0236_1389366195564_913164_2300"></a>*The **ElectionReport** Class*
-![Image of ElectionReport](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434237106_658676_5267.jpg)
+![Image of ElectionReport](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434237106_658676_5267.jpg)
 
 For defining items pertaining to the status and format of the report and when it was generated.
  
@@ -661,7 +661,7 @@ Attribute | Multiplicity | Type | Attribute Description
 </xsd:complexType>
 ```
 ### <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>*The **ExternalIdentifier** Class*
-![Image of ExternalIdentifier](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1430405712661_66241_2411.jpg)
+![Image of ExternalIdentifier](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1430405712661_66241_2411.jpg)
 
 For associating a jurisdiction’s codes, i.e., identifiers, with objects such as candidates, offices, or geopolitical units such as counties, towns, precincts, etc. Multiple occurrences of the ExternalIdentifier sub-element can be used to associate multiple codes, e.g., if there is a desire to associate multiple codes with a particular object such as FIPS (Federal Information Processing Standard) codes as well as OCD-IDs (Open Civic Data Identifiers).
  
@@ -678,7 +678,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_18_5_3_43701b0_1520436884164_879935_6225"></a>*The **FormattedString** Class*
-![Image of FormattedString](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520436885263_98142_6240.jpg)
+![Image of FormattedString](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520436885263_98142_6240.jpg)
 
 For a string that has been formatted with a markup language (e.g. HTML, RTF, Markdown).
 
@@ -688,7 +688,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Content`|1|`string`|The actual string content, including any formatting directives.
 `MimeType`|1|`StringFormattingMimeType`|The (Multi-Purpose Internet Mail Extensions) MIME type, e.g., application/pdf for a file of type PDF.
 ### <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
-![Image of GpUnit](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1390579885871_183088_2445.jpg)
+![Image of GpUnit](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1390579885871_183088_2445.jpg)
 
 Class/element for describing a geo-politically bounded area of geography such as a city, district, or jurisdiction, or a precinct or split-precinct, or specific vote-capture device, for the purpose of associating contest vote counts and ballot counts (and other information) with the reporting unit. Reporting units can link to each other to form a hierarchicallly-oriented model of a state's (or a county's, etc.) jurisdictions, districts, and precincts.
 
@@ -698,7 +698,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the GpUnit, e.g., a district’s or county’s code.
 `Name`|0..1|`string`|Name of the geopolitical unit.
 ### <a name="_18_5_3_43701b0_1520434156371_106161_5177"></a>*The **Header** Class*
-![Image of Header](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434156383_419192_5184.jpg)
+![Image of Header](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434156383_419192_5184.jpg)
 
 For defining a reusable set of headers.
 
@@ -707,7 +707,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style.
 `Name`|1|`InternationalizedFormattedText`|
 ### <a name="_18_0_2_6340208_1427122205989_885563_4602"></a>*The **Hours** Class*
-![Image of Hours](Ballot Definition UML Documentation_files/_18_0_2_6340208_1427122205998_606908_4603.jpg)
+![Image of Hours](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1427122205998_606908_4603.jpg)
 
 Hours is used to specify a specific day and hours on that day, including the time zone. Multiple occurrences of Hours can be used if the schedule includes a range of days and hours.
 
@@ -722,7 +722,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_17_0_2_4_f71035d_1428586849773_722256_2252"></a>*The **HtmlColorString** Class*
-![Image of HtmlColorString](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1428586856729_349934_2257.jpg)
+![Image of HtmlColorString](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1428586856729_349934_2257.jpg)
 
 
 
@@ -730,7 +730,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`String`|
 ### <a name="_18_5_3_43701b0_1520436920668_973439_6310"></a>*The **InternationalizedFormattedText** Class*
-![Image of InternationalizedFormattedText](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520436921803_529921_6319.jpg)
+![Image of InternationalizedFormattedText](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520436921803_529921_6319.jpg)
 
 For strings that can contain formatted and multi-national text, for use with text as shown on a ballot containing multi-national text. The Identifier attribute can be used to assign an identifier to the text as desired.   Text uses the xsd:language type such that its language attribute must be set to a value that identifies the language.   Values for language are from ISO 639 [12] and include:   • en – English • en-US – U.S. English • en-GB – U.K. English • fr – French • es – Spanish • zh – Chinese • ja – Japanese • ko – Korean
 
@@ -739,7 +739,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Label`|0..1|`string`|
 `Text`|1..*|`FormattedString`|
 ### <a name="_17_0_2_4_f71035d_1428953680097_700602_2220"></a>*The **InternationalizedText** Class*
-![Image of InternationalizedText](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1428953680136_311337_2237.jpg)
+![Image of InternationalizedText](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1428953680136_311337_2237.jpg)
 
 For strings that can contain multi-national text, for use with text as shown on a ballot containing multi-national text. The Identifier attribute can be used to assign an identifier to the text as desired.
  
@@ -765,7 +765,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_17_0_2_4_f71035d_1428953680095_709464_2219"></a>*The **LanguageString** Class*
-![Image of LanguageString](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1428953680134_904840_2236.jpg)
+![Image of LanguageString](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1428953680134_904840_2236.jpg)
 
 
 
@@ -778,7 +778,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 ```
 ### <a name="_17_0_2_4_f71035d_1443104838926_393729_2222"></a>*The **LatLng** Class*
-![Image of LatLng](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1443104838931_652630_2223.jpg)
+![Image of LatLng](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1443104838931_652630_2223.jpg)
 
 
 
@@ -793,7 +793,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_17_0_5_1_43401a7_1400623830572_164081_3518"></a>*The **Office** Class*
-![Image of Office](Ballot Definition UML Documentation_files/_17_0_5_1_43401a7_1400623830579_197715_3519.jpg)
+![Image of Office](Ballot_Definition_UML_Documentation_files/_17_0_5_1_43401a7_1400623830579_197715_3519.jpg)
 
 For defining an office and associated information associated with a contest and/or a district. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Office. [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806) and [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554) reference Office.
  
@@ -813,7 +813,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Name`|1|`InternationalizedText`|Name of the office; can appear on the ballot.
 `OfficeHolderPerson`|0..*|`Person`|Links to one or more [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) instances defined for the office holder.
 ### <a name="_17_0_2_4_f71035d_1433183615993_866714_2239"></a>*The **OfficeGroup** Class*
-![Image of OfficeGroup](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1433183615994_647505_2240.jpg)
+![Image of OfficeGroup](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1433183615994_647505_2240.jpg)
 
 Used to assign a name to a grouping of office definitions. It includes references to [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes OfficeGroup.
 
@@ -828,7 +828,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_18_5_3_43701b0_1520434015209_434672_4990"></a>*The **OrderedContent** Class*
-![Image of OrderedContent](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434016646_236480_5013.jpg)
+![Image of OrderedContent](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016646_236480_5013.jpg)
 
 An abstract base class for content that can appear on a particular ballot style.
  
@@ -840,7 +840,7 @@ OrderedContent, used for the appearance of a contest, optionally with the inclus
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 ### <a name="_18_5_3_43701b0_1520434015213_178025_4991"></a>*The **OrderedContest** Class*
-![Image of OrderedContest](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434016646_101105_5014.jpg)
+![Image of OrderedContest](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016646_101105_5014.jpg)
 
 For the appearance of a contest on a given ballot style. If the contest is grouped by a set of headers, links to the header instances in their order of appearance.
 
@@ -849,7 +849,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `{Contest}`|1|`Contest`|
 `Header`|0..*|`Header`|
 ### <a name="_18_5_3_43701b0_1520434015204_49974_4989"></a>*The **OrderedHeader** Class*
-![Image of OrderedHeader](Ballot Definition UML Documentation_files/_18_5_3_43701b0_1520434016642_636707_5012.jpg)
+![Image of OrderedHeader](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016642_636707_5012.jpg)
 
 For the appearance of a header on a particular ballot style
 
@@ -857,7 +857,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Header`|1|`Header`|
 ### <a name="_18_0_2_6340208_1508176198256_527421_4561"></a>*The **OtherCounts** Class*
-![Image of OtherCounts](Ballot Definition UML Documentation_files/_18_0_2_6340208_1508176198261_91260_4562.jpg)
+![Image of OtherCounts](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1508176198261_91260_4562.jpg)
 
 
 
@@ -869,7 +869,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Undervotes`|0..1|`integer`|
 `WriteIns`|0..1|`integer`|
 ### <a name="_17_0_2_4_78e0236_1389366278128_412819_2460"></a>*The **Party** Class*
-![Image of Party](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_989674_5350.jpg)
+![Image of Party](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_989674_5350.jpg)
 
 Used to describe a political party that can then be referenced in other elements. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Party. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440), [PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144), [PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826), and [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) reference Party.
  
@@ -887,14 +887,14 @@ Attribute | Multiplicity | Type | Attribute Description
 `LogoUri`|0..1|`anyURI`|A URI to the party’s graphical logo.
 `Name`|1|`InternationalizedText`|Official full name of the party, e.g., “Republican”; can appear on the ballot.
 ### <a name="_17_0_2_4_d420315_1393514218965_55008_3144"></a>*The **PartyContest** Class*
-![Image of PartyContest](Ballot Definition UML Documentation_files/_17_0_2_4_d420315_1393514218978_361648_3145.jpg)
+![Image of PartyContest](Ballot_Definition_UML_Documentation_files/_17_0_2_4_d420315_1393514218978_361648_3145.jpg)
 
 For a contest that involves choosing a party, typically for a straight party selection on the ballot.
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 ### <a name="_17_0_2_4_78e0236_1394566839296_58362_2826"></a>*The **PartyRegistration** Class*
-![Image of PartyRegistration](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1394566839298_705765_2827.jpg)
+![Image of PartyRegistration](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1394566839298_705765_2827.jpg)
 
 For tracking the number of registered voters per party per geopolitical unit, i.e., for reporting on the number of registered voters of a particular party in a district or other type of reporting unit. Referenced by [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
 
@@ -903,7 +903,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Count`|1|`integer`|A count for tracking the number of registered voters.
 `Party`|1|`Party`|Link to a [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instance. For associating a political party.
 ### <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>*The **PartySelection** Class*
-![Image of PartySelection](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1426519980661_572615_2512.jpg)
+![Image of PartySelection](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1426519980661_572615_2512.jpg)
 
 For a ballot selection involving a party such as for a straight party selection on the ballot. It inherits the attributes of [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
@@ -911,7 +911,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Party`|1..*|`Party`|Link to one or more [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instances. For associating one or more parties with the party selection.
 ### <a name="_17_0_5_1_43401a7_1400623980732_100904_3567"></a>*The **Person** Class*
-![Image of Person](Ballot Definition UML Documentation_files/_17_0_5_1_43401a7_1400623980734_867286_3568.jpg)
+![Image of Person](Ballot_Definition_UML_Documentation_files/_17_0_5_1_43401a7_1400623980734_867286_3568.jpg)
 
 For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Person. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) and [ElectionAdminsitration](#_18_0_2_6340208_1441311877439_710008_4433) and [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) reference Person. Person optionally references [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) for associating contact information.
  
@@ -934,7 +934,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Suffix`|0..1|`RichText`|A suffix associated with the person, e.g., Jr.
 `Title`|0..1|`InternationalizedText`|A title associated with the person.
 ### <a name="_17_0_2_4_78e0236_1389798013459_389380_4178"></a>*The **ReportingDevice** Class*
-![Image of ReportingDevice](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1389798977982_371820_5343.jpg)
+![Image of ReportingDevice](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_371820_5343.jpg)
 
 For reporting counts associated with a specific vote-capture device. It inherits the attributes of [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
  
@@ -945,7 +945,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `DeviceClass`|0..1|`DeviceClass`|For filtering the vote counts by device type, model, and manufacturer.
 `SerialNumber`|0..1|`RichText`|A serial number or otherwise identifier associated with the device.
 ### <a name="_17_0_2_4_f71035d_1400606476166_735297_2593"></a>*The **ReportingUnit** Class*
-![Image of ReportingUnit](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1400606476167_480570_2594.jpg)
+![Image of ReportingUnit](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1400606476167_480570_2594.jpg)
 
 For defining a geopolitical unit such as state, county, township, precinct, etc., using the [ReportingUnitType](#_17_0_2_4_f71035d_1431607637366_785815_2242) enumeration. It inherits the attributes of [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
  
@@ -975,7 +975,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `VotersParticipated`|0..1|`integer`|Number of voters who have participated in the election, i.e., shown up at the polls, including those who did not cast ballots.
 `VotersRegistered`|0..1|`integer`|Number of registered voters residing within the boundaries of the geopolitical unit.
 ### <a name="_18_0_2_6340208_1425646217522_163181_4554"></a>*The **RetentionContest** Class*
-![Image of RetentionContest](Ballot Definition UML Documentation_files/_18_0_2_6340208_1425646217525_713812_4555.jpg)
+![Image of RetentionContest](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1425646217525_713812_4555.jpg)
 
 For judicial retention or other types of retention contests. Retention contests can be treated essentially as ballot measure contests, however this element differs from [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783) in that it can include a reference to a candidate or the associated office.
  
@@ -986,7 +986,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Candidate`||`Candidate`|Link to a [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instance. For associating a candidate with the retention contest.
 `Office`|0..1|`Office`|Link to an [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance. For associating an office description with the retention contest.
 ### <a name="_18_0_2_6340208_1427122121448_198970_4547"></a>*The **Schedule** Class*
-![Image of Schedule](Ballot Definition UML Documentation_files/_18_0_2_6340208_1427122121457_980308_4548.jpg)
+![Image of Schedule](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1427122121457_980308_4548.jpg)
 
 For defining a schedule associated with a particular election office or location. [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) includes Schedule.
 
@@ -1004,7 +1004,7 @@ Attribute | Multiplicity | Type | Attribute Description
 For use as needed and compatibility with the VIP schema.
 ```
 ### <a name="_18_0_2_6340208_1499878618645_537953_4560"></a>*The **ShortString** Class*
-![Image of ShortString](Ballot Definition UML Documentation_files/_18_0_2_6340208_1499878618648_579134_4561.jpg)
+![Image of ShortString](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1499878618648_579134_4561.jpg)
 
 
 
@@ -1012,7 +1012,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `maxLength`||`int`|
 ### <a name="_17_0_2_4_f71035d_1407165065674_39189_2188"></a>*The **SpatialDimension** Class*
-![Image of SpatialDimension](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1407165065676_7001_2189.jpg)
+![Image of SpatialDimension](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1407165065676_7001_2189.jpg)
 
 For defining the spatial layout of a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380), e.g., a map or a spatial extent (a polygon that shows the related area) for various purposes, including to visualize election results, to understand the composition of districts, or to determine whether [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instances are properly related. [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) includes SpatialDimension.
 
@@ -1021,7 +1021,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `{SpatialExtent}`|0..1|`SpatialExtent`|For associating a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) element’s spatial extent information.
 `MapUri`|0..1|`anyURI`|Typically a URL to a map of the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
 ### <a name="_17_0_2_4_f71035d_1409080246279_778720_2209"></a>*The **SpatialExtent** Class*
-![Image of SpatialExtent](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1409080246298_242462_2210.jpg)
+![Image of SpatialExtent](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1409080246298_242462_2210.jpg)
 
 [SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188) includes SpatialExtent for defining a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance’s spatial extent data and the format used for the spatial extent.
 
@@ -1030,7 +1030,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Coordinates`|1|`RichText`|The data coordinates constituting the spatial extent.
 `Format`|1|`GeoSpatialFormat`|Enumerated type for the format used, e.g., gml, kml, wkt, etc.
 ### <a name="_17_0_2_4_f71035d_1428489072598_282236_2217"></a>*The **Term** Class*
-![Image of Term](Ballot Definition UML Documentation_files/_17_0_2_4_f71035d_1428489072603_236447_2218.jpg)
+![Image of Term](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1428489072603_236447_2218.jpg)
 
 Enumeration for the status of the election results in the [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) class.
 
@@ -1045,7 +1045,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 ```
 ### <a name="_18_0_2_6340208_1427385616970_86952_4407"></a>*The **TimeWithZone** Class*
-![Image of TimeWithZone](Ballot Definition UML Documentation_files/_18_0_2_6340208_1427385616977_352513_4414.jpg)
+![Image of TimeWithZone](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1427385616977_352513_4414.jpg)
 
 
 
@@ -1053,7 +1053,7 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`string`|
 ### <a name="_17_0_2_4_78e0236_1397156604549_15838_2489"></a>*The **VoteCounts** Class*
-![Image of VoteCounts](Ballot Definition UML Documentation_files/_17_0_2_4_78e0236_1397156604556_583070_2490.jpg)
+![Image of VoteCounts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1397156604556_583070_2490.jpg)
 
 For reporting on vote counts for ballot selections in a contest. VoteCounts includes [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835) as a superclass and therefore inherits the attributes from [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835), but it is included directly by [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
