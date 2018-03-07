@@ -63,8 +63,8 @@
     - *The **[TimeWithZone](#_18_0_2_6340208_1427385616970_86952_4407)** Class*
     - *The **[VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489)** Class*
 # Enumerations
-![alt text]()
 ### <a name="_17_0_2_4_f71035d_1426549604222_56408_2487"></a>*The **BallotMeasureType** Enumeration*
+![alt text](test_files/_17_0_2_4_f71035d_1426549604223_980638_2488.jpg)
     
 Name | Value
 ---- | -----
@@ -73,8 +73,8 @@ Name | Value
 `recall`|
 `referendum`|For a referendum.
 `other`|Used when the type of ballot measure is not included in this enumeration.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389797791548_146399_4136"></a>*The **CandidatePostElectionStatus** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389797791548_146399_4136"></a>*The **CandidatePostElectionStatus** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_58243_5353.jpg)
     
 Name | Value
 ---- | -----
@@ -82,16 +82,16 @@ Name | Value
 `projected-winner`|For a projected contest winner.
 `winner`|For the official contest winner or one of “n” contest winners for n-of-m voting.
 `withdrawn`|For candidates who have withdrawn from the contest.
-  ![alt text]()
-### <a name="_17_0_2_4_f71035d_1427223542780_950918_2213"></a>*The **CandidatePreElectionStatus** Enumeration*
+  ### <a name="_17_0_2_4_f71035d_1427223542780_950918_2213"></a>*The **CandidatePreElectionStatus** Enumeration*
+![alt text](test_files/_17_0_2_4_f71035d_1427223542789_361508_2214.jpg)
     
 Name | Value
 ---- | -----
 `filed`|For candidates who have filed with the election authority but not necessarily qualified.
 `qualified`|For candidates who are qualified by the election authority to be on the ballot for a contest.
 `withdrawn`|For candidates who have withdrawn from the contest.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389797161173_369293_4078"></a>*The **CountItemStatus** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389797161173_369293_4078"></a>*The **CountItemStatus** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_740364_5352.jpg)
     
 Name | Value
 ---- | -----
@@ -99,8 +99,8 @@ Name | Value
 `in-process`|For counts that are in process
 `not-processed`|When the counting has not started or is not underway.
 `unknown`|When the status of the counting is unknown.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389798097477_664878_4228"></a>*The **CountItemType** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389798097477_664878_4228"></a>*The **CountItemType** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_781011_5347.jpg)
     
 Name | Value
 ---- | -----
@@ -115,8 +115,8 @@ Name | Value
 `uocava`|For ballots from UOCAVA (Uniform and Overseas Citizens Assistance in Voting Act) voters.
 `write-in`|For write-ins on ballots.
 `other`|Used when the type of counting item is not included in this enumeration.
-  ![alt text]()
-### <a name="_18_0_2_6340208_1425647845906_917814_4818"></a>*The **DayType** Enumeration*
+  ### <a name="_18_0_2_6340208_1425647845906_917814_4818"></a>*The **DayType** Enumeration*
+![alt text](test_files/_18_0_2_6340208_1425647845916_861367_4819.jpg)
     
 Name | Value
 ---- | -----
@@ -130,8 +130,8 @@ Name | Value
 `saturday`|
 `weekday`|Used for any day of the week.
 `weekend`|Used for both Saturday and Sunday.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389798087342_91702_4210"></a>*The **DeviceType** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389798087342_91702_4210"></a>*The **DeviceType** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_639477_5345.jpg)
     
 Name | Value
 ---- | -----
@@ -144,8 +144,8 @@ Name | Value
 `punch-card`|For punch card devices.
 `unknown`|Used when the type of device is unknown.
 `other`|Used when the device type is not listed in this enumeration.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389734457182_720347_3938"></a>*The **ElectionType** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389734457182_720347_3938"></a>*The **ElectionType** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_571622_5349.jpg)
     
 Name | Value
 ---- | -----
@@ -156,8 +156,8 @@ Name | Value
 `runoff`|For an election to decide a prior contest that ended with no candidate receiving a majority of the votes.
 `special`|For an election held out of sequence for special circumstances, e.g., to fill a vacated office.
 `other`|Used when the election type is not listed in this enumeration.
-  ![alt text]()
-### <a name="_17_0_2_4_f71035d_1425325534467_889921_2544"></a>*The **GeoSpatialFormat** Enumeration*
+  ### <a name="_17_0_2_4_f71035d_1425325534467_889921_2544"></a>*The **GeoSpatialFormat** Enumeration*
+![alt text](test_files/_17_0_2_4_f71035d_1425325534469_261190_2545.jpg)
     
 Name | Value
 ---- | -----
@@ -166,8 +166,8 @@ Name | Value
 `kml`|For Keyhole Markup Language format.
 `shp`|For the shape file format associated with Esri.
 `wkt`|For Well-known Text format.
-  ![alt text]()
-### <a name="_17_0_2_4_f71035d_1425061188508_163854_2613"></a>*The **IdentifierType** Enumeration*
+  ### <a name="_17_0_2_4_f71035d_1425061188508_163854_2613"></a>*The **IdentifierType** Enumeration*
+![alt text](test_files/_17_0_2_4_f71035d_1425061188510_56434_2614.jpg)
     
 Name | Value
 ---- | -----
@@ -177,22 +177,22 @@ Name | Value
 `ocd-id`|For Open Civic Data identifiers.
 `state-level`|For a code that is specific to a state.
 `other`|Used when the type of code is not included in this enumeration.
-  ![alt text]()
-### <a name="_17_0_2_4_f71035d_1425314816880_411605_2504"></a>*The **OfficeTermType** Enumeration*
+  ### <a name="_17_0_2_4_f71035d_1425314816880_411605_2504"></a>*The **OfficeTermType** Enumeration*
+![alt text](test_files/_17_0_2_4_f71035d_1425314816883_792510_2505.jpg)
     
 Name | Value
 ---- | -----
 `full-term`|When the officeholder’s term began at the beginning of the full term of the office, e.g., 6 years for U.S. Senate.
 `unexpired-term`|When the officeholder’s term began at some date after the beginning of the full term of the office, generally because the previous officeholder vacated the office before the fullterm expired.
-  ![alt text]()
-### <a name="_17_0_2_4_d420315_1392318380928_311473_2471"></a>*The **ReportDetailLevel** Enumeration*
+  ### <a name="_17_0_2_4_d420315_1392318380928_311473_2471"></a>*The **ReportDetailLevel** Enumeration*
+![alt text](test_files/_17_0_2_4_d420315_1392318381019_76514_2472.jpg)
     
 Name | Value
 ---- | -----
 `precinct-level`|For reports that contain counts from precincts in the reporting jurisdiction.
 `summary-contest`|For reports that contain only aggregated counts.
-  ![alt text]()
-### <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>*The **ReportingUnitType** Enumeration*
+  ### <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>*The **ReportingUnitType** Enumeration*
+![alt text](test_files/_17_0_2_4_f71035d_1431607637380_196295_2243.jpg)
     
 Name | Value
 ---- | -----
@@ -225,8 +225,8 @@ Name | Value
 `ward`|Used for combinations or groupings of precincts or other units.
 `water`|Used for a water district.
 `other`|Used for other types of reporting units not included in this enumeration.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389734128637_37089_3895"></a>*The **ResultsStatus** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389734128637_37089_3895"></a>*The **ResultsStatus** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_795592_5348.jpg)
     
 Name | Value
 ---- | -----
@@ -236,8 +236,8 @@ Name | Value
 `recount`|For results that are a recount of an earlier election.
 `unofficial-complete`|For results that are unofficial and complete, e.g., the complete election night results.
 `unofficial-partial`|For results that are unofficial and partial, e.g., partial election night results.
-  ![alt text]()
-### <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>*The **VoteVariation** Enumeration*
+  ### <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>*The **VoteVariation** Enumeration*
+![alt text](test_files/_17_0_2_4_78e0236_1389798977982_521336_5354.jpg)
     
 Name | Value
 ---- | -----
