@@ -278,10 +278,6 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|An annotation of up to 16 characters associated with a character string.
 `Content`|1|`string`|
-
-```
-
-```
 ### <a name="_18_0_2_6340208_1498658436378_308208_4565"></a>*The **AnnotatedUri** Class*
 ![Image of AnnotatedUri](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1498658436383_253730_4566.png)
 
@@ -291,10 +287,6 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|
 `Content`|1|`anyURI`|
-
-```
-
-```
 ### <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>*The **BallotCounts** Class*
 ![Image of BallotCounts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1397156576165_50958_2462.png)
 
@@ -347,7 +339,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `{VoteCounts}`|0..*|`VoteCounts`|For associating votes with a ballot selection in a contest.
 `SequenceOrder`|0..1|`integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 ### <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>*The **BallotStyle** Class*
-![Image of BallotStyle](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434059269_416669_5114.png)
+![Image of BallotStyle](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389799207465_976765_6435.png)
 
 For defining a ballot style composed of ordered content (i.e. Headers or Contests) and their ballot selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to the a precinct or other geopolitical unit that the ballot is unique to. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes BallotStyle.
  
@@ -449,12 +441,8 @@ Attribute | Multiplicity | Type | Attribute Description
 `Name`|0..1|`RichText`|Name associated with the contact.
 `Phone`|0..*|`AnnotatedString`|Phone number associated with the contact.
 `Uri`|0..*|`AnnotatedUri`|URI associated with the contact.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_17_0_2_4_78e0236_1389366251994_876831_2400"></a>*The **Contest** Class*
-![Image of Contest](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434045517_884187_5091.png)
+![Image of Contest](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_293750_5341.png)
 
 For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Contest.
  
@@ -545,7 +533,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285959630_42686_2265) is other.
 `Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
 ### <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
-![Image of Election](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434243214_911485_5295.png)
+![Image of Election](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1426101822601_995748_2210.png)
 
 For defining the status of the election and associated information such as candidates, contests, and vote counts.
  
@@ -581,7 +569,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ElectionOfficialPerson`|0..*|`Person`|Unique identifier for one or more   elements defined for the election authority.
 `Name`|0..1|`RichText`|Name of the election authority.
 ### <a name="_17_0_2_4_78e0236_1389366195564_913164_2300"></a>*The **ElectionReport** Class*
-![Image of ElectionReport](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434237106_658676_5267.png)
+![Image of ElectionReport](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_73815_5340.png)
 
 For defining items pertaining to the status and format of the report and when it was generated.
  
@@ -611,7 +599,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `TestType`|0..1|`string`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
 `VendorApplicationId`|1|`string`|An identifier of the vendor application generating the election report, e.g., X-EMS version 3.1.a.
 
-```xsd
+```xml
 <xsd:complexType name="ElectionReport">
    <xsd:sequence>
       <xsd:element name="Election" type="Election" minOccurs="0" maxOccurs="unbounded"/>
@@ -660,6 +648,32 @@ Attribute | Multiplicity | Type | Attribute Description
    </xsd:sequence>
 </xsd:complexType>
 ```
+
+```json
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+
+```
 ### <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>*The **ExternalIdentifier** Class*
 ![Image of ExternalIdentifier](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1430405712661_66241_2411.png)
 
@@ -673,10 +687,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `OtherType`|0..1|`string`|Used when [IdentifierType](#_17_0_2_4_f71035d_1430405763078_743585_2433) value is other.
 `Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
 `Value`|1|`string`|The identifier used by the jurisdiction.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_18_5_3_43701b0_1520436884164_879935_6225"></a>*The **FormattedString** Class*
 ![Image of FormattedString](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520436885263_98142_6240.png)
 
@@ -717,10 +727,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `EndTime`|1|`TimeWithZone`|End time of the schedule.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `StartTime`|1|`TimeWithZone`|Start time of the schedule.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_17_0_2_4_f71035d_1428586849773_722256_2252"></a>*The **HtmlColorString** Class*
 ![Image of HtmlColorString](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1428586856729_349934_2257.png)
 
@@ -760,10 +766,6 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Text`|1..*|`LanguageString`|A string of text, i.e., possibly non-English.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_17_0_2_4_f71035d_1428953680095_709464_2219"></a>*The **LanguageString** Class*
 ![Image of LanguageString](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1428953680134_904840_2236.png)
 
@@ -773,10 +775,6 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Content`|1|`string`|
 `Language`|1|`language`|A string of text, i.e., possibly non-English.
-
-```
-
-```
 ### <a name="_17_0_2_4_f71035d_1443104838926_393729_2222"></a>*The **LatLng** Class*
 ![Image of LatLng](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1443104838931_652630_2223.png)
 
@@ -788,10 +786,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `Latitude`|1|`float`|Latitude of the contact location.
 `Longitude`|1|`float`|Longitude of the contact location.
 `Source`|0..1|`string`|System used to perform the lookup from location name to lat/lng, e.g., the name of a geocoding service.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_17_0_5_1_43401a7_1400623830572_164081_3518"></a>*The **Office** Class*
 ![Image of Office](Ballot_Definition_UML_Documentation_files/_17_0_5_1_43401a7_1400623830579_197715_3519.png)
 
@@ -823,10 +817,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `Name`|1|`string`|Name of the office grouping.
 `SubOfficeGroup`|0..*|`OfficeGroup`|For defining a nested hierarchy of [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance groupings.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_18_5_3_43701b0_1520434015209_434672_4990"></a>*The **OrderedContent** Class*
 ![Image of OrderedContent](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016646_236480_5013.png)
 
@@ -999,10 +989,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `IsSubjectToChange`|0..1|`boolean`|If an appointment may be subject to change; assumed to be “no” if not present.
 `Label`|0..1|`string`|For use as needed and compatibility with the VIP schema.
 `StartDate`|0..1|`date`|For the starting date of the schedule.
-
-```
-For use as needed and compatibility with the VIP schema.
-```
 ### <a name="_18_0_2_6340208_1499878618645_537953_4560"></a>*The **ShortString** Class*
 ![Image of ShortString](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1499878618648_579134_4561.png)
 
@@ -1040,10 +1026,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `Label`|0..1|`string`|
 `StartDate`|0..1|`date`|
 `Type`|0..1|`OfficeTermType`|
-
-```
-
-```
 ### <a name="_18_0_2_6340208_1427385616970_86952_4407"></a>*The **TimeWithZone** Class*
 ![Image of TimeWithZone](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1427385616977_352513_4414.png)
 
