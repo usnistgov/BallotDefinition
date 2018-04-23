@@ -20,7 +20,6 @@
   - Classes
     - *The **[AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565)** Class*
     - *The **[AnnotatedUri](#_18_0_2_6340208_1498658436378_308208_4565)** Class*
-    - *The **[BallotCounts](#_17_0_2_4_78e0236_1397156576157_466818_2461)** Class*
     - *The **[BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783)** Class*
     - *The **[BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926)** Class*
     - *The **[BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906)** Class*
@@ -31,9 +30,6 @@
     - *The **[Coalition](#_18_0_2_6340208_1425647247631_162984_4712)** Class*
     - *The **[ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637)** Class*
     - *The **[Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400)** Class*
-    - *The **[Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835)** Class*
-    - *The **[CountStatus](#_17_0_2_4_f71035d_1430412663878_61362_2269)** Class*
-    - *The **[DeviceClass](#_18_0_2_6340208_1425911626288_420556_4530)** Class*
     - *The **[Election](#_17_0_2_4_f71035d_1426101822599_430942_2209)** Class*
     - *The **[ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433)** Class*
     - *The **[ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300)** Class*
@@ -52,13 +48,11 @@
     - *The **[OrderedContent](#_18_5_3_43701b0_1520434015209_434672_4990)** Class*
     - *The **[OrderedContest](#_18_5_3_43701b0_1520434015213_178025_4991)** Class*
     - *The **[OrderedHeader](#_18_5_3_43701b0_1520434015204_49974_4989)** Class*
-    - *The **[OtherCounts](#_18_0_2_6340208_1508176198256_527421_4561)** Class*
     - *The **[Party](#_17_0_2_4_78e0236_1389366278128_412819_2460)** Class*
     - *The **[PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144)** Class*
     - *The **[PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826)** Class*
     - *The **[PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)** Class*
     - *The **[Person](#_17_0_5_1_43401a7_1400623980732_100904_3567)** Class*
-    - *The **[ReportingDevice](#_17_0_2_4_78e0236_1389798013459_389380_4178)** Class*
     - *The **[ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593)** Class*
     - *The **[RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554)** Class*
     - *The **[Schedule](#_18_0_2_6340208_1427122121448_198970_4547)** Class*
@@ -67,7 +61,6 @@
     - *The **[SpatialExtent](#_17_0_2_4_f71035d_1409080246279_778720_2209)** Class*
     - *The **[Term](#_17_0_2_4_f71035d_1428489072598_282236_2217)** Class*
     - *The **[TimeWithZone](#_18_0_2_6340208_1427385616970_86952_4407)** Class*
-    - *The **[VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489)** Class*
 # Enumerations
 ### <a name="_17_0_2_4_f71035d_1426549604222_56408_2487"></a>*The **BallotMeasureType** Enumeration*
 ![Image of BallotMeasureType](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1426549604223_980638_2488.png)
@@ -287,16 +280,6 @@ Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Annotation`|0..1|`ShortString`|
 `Content`|1|`anyURI`|
-### <a name="_17_0_2_4_78e0236_1397156576157_466818_2461"></a>*The **BallotCounts** Class*
-![Image of BallotCounts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1397156576165_50958_2462.png)
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`BallotsCast`|0..1|`integer`|
-`BallotsOutstanding`|0..1|`integer`|
-`BallotsRejected`|0..1|`integer`|
 ### <a name="_17_0_2_4_78e0236_1389366932057_929676_2783"></a>*The **BallotMeasureContest** Class*
 ![Image of BallotMeasureContest](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_80297_5351.png)
 
@@ -336,7 +319,6 @@ BallotSelection includes [VoteCounts](#_17_0_2_4_78e0236_1389372026000_187007_28
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
-`{VoteCounts}`|0..*|`VoteCounts`|For associating votes with a ballot selection in a contest.
 `SequenceOrder`|0..1|`integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 ### <a name="_17_0_2_4_78e0236_1389366224561_797289_2360"></a>*The **BallotStyle** Class*
 ![Image of BallotStyle](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389799207465_976765_6435.png)
@@ -470,11 +452,10 @@ When including <ExternalIdentifiers>, if the type is not listed in enumeration <
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `{BallotSelection}`|0..*|`BallotSelection`|For associating a ballot selection for the contest, i.e., a candidate, a ballot measure.
-`{OtherCounts}`|0..*|`OtherCounts`|
 `Abbreviation`|0..1|`string`|Abbreviation for the contest.
 `BallotSubTitle`|0..1|`InternationalizedText`|Subtitle of the contest as it appears on the ballot.
 `BallotTitle`|0..1|`InternationalizedText`|Title of the contest as it appears on the ballot.
-`CountStatus`|0..*|`CountStatus`|For providing various counting status associated with the contest.
+`CountStatus`|0..*|``|For providing various counting status associated with the contest.
 `ElectoralDistrict`|1|`ReportingUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the contest.
 `HasRotation`|0..1|`boolean`|Boolean to indicate whether the selections in the contest are rotated. Assumed to be “no” if not present.
@@ -484,54 +465,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `SubUnitsReported`|0..1|`integer`|Number of subunits, e.g., precincts, that have completed reporting votes for this contest.
 `TotalSubUnits`|0..1|`integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
 `VoteVariation`|0..1|`VoteVariation`|Vote variation associated with the contest, e.g., n-of-m.
-### <a name="_17_0_2_4_78e0236_1389367291663_284973_2835"></a>*The **Counts** Class*
-![Image of Counts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_267901_5355.png)
-
-Counts is an abstract class with the following subclasses:
- 
-•<SummaryCounts, for reporting on contest and geopolitical unit summary vote counts; and
-•[VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489) for reporting on contest vote counts (see section 4.2.24).
- 
-These classes inherit the attributes of Counts.
- 
-Counts provides the capability to filter vote counts by device characteristics or by various types of ballots or write-ins, or to link the counts to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance defined for, e.g., a precinct.
- 
-The [IsSuppressedForPrivacy](#_17_0_2_4_f71035d_1443037119396_390572_2220) boolean is used for cases when a jurisdiction has a requirement for suppressing a contest’s vote count when associated with a precinct and the count is so small as to potentially show how specific voters at the precinct’s polling place may have voted (typically under 10 votes). This is also a potential concern when filtering on device type or ballot type for a precinct; the accessible voting device will typically have relatively low counts. In some cases, jurisdictions suppress the votes for that contest/precinct/device/ballot type combination, but add them back to the contest totals, thus meeting the requirement for voter privacy. However, this results in the precinct counts not adding up to the aggregated totals, thus this boolean can be used to indicate which of the counts were suppressed.
- 
-If the type of count item is not listed in enumeration [CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1426077947627_227957_2665).
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`DeviceClass`|0..1|`DeviceClass`|
-`GpUnit`|1|`GpUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating counts with a geopolitical unit, e.g., a precinct, a county, a township, etc.
-`IsSuppressedForPrivacy`|0..1|`boolean`|Boolean to indicate if votes are suppressed for voter privacy, e.g., true or false. Assumed to be false if not present.
-`OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285906925_720136_2261) is other.
-`Type`|1|`CountItemType`|The type of count being used as a filter on the vote counts, e.g., election day, early voting, etc.
-### <a name="_17_0_2_4_f71035d_1430412663878_61362_2269"></a>*The **CountStatus** Class*
-![Image of CountStatus](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1430412663882_602578_2270.png)
-
-For reporting on the counting status for various items such as ballot types or write-ins, e.g., whether for a certain type of ballot, the counts are in progress, not yet started, complete, etc. [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400), [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209), and [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) include CountStatus.
- 
-If the type of count item is not listed in enumeration [CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1426077858771_890955_2661).
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`OtherType`|0..1|`string`|Used when [ype](#_17_0_2_4_f71035d_1426077318387_348887_2615)Type is other.
-`Status`|1|`CountItemStatus`|The status of the count, from the [CountItemStatus](#_17_0_2_4_78e0236_1389797161173_369293_4078) enumeration.
-`Type`|1|`CountItemType`|The type of item, from the [CountItemType](#_17_0_2_4_78e0236_1389798097477_664878_4228) enumeration.
-### <a name="_18_0_2_6340208_1425911626288_420556_4530"></a>*The **DeviceClass** Class*
-![Image of DeviceClass](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1425911626300_559547_4531.png)
-
-For filtering vote counts by various attributes associated with devices. [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) includes Device, and SummaryCounts and [VoteCounts](#_17_0_2_4_78e0236_1397156604549_15838_2489) include Device as a result of it being included from superclass [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835).
- 
-If manual counting of ballots is being employed, use the [DeviceType](#_17_0_2_4_78e0236_1389798087342_91702_4210) enumeration value manual-count.
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`Manufacturer`|0..1|`string`|Manufacturer of the device.
-`Model`|0..1|`string`|Manufacturer’s device model, used to filter on, e.g., a specific model of DRE or other device type.
-`OtherType`|0..1|`string`|Used when [Type](#_17_0_2_4_f71035d_1401285959630_42686_2265) is other.
-`Type`|0..1|`DeviceType`|Enumerated type of device, e.g., DRE, opscan-precinct, etc.
 ### <a name="_17_0_2_4_f71035d_1426101822599_430942_2209"></a>*The **Election** Class*
 ![Image of Election](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1426101822601_995748_2210.png)
 
@@ -546,9 +479,8 @@ Attribute | Multiplicity | Type | Attribute Description
 `{Contest}`|0..*|`Contest`|For defining contests associated with the election.
 `{Candidate}`|0..*|`Candidate`|For defining candidates associated with the election.
 `{BallotStyle}`|0..*|`BallotStyle`|For defining ballot styles associated with the election.
-`{BallotCounts}`|0..*|`BallotCounts`|
 `ContactInformation`|0..1|`ContactInformation`|For associating various contact information with the election.
-`CountStatus`|0..*|`CountStatus`|For providing various counting status on types of ballots or other items.
+`CountStatus`|0..*|``|For providing various counting status on types of ballots or other items.
 `ElectionScope`|1|`ReportingUnit`|Unique identifier for a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) element. For associating the election with a reporting unit that represents the geographical scope of the election, e.g., a state, a county, etc.
 `EndDate`|1|`date`|Calendar end date of the election; for a typical one-day election, the end date is the same as the start date.
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the election.
@@ -599,6 +531,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `TestType`|0..1|`string`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
 `VendorApplicationId`|1|`string`|An identifier of the vendor application generating the election report, e.g., X-EMS version 3.1.a.
 
+
 ```xml
 <xsd:complexType name="ElectionReport">
    <xsd:sequence>
@@ -648,6 +581,8 @@ Attribute | Multiplicity | Type | Attribute Description
    </xsd:sequence>
 </xsd:complexType>
 ```
+
+JSON Schema Documentation:
 
 ```json
 {
@@ -708,7 +643,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the GpUnit, e.g., a district’s or county’s code.
 `Name`|0..1|`string`|Name of the geopolitical unit.
 ### <a name="_18_5_3_43701b0_1520434156371_106161_5177"></a>*The **Header** Class*
-![Image of Header](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434156383_419192_5184.png)
+![Image of Header](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1524503590945_106879_6912.png)
 
 For defining a reusable set of headers.
 
@@ -818,7 +753,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `Name`|1|`string`|Name of the office grouping.
 `SubOfficeGroup`|0..*|`OfficeGroup`|For defining a nested hierarchy of [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance groupings.
 ### <a name="_18_5_3_43701b0_1520434015209_434672_4990"></a>*The **OrderedContent** Class*
-![Image of OrderedContent](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016646_236480_5013.png)
+![Image of OrderedContent](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1524503612666_761318_6969.png)
 
 An abstract base class for content that can appear on a particular ballot style.
  
@@ -830,7 +765,7 @@ OrderedContent, used for the appearance of a contest, optionally with the inclus
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 ### <a name="_18_5_3_43701b0_1520434015213_178025_4991"></a>*The **OrderedContest** Class*
-![Image of OrderedContest](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016646_101105_5014.png)
+![Image of OrderedContest](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1524503616148_694472_7006.png)
 
 For the appearance of a contest on a given ballot style. If the contest is grouped by a set of headers, links to the header instances in their order of appearance.
 
@@ -839,25 +774,13 @@ Attribute | Multiplicity | Type | Attribute Description
 `{Contest}`|1|`Contest`|
 `Header`|0..*|`Header`|
 ### <a name="_18_5_3_43701b0_1520434015204_49974_4989"></a>*The **OrderedHeader** Class*
-![Image of OrderedHeader](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1520434016642_636707_5012.png)
+![Image of OrderedHeader](Ballot_Definition_UML_Documentation_files/_18_5_3_43701b0_1524503587549_660060_6889.png)
 
 For the appearance of a header on a particular ballot style
 
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `Header`|1|`Header`|
-### <a name="_18_0_2_6340208_1508176198256_527421_4561"></a>*The **OtherCounts** Class*
-![Image of OtherCounts](Ballot_Definition_UML_Documentation_files/_18_0_2_6340208_1508176198261_91260_4562.png)
-
-
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`{GpUnit}`|1|`GpUnit`|
-`DeviceClass`|0..1|`DeviceClass`|
-`Overvotes`|0..1|`integer`|
-`Undervotes`|0..1|`integer`|
-`WriteIns`|0..1|`integer`|
 ### <a name="_17_0_2_4_78e0236_1389366278128_412819_2460"></a>*The **Party** Class*
 ![Image of Party](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_989674_5350.png)
 
@@ -923,17 +846,6 @@ Attribute | Multiplicity | Type | Attribute Description
 `Profession`|0..1|`InternationalizedText`|Person’s profession.
 `Suffix`|0..1|`RichText`|A suffix associated with the person, e.g., Jr.
 `Title`|0..1|`InternationalizedText`|A title associated with the person.
-### <a name="_17_0_2_4_78e0236_1389798013459_389380_4178"></a>*The **ReportingDevice** Class*
-![Image of ReportingDevice](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1389798977982_371820_5343.png)
-
-For reporting counts associated with a specific vote-capture device. It inherits the attributes of [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
- 
-It identifies a specific vote-capture device by using the [SerialNumber](#_17_0_2_4_d420315_1393446014406_394266_2688) attribute, and then includes [DeviceClass](#_18_0_2_6340208_1425911626288_420556_4530) to identify other characteristics of the device such as manufacturer and model.
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`DeviceClass`|0..1|`DeviceClass`|For filtering the vote counts by device type, model, and manufacturer.
-`SerialNumber`|0..1|`RichText`|A serial number or otherwise identifier associated with the device.
 ### <a name="_17_0_2_4_f71035d_1400606476166_735297_2593"></a>*The **ReportingUnit** Class*
 ![Image of ReportingUnit](Ballot_Definition_UML_Documentation_files/_17_0_2_4_f71035d_1400606476167_480570_2594.png)
 
@@ -954,7 +866,7 @@ Attribute | Multiplicity | Type | Attribute Description
 `{ElectionAdministration}`|0..1|`ElectionAdministration`|For use when the reporting unit serves as the authority in the election.
 `Authority`|0..*|`Person`|A link to one or more [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) instances describing an authority responsible for the reporting unit.
 `ContactInformation`|0..1|`ContactInformation`|For associating contact information with the reporting unit.
-`CountStatus`|0..*|`CountStatus`|For providing various counting status on types of ballots or other items.
+`CountStatus`|0..*|``|For providing various counting status on types of ballots or other items.
 `IsDistricted`|0..1|`boolean`|Boolean to indicate whether the reporting unit is a district; assumed to be “no” if not present.
 `IsMailOnly`|0..1|`boolean`|Boolean to indicate whether the reporting unit handles only mail-in or absentee ballot elections, assumed to be “no” if not present.
 `Number`|0..1|`string`|A number associated with the reporting unit; for compatibility with VIP.
@@ -1034,12 +946,3 @@ Attribute | Multiplicity | Type | Attribute Description
 Attribute | Multiplicity | Type | Attribute Description
 --------- | ------------ | ---- | ---------------------
 `pattern`||`string`|
-### <a name="_17_0_2_4_78e0236_1397156604549_15838_2489"></a>*The **VoteCounts** Class*
-![Image of VoteCounts](Ballot_Definition_UML_Documentation_files/_17_0_2_4_78e0236_1397156604556_583070_2490.png)
-
-For reporting on vote counts for ballot selections in a contest. VoteCounts includes [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835) as a superclass and therefore inherits the attributes from [Counts](#_17_0_2_4_78e0236_1389367291663_284973_2835), but it is included directly by [BallotSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
-
-Attribute | Multiplicity | Type | Attribute Description
---------- | ------------ | ---- | ---------------------
-`Count`|1|`float`|Count of contest votes cast; can include a fractional component in special cases.
-`Round`|0..1|`integer`|
