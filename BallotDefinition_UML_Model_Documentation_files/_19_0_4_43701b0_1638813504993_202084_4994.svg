@@ -26,11 +26,11 @@
     ><rect fill="none" x="469" width="176" height="97" y="1001" clip-path="url(#clipPath2)"
       /><line y2="1019" fill="none" x1="469" clip-path="url(#clipPath2)" x2="645" y1="1019"
       /><text x="472" font-size="11" y="1066.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-FillColor : HtmlColorString [0..1]</text
+      >-StrokeWidth : Integer [1]</text
       ><text x="472" font-size="11" y="1054.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-StrokeColor : HtmlColorString [0..1]</text
       ><text x="472" font-size="11" y="1042.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-StrokeWidth : Integer [0..1]</text
+      >-FillColor : HtmlColorString [0..1]</text
     ></g
     ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-454,-986)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="538" space="preserve" y="1030.2947" clip-path="url(#clipPath2)" stroke="none"

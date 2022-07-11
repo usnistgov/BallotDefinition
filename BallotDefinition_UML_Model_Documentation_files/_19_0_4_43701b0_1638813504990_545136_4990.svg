@@ -26,11 +26,11 @@
     ><rect fill="none" x="567" width="207" height="147" y="756" clip-path="url(#clipPath2)"
       /><line y2="774" fill="none" x1="567" clip-path="url(#clipPath2)" x2="774" y1="774"
       /><text x="570" font-size="11" y="821.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-FractionalVotes : FractionalNumber [0..1]</text
-      ><text x="570" font-size="11" y="809.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Rank : Integer [0..1]</text
-      ><text x="570" font-size="11" y="797.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="570" font-size="11" y="809.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-NumberVotes : Integer [1]</text
+      ><text x="570" font-size="11" y="797.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      >-FractionalVotes : FractionalNumber [0..1]</text
     ></g
     ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-552,-741)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="651.5" space="preserve" y="785.2947" clip-path="url(#clipPath2)" stroke="none"

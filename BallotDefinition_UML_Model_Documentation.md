@@ -199,8 +199,10 @@ Name | Value
 
 Name | Value
 ---- | -----
-`pt`|points (1/72 inch)
+`in`|
 `mm`|millimeters
+`pc`|
+`pt`|points (1/72 inch)
 
 ### <a name="_17_0_2_4_f71035d_1425314816880_411605_2504"></a>*The **OfficeTermType** Enumeration*
 
@@ -221,8 +223,8 @@ The orientation of a ballot sheet.
 
 Name | Value
 ---- | -----
-`portrait`|Orient the sheet so that the ballot content print across the short edge of the paper.
 `landscape`|Orient the sheet so that the ballot content print across the long edge of the paper.
+`portrait`|Orient the sheet so that the ballot content print across the short edge of the paper.
 
 ### <a name="_19_0_4_43701b0_1656439060260_881241_16237"></a>*The **ReadMethodType** Enumeration*
 
@@ -232,8 +234,8 @@ Name | Value
 
 Name | Value
 ---- | -----
-`omr`|For a read method that uses optical mark recognition.
 `encoded-text`|For a read method that uses text encoded using a symbology.
+`omr`|For a read method that uses optical mark recognition.
 
 ### <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>*The **ReportingUnitType** Enumeration*
 
@@ -281,8 +283,8 @@ The side of a ballot sheet.
 
 Name | Value
 ---- | -----
-`front`|The front of the ballot sheet
 `back`|The back of the ballot sheet.
+`front`|The front of the ballot sheet
 
 ### <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>*The **VoteVariation** Enumeration*
 
@@ -312,7 +314,7 @@ Name | Value
 
 Used as a type for character strings; it adds a 32-character annotation to a character string.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1497553268113_377804_4591"></a>`Annotation`|0..1|`ShortString`|An annotation of up to 32 characters associated with a character string.
 <a name="_18_0_2_6340208_1497553239224_304629_4586"></a>`Content`|1|`String`|The string to be annotated.
@@ -324,7 +326,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Used as a type for character strings that represent Uniform Resource Identifiers (URI); it adds a 32-character annotation to a character string.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1498658485557_944083_4589"></a>`Annotation`|0..1|`ShortString`|An annotation of up to 32 characters associated with a character string.
 <a name="_18_0_2_6340208_1498658457673_356828_4586"></a>`Content`|1|`anyURI`|The URI to be annotated.
@@ -338,7 +340,7 @@ For defining items pertaining to the status and format of the definition and whe
 
 BallotDefinition references the major elements that are not necessarily specific to an election and that therefore can exist in a pre-election report: [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380), [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) and [OfficeGroup](#_17_0_2_4_f71035d_1433183615993_866714_2239), [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460), [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567), and [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1638813505041_459512_5041"></a>`{BallotFormat}`|0..*|`BallotFormat`|For associating ballot formats with the definition.
 <a name="_17_0_2_4_f71035d_1426102320351_976615_2363"></a>`{Election}`|0..*|`Election`|For associating elections with the definition.
@@ -370,7 +372,7 @@ For providing details related to the concrete presentation a ballot appropriate 
 BallotFormat sets the [MeasurementUnit](#_19_0_4_43701b0_1644432420684_862271_5068) appropriate for the marking surface used.
 
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1644416765920_868492_5058"></a>`Application`|0..1|`String`|The application associated with the ballot format.
 <a name="_19_0_4_43701b0_1654704956084_328829_4972"></a>`ExternalIdentifier`|1..*|`ExternalIdentifier`|For associating an ID with the ballot format.
@@ -392,7 +394,7 @@ For ballot measure (i.e., referenda or a tax measure) and judicial retention con
 
 If the type of ballot measure is not listed in enumeration [BallotMeasureType](#_17_0_2_4_f71035d_1426549604222_56408_2487), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1426550214099_344315_2520).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1426519421663_178011_2491"></a>`ConStatement`|0..1|`InternationalizedText`|For a statement on the ballot associated with a “no” vote.
 <a name="_17_0_2_4_f71035d_1426519513798_649615_2501"></a>`EffectOfAbstain`|0..1|`InternationalizedText`|For a statement on the ballot detailing the effect of abstaining from voting on the ballot measure.
@@ -411,7 +413,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For a contest selection in a ballot measure contest. Because judicial or other retention contests are often treated like ballot measure contests, this element can be used also for retention contests. It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_2_43701b0_1576350241608_897910_4990"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot measure selection.
 <a name="_17_0_2_4_78e0236_1389710917151_765889_2176"></a>`Selection`|1|`InternationalizedText`|Contains the text used to indicate a vote for or against the ballot measure, e.g., “yes”, “no”.
@@ -427,7 +429,7 @@ BallotStyle references one or more [GpUnit](#_17_0_2_4_78e0236_1389366233346_423
 
 BallotStyle references zero or more [PhysicalBallotStyle](#_19_0_4_43701b0_1638814301674_803769_5641) instances for describing physical manifestations of the ballot style.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1441377633582_32184_2220"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot style.
 <a name="_17_0_2_4_f71035d_1436214223050_585224_2515"></a>`{GpUnit}`|1..*|`GpUnit`|Unique identifier for one or more GpUnit instances. For associating specific geopolitical units with the ballot style.
@@ -442,7 +444,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 An abstract class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1638813505007_72660_5006"></a>`H`|0..1|`float`|Height in ballot format measurement units.
 <a name="_19_0_4_43701b0_1644926850594_99365_4968"></a>`Sheet`|0..1|`Integer`|The ballot sheet the bounded object appears. Sheets start at 1 and increase monotonically.
@@ -462,7 +464,7 @@ Candidate uses the [Party](#_17_0_2_4_78e0236_1389366597377_433664_2698) associa
 
 [ExternalIdentifier](#_17_0_2_4_f71035d_1430405890311_465205_2454) can be used to associate an ID with the candidate. If the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_78e0236_1389710816659_20227_2170"></a>`BallotName`|1|`InternationalizedText`|For the candidate’s name as listed on the ballot.
 <a name="_19_0_2_43701b0_1576187672054_587470_4958"></a>`CampaignSlogan`|0..1|`InternationalizedText`|The slogan or motto used by the candidate in their campaign.
@@ -487,7 +489,7 @@ This class optionally references [Office](#_17_0_5_1_43401a7_1400623830572_16408
 
 Note that when using the [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562) class to associate the candidates with a contest selection for the contest, the order of the candidates should match the order of offices. Again, using the example of the state governor ticket, if the offices are listed with Governor first and Lt. Governor second, then the order of the candidates in the [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) instance should be identical, with the Governor candidate first and the Lt. Governor candidate second.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_78e0236_1389797739578_12603_4129"></a>`NumberElected`|0..1|`Integer`|Number of candidates that are elected in the contest (“n” of n-of-m).
 <a name="_18_0_2_6340208_1498659576131_900303_4636"></a>`NumberRunoff`|0..1|`Integer`|The number of candidates in a runoff contest.
@@ -506,7 +508,7 @@ For the contest selections in a candidate contest, including for write-ins. It i
 
 When multiple candidates are referenced for a ticket and the ordering of the candidates is important to preserve, it is expected that the generating application will list the references to [Candidate](#_17_0_2_4_d420315_1392145686219_781480_2594) instances according to the ordering scheme in place. For example, if the contest is for a ticket in which each candidate is associated with a different office, then the order of the candidates should match the same ordering of the <Office> element references within <OfficeIds> in the <Contest xsi:type="CandidateContest" ... /> element.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_d420315_1392145686219_781480_2594"></a>`{Candidate}`|0..*|`Candidate`|For associating a candidate with the candidate selection on the ballot and for cases where the contest selection is for multiple candidates, e.g., a ticket.
 <a name="_17_0_2_4_78e0236_1389797859448_230579_4174"></a>`IsWriteIn`|0..1|`Boolean`|Indicates whether the candidate is a write-in, e.g., true or false. Assumed to be false if not present.
@@ -523,7 +525,7 @@ Coalition instances themselves are composed of multiple [Party](#_17_0_2_4_78e02
 
 If there are no associated [Contests](#_17_0_2_4_78e0236_1389366251994_876831_2400), a general default is that the coalition endorses the associated parties.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1427484451489_775363_4609"></a>`{Contest}`|0..*|`Contest`|For associating contests with the coalition.
 <a name="_18_0_2_6340208_1425647321121_89855_4744"></a>`{Party}`|0..*|`Party`|For associating parties with the coalition.
@@ -541,7 +543,7 @@ ContactInformation includes [LatLng](#_17_0_2_4_f71035d_1443104838926_393729_222
 
 [Email](#_17_0_5_1_43401a7_1400668036651_743620_3650), [Fax](#_17_0_5_1_43401a7_1400668021448_721992_3646), and [Phone](#_17_0_5_1_43401a7_1400667951215_637516_3638) are of type [AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565), which permits up to a 32-character annotation to be associated with the data.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1425645912998_115448_4529"></a>`AddressLine`|0..*|`RichText`|For associating an address with the contact.
 <a name="_17_0_2_4_f71035d_1443105112875_46223_2290"></a>`Directions`|0..1|`InternationalizedText`|Directional information in addition to address information.
@@ -580,7 +582,7 @@ Contest includes [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906)
 When including [ExternalIdentifiers](#_17_0_2_4_f71035d_1430405712653_451634_2410), if the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
 
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_5_1_43401a7_1395831571231_804795_3632"></a>`Abbreviation`|0..1|`String`|Abbreviation for the contest.
 <a name="_17_0_2_4_f71035d_1426519324658_821208_2483"></a>`BallotSubTitle`|0..1|`InternationalizedText`|Subtitle of the contest as it appears on the ballot.
@@ -610,7 +612,7 @@ Used for the contest selections in a contest (e.g., for candidates, for ballot m
  *  [PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511), used if the contest type is for a party, e.g., for a straight party contest.
  *  [SequenceOrder](#_17_0_2_4_f71035d_1426296042287_22607_2200) is included to specify an ordering for the contest selections for purposes of display only. The original ballot ordering can be preserved, however, by using the [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) class.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1426296042287_22607_2200"></a>`SequenceOrder`|0..1|`Integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 
@@ -621,7 +623,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Restricts dateTime to require inclusion of time zone information and excludes fractional seconds.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1519999795210_981371_4601"></a>`pattern`||`String`|Pattern used for indicating the date, time and the accompanying time zone.
 
@@ -636,7 +638,7 @@ Election includes links to the major instances that are specific to an election:
 
 Election includes a required association end [ElectionScope](#_17_0_2_4_f71035d_1426102211616_609900_2331), which links to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance for the purpose of identifying the geographical scope of the election. For example, for an election within a county, [ElectionScope](#_17_0_2_4_f71035d_1426102211616_609900_2331) would reference a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the county. If it is desired to include election authority information, the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) can include [ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1426789041442_265842_2746"></a>`{BallotStyle}`|0..*|`BallotStyle`|For defining ballot styles associated with the election.
 <a name="_17_0_2_4_f71035d_1426788786008_599642_2643"></a>`{Candidate}`|0..*|`Candidate`|For defining candidates associated with the election.
@@ -659,7 +661,7 @@ Used to provide various information about an election authority. [ReportingUnit]
 
 ElectionAdministration includes [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) for the election authority and, using [ElectionOfficialPerson](#_18_0_2_6340208_1441312523523_377380_4513) references one or more [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) instances defined for individuals/organizations associated with the election authority.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1441312459706_787590_4464"></a>`{ContactInformation}`|0..1|`ContactInformation`|For including various contact information.
 <a name="_18_0_2_6340208_1441312523523_377380_4513"></a>`{ElectionOfficialPerson}`|0..*|`Person`|Unique identifier for one or more Person elements defined for the election authority.
@@ -681,7 +683,7 @@ For associating a jurisdiction’s codes, i.e., identifiers, with objects such a
 
 For elements that link to ExternalIdentifier instances, if the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1441215385623_864674_2521"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
 <a name="_17_0_2_4_f71035d_1430405763078_743585_2433"></a>`Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
@@ -695,7 +697,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 A proper fractional value, represented using fractional or decimal notation.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1654793467817_324020_5118"></a>`pattern`||`String`|Pattern describing the allowed values for a [FractionalNumber](#_19_0_4_43701b0_1654793467815_816834_5117).
 
@@ -706,12 +708,12 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For defining a geometric shape. Geometry can be used to represent content on a physical ballot style, such as for associating an OptionPosition to its shape.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1656516495506_637985_5124"></a>`{OrderedPhysicalContest}`||`OrderedPhysicalContest`|
-<a name="_19_0_4_43701b0_1656513867120_25918_5112"></a>`FillColor`|0..1|`HtmlColorString`|For fiducial marks only.
+<a name="_19_0_4_43701b0_1656513867120_25918_5112"></a>`FillColor`|0..1|`HtmlColorString`|For fiducial marks only. If not specified, no fill is assumed.
 <a name="_19_0_4_43701b0_1638824437354_427069_5934"></a>`StrokeColor`|0..1|`HtmlColorString`|The color of the stroke. If no color is specified, assume black (what XFA does)
-<a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|0..1|`Integer`|\[in what unit\]The width of the stroke
+<a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|1|`Integer`|\[in what unit\]The width of the stroke
 
 
 ### <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
@@ -729,7 +731,7 @@ Reporting units can link to each other to form a hierarchicallly-oriented model 
 [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) and [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) contain a required reference to [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) representing the jurisdiction of the election or contest respectively; [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) contains a similar reference that is optional. [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) references [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) to link a ballot style to its corresponding geopolitical unit.
 
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1442233726833_338497_2238"></a>`{ComposingGpUnit}`|0..*|`GpUnit`|Unique identifier for one or more GpUnit instances. For creating a reference to another GpUnit that is contained with the parent GpUnit.
 <a name="_17_0_2_4_f71035d_1430412120441_638024_2251"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the GpUnit, e.g., a district’s or county’s code.
@@ -742,7 +744,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For defining a reusable set of headers.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_5_3_43701b0_1527684342717_856894_6148"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the header.
 <a name="_18_5_3_43701b0_1527684342719_705794_6149"></a>`Name`|1|`InternationalizedText`|Name of the header, as it is to appear on a ballot style.
@@ -754,7 +756,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Hours is used to specify a specific day and hours on that day, including the time zone. Multiple occurrences of Hours can be used if the schedule includes a range of days and hours.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1427123259576_729129_4765"></a>`Day`|0..1|`DayType`|Day of the week.
 <a name="_17_0_2_4_f71035d_1441215533034_678840_2525"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
@@ -768,7 +770,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For a string containing a 6-digit Red-Green-Blue (RGB) code that can be displayed using HTML. Used in Party to associate a web-displayable color with the party. The RGB code is specified in hexadecimal, such that the RGB code for the color green is “00FF00” (“\#00” + “\#FF” + “\#00”).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1428586849775_553802_2253"></a>`pattern`||`String`|Pattern used for indicating the RGB color to use.
 
@@ -792,7 +794,7 @@ Values for language are from ISO 639 \[12\] and include:
  *  ja – Japanese
  *  ko – Korean
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1441215669264_408334_2533"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
 <a name="_17_0_2_4_f71035d_1428953680100_198341_2225"></a>`{Text}`|1..*|`LanguageString`|Used to hold a string of text with an associated table indicating the language used.
@@ -804,7 +806,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Used to hold a string of text with an associated table indicating the language used.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1428953680098_437370_2221"></a>`Content`|1|`String`|The string in the specified language.
 <a name="_17_0_2_4_f71035d_1428953680098_683534_2222"></a>`Language`|1|`language`|Identification of the language, such as 'es'.
@@ -816,7 +818,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Associates latitude/longitude with a contact address.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1443104953915_703386_2253"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
 <a name="_17_0_2_4_f71035d_1443104855995_933877_2241"></a>`Latitude`|1|`double`|Latitude of the contact location.
@@ -830,7 +832,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 A part of the ballot containing an instantiation of the microCDF.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1638813505005_130746_5001"></a>`IsOverflow`|0..1|`boolean`|Whether the mCDFArea serves as an overflow (continuation) of another mCDFArea.
 <a name="_19_0_4_43701b0_1638813505003_506262_4999"></a>`Symbology`|1|`String`|The name of the symbology used.
@@ -847,7 +849,7 @@ Office includes [Term](#_17_0_2_4_f71035d_1428489072598_282236_2217) for definin
 
 Office includes an optional [ElectionDistrict](#_17_0_5_1_43401a7_1400701616170_933421_3684) reference to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) for the purpose of identifying the geographical scope of the office. For example, for an office for a state senate seat, [ElectionDistrict](#_17_0_5_1_43401a7_1400701616170_933421_3684) would include a reference to the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the district associated with that office.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1429207941244_121672_2262"></a>`{ContactInformation}`|0..1|`ContactInformation`|For associating various contact information with the office.
 <a name="_18_0_2_6340208_1498658815063_675104_4595"></a>`Description`|0..1|`InternationalizedText`|A description of the office, possibly as shown on the ballot to the voter.
@@ -866,7 +868,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Used to assign a name to a grouping of office definitions. It includes references to [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes OfficeGroup.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1441363295584_2457_2492"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
 <a name="_17_0_2_4_f71035d_1433183632661_693280_2258"></a>`Name`|1|`String`|Name of the office grouping.
@@ -880,7 +882,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For associating a physical contest option to the location(s) where a selection can be indicated.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1644416632980_218913_5044"></a>`FractionalVotes`|0..1|`FractionalNumber`|The proper fractional number of votes represented by the option position.
 <a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{Geometry}`|0..1|`Geometry`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
@@ -907,7 +909,7 @@ OrderedContent is an abstract class with two subclasses that get used according 
 
 For the appearance of a contest on a particular ballot style.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_3_43401a7_1394477833535_563732_3249"></a>`{Contest}`|1|`Contest`|The contest associated represented by OrderedContest.
 <a name="_17_0_3_43401a7_1394477871277_951066_3270"></a>`{OrderedContestSelection}`|0..*|`ContestSelection`|The contest selections for the ballot.
@@ -919,7 +921,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For the appearance of a header on a particular ballot style.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_5_3_43701b0_1527684342723_761487_6155"></a>`{Header}`|1|`Header`|Association to the header to be used.
 <a name="_19_0_43701b0_1535731879583_845997_4783"></a>`{OrderedContent}`|0..*|`OrderedContent`|For associating a header with ballot content, such as contests or nested headers.
@@ -931,7 +933,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For the appearance of a contest on a particular ballot style with physical details.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1654799520016_831963_5285"></a>`{PhysicalContestOption}`|0..*|`PhysicalContestOption`|The contest options for the ballot.
 <a name="_19_0_4_43701b0_1654799492666_226861_5266"></a>`{Contest}`|1|`Contest`|The contest associated represented by OrderedPhysicalContest.
@@ -948,7 +950,7 @@ Party is an abstract type with one subtype [Coalition](#_18_0_2_6340208_14256472
 
 The Color attribute specifies a 6-digit RGB code displayable using HTML.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_78e0236_1389734813018_766516_3987"></a>`Abbreviation`|0..1|`InternationalizedText`|Short name for the party, e.g., “DEM”.
 <a name="_18_0_2_6340208_1425913135379_377945_4658"></a>`Color`|0..1|`HtmlColorString`|For associating an HTML RGB color coding with the party.
@@ -975,7 +977,7 @@ For a contest that involves choosing a party, typically for a straight party sel
 
 For tracking the number of registered voters per party per geopolitical unit, i.e., for reporting on the number of registered voters of a particular party in a district or other type of reporting unit. Referenced by [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_78e0236_1394566847763_82144_2845"></a>`Count`|1|`Integer`|A count for tracking the number of registered voters.
 <a name="_17_0_2_4_78e0236_1394566867126_871059_2851"></a>`{Party}`|1|`Party`|Link to a [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instance. For associating a political party.
@@ -987,7 +989,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For a contest selection involving a party such as for a straight party selection on the ballot. It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1426520590194_384550_2564"></a>`{Party}`|1..*|`Party`|Link to one or more [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) instances. For associating one or more parties with the party selection.
 
@@ -1001,7 +1003,7 @@ For defining information about a person; the person may be a candidate, election
 
 Multiple occurrences of the MiddleName attribute can be used as needed, e.g., for names such as “John Andrew Winston Smith”.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1409158807179_27867_2211"></a>`{ContactInformation}`|0..*|`ContactInformation`|For associating contact information with the person.
 <a name="_18_0_2_6340208_1425648435033_458578_4893"></a>`DateOfBirth`|0..1|`date`|Person’s date of birth.
@@ -1025,7 +1027,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For associating a [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) to its physical manifestation. Each PhysicalContestOption is specified in terms of a particular [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993). A PhysicalContestOption may have multiple [OptionPosition](#_19_0_4_43701b0_1638813504990_545136_4990), for voting methods that require it (e.g. rank choice voting). [WriteInPosition](#_19_0_4_43701b0_1638813504998_266381_4995) specifies the response area where name(s) may written-in.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1638814823233_177286_5745"></a>`{BallotFormat}`|1|`BallotFormat`|
 <a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..1|`WriteInPosition`|
@@ -1054,7 +1056,7 @@ The [Type](#_17_0_2_4_78e0236_1389713376966_77071_2393) attribute uses the [Repo
 
 The [IsDistricted](#_17_0_2_4_f71035d_1441207733430_83517_2240) boolean can be used in a number of ways. It is not strictly necessary, as it is possible to identify districts by their [Type](#_17_0_2_4_78e0236_1389713376966_77071_2393) attribute or by examining the [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) instance’s [ElectionDistrict](#_17_0_2_4_78e0236_1389366667508_703141_2753) reference, which links to the election district associated with the contest. However, if a district is defined but is not linked from a contest, or if the type of district is not listed in the [ReportingUnitType](#_17_0_2_4_f71035d_1431607637366_785815_2242) enumeration and therefore [OtherType](#_17_0_2_4_f71035d_1426007519161_685921_2510) is used, then [IsDistricted](#_17_0_2_4_f71035d_1441207733430_83517_2240) is necessary to identify the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) as a district. The [IsDistricted](#_17_0_2_4_f71035d_1441207733430_83517_2240) boolean can also be used to signify that a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined as a jurisdiction, e.g., a county, is also used as a district for, e.g., county-wide contests.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_5_1_43401a7_1400624362436_113642_3662"></a>`{Authority}`|0..*|`Person`|A link to one or more [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) instances describing an authority responsible for the reporting unit.
 <a name="_17_0_2_4_f71035d_1429207854277_960649_2231"></a>`{ContactInformation}`|0..1|`ContactInformation`|For associating contact information with the reporting unit.
@@ -1079,7 +1081,7 @@ For judicial retention or other types of retention contests. Retention contests 
 
 This element uses [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783) as a superclass. Therefore, it inherits the attributes of [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) as well as [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1425646466278_708197_4616"></a>`{Candidate}`|1|`Candidate`|Link to a [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instance. For associating a candidate with the retention contest.
 <a name="_18_0_2_6340208_1425646257224_14886_4580"></a>`{Office}`|0..1|`Office`|Link to an [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance. For associating an office description with the retention contest.
@@ -1091,7 +1093,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For defining a schedule associated with a particular election office or location. [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) includes Schedule.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1427122219893_697937_4628"></a>`{Hours}`|0..*|`Hours`|For specifying a range of hours for a schedule.
 <a name="_18_0_2_6340208_1427122382178_611115_4660"></a>`IsOnlyByAppointment`|0..1|`Boolean`|If an appointment is only by appointment; assumed to be “no” if not present.
@@ -1108,7 +1110,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For defining a 32-character annotation, used with character strings in [AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1499878669447_998177_4582"></a>`maxLength`||`Integer`|The maximum allowed length of a ShortString.
 
@@ -1119,7 +1121,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For defining the spatial layout of a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380), e.g., a map or a spatial extent (a polygon that shows the related area) for various purposes, including to visualize election results, to understand the composition of districts, or to determine whether [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instances are properly related. [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) includes SpatialDimension.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1407172954401_413137_2508"></a>`MapUri`|0..*|`AnnotatedUri`|Typically a URI to a map of the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380).
 <a name="_17_0_2_4_f71035d_1409080509711_839030_2261"></a>`{SpatialExtent}`|0..1|`SpatialExtent`|For associating a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) element’s spatial extent information.
@@ -1131,7 +1133,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 [SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188) includes SpatialExtent for defining a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance’s spatial extent data and the format used for the spatial extent.
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1409080350911_799955_2232"></a>`Coordinates`|1|`RichText`|The data coordinates constituting the spatial extent.
 <a name="_17_0_2_4_f71035d_1409080287789_708966_2228"></a>`Format`|1|`GeoSpatialFormat`|Enumerated type for the format used, e.g., gml, kml, wkt, etc.
@@ -1143,7 +1145,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 For describing information about an office term. [Term](#_17_0_2_4_f71035d_1428489072598_282236_2217) is included by [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518).
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1505852448141_524598_4584"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
 <a name="_17_0_2_4_f71035d_1400610432611_11829_2688"></a>`StartDate`|0..1|`date`|Start date for the current term of the office.
@@ -1157,7 +1159,7 @@ Attribute | Multiplicity | Type | Attribute Description
 
 Restricts time to require inclusion of time zone information and excludes fractional seconds
 
-Attribute | Multiplicity | Type | Attribute Description
+Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_18_0_2_6340208_1427385616971_659746_4409"></a>`pattern`||`String`|Pattern used for indicating the time with the accompanying time zone.
 

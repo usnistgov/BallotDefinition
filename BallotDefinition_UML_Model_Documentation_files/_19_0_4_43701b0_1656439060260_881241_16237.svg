@@ -26,9 +26,9 @@
     ><rect fill="none" x="217" width="103" height="66" y="434" clip-path="url(#clipPath2)"
       /><line y2="467" fill="none" x1="217" clip-path="url(#clipPath2)" x2="320" y1="467"
       /><text x="220" font-size="11" y="492.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >encoded-text</text
-      ><text x="220" font-size="11" y="480.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >omr</text
+      ><text x="220" font-size="11" y="480.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      >encoded-text</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-202,-419)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="221.5" space="preserve" y="462.1379" clip-path="url(#clipPath2)" stroke="none"
