@@ -4,6 +4,7 @@
   - Enumerations
     - *The **[BallotMeasureType](#_17_0_2_4_f71035d_1426549604222_56408_2487)** Enumeration*
     - *The **[CandidatePreElectionStatus](#_17_0_2_4_f71035d_1427223542780_950918_2213)** Enumeration*
+    - *The **[ControlContestType](#_19_0_4_43701b0_1657540288126_467465_5529)** Enumeration*
     - *The **[DayType](#_18_0_2_6340208_1425647845906_917814_4818)** Enumeration*
     - *The **[DeviceType](#_17_0_2_4_78e0236_1389798087342_91702_4210)** Enumeration*
     - *The **[DirectionType](#_19_0_4_43701b0_1638888842144_832668_6236)** Enumeration*
@@ -15,9 +16,13 @@
     - *The **[OrientationType](#_19_0_4_43701b0_1654872700628_375746_5104)** Enumeration*
     - *The **[ReadMethodType](#_19_0_4_43701b0_1656439060260_881241_16237)** Enumeration*
     - *The **[ReportingUnitType](#_17_0_2_4_f71035d_1431607637366_785815_2242)** Enumeration*
+    - *The **[ShapeType](#_19_0_4_43701b0_1657558418384_602517_5820)** Enumeration*
     - *The **[SideType](#_19_0_4_43701b0_1638888251218_423470_6185)** Enumeration*
+    - *The **[StraightPartyRuleset](#_19_0_4_43701b0_1657644674655_50560_5899)** Enumeration*
     - *The **[VoteVariation](#_17_0_2_4_78e0236_1389798224990_11192_4272)** Enumeration*
   - Classes
+    - *The **[ActivationContest](#_19_0_4_43701b0_1657644824107_634969_5936)** Class*
+    - *The **[ActivationSelection](#_19_0_4_43701b0_1657540726121_302449_5703)** Class*
     - *The **[AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565)** Class*
     - *The **[AnnotatedUri](#_18_0_2_6340208_1498658436378_308208_4565)** Class*
     - *The **[BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300)** Class*
@@ -33,10 +38,10 @@
     - *The **[ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637)** Class*
     - *The **[Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400)** Class*
     - *The **[ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906)** Class*
+    - *The **[ControllingContest](#_19_0_4_43701b0_1657539979421_509884_5407)** Class*
     - *The **[DateTimeWithZone](#_18_0_2_6340208_1519999692422_172889_4576)** Class*
     - *The **[Election](#_17_0_2_4_f71035d_1426101822599_430942_2209)** Class*
     - *The **[ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433)** Class*
-    - *The **[Ellipse](#_19_0_4_43701b0_1654020103490_332966_5264)** Class*
     - *The **[ExternalIdentifier](#_17_0_2_4_f71035d_1430405712653_451634_2410)** Class*
     - *The **[FractionalNumber](#_19_0_4_43701b0_1654793467815_816834_5117)** Class*
     - *The **[Geometry](#_19_0_4_43701b0_1638813504993_202084_4994)** Class*
@@ -57,17 +62,18 @@
     - *The **[OrderedPhysicalContest](#_19_0_4_43701b0_1654799451085_749033_5240)** Class*
     - *The **[Party](#_17_0_2_4_78e0236_1389366278128_412819_2460)** Class*
     - *The **[PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144)** Class*
+    - *The **[PartyPreferenceContest](#_19_0_4_43701b0_1657644855685_740858_5970)** Class*
     - *The **[PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826)** Class*
     - *The **[PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)** Class*
     - *The **[Person](#_17_0_5_1_43401a7_1400623980732_100904_3567)** Class*
     - *The **[PhysicalContestOption](#_19_0_4_43701b0_1638814789673_90932_5706)** Class*
-    - *The **[Rectangle](#_19_0_4_43701b0_1654020095954_591343_5237)** Class*
     - *The **[ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593)** Class*
     - *The **[RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554)** Class*
     - *The **[Schedule](#_18_0_2_6340208_1427122121448_198970_4547)** Class*
     - *The **[ShortString](#_18_0_2_6340208_1499878618645_537953_4560)** Class*
     - *The **[SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188)** Class*
     - *The **[SpatialExtent](#_17_0_2_4_f71035d_1409080246279_778720_2209)** Class*
+    - *The **[StraightPartyContest](#_19_0_4_43701b0_1657644644067_42377_5870)** Class*
     - *The **[Term](#_17_0_2_4_f71035d_1428489072598_282236_2217)** Class*
     - *The **[TimeWithZone](#_18_0_2_6340208_1427385616970_86952_4407)** Class*
     - *The **[WriteInPosition](#_19_0_4_43701b0_1638813504998_266381_4995)** Class*
@@ -99,6 +105,18 @@ Name | Value
 `filed`|For candidates who have filed with the election authority but not necessarily qualified.
 `qualified`|For candidates who are qualified by the election authority to be on the ballot for a contest.
 `withdrawn`|For candidates who have withdrawn from the contest.
+
+### <a name="_19_0_4_43701b0_1657540288126_467465_5529"></a>*The **ControlContestType** Enumeration*
+
+![Image of ControlContestType](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657540288126_467465_5529.svg)
+
+
+
+Name | Value
+---- | -----
+`activation`|A controlling contest containing an activation option, that when selected activates one or more controlled contests.
+`open-primary-party-preference`|A controlling contest that may appear on an open primary ballot that allows the voter to select which political party’s primary they wish to vote.  A valid selection in this contest protects the voter from voiding the partisan selection of the ballot by making selections in more than one party’s contest.
+`straight-party`|
 
 ### <a name="_18_0_2_6340208_1425647845906_917814_4818"></a>*The **DayType** Enumeration*
 
@@ -275,6 +293,17 @@ Name | Value
 `water`|Used for a water district.
 `other`|Used for other types of reporting units not included in this enumeration.
 
+### <a name="_19_0_4_43701b0_1657558418384_602517_5820"></a>*The **ShapeType** Enumeration*
+
+![Image of ShapeType](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657558418384_602517_5820.svg)
+
+
+
+Name | Value
+---- | -----
+`elipse`|
+`rectangle`|
+
 ### <a name="_19_0_4_43701b0_1638888251218_423470_6185"></a>*The **SideType** Enumeration*
 
 ![Image of SideType](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638888251218_423470_6185.svg)
@@ -285,6 +314,18 @@ Name | Value
 ---- | -----
 `back`|The back of the ballot sheet.
 `front`|The front of the ballot sheet
+
+### <a name="_19_0_4_43701b0_1657644674655_50560_5899"></a>*The **StraightPartyRuleset** Enumeration*
+
+![Image of StraightPartyRuleset](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657644674655_50560_5899.svg)
+
+
+
+Name | Value
+---- | -----
+`inclusive`|For rules allow any additional candidates selected by the straight-party to be included with directly selected candidates if the total number of candidates does not exceed the number of selections allowed. 
+`exclusive`|For a ruleset that excludes any straight-party selections if there is a directly selected candidate in a contest. 
+`other`|Used when the straight party rule type is not included in this enumeration.
 
 ### <a name="_17_0_2_4_78e0236_1389798224990_11192_4272"></a>*The **VoteVariation** Enumeration*
 
@@ -307,6 +348,28 @@ Name | Value
 `other`|Used when the vote variation type is not included in this enumeration.
 
 ## Classes
+
+### <a name="_19_0_4_43701b0_1657644824107_634969_5936"></a>*The **ActivationContest** Class*
+
+![Image of ActivationContest](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657644824107_634969_5936.svg)
+
+
+
+Property  | Multiplicity | Type | Property Description
+--------- | ------------ | ---- | ---------------------
+<a name="_19_0_4_43701b0_1657631136442_494329_5860"></a>`ActivationType`||``|
+
+
+### <a name="_19_0_4_43701b0_1657540726121_302449_5703"></a>*The **ActivationSelection** Class*
+
+![Image of ActivationSelection](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657540726121_302449_5703.svg)
+
+
+
+Property  | Multiplicity | Type | Property Description
+--------- | ------------ | ---- | ---------------------
+<a name="_19_0_4_43701b0_1657544570051_848307_5737"></a>`Selection`|1|`InternationalizedText`|
+
 
 ### <a name="_18_0_2_6340208_1497553224568_429892_4565"></a>*The **AnnotatedString** Class*
 
@@ -617,6 +680,17 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1426296042287_22607_2200"></a>`SequenceOrder`|0..1|`Integer`|Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.
 
 
+### <a name="_19_0_4_43701b0_1657539979421_509884_5407"></a>*The **ControllingContest** Class*
+
+![Image of ControllingContest](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657539979421_509884_5407.svg)
+
+Ballot content structured as a contest that affects other contests under its control. The purpose of a controlling contest varies, but includes the activation or deactivation of parts of the ballot based on the voter's selection.
+
+Property  | Multiplicity | Type | Property Description
+--------- | ------------ | ---- | ---------------------
+<a name="_19_0_4_43701b0_1657540039668_121088_5440"></a>`{ControlledContest}`|1..*|`Contest`|A contest on a ballot whose state is dependent on the selections made in a separate controlling contest.
+
+
 ### <a name="_18_0_2_6340208_1519999692422_172889_4576"></a>*The **DateTimeWithZone** Class*
 
 ![Image of DateTimeWithZone](BallotDefinition_UML_Model_Documentation_files/_18_0_2_6340208_1519999692422_172889_4576.svg)
@@ -668,13 +742,6 @@ Property  | Multiplicity | Type | Property Description
 <a name="_18_0_2_6340208_1441312432223_272740_4455"></a>`Name`|0..1|`RichText`|Name of the election authority.
 
 
-### <a name="_19_0_4_43701b0_1654020103490_332966_5264"></a>*The **Ellipse** Class*
-
-![Image of Ellipse](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1654020103490_332966_5264.svg)
-
-For a shape that is an ellipse.
-
-
 ### <a name="_17_0_2_4_f71035d_1430405712653_451634_2410"></a>*The **ExternalIdentifier** Class*
 
 ![Image of ExternalIdentifier](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_f71035d_1430405712653_451634_2410.svg)
@@ -710,8 +777,8 @@ For defining a geometric shape. Geometry can be used to represent content on a p
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
-<a name="_19_0_4_43701b0_1656516495506_637985_5124"></a>`{OrderedPhysicalContest}`||`OrderedPhysicalContest`|
 <a name="_19_0_4_43701b0_1656513867120_25918_5112"></a>`FillColor`|0..1|`HtmlColorString`|For fiducial marks only. If not specified, no fill is assumed.
+<a name="_19_0_4_43701b0_1657564755655_784075_5843"></a>`ShapeType`|1|`ShapeType`|
 <a name="_19_0_4_43701b0_1638824437354_427069_5934"></a>`StrokeColor`|0..1|`HtmlColorString`|The color of the stroke. If no color is specified, assume black (what XFA does)
 <a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|1|`Integer`|\[in what unit\]The width of the stroke
 
@@ -971,6 +1038,13 @@ Property  | Multiplicity | Type | Property Description
 For a contest that involves choosing a party, typically for a straight party selection on the ballot.
 
 
+### <a name="_19_0_4_43701b0_1657644855685_740858_5970"></a>*The **PartyPreferenceContest** Class*
+
+![Image of PartyPreferenceContest](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657644855685_740858_5970.svg)
+
+
+
+
 ### <a name="_17_0_2_4_78e0236_1394566839296_58362_2826"></a>*The **PartyRegistration** Class*
 
 ![Image of PartyRegistration](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1394566839296_58362_2826.svg)
@@ -1033,13 +1107,6 @@ Property  | Multiplicity | Type | Property Description
 <a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..1|`WriteInPosition`|
 <a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|
 <a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestSelection}`|1|`ContestSelection`|
-
-
-### <a name="_19_0_4_43701b0_1654020095954_591343_5237"></a>*The **Rectangle** Class*
-
-![Image of Rectangle](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1654020095954_591343_5237.svg)
-
-For a shape that is an ellipse.
 
 
 ### <a name="_17_0_2_4_f71035d_1400606476166_735297_2593"></a>*The **ReportingUnit** Class*
@@ -1137,6 +1204,18 @@ Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1409080350911_799955_2232"></a>`Coordinates`|1|`RichText`|The data coordinates constituting the spatial extent.
 <a name="_17_0_2_4_f71035d_1409080287789_708966_2228"></a>`Format`|1|`GeoSpatialFormat`|Enumerated type for the format used, e.g., gml, kml, wkt, etc.
+
+
+### <a name="_19_0_4_43701b0_1657644644067_42377_5870"></a>*The **StraightPartyContest** Class*
+
+![Image of StraightPartyContest](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657644644067_42377_5870.svg)
+
+
+
+Property  | Multiplicity | Type | Property Description
+--------- | ------------ | ---- | ---------------------
+<a name="_19_0_4_43701b0_1657631148940_847137_5862"></a>`StraightPartyRuleset`|1|`StraightPartyRuleset`|
+<a name="_19_0_4_43701b0_1657644738062_412335_5926"></a>`OtherStraightPartyRuleset`|0..1|`String`|For use when StraightPartyRuleset value is other.
 
 
 ### <a name="_17_0_2_4_f71035d_1428489072598_282236_2217"></a>*The **Term** Class*
