@@ -25,33 +25,33 @@
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-2778,-97)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
     ><rect fill="none" x="2793" width="235" height="196" y="112" clip-path="url(#clipPath2)"
       /><line y2="130" fill="none" x1="2793" clip-path="url(#clipPath2)" x2="3028" y1="130"
-      /><text x="2796" font-size="11" y="275.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      /><text x="2796" font-size="11" y="274.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Title : InternationalizedText [0..1]</text
-      ><text x="2796" font-size="11" y="263.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="262.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Suffix : RichText [0..1]</text
-      ><text x="2796" font-size="11" y="251.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="250.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Profession : InternationalizedText [0..1]</text
-      ><text x="2796" font-size="11" y="239.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="238.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Prefix : RichText [0..1]</text
-      ><text x="2796" font-size="11" y="227.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="226.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Nickname : RichText [0..1]</text
-      ><text x="2796" font-size="11" y="215.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="214.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-MiddleName : RichText [0..*]</text
-      ><text x="2796" font-size="11" y="203.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="202.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-LastName : RichText [0..1]</text
-      ><text x="2796" font-size="11" y="191.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="190.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Gender : RichText [0..1]</text
-      ><text x="2796" font-size="11" y="179.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="178.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-FullName : InternationalizedText [0..1]</text
-      ><text x="2796" font-size="11" y="167.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="166.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-FirstName : RichText [0..1]</text
-      ><text x="2796" font-size="11" y="155.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="154.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-ExternalIdentifier : ExternalIdentifier [0..*]</text
-      ><text x="2796" font-size="11" y="143.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2796" font-size="11" y="142.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-DateOfBirth : date [0..1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-2778,-97)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="2891.5" space="preserve" y="125.1379" clip-path="url(#clipPath2)" stroke="none"
+    ><text x="2891.5" space="preserve" y="124.958" clip-path="url(#clipPath2)" stroke="none"
       >Person</text
     ></g
   ></g

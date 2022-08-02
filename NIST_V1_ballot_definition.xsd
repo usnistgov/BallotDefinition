@@ -65,6 +65,15 @@
     </xsd:restriction>
   </xsd:simpleType>
   <!-- ========== Enumerations ========== -->
+  <xsd:simpleType name="BallotDefinitionVersion">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1.0.0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For version 1.0.0 of this specification.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
   <xsd:simpleType name="BallotMeasureType">
     <xsd:annotation>
       <xsd:documentation xml:lang="en">Enumeration for types of ballot measures in the BallotMeasureContest element.</xsd:documentation>
@@ -72,7 +81,7 @@
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="ballot-measure">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For reports that contain only aggregated counts.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For a standard “yes” or “no” question on the ballot.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="initiative">
@@ -93,6 +102,23 @@
       <xsd:enumeration value="other">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Used when the type of ballot measure is not included in this enumeration.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="BallotSideType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">The side of a ballot sheet.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="back">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The back of the ballot sheet.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="front">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The front of the ballot sheet</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -119,21 +145,6 @@
           <xsd:documentation xml:lang="en">For candidates who have withdrawn from the contest.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="ControlContestType">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="activation">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">A controlling contest containing an activation option, that when selected activates one or more controlled contests.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="open-primary-party-preference">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">A controlling contest that may appear on an open primary ballot that allows the voter to select which political party’s primary they wish to vote.  A valid selection in this contest protects the voter from voiding the partisan selection of the ballot by making selections in more than one party’s contest.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="straight-party"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="DayType">
@@ -191,57 +202,6 @@
           <xsd:documentation xml:lang="en">Used for both Saturday and Sunday.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="DeviceType">
-    <xsd:annotation>
-      <xsd:documentation xml:lang="en">Enumeration for the type of device in the DeviceClass class.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="bmd">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For ballots prepared on ballot marking devices and then scanned.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="dre">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For DRE (Direct Record Electronic) and other all-electronic devices.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="manual-count">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For hand-counted paper ballots.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="opscan-central">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For an optical scanner used at a central office with no opportunity for voter correction of mistakes.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="opscan-precinct">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For an optical scanner used at a precinct or other location where voter correction of mistakes such as overvotes is possible.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="unknown">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">Used when the type of device is unknown.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="other">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">Used when the device type is not listed in this enumeration.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="DirectionType">
-    <xsd:annotation>
-      <xsd:documentation xml:lang="en">The direction timing marks appear.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="tb "/>
-      <xsd:enumeration value="lr"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="ElectionType">
@@ -356,14 +316,25 @@
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="MeasurementUnitType">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">The measurement unit for describing the location of content on a ballot.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="in"/>
+      <xsd:enumeration value="in">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">inches</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="mm">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">millimeters</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="pc"/>
+      <xsd:enumeration value="pc">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">picas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
       <xsd:enumeration value="pt">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">points (1/72 inch)</xsd:documentation>
@@ -573,32 +544,26 @@
   </xsd:simpleType>
   <xsd:simpleType name="ShapeType">
     <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="elipse"/>
-      <xsd:enumeration value="rectangle"/>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="SideType">
-    <xsd:annotation>
-      <xsd:documentation xml:lang="en">The side of a ballot sheet.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="back">
+      <xsd:enumeration value="ellipse">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">The back of the ballot sheet.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For an ellipse shape</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="front">
+      <xsd:enumeration value="rectangle">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">The front of the ballot sheet</xsd:documentation>
+          <xsd:documentation xml:lang="en">For a rectangle shape</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="StraightPartyRuleset">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">Specifies how to consider indications made in the controlled contests of a straight party controlling contest.These specify the consequences direct selections made by the voter in controlled contests.</xsd:documentation>
+    </xsd:annotation>
     <xsd:restriction base="xsd:string">
       <xsd:enumeration value="inclusive">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For rules allow any additional candidates selected by the straight-party to be included with directly selected candidates if the total number of candidates does not exceed the number of selections allowed.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For a ruleset allowing any additional candidates selected by the straight-party to be included with directly selected candidates if the total number of candidates does not exceed the number of selections allowed.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="exclusive">
@@ -677,16 +642,38 @@
   </xsd:simpleType>
   <!-- ========== Classes ========== -->
   <xsd:complexType name="ActivationContest">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">For a contest containing an option that conditionally activates other contests on the ballot.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="ControllingContest">
+        <xsd:sequence>
+          <xsd:element name="SummaryText" type="InternationalizedText" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">For a summary on the ballot of the activation contest, e.g. "Should John Smith be recalled?".</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>
   <xsd:complexType name="ActivationSelection">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">For the contest selections in an ActivationContest.It inherits the attributes of ContestSelection.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="ContestSelection">
         <xsd:sequence>
-          <xsd:element name="Selection" type="InternationalizedText"/>
+          <xsd:element name="CausesActivation" type="xsd:boolean">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">Boolean to indicate whether this selection, when chosen by the voter will cause controlled contests to activate.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="Selection" type="InternationalizedText">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">The text on the ballot associated with the selection.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
@@ -723,7 +710,7 @@
     <xsd:annotation>
       <xsd:documentation xml:lang="en">For defining items pertaining to the status and format of the definition and when it was generated.
 
-BallotDefinition references the major elements that are not necessarily specific to an election and that therefore can exist in a pre-election report: GpUnit, Office and OfficeGroup, Party, Person, and Election.</xsd:documentation>
+BallotDefinition references the major elements that are not necessarily specific to an election and that therefore can exist in a logical ballot definition: GpUnit, Office and OfficeGroup, Party, Person, and Election.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="BallotFormat" type="BallotFormat" minOccurs="0" maxOccurs="unbounded">
@@ -799,7 +786,7 @@ BallotDefinition references the major elements that are not necessarily specific
       </xsd:element>
       <xsd:element name="SequenceStart" type="xsd:integer">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">The report’s number as part of a sequence of reports, used with  so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc.  Starts with “1”.</xsd:documentation>
+          <xsd:documentation xml:lang="en">The report's number as part of a sequence of reports, used with SequenceEnd so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc.  Starts with "1".</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="SequenceEnd" type="xsd:integer">
@@ -817,11 +804,16 @@ BallotDefinition references the major elements that are not necessarily specific
           <xsd:documentation xml:lang="en">An identifier of the vendor application generating the ballot definition, e.g., X-EMS version 3.1.a.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="Version" type="BallotDefinitionVersion">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">To identify the version of the BD specification being used, i.e., version 1.0.0. This will need to be updated for different versions of the specification.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="BallotFormat">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For providing details related to the concrete presentation a ballot appropriate to the particular voting technology being used. All physical details of a ballot style are associated with a particular BallotFormat.
+      <xsd:documentation xml:lang="en">For providing details related to the concrete presentation of a ballot appropriate to the particular voting technology being used. All physical details of a ballot style are associated with a particular BallotFormat.
 
 BallotFormat sets the MeasurementUnit appropriate for the marking surface used.</xsd:documentation>
     </xsd:annotation>
@@ -831,12 +823,17 @@ BallotFormat sets the MeasurementUnit appropriate for the marking surface used.<
           <xsd:documentation xml:lang="en">The application associated with the ballot format.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" maxOccurs="unbounded">
+      <xsd:element name="BallotFormat" type="mCDFArea" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an ID with the ballot format.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For locating the data encoded using a mCDF Profile (e.g. mCDF Profile for Contest Selection Capture).</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="FiducialMark" type="Geometry" minOccurs="0" maxOccurs="unbounded">
+      <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating IDs with the ballot format.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="FiducialMark" type="FiducialMark" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating a ballot format with one or more global fiducial marks appearing on a ballot.</xsd:documentation>
         </xsd:annotation>
@@ -864,11 +861,6 @@ BallotFormat sets the MeasurementUnit appropriate for the marking surface used.<
       <xsd:element name="ReadMethod" type="ReadMethodType">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The method used to read contest selections or indications on the ballot.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="ResponseLocator" type="mCDFArea" minOccurs="0" maxOccurs="unbounded">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For locating the data encoded using the mCDF Profile for Contest Selection Capture.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="ShortEdge" type="xsd:float">
@@ -962,14 +954,12 @@ If the type of ballot measure is not listed in enumeration BallotMeasureType, us
     <xsd:annotation>
       <xsd:documentation xml:lang="en">For defining a ballot style composed of ordered content (i.e. Headers or Contests) and their contest selections, and associating the ballot style with a political party, a reference to an image of the ballot, and a reference to a precinct or other geopolitical unit that the ballot is unique to. Election includes BallotStyle.
 BallotStyle references OrderedContent to include content that appears on that ballot style. To preserve any rotation associated with the ballot, it is expected that the generating application will list the occurrences of OrderedContest in the order as on the ballot for the associated geopolitical unit.
-BallotStyle references one or more GpUnit instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct GpUnit instances can be included.
-
-BallotStyle references zero or more PhysicalBallotStyle instances for describing physical manifestations of the ballot style.</xsd:documentation>
+BallotStyle references one or more GpUnit instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct GpUnit instances can be included.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an ID with the ballot style.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating IDs with the ballot style.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="GpUnitIds" type="xsd:IDREFS">
@@ -1009,7 +999,7 @@ BallotStyle references zero or more PhysicalBallotStyle instances for describing
           <xsd:documentation xml:lang="en">The ballot sheet the bounded object appears. Sheets start at 1 and increase monotonically.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="Side" type="SideType" minOccurs="0">
+      <xsd:element name="Side" type="BallotSideType" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The side of the sheet of paper the bounded object appears.</xsd:documentation>
         </xsd:annotation>
@@ -1021,12 +1011,12 @@ BallotStyle references zero or more PhysicalBallotStyle instances for describing
       </xsd:element>
       <xsd:element name="X" type="xsd:float" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">X coordinate for locating a bounded object (top left anchor).  Assumed to be in absolute coordinate space.</xsd:documentation>
+          <xsd:documentation xml:lang="en">X-coordinate for locating a bounded object (top left anchor).</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Y" type="xsd:float" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Y coordinate for locating a bounded object (top left anchor).  Assumed to be in absolute coordinate space.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Y-coordinate for locating a bounded object (top left anchor).</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
@@ -1037,7 +1027,7 @@ BallotStyle references zero or more PhysicalBallotStyle instances for describing
 
 Candidate uses the Party association to reference the candidate's political party. If the candidate is endorsed by other parties for a particular contest, the endorsing parties are referenced using the CandidateSelection attribute.
 
-ExternalIdentifier can be used to associate an ID with the candidate. If the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
+ExternalIdentifier can be used to associate IDs with the candidate. If the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="BallotName" type="InternationalizedText">
@@ -1067,12 +1057,12 @@ ExternalIdentifier can be used to associate an ID with the candidate. If the typ
       </xsd:element>
       <xsd:element name="IsIncumbent" type="xsd:boolean" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Boolean to indicate whether the candidate is the incumbent for the office associated with the contest. Assumed to be “no” if not present.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Boolean to indicate whether the candidate is the incumbent for the office associated with the contest. Assumed to be “false” if not present.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="IsTopTicket" type="xsd:boolean" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Boolean to indicate whether the candidate is the top of a ticket that includes multiple candidates. Assumed to be “no” if not present.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Boolean to indicate whether the candidate is the top of a ticket that includes multiple candidates. Assumed to be “false” if not present.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="PartyId" type="xsd:IDREF" minOccurs="0">
@@ -1088,6 +1078,11 @@ ExternalIdentifier can be used to associate an ID with the candidate. If the typ
       <xsd:element name="PreElectionStatus" type="CandidatePreElectionStatus" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Registration status of the candidate, e.g., filed, qualified, etc.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ReadName" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The name as it is read by a screen reader.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
@@ -1152,11 +1147,6 @@ When multiple candidates are referenced for a ticket and the ordering of the can
           <xsd:element name="EndorsementPartyIds" type="xsd:IDREFS" minOccurs="0">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For associating one or more endorsing parties with the candidate selection.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="IsWriteIn" type="xsd:boolean" minOccurs="0">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">Indicates whether the candidate is a write-in, e.g., true or false.  Assumed to be false if not present.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -1253,7 +1243,7 @@ Email, Fax, and Phone are of type AnnotatedString, which permits up to a 32-char
   </xsd:complexType>
   <xsd:complexType name="Contest" abstract="true">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or retention contests. Election includes Contest.
+      <xsd:documentation xml:lang="en">For defining a contest and linking the contest to the associated candidates, ballot measures, parties, or controlled contests. Election includes Contest.
 
 Contest is an abstract class with four subclasses that get used according to the type of contest:
 
@@ -1261,7 +1251,7 @@ BallotMeasureContest, used for a contest involving a ballot measure
 
 CandidateContest, used for a contest involving one or more candidates for an office
 
-PartyContest, used for a contest for a straight party selection on the ballot
+ControllingContest, an abstract class used for a contest that affects contests under its control.
 
 RetentionContest, used for a judicial or other type of retention contest
 
@@ -1271,11 +1261,13 @@ BallotMeasureContest includes BallotMeasureSelection
 
 CandidateContest includes CandidateSelection
 
+The subtypes of ControllingContest include either ActivationSelection or PartySelection
+
 PartyContest includes PartySelection
 
 RetentionContest includes BallotMeasureSelection
 
-Contest includes a required ElectionDistrict reference to a GpUnit defined for the geographical scope of the contest. For example, in a state senate contest, ElectionDistrict would reference a GpUnit of type ReportingUnit element defined for the district associated with the contest. Office also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same GpUnit defined for the state or county, etc., can be re-used.
+`Contest includes a required ElectionDistrict reference to a GpUnit defined for the geographical scope of the contest. For example, in a state senate contest, ElectionDistrict would reference a GpUnit of type ReportingUnit element defined for the district associated with the contest. Office also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same GpUnit defined for the state or county, etc., can be re-used.
 SequenceOrder is used for results display ordering, i.e., to display contests according to a particular ordering. For example, "100" may indicate a U.S. Senatorial contest, "200" may indicate a U.S. Congressional contest, etc. SequenceOrder is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the BallotStyle element, which associates ballot styles with their corresponding precincts or other geopolitical units.
 When including ExternalIdentifiers, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
     </xsd:annotation>
@@ -1322,7 +1314,7 @@ When including ExternalIdentifiers, if the type is not listed in enumeration Ide
       </xsd:element>
       <xsd:element name="SequenceOrder" type="xsd:integer" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Orderering for listing the contest for purposes of results display.  If not present, no order is assumed.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Orderering for listing the contest for purposes of display.  If not present, no order is assumed.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="SubUnitsReported" type="xsd:integer" minOccurs="0">
@@ -1352,28 +1344,39 @@ When including ExternalIdentifiers, if the type is not listed in enumeration Ide
     <xsd:annotation>
       <xsd:documentation xml:lang="en">Used for the contest selections in a contest (e.g., for candidates, for ballot measures). Contest includes ContestSelection.
 
-ContestSelection is an abstract class with three subclasses that get used according to the type of contest:
+ContestSelection is an abstract class with four subclasses that get used according to the type of contest:
+
+ActivationSelection, used if the contest type is for an activation contest
 
 BallotMeasureSelection, used if the contest type is for a ballot measure, including for retentions
 
 CandidateSelection, used if the contest type is for one or more candidates, to link the contest selection to the candidate instances and endorsement parties; and
 
-PartySelection, used if the contest type is for a party, e.g., for a straight party contest.
+PartySelection, used if the contest type is for a party, e.g., for a party list contest.
 
 SequenceOrder is included to specify an ordering for the contest selections for purposes of display only. The original ballot ordering can be preserved, however, by using the BallotStyle class.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="SequenceOrder" type="xsd:integer" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Order in which the candidate is listed on the ballot for purposes of results display. If not present, no order is assumed.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Order in which the candidate is listed on the ballot for purposes of display. If not present, no order is assumed.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
     <xsd:attribute name="ObjectId" type="xsd:ID" use="required"/>
   </xsd:complexType>
-  <xsd:complexType name="ControllingContest">
+  <xsd:complexType name="ControllingContest" abstract="true">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">Ballot content structured as a contest that affects other contests under its control. The purpose of a controlling contest varies, but includes the activation or deactivation of parts of the ballot based on the voter's selection.</xsd:documentation>
+      <xsd:documentation xml:lang="en">For a contest that affects other contests under its control.
+ControllingContest is an abstract subclass of Contest with three subclasses that get used according to the type of contest:
+
+ActivationContest, used for a contest that conditionally activates other contests
+
+PartyPreferenceContest, for a contest that activates partisan sections of the ballot
+
+StraightPartyContest, used for a contest for a straight party selection on the ballot
+
+ControllingContest contains ControlledContest to link to the contests under its control.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="Contest">
@@ -1389,11 +1392,11 @@ SequenceOrder is included to specify an ordering for the contest selections for 
   </xsd:complexType>
   <xsd:complexType name="Election">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For defining details of the election and associated information such as candidates, contests, and vote counts.
+      <xsd:documentation xml:lang="en">For defining details of the election and associated information such as candidates and contests.
 
 Election includes links to the major instances that are specific to an election: BallotStyle, Candidate, and Contest.
 
-Election includes a required association end ElectionScope, which links to a GpUnit instance for the purpose of identifying the geographical scope of the election. For example, for an election within a county, ElectionScope would reference a GpUnit defined for the county. If it is desired to include election authority information, the GpUnit can include ElectionAdministration.</xsd:documentation>
+Election includes a required reference to ElectionScope, which links to a GpUnit instance for the purpose of identifying the geographical scope of the election. For example, for an election within a county, ElectionScope would reference a GpUnit defined for the county. If it is desired to include election authority information, the GpUnit can include ElectionAdministration.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="BallotStyle" type="BallotStyle" minOccurs="0" maxOccurs="unbounded">
@@ -1423,7 +1426,7 @@ Election includes a required association end ElectionScope, which links to a GpU
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an ID with the election.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating IDs with the election.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Name" type="InternationalizedText">
@@ -1467,7 +1470,7 @@ ElectionAdministration includes ContactInformation for the election authority an
       </xsd:element>
       <xsd:element name="ElectionOfficialPersonIds" type="xsd:IDREFS" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Unique identifier for one or more Person elements defined for the election authority.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Unique identifier for one or more Person instances defined for the election authority.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Name" type="xsd:string" minOccurs="0">
@@ -1479,7 +1482,7 @@ ElectionAdministration includes ContactInformation for the election authority an
   </xsd:complexType>
   <xsd:complexType name="ExternalIdentifier">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For associating a jurisdiction's codes, i.e., identifiers, with objects such as candidates, offices, or geopolitical units such as counties, towns, precincts, etc. Multiple occurrences of the ExternalIdentifier sub-element can be used to associate multiple codes, e.g., if there is a desire to associate multiple codes with a particular object such as FIPS (Federal Information Processing Standard) codes as well as OCD-IDs (Open Civic Data Identifiers).
+      <xsd:documentation xml:lang="en">For associating a jurisdiction's codes, i.e., identifiers, with objects such as candidates, offices, or geopolitical units such as counties, towns, precincts, etc. Multiple occurrences of ExternalIdentifier can be used to associate multiple codes, e.g., if there is a desire to associate multiple codes with a particular object such as FIPS (Federal Information Processing Standard) codes as well as OCD-IDs (Open Civic Data Identifiers).
 
 For elements that link to ExternalIdentifier instances, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
     </xsd:annotation>
@@ -1506,9 +1509,27 @@ For elements that link to ExternalIdentifier instances, if the type is not liste
       </xsd:annotation>
     </xsd:attribute>
   </xsd:complexType>
+  <xsd:complexType name="FiducialMark">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">FiducialMark is a subclass of BoundedObject for geometry found at fixed positions of the page. BallotFormat references FiducialMark for geometry found at fixed locations on the ballot. PhysicalContest references FiducialMark for geometry proximate to the contest.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="BoundedObject">
+        <xsd:sequence>
+          <xsd:element name="GeometryId" type="xsd:IDREF">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">For associating a FiducialMark with the geometric shape that represents it.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
   <xsd:complexType name="Geometry">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For defining a geometric shape. Geometry can be used to represent content on a physical ballot style, such as for associating an OptionPosition to its shape.</xsd:documentation>
+      <xsd:documentation xml:lang="en">For defining a geometric shape. Geometry can be used to represent content on a physical ballot style, such as for associating an OptionPosition to its shape. It is also used by FiducialMark to define the shape it takes..
+
+Strokes when applied, are applied evenhanded.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="FillColor" type="HtmlColorString" minOccurs="0">
@@ -1516,7 +1537,11 @@ For elements that link to ExternalIdentifier instances, if the type is not liste
           <xsd:documentation xml:lang="en">For fiducial marks only. If not specified, no fill is assumed.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="ShapeType" type="ShapeType"/>
+      <xsd:element name="ShapeType" type="ShapeType">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The shape this Geometry represents.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="StrokeColor" type="HtmlColorString" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The color of the stroke. If no color is specified, assume black (what XFA does)</xsd:documentation>
@@ -1524,7 +1549,7 @@ For elements that link to ExternalIdentifier instances, if the type is not liste
       </xsd:element>
       <xsd:element name="StrokeWidth" type="xsd:integer">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">[in what unit]The width of the stroke</xsd:documentation>
+          <xsd:documentation xml:lang="en">The width of the stroke in the measurement units of the BallotFormat associated with the PhysicalContest.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
@@ -1571,6 +1596,11 @@ Election and Contest contain a required reference to GpUnit representing the jur
           <xsd:documentation xml:lang="en">For associating an ID with the header.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="HeaderedContent" type="InternationalizedText" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For textual content appearing under a header (e.g. ballot instructions).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="Name" type="InternationalizedText">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Name of the header, as it is to appear on a ballot style.</xsd:documentation>
@@ -1608,7 +1638,7 @@ Election and Contest contain a required reference to GpUnit representing the jur
   </xsd:complexType>
   <xsd:complexType name="InternationalizedText">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For strings that can contain multi-national text, for use with text as shown on a ballot containing multi-national text. The Identifier attribute can be used to assign an identifier to the text as desired.
+      <xsd:documentation xml:lang="en">For strings that can contain multi-national text, for use with text as shown on a ballot containing multi-national text. The label attribute can be used to assign an identifier to the text as desired.
 
 Text uses the xsd:language type such that its language attribute must be set to a value that identifies the language.
 
@@ -1710,7 +1740,7 @@ Office includes an optional ElectionDistrict reference to a GpUnit for the purpo
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an ID with the office.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating IDs with the office.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="FilingDeadline" type="xsd:date" minOccurs="0">
@@ -1780,7 +1810,7 @@ Office includes an optional ElectionDistrict reference to a GpUnit for the purpo
               <xsd:documentation xml:lang="en">The proper fractional number of votes represented by the option position.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
-          <xsd:element name="GeometryId" type="xsd:IDREF" minOccurs="0">
+          <xsd:element name="IndicatorId" type="xsd:IDREF" minOccurs="0">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
             </xsd:annotation>
@@ -1832,6 +1862,11 @@ OrderedHeader, used for the appearance of a header, optionally with the inclusio
               <xsd:documentation xml:lang="en">The contest selections for the ballot.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element name="Physical" type="PhysicalContest" minOccurs="0" maxOccurs="unbounded">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">For describing the physical aspects of the contest.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
@@ -1851,32 +1886,6 @@ OrderedHeader, used for the appearance of a header, optionally with the inclusio
           <xsd:element name="OrderedContent" type="OrderedContent" minOccurs="0" maxOccurs="unbounded">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For associating a header with ballot content, such as contests or nested headers.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-        </xsd:sequence>
-      </xsd:extension>
-    </xsd:complexContent>
-  </xsd:complexType>
-  <xsd:complexType name="OrderedPhysicalContest">
-    <xsd:annotation>
-      <xsd:documentation xml:lang="en">For the appearance of a contest on a particular ballot style with physical details.</xsd:documentation>
-    </xsd:annotation>
-    <xsd:complexContent>
-      <xsd:extension base="OrderedContent">
-        <xsd:sequence>
-          <xsd:element name="ContestId" type="xsd:IDREF">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">The contest associated represented by OrderedPhysicalContest.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="FiducialMark" type="Geometry" minOccurs="0" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">For associating a ordered physical contest with one or more local fiducial marks appearing near the contest.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="PhysicalContestOption" type="PhysicalContestOption" minOccurs="0" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">The contest options for the ballot.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -1909,7 +1918,7 @@ The Color attribute specifies a 6-digit RGB code displayable using HTML.</xsd:do
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an ID with the party.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating IDs with the party.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="IsRecognizedParty" type="xsd:boolean" minOccurs="0">
@@ -1947,7 +1956,7 @@ The Color attribute specifies a 6-digit RGB code displayable using HTML.</xsd:do
   </xsd:complexType>
   <xsd:complexType name="PartyContest">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For a contest that involves choosing a party, typically for a straight party selection on the ballot.</xsd:documentation>
+      <xsd:documentation xml:lang="en">Use PartyContest for a contest that where voters choose a party on the ballot. When a selection in this contest causes other indirect selections, StraightPartyContest should be used instead.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="Contest">
@@ -1955,6 +1964,9 @@ The Color attribute specifies a 6-digit RGB code displayable using HTML.</xsd:do
     </xsd:complexContent>
   </xsd:complexType>
   <xsd:complexType name="PartyPreferenceContest">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">For a controlling contest that may appear on an open primary ballot and allows the voter to select which political party’s primary they wish to vote. A valid selection in this contest protects the voter from voiding the partisan selection of the ballot by making selections in more than one party’s contest.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="ControllingContest">
       </xsd:extension>
@@ -1979,7 +1991,7 @@ The Color attribute specifies a 6-digit RGB code displayable using HTML.</xsd:do
   </xsd:complexType>
   <xsd:complexType name="PartySelection">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For a contest selection involving a party such as for a straight party selection on the ballot. It inherits the attributes of ContestSelection.</xsd:documentation>
+      <xsd:documentation xml:lang="en">For a contest selection involving a party such as for a party list selection or straight party selection on the ballot. It inherits the attributes of ContestSelection.</xsd:documentation>
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="ContestSelection">
@@ -1995,7 +2007,7 @@ The Color attribute specifies a 6-digit RGB code displayable using HTML.</xsd:do
   </xsd:complexType>
   <xsd:complexType name="Person">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. ElectionReport includes Person. Candidate and ElectionAdministration and
+      <xsd:documentation xml:lang="en">For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. ElectionReport includes Person. Candidate, ElectionAdministration and
 GpUnit references Person. Person optionally references ContactInformation for associating contact information.
 
 Multiple occurrences of the MiddleName attribute can be used as needed, e.g., for names such as "John Andrew Winston Smith".</xsd:documentation>
@@ -2074,13 +2086,43 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
     </xsd:sequence>
     <xsd:attribute name="ObjectId" type="xsd:ID" use="required"/>
   </xsd:complexType>
-  <xsd:complexType name="PhysicalContestOption">
+  <xsd:complexType name="PhysicalContest">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For associating a ContestSelection to its physical manifestation. Each PhysicalContestOption is specified in terms of a particular BallotFormat. A PhysicalContestOption may have multiple OptionPosition, for voting methods that require it (e.g. rank choice voting). WriteInPosition specifies the response area where name(s) may written-in.</xsd:documentation>
+      <xsd:documentation xml:lang="en">For the appearance of a contest on a particular ballot style with physical details such as the locations and shapes of contest option positions.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="BallotFormatId" type="xsd:IDREF"/>
-      <xsd:element name="ContestSelectionId" type="xsd:IDREF"/>
+      <xsd:element name="BallotFormatId" type="xsd:IDREF">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating a ballot format with a physical contest.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Extent" type="BoundedObject" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The extent of the contest. If the contest spans multiple sections of the ballot (e.g. columns or pages), then multiple extents may be provided.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="FiducialMark" type="FiducialMark" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating a ordered physical contest with one or more local fiducial marks appearing near the contest.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="PhysicalContestOption" type="PhysicalContestOption" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The contest options associated with the contest, including physical details.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PhysicalContestOption">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">For associating a ContestSelection to its physical manifestation. Each PhysicalContestOption is specified in terms of a particular BallotFormat. A PhysicalContestOption may have multiple OptionPosition instances, for voting methods that require it (e.g. rank choice voting). WriteInPosition specifies the response area where name(s) may written-in.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="ContestSelectionId" type="xsd:IDREF" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating a PhysicalContestOption with a ContestSelection. This should always be provided unless the contest option is for a write-in.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="OptionPosition" type="OptionPosition" maxOccurs="unbounded"/>
       <xsd:element name="WriteInPosition" type="WriteInPosition" minOccurs="0"/>
     </xsd:sequence>
@@ -2266,10 +2308,17 @@ This element uses BallotMeasureContest as a superclass. Therefore, it inherits t
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="StraightPartyContest">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">For a contest that involves choosing a party, typically for a straight party selection on the ballot.</xsd:documentation>
+    </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="ControllingContest">
         <xsd:sequence>
-          <xsd:element name="StraightPartyRuleset" type="StraightPartyRuleset"/>
+          <xsd:element name="StraightPartyRuleset" type="StraightPartyRuleset">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">The ruleset specifying how to consider indications made in the controlled contests.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="OtherStraightPartyRuleset" type="xsd:string" minOccurs="0">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For use when StraightPartyRuleset value is other.</xsd:documentation>
@@ -2312,6 +2361,13 @@ This element uses BallotMeasureContest as a superclass. Therefore, it inherits t
     </xsd:annotation>
     <xsd:complexContent>
       <xsd:extension base="BoundedObject">
+        <xsd:sequence>
+          <xsd:element name="SelectionRequired" type="xsd:boolean" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">Whether a selection in an OptionPosition is required in order to count the write-in. Assumed to be false if not present.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
   </xsd:complexType>

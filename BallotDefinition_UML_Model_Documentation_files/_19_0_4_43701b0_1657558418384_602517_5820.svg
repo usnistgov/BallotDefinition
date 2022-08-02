@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="350" gradientUnits="userSpaceOnUse" x2="430" y1="1092" y2="1158" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="28" gradientUnits="userSpaceOnUse" x2="108" y1="1141" y2="1207" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,26 +14,26 @@
       ><path d="M0 0 L110 0 L110 96 L0 96 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M335 1077 L445 1077 L445 1173 L335 1173 L335 1077 Z"
+      ><path d="M13 1126 L123 1126 L123 1222 L13 1222 L13 1126 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="110" height="96" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="353" y="1095" transform="translate(-335,-1077)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="80" text-rendering="geometricPrecision" height="66" stroke="none"
-      /><rect x="350" y="1092" transform="translate(-335,-1077)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="80" text-rendering="geometricPrecision" height="66" stroke="none"
+      /><rect x="31" y="1144" transform="translate(-13,-1126)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="80" text-rendering="geometricPrecision" height="66" stroke="none"
+      /><rect x="28" y="1141" transform="translate(-13,-1126)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="80" text-rendering="geometricPrecision" height="66" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-335,-1077)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="350" width="80" height="66" y="1092" clip-path="url(#clipPath2)"
-      /><line y2="1125" fill="none" x1="350" clip-path="url(#clipPath2)" x2="430" y1="1125"
-      /><text x="353" font-size="11" y="1150.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-13,-1126)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="28" width="80" height="66" y="1141" clip-path="url(#clipPath2)"
+      /><line y2="1174" fill="none" x1="28" clip-path="url(#clipPath2)" x2="108" y1="1174"
+      /><text x="31" font-size="11" y="1198.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >rectangle</text
-      ><text x="353" font-size="11" y="1138.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >elipse</text
+      ><text x="31" font-size="11" y="1186.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      >ellipse</text
     ></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-335,-1077)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="360.5" space="preserve" y="1120.1379" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-13,-1126)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="38.5" space="preserve" y="1168.958" clip-path="url(#clipPath2)" stroke="none"
       >ShapeType</text
-      ><text x="355" space="preserve" y="1105.1379" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
+      ><text x="33" space="preserve" y="1153.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
       >«enumeration»</text
     ></g
   ></g

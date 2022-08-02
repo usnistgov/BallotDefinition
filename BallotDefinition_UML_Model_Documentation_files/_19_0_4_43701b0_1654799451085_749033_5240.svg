@@ -7,8 +7,8 @@
   /><g
   ><defs id="defs1"
     ><linearGradient x1="1036" gradientUnits="userSpaceOnUse" x2="1178" y1="609" y2="633" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(153,158,255)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(218,225,255)" offset="100%"
+      ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
+        /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L172 0 L172 54 L0 54 L0 0 Z"
@@ -26,8 +26,8 @@
     ><rect fill="none" x="1036" width="142" height="24" y="609" clip-path="url(#clipPath2)"
     /></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1021,-594)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="1040" space="preserve" y="622.1379" clip-path="url(#clipPath2)" stroke="none"
-      >OrderedPhysicalContest</text
+    ><text x="1063" space="preserve" y="621.958" clip-path="url(#clipPath2)" stroke="none"
+      >PhysicalContest</text
     ></g
   ></g
 ></svg

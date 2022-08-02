@@ -25,11 +25,11 @@
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-2827,-559)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
     ><rect fill="none" x="2842" width="168" height="42" y="574" clip-path="url(#clipPath2)"
       /><line y2="592" fill="none" x1="2842" clip-path="url(#clipPath2)" x2="3010" y1="592"
-      /><text x="2845" font-size="11" y="605.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      /><text x="2845" font-size="11" y="604.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Name : RichText [0..1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-2827,-559)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="2864.5" space="preserve" y="587.1379" clip-path="url(#clipPath2)" stroke="none"
+    ><text x="2864.5" space="preserve" y="586.958" clip-path="url(#clipPath2)" stroke="none"
       >ElectionAdministration</text
     ></g
   ></g

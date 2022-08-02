@@ -25,17 +25,17 @@
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-3142,-706)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
     ><rect fill="none" x="3157" width="170" height="84" y="721" clip-path="url(#clipPath2)"
       /><line y2="739" fill="none" x1="3157" clip-path="url(#clipPath2)" x2="3327" y1="739"
-      /><text x="3160" font-size="11" y="788.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      /><text x="3160" font-size="11" y="787.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Source : String [0..1]</text
-      ><text x="3160" font-size="11" y="776.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="3160" font-size="11" y="775.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Longitude : double [1]</text
-      ><text x="3160" font-size="11" y="764.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="3160" font-size="11" y="763.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Latitude : double [1]</text
-      ><text x="3160" font-size="11" y="752.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="3160" font-size="11" y="751.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >«xmlAttribute»-Label : String [0..1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-3142,-706)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="3224" space="preserve" y="734.1379" clip-path="url(#clipPath2)" stroke="none"
+    ><text x="3224" space="preserve" y="733.958" clip-path="url(#clipPath2)" stroke="none"
       >LatLng</text
     ></g
   ></g

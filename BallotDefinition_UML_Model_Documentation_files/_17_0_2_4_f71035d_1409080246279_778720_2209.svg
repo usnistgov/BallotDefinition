@@ -25,13 +25,13 @@
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-2099,-1707)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
     ><rect fill="none" x="2114" width="211" height="54" y="1722" clip-path="url(#clipPath2)"
       /><line y2="1740" fill="none" x1="2114" clip-path="url(#clipPath2)" x2="2325" y1="1740"
-      /><text x="2117" font-size="11" y="1765.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      /><text x="2117" font-size="11" y="1764.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Format : GeoSpatialFormat [1]</text
-      ><text x="2117" font-size="11" y="1753.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="2117" font-size="11" y="1752.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-Coordinates : RichText [1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-2099,-1707)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="2185" space="preserve" y="1735.1379" clip-path="url(#clipPath2)" stroke="none"
+    ><text x="2185" space="preserve" y="1734.958" clip-path="url(#clipPath2)" stroke="none"
       >SpatialExtent</text
     ></g
   ></g

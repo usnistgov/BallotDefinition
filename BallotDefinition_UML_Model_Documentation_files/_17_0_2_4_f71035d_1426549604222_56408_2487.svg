@@ -25,21 +25,21 @@
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-48,-2050)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
     ><rect fill="none" x="63" width="113" height="109" y="2065" clip-path="url(#clipPath2)"
       /><line y2="2098" fill="none" x1="63" clip-path="url(#clipPath2)" x2="176" y1="2098"
-      /><text x="66" font-size="11" y="2159.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      /><text x="66" font-size="11" y="2158.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >other</text
-      ><text x="66" font-size="11" y="2147.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="66" font-size="11" y="2146.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >referendum</text
-      ><text x="66" font-size="11" y="2135.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="66" font-size="11" y="2134.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >recall</text
-      ><text x="66" font-size="11" y="2123.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="66" font-size="11" y="2122.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >initiative</text
-      ><text x="66" font-size="11" y="2111.1379" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="66" font-size="11" y="2110.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >ballot-measure</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-48,-2050)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="67.5" space="preserve" y="2093.1379" clip-path="url(#clipPath2)" stroke="none"
+    ><text x="67.5" space="preserve" y="2092.958" clip-path="url(#clipPath2)" stroke="none"
       >BallotMeasureType</text
-      ><text x="84.5" space="preserve" y="2078.1379" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
+      ><text x="84.5" space="preserve" y="2077.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
       >«enumeration»</text
     ></g
   ></g
