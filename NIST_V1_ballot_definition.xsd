@@ -303,6 +303,7 @@
           <xsd:documentation xml:lang="en">For Open Civic Data identifiers.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
+      <xsd:enumeration value="stable"/>
       <xsd:enumeration value="state-level">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For a code that is specific to a state.</xsd:documentation>
@@ -823,11 +824,6 @@ BallotFormat sets the MeasurementUnit appropriate for the marking surface used.<
           <xsd:documentation xml:lang="en">The application associated with the ballot format.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="BallotFormat" type="mCDFArea" minOccurs="0" maxOccurs="unbounded">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For locating the data encoded using a mCDF Profile (e.g. mCDF Profile for Contest Selection Capture).</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating IDs with the ballot format.</xsd:documentation>
@@ -846,6 +842,11 @@ BallotFormat sets the MeasurementUnit appropriate for the marking surface used.<
       <xsd:element name="Manufacturer" type="xsd:string" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Manufacturer of the ballot format.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="mCDFArea" type="mCDFArea" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For locating the data encoded using a mCDF Profile (e.g. mCDF Profile for Contest Selection Capture).</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="MeasurementUnit" type="MeasurementUnitType">
@@ -957,6 +958,11 @@ BallotStyle references OrderedContent to include content that appears on that ba
 BallotStyle references one or more GpUnit instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct GpUnit instances can be included.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
+      <xsd:element name="DefinitionUri" type="xsd:anyURI" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating a BallotStyle with the location of the ballot style. Used with mCDF BSI Profile</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating IDs with the ballot style.</xsd:documentation>
@@ -984,9 +990,9 @@ BallotStyle references one or more GpUnit instances defined for the associated p
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
-  <xsd:complexType name="BoundedObject" abstract="true">
+  <xsd:complexType name="BoundedObject">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">An abstract class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.</xsd:documentation>
+      <xsd:documentation xml:lang="en">A class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="H" type="xsd:float" minOccurs="0">
@@ -1082,7 +1088,7 @@ ExternalIdentifier can be used to associate IDs with the candidate. If the type 
       </xsd:element>
       <xsd:element name="ReadName" type="xsd:string" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">The name as it is read by a screen reader.</xsd:documentation>
+          <xsd:documentation xml:lang="en">The name spelled phonetically for reading by a screen reader.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
     </xsd:sequence>
@@ -1147,6 +1153,11 @@ When multiple candidates are referenced for a ticket and the ordering of the can
           <xsd:element name="EndorsementPartyIds" type="xsd:IDREFS" minOccurs="0">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For associating one or more endorsing parties with the candidate selection.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="IsWriteIn" type="xsd:boolean" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">Indicates whether the candidate is a write-in, e.g., true or false. Assumed to be false if not present.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
@@ -1547,7 +1558,7 @@ Strokes when applied, are applied evenhanded.</xsd:documentation>
           <xsd:documentation xml:lang="en">The color of the stroke. If no color is specified, assume black (what XFA does)</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="StrokeWidth" type="xsd:integer">
+      <xsd:element name="StrokeWidth" type="xsd:float" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The width of the stroke in the measurement units of the BallotFormat associated with the PhysicalContest.</xsd:documentation>
         </xsd:annotation>
@@ -2124,7 +2135,7 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="OptionPosition" type="OptionPosition" maxOccurs="unbounded"/>
-      <xsd:element name="WriteInPosition" type="WriteInPosition" minOccurs="0"/>
+      <xsd:element name="WriteInPosition" type="WriteInPosition" minOccurs="0" maxOccurs="unbounded"/>
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="ReportingUnit">
