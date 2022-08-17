@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-XXX/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+	<BallotFormat ObjectId="bf-hart">
+		<ExternalIdentifier>
+			<Type>local-level</Type>
+			<Value>H1</Value>
+		</ExternalIdentifier>
+		<LongEdge>1008</LongEdge>
+		<MeasurementUnit>pt</MeasurementUnit>
+		<Orientation>portrait</Orientation>
+		<ReadMethod>omr</ReadMethod>
+		<ShortEdge>612</ShortEdge>
+	</BallotFormat>
+	<Election>
+		<BallotStyle>
+			<GpUnitIds>gpu-p-001-BRA</GpUnitIds>
+			<OrderedContent xsi:type="OrderedContest">
+				<ContestId>cc-president</ContestId>
+				<Physical>
+					<BallotFormatId>bf-hart</BallotFormatId>
+					<Extent>
+						<H>434.25</H>
+						<Sheet>1</Sheet>
+						<Side>front</Side>
+						<W>166.5</W>
+						<X>219.75</X>
+						<Y>207.75</Y>
+					</Extent>
+					<PhysicalContestOption>
+						<ContestSelectionId>cs-biden-harris</ContestSelectionId>
+						<OptionPosition>
+							<H>13.5</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>25</W>
+							<X>224.25</X>
+							<Y>263.25</Y>
+							<IndicatorId>g-1</IndicatorId>
+							<NumberVotes>1</NumberVotes>
+						</OptionPosition>
+					</PhysicalContestOption>
+					<PhysicalContestOption>
+						<ContestSelectionId>cs-hawkins-walker</ContestSelectionId>
+						<OptionPosition>
+							<H>13.5</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>25</W>
+							<X>224.25</X>
+							<Y>343</Y>
+							<IndicatorId>g-1</IndicatorId>
+							<NumberVotes>1</NumberVotes>
+						</OptionPosition>
+					</PhysicalContestOption>
+					<PhysicalContestOption>
+						<ContestSelectionId>cs-jorgensen-cohen</ContestSelectionId>
+						<OptionPosition>
+							<H>13.5</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>25</W>
+							<X>224.25</X>
+							<Y>409.5</Y>
+							<IndicatorId>g-1</IndicatorId>
+							<NumberVotes>1</NumberVotes>
+						</OptionPosition>
+					</PhysicalContestOption>
+					<PhysicalContestOption>
+						<ContestSelectionId>cs-trump-pence</ContestSelectionId>
+						<OptionPosition>
+							<H>13.5</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>25</W>
+							<X>224.25</X>
+							<Y>490</Y>
+							<IndicatorId>g-1</IndicatorId>
+							<NumberVotes>1</NumberVotes>
+						</OptionPosition>
+					</PhysicalContestOption>
+					<PhysicalContestOption>
+						<OptionPosition>
+							<H>13.5</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>25</W>
+							<X>224.25</X>
+							<Y>570.75</Y>
+							<IndicatorId>g-1</IndicatorId>
+							<NumberVotes>1</NumberVotes>
+						</OptionPosition>
+						<WriteInPosition>
+							<H>22.25</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>131</W>
+							<X>251.25</X>
+							<Y>567.25</Y>
+							<SelectionRequired>true</SelectionRequired>
+						</WriteInPosition>
+						<WriteInPosition>
+							<H>22.25</H>
+							<Sheet>1</Sheet>
+							<Side>front</Side>
+							<W>131</W>
+							<X>251.25</X>
+							<Y>603</Y>
+							<SelectionRequired>true</SelectionRequired>
+						</WriteInPosition>
+					</PhysicalContestOption>
+				</Physical>
+			</OrderedContent>
+		</BallotStyle>
+		<Candidate ObjectId="can-kamala-harris">
+			<BallotName>
+				<Text Language="en">Kamala D. Harris</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-joseph-biden">
+			<BallotName>
+				<Text Language="en">Joseph R. Biden</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-donald-trump">
+			<BallotName>
+				<Text Language="en">Donald J. Trump</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-michael-pence">
+			<BallotName>
+				<Text Language="en">Michael R. Pence</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-jo-jorgensen">
+			<BallotName>
+				<Text Language="en">Jo Jorgensen</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-spike-cohen">
+			<BallotName>
+				<Text Language="en">Spike Cohen</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-howie-hawkins">
+			<BallotName>
+				<Text Language="en">Howie Hawkins</Text>
+			</BallotName>
+		</Candidate>
+		<Candidate ObjectId="can-angela-walker">
+			<BallotName>
+				<Text Language="en">Angela Walker</Text>
+			</BallotName>
+		</Candidate>
+		<Contest ObjectId="cc-president" xsi:type="CandidateContest">
+			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-biden-harris">
+				<CandidateIds>can-joseph-biden can-kamala-harris</CandidateIds>
+			</ContestSelection>
+			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-hawkins-walker">
+				<CandidateIds>can-howie-hawkins can-angela-walker</CandidateIds>
+			</ContestSelection>
+			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-jorgensen-cohen">
+				<CandidateIds>can-jo-jorgensen can-spike-cohen</CandidateIds>
+			</ContestSelection>
+			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-trump-pence">
+				<CandidateIds>can-donald-trump can-michael-pence</CandidateIds>
+			</ContestSelection>
+			<ElectionDistrictId>gpu-ohio</ElectionDistrictId>
+			<Name>PRESIDENT OF THE UNITED STATES</Name>
+			<VoteVariation>n-of-m</VoteVariation>
+			<NumberElected>1</NumberElected>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<ElectionScopeId>gpu-ohio</ElectionScopeId>
+		<Name>
+			<Text Language="en">2020 General Election</Text>
+		</Name>
+		<StartDate>2020-11-03</StartDate>
+		<EndDate>2020-11-03</EndDate>
+		<Type>general</Type>
+	</Election>
+	<GeneratedDate>2022-08-16T00:00:00Z</GeneratedDate>
+	<Geometry ObjectId="g-1">
+		<ShapeType>rectangle</ShapeType>
+		<StrokeWidth>2.25</StrokeWidth>
+	</Geometry>
+	<Geometry ObjectId="g-2">
+		<ShapeType>rectangle</ShapeType>
+	</Geometry>
+	<GpUnit ObjectId="gpu-ohio" xsi:type="ReportingUnit">
+		<Name>
+			<Text Language="en">STATE OF OHIO</Text>
+		</Name>
+		<Type>state</Type>
+	</GpUnit>
+	<GpUnit ObjectId="gpu-p-001-BRA" xsi:type="ReportingUnit">
+		<Name>
+			<Text Language="en">001-BRA</Text>
+		</Name>
+		<Type>split-precinct</Type>
+	</GpUnit>
+	<Issuer>NIST POC</Issuer>
+	<IssuerAbbreviation>NIST</IssuerAbbreviation>
+	<SequenceStart>1</SequenceStart>
+	<SequenceEnd>1</SequenceEnd>
+	<VendorApplicationId>Hand Written</VendorApplicationId>
+	<Version>1.0.0</Version>
+</BallotDefinition>

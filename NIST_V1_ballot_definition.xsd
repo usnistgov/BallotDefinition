@@ -967,6 +967,11 @@ BallotStyle references OrderedContent to include content that appears on that ba
 BallotStyle references one or more GpUnit instances defined for the associated precincts or split precincts. If the ballot style is associated with multiple precincts (or other geographies), multiple references to the precinct GpUnit instances can be included.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
+      <xsd:element name="DefinitionUri" type="xsd:anyURI" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating a BallotStyle with the location of the ballot style. Used with mCDF BSI Profile</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating IDs with the ballot style.</xsd:documentation>
