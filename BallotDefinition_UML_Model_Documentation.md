@@ -187,6 +187,7 @@ Name | Value
 `local-level`|For a code that is specific to a county or other similar locality.
 `national-level`|For a code that is used at the national level other than “fips” or “ocd-id”.
 `ocd-id`|For Open Civic Data identifiers.
+`stable`|
 `state-level`|For a code that is specific to a state.
 `other`|Used when the type of code is not included in this enumeration.
 
@@ -387,11 +388,11 @@ BallotFormat sets the [MeasurementUnit](#_19_0_4_43701b0_1644432420684_862271_50
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1644416765920_868492_5058"></a>`Application`|0..1|`String`|The application associated with the ballot format.
-<a name="_19_0_4_43701b0_1638814322895_950323_5680"></a>`{BallotFormat}`|0..*|`mCDFArea`|For locating the data encoded using a mCDF Profile (e.g. mCDF Profile for Contest Selection Capture).
 <a name="_19_0_4_43701b0_1654704956084_328829_4972"></a>`ExternalIdentifier`|1..*|`ExternalIdentifier`|For associating IDs with the ballot format.
 <a name="_19_0_4_43701b0_1656430562032_266351_16158"></a>`{FiducialMark}`|0..*|`FiducialMark`|For associating a ballot format with one or more global fiducial marks appearing on a ballot.
 <a name="_19_0_4_43701b0_1644443744943_743823_5101"></a>`LongEdge`|1|`float`|Measurement of the long edge of the ballot sheet.
 <a name="_19_0_4_43701b0_1638813505011_343713_5013"></a>`Manufacturer`|0..1|`String`|Manufacturer of the ballot format.
+<a name="_19_0_4_43701b0_1638814322895_950323_5680"></a>`{mCDFArea}`|0..*|`mCDFArea`|For locating the data encoded using a mCDF Profile (e.g. mCDF Profile for Contest Selection Capture).
 <a name="_19_0_4_43701b0_1644432420684_862271_5068"></a>`MeasurementUnit`|1|`MeasurementUnitType`|The measurement units used to express locations of ballot content, such as contest option positions.
 <a name="_19_0_4_43701b0_1644869744155_852258_4966"></a>`Orientation`|1|`OrientationType`|Orientation of the page relative to the coordinate plane.
 <a name="_19_0_4_43701b0_1656439040649_609126_16227"></a>`ReadMethod`|1|`ReadMethodType`|The method used to read contest selections or indications on the ballot.
@@ -408,6 +409,7 @@ BallotStyle references one or more [GpUnit](#_17_0_2_4_78e0236_1389366233346_423
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
+<a name="_19_0_4_2a60152_1660308555263_956213_5763"></a>`DefinitionUri`|0..1|`anyURI`|For associating a BallotStyle with the location of the ballot style. Used with mCDF BSI Profile
 <a name="_17_0_2_4_f71035d_1441377633582_32184_2220"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating IDs with the ballot style.
 <a name="_17_0_2_4_f71035d_1436214223050_585224_2515"></a>`{GpUnit}`|1..*|`GpUnit`|Unique identifier for one or more GpUnit instances. For associating specific geopolitical units with the ballot style.
 <a name="_17_0_2_4_f71035d_1428529376950_608184_2486"></a>`ImageUri`|0..*|`AnnotatedUri`|URI for a ballot image.
@@ -419,7 +421,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of BoundedObject](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638813504988_273981_4988.svg)
 
-An abstract class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.
+A class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -453,7 +455,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_78e0236_1389366597377_433664_2698"></a>`{Party}`|0..1|`Party`|For associating a party with the candidate.
 <a name="_17_0_5_1_43401a7_1400624143347_418542_3604"></a>`{Person}`|0..1|`Person`|For associating more detailed information about the candidate.
 <a name="_17_0_2_4_f71035d_1426535359938_597654_2790"></a>`PreElectionStatus`|0..1|`CandidatePreElectionStatus`|Registration status of the candidate, e.g., filed, qualified, etc.
-<a name="_19_0_4_43701b0_1644416149210_282250_5030"></a>`ReadName`|0..1|`String`|The name as it is read by a screen reader.
+<a name="_19_0_4_43701b0_1644416149210_282250_5030"></a>`ReadName`|0..1|`String`|The name spelled phonetically for reading by a screen reader.
 
 
 ### <a name="_17_0_5_1_43401a7_1400624327407_326048_3637"></a>*The **ContactInformation** Class*
@@ -616,7 +618,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_19_0_4_43701b0_1656513867120_25918_5112"></a>`FillColor`|0..1|`HtmlColorString`|For fiducial marks only. If not specified, no fill is assumed.
 <a name="_19_0_4_43701b0_1657564755655_784075_5843"></a>`ShapeType`|1|`ShapeType`|The shape this Geometry represents.
 <a name="_19_0_4_43701b0_1638824437354_427069_5934"></a>`StrokeColor`|0..1|`HtmlColorString`|The color of the stroke. If no color is specified, assume black (what XFA does)
-<a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|1|`Integer`|The width of the stroke in the measurement units of the [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993) associated with the [PhysicalContest](#_19_0_4_43701b0_1654799451085_749033_5240).
+<a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|0..1|`float`|The width of the stroke in the measurement units of the [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993) associated with the [PhysicalContest](#_19_0_4_43701b0_1654799451085_749033_5240).
 
 
 ### <a name="_17_0_2_4_78e0236_1389366233346_42391_2380"></a>*The **GpUnit** Class*
@@ -855,7 +857,7 @@ Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestSelection}`|0..1|`ContestSelection`|For associating a PhysicalContestOption with a ContestSelection. This should always be provided unless the contest option is for a write-in.
 <a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|
-<a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..1|`WriteInPosition`|
+<a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..*|`WriteInPosition`|
 
 
 ### <a name="_18_0_2_6340208_1427122121448_198970_4547"></a>*The **Schedule** Class*

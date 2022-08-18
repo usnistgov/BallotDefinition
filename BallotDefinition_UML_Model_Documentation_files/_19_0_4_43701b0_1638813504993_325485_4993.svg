@@ -26,21 +26,21 @@
     ><rect fill="none" x="294" width="239" height="133" y="287" clip-path="url(#clipPath2)"
       /><line y2="305" fill="none" x1="294" clip-path="url(#clipPath2)" x2="533" y1="305"
       /><text x="297" font-size="11" y="411.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-ShortEdge : float [1]</text
+      >+ShortEdge : float [1]</text
       ><text x="297" font-size="11" y="399.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-ReadMethod : ReadMethodType [1]</text
+      >+ReadMethod : ReadMethodType [1]</text
       ><text x="297" font-size="11" y="387.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Orientation : OrientationType [1]</text
+      >+Orientation : OrientationType [1]</text
       ><text x="297" font-size="11" y="375.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-MeasurementUnit : MeasurementUnitType [1]</text
+      >+MeasurementUnit : MeasurementUnitType [1]</text
       ><text x="297" font-size="11" y="363.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Manufacturer : String [0..1]</text
+      >+Manufacturer : String [0..1]</text
       ><text x="297" font-size="11" y="351.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-LongEdge : float [1]</text
+      >+LongEdge : float [1]</text
       ><text x="297" font-size="11" y="339.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-ExternalIdentifier : ExternalIdentifier [1..*]</text
+      >+ExternalIdentifier : ExternalIdentifier [1..*]</text
       ><text x="297" font-size="11" y="327.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Application : String [0..1]</text
+      >+Application : String [0..1]</text
     ></g
     ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-279,-272)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="394.5" space="preserve" y="316.1475" clip-path="url(#clipPath2)" stroke="none"

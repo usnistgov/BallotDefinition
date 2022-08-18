@@ -26,9 +26,9 @@
     ><rect fill="none" x="2254" width="191" height="54" y="2548" clip-path="url(#clipPath2)"
       /><line y2="2566" fill="none" x1="2254" clip-path="url(#clipPath2)" x2="2445" y1="2566"
       /><text x="2257" font-size="11" y="2590.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Annotation : ShortString [0..1]</text
+      >+Annotation : ShortString [0..1]</text
       ><text x="2257" font-size="11" y="2578.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«simpleContent»-Content : anyURI [1]</text
+      >«simpleContent»+Content : anyURI [1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-2239,-2533)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="2314" space="preserve" y="2560.958" clip-path="url(#clipPath2)" stroke="none"

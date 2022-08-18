@@ -26,21 +26,21 @@
     ><rect fill="none" x="3066" width="252" height="147" y="224" clip-path="url(#clipPath2)"
       /><line y2="242" fill="none" x1="3066" clip-path="url(#clipPath2)" x2="3318" y1="242"
       /><text x="3069" font-size="11" y="338.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Uri : AnnotatedUri [0..*]</text
+      >+Uri : AnnotatedUri [0..*]</text
       ><text x="3069" font-size="11" y="326.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Phone : AnnotatedString [0..*]</text
+      >+Phone : AnnotatedString [0..*]</text
       ><text x="3069" font-size="11" y="314.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Name : RichText [0..1]</text
+      >+Name : RichText [0..1]</text
       ><text x="3069" font-size="11" y="302.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«xmlAttribute»-Label : String [0..1]</text
+      >«xmlAttribute»+Label : String [0..1]</text
       ><text x="3069" font-size="11" y="290.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Fax : AnnotatedString [0..*]</text
+      >+Fax : AnnotatedString [0..*]</text
       ><text x="3069" font-size="11" y="278.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Email : AnnotatedString [0..*]</text
+      >+Email : AnnotatedString [0..*]</text
       ><text x="3069" font-size="11" y="266.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Directions : InternationalizedText [0..1]</text
+      >+Directions : InternationalizedText [0..1]</text
       ><text x="3069" font-size="11" y="254.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-AddressLine : RichText [0..*]</text
+      >+AddressLine : RichText [0..*]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-3051,-209)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="3140" space="preserve" y="236.958" clip-path="url(#clipPath2)" stroke="none"

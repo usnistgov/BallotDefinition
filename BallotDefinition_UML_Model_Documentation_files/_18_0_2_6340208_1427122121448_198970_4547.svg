@@ -26,17 +26,17 @@
     ><rect fill="none" x="3045" width="222" height="106" y="455" clip-path="url(#clipPath2)"
       /><line y2="473" fill="none" x1="3045" clip-path="url(#clipPath2)" x2="3267" y1="473"
       /><text x="3048" font-size="11" y="545.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-EndDate : date [0..1]</text
+      >+EndDate : date [0..1]</text
       ><text x="3048" font-size="11" y="533.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-StartDate : date [0..1]</text
+      >+StartDate : date [0..1]</text
       ><text x="3048" font-size="11" y="521.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«xmlAttribute»-Label : String [0..1]</text
+      >«xmlAttribute»+Label : String [0..1]</text
       ><text x="3048" font-size="11" y="509.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-IsSubjectToChange : Boolean [0..1]</text
+      >+IsSubjectToChange : Boolean [0..1]</text
       ><text x="3048" font-size="11" y="497.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-IsOrByAppointment : Boolean [0..1]</text
+      >+IsOrByAppointment : Boolean [0..1]</text
       ><text x="3048" font-size="11" y="485.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-IsOnlyByAppointment : Boolean [0..1]</text
+      >+IsOnlyByAppointment : Boolean [0..1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-3030,-440)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="3131.5" space="preserve" y="467.958" clip-path="url(#clipPath2)" stroke="none"
