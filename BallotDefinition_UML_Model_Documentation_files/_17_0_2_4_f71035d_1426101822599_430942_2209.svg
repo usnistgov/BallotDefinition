@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="623" gradientUnits="userSpaceOnUse" x2="1088" y1="119" y2="249" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="434" gradientUnits="userSpaceOnUse" x2="899" y1="1008" y2="1138" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(255,255,204)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,36 +14,34 @@
       ><path d="M0 0 L495 0 L495 160 L0 160 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M608 104 L1103 104 L1103 264 L608 264 L608 104 Z"
+      ><path d="M419 993 L914 993 L914 1153 L419 1153 L419 993 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="495" height="160" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="626" y="122" transform="translate(-608,-104)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="465" text-rendering="geometricPrecision" height="130" stroke="none"
-      /><rect x="623" y="119" transform="translate(-608,-104)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="465" text-rendering="geometricPrecision" height="130" stroke="none"
+      /><rect x="437" y="1011" transform="translate(-419,-993)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="465" text-rendering="geometricPrecision" height="130" stroke="none"
+      /><rect x="434" y="1008" transform="translate(-419,-993)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="465" text-rendering="geometricPrecision" height="130" stroke="none"
     /></g
-    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" transform="translate(-608,-104)" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
-    ><rect fill="none" x="623" width="465" height="130" y="119" clip-path="url(#clipPath2)"
-      /><line y2="168" fill="none" x1="623" clip-path="url(#clipPath2)" x2="1088" y1="168"
-      /><text x="626" font-size="11" y="240.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-419,-993)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="434" width="465" height="130" y="1008" clip-path="url(#clipPath2)"
+      /><line y2="1057" fill="none" x1="434" clip-path="url(#clipPath2)" x2="899" y1="1057"
+      /><text x="437" font-size="11" y="1117.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+OtherType : String [0..1]</text
-      ><text x="626" font-size="11" y="228.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="437" font-size="11" y="1105.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+Type : ElectionType [1]</text
-      ><text x="626" font-size="11" y="216.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="437" font-size="11" y="1093.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+EndDate : date [1]</text
-      ><text x="626" font-size="11" y="204.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="437" font-size="11" y="1081.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+StartDate : date [1]</text
-      ><text x="626" font-size="11" y="192.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="437" font-size="11" y="1069.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+Name : InternationalizedText [1]</text
-      ><text x="626" font-size="11" y="180.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«mCDFInclude»+ExternalIdentifier : ExternalIdentifier [0..*]{Order = 3, Rename = "Election Code"}</text
     ></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-608,-104)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="835" space="preserve" y="146.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-419,-993)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="646" space="preserve" y="1035.958" clip-path="url(#clipPath2)" stroke="none"
       >Election</text
-      ><text x="815" space="preserve" y="131.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
+      ><text x="626" space="preserve" y="1020.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
       >«mCDFSegment»</text
-      ><text x="967" font-size="10" y="162" clip-path="url(#clipPath2)" text-rendering="optimizeLegibility" stroke="none" font-weight="normal" xml:space="preserve"
+      ><text x="778" font-size="10" y="1051" clip-path="url(#clipPath2)" text-rendering="optimizeLegibility" stroke="none" font-weight="normal" xml:space="preserve"
       >{Segment Name = "ELE"}</text
     ></g
   ></g

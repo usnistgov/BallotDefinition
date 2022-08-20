@@ -978,6 +978,11 @@ BallotStyle references one or more GpUnit instances defined for the associated p
           <xsd:documentation xml:lang="en">URI for a ballot image.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="Language" type="xsd:language" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For the written languages appearing on the ballot style.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="OrderedContent" type="OrderedContent" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating a ballot style with ballot content, such as contests or headers.</xsd:documentation>
@@ -988,6 +993,11 @@ BallotStyle references one or more GpUnit instances defined for the associated p
           <xsd:documentation xml:lang="en">Unique identifier for one or more Party instances.  For associating one or more parties with the ballot style.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
+      <xsd:element name="Purpose" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">Freeform text to further describe the purpose (e.g. federal-only ballot) of the ballot style.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="BoundedObject">
@@ -995,32 +1005,32 @@ BallotStyle references one or more GpUnit instances defined for the associated p
       <xsd:documentation xml:lang="en">A class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
-      <xsd:element name="H" type="xsd:float" minOccurs="0">
+      <xsd:element name="H" type="xsd:float">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Height in ballot format measurement units.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Sheet" type="xsd:integer" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">The ballot sheet the bounded object appears. Sheets start at 1 and increase monotonically.</xsd:documentation>
+          <xsd:documentation xml:lang="en">The ballot sheet the bounded object appears on. Sheets start at 1 and increase monotonically. Does not apply to mCDFArea, or global fiducials.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="Side" type="BallotSideType" minOccurs="0">
+      <xsd:element name="Side" type="BallotSideType">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The side of the sheet of paper the bounded object appears.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="W" type="xsd:float" minOccurs="0">
+      <xsd:element name="W" type="xsd:float">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Width in ballot format measurement units.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="X" type="xsd:float" minOccurs="0">
+      <xsd:element name="X" type="xsd:float">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">X-coordinate for locating a bounded object (top left anchor).</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="Y" type="xsd:float" minOccurs="0">
+      <xsd:element name="Y" type="xsd:float">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Y-coordinate for locating a bounded object (top left anchor).</xsd:documentation>
         </xsd:annotation>
@@ -1816,14 +1826,14 @@ Office includes an optional ElectionDistrict reference to a GpUnit for the purpo
     <xsd:complexContent>
       <xsd:extension base="BoundedObject">
         <xsd:sequence>
+          <xsd:element name="AppearanceId" type="xsd:IDREF" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="FractionalVotes" type="FractionalNumber" minOccurs="0">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">The proper fractional number of votes represented by the option position.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="IndicatorId" type="xsd:IDREF" minOccurs="0">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
           <xsd:element name="MarkIds" type="xsd:IDREFS" minOccurs="0">
@@ -2389,19 +2399,9 @@ This element uses BallotMeasureContest as a superclass. Therefore, it inherits t
     <xsd:complexContent>
       <xsd:extension base="BoundedObject">
         <xsd:sequence>
-          <xsd:element name="IsOverflow" type="xsd:boolean" minOccurs="0">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">Whether the mCDFArea serves as an overflow (continuation) of another mCDFArea.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
           <xsd:element name="Symbology" type="xsd:string">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">The name of the symbology used.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
-          <xsd:element name="SymbologyConfiguration" type="xsd:string" minOccurs="0">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">Additional details about how the symbology is configured.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
         </xsd:sequence>
