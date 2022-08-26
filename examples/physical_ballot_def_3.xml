@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-XXX/v1 file:///C:/Users/john/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+<cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1">
 	<cdf:BallotFormat ObjectId="bf-1">
 		<cdf:ExternalIdentifier>
 			<cdf:Type>local-level</cdf:Type>
@@ -14,8 +14,8 @@
 	<cdf:Election>
 		<cdf:BallotStyle>
 			<cdf:ExternalIdentifier>
-				<cdf:Type>local-level</cdf:Type>
-				<cdf:Value>_01-0052-01</cdf:Value>
+				<cdf:Type>stable</cdf:Type>
+				<cdf:Value>01-0052-01</cdf:Value>
 			</cdf:ExternalIdentifier>
 			<cdf:GpUnitIds>gpu-precinct</cdf:GpUnitIds>
 			<cdf:OrderedContent xsi:type="cdf:OrderedContest">

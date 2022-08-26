@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-XXX/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<BallotFormat ObjectId="bf-hart">
 		<ExternalIdentifier>
 			<Type>local-level</Type>
@@ -13,6 +13,10 @@
 	</BallotFormat>
 	<Election>
 		<BallotStyle>
+			<ExternalIdentifier>
+				<Type>stable</Type>
+				<Value>001-bra</Value>
+			</ExternalIdentifier>
 			<GpUnitIds>gpu-p-001-BRA</GpUnitIds>
 			<OrderedContent xsi:type="OrderedContest">
 				<ContestId>cc-president</ContestId>
