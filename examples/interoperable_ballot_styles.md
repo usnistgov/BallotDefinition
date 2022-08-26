@@ -9,7 +9,7 @@ Three ballot styles are represented as examples. PDFs that reproduce ballot styl
 > [!NOTE]
 > Any mention of commercial products is for information only; it does not imply recommendation or endorsement by NIST.
 
-While detailed documentation of the code will not be provided here, an XSLT file that can be used to transform custom ballot definition XML files into XFDF is included and instructions for executing it using SaxonJ follow at the end of this document.
+While detailed documentation of the code will not be provided here, an XSLT file that can be used to transform custom ballot definition XML files into XFDF is included and instructions for executing it using SaxonJ follow at the [end of this document](#creating-custom-ballot-definition-overlays).
 
 ## Requirements
 
@@ -18,13 +18,13 @@ While detailed documentation of the code will not be provided here, an XSLT file
 
 ## Viewing the Example Ballots
 
-The PDF files provided in this repository, named `physical_ballot_def_1.pdf`, `physical_ballot_def_2.pdf`, and `physical_ballot_def_3.pdf` respectively, represent ballots produced by Hart (`physical_ballot_def_1*`), ES&S (`physical_ballot_def_2*`) and as part of the [Ballot Definition Prototype](Add link!) (`physical_ballot_def_3*`). Adobe Acrobat Reader or equivalent is required to view them and in order to render the XFDF annotations that overlay the ballot image.
+The PDF files provided in this repository, named `physical_ballot_def_1.pdf`, `physical_ballot_def_2.pdf`, and `physical_ballot_def_3.pdf` respectively, represent ballots produced by Hart (`physical_ballot_def_1*`), ES&S (`physical_ballot_def_2*`) and as part of the [Ballot Definition Prototype](../Ballot_Definition_Prototype.pdf),(`physical_ballot_def_3*`). Adobe Acrobat Reader or equivalent is required to view them and in order to render the XFDF annotations that overlay the ballot image.
 
 Target areas defined in the XML ballot definitions should be outlined in red and overlap those on the ballot. Mousing over a target area will display a snippet of ballot definition XML that is associated with it. This can also be viewed in the side panel by selecting View -> Tools -> Comment -> Open from the command bar.
 
 ## Ballot Definitions
 
-The visual format and features of a ballot are defined in a ballot definition XML file. Each of the PDFs is associated with a similarly-named XML file that describes it. In general, the files define three features of a ballot: 
+The visual format and features of a ballot are defined in a ballot definition XML file. Each of the PDFs is associated with a similarly-named XML file that describes it. In general, the files define three features of a ballot:
 
 1. The format of a ballot,
 2. Information about contests, such selection options and rules,
@@ -163,7 +163,7 @@ Metadata about the ballot issuer and related information follows at the end of t
 
 The file named `bd_to_xfdf.xlsx` can be used to create overlays from custom ballot definition XML files. To run the XSLX template with a custom file, a XSLT 3.0 engine is required. The example below requires the use of:
 
-- Java SE 8 (JDK 1.8) or later
+- [Java SE 8 (JDK 1.8) or later](https://developers.redhat.com/products/openjdk/overview)
 - [SaxonJ Home Edition 11](https://sourceforge.net/projects/saxon/files/Saxon-HE/11/) or later (frameworks other than Java are supported, but this document assumes the use of the Java version)
 
 1. Navigate to the `SaxonHE11-4J` folder contained in the ZIP file downloaded from the link above.
@@ -172,3 +172,7 @@ The file named `bd_to_xfdf.xlsx` can be used to create overlays from custom ball
 ```bash
 java -jar './saxon-he-11.4.jar' -s:<definition> -xsl:<template> -o:<output_file>
 ```
+Limitations:
+
+- Only ballots using a ballot format with `Orientation = 'landscape'` are currently supported.
+- Only ballots using a ballot format with `MeasurementUnit = 'pt'` are currently supported.
