@@ -6,7 +6,6 @@ The interoperable ballot style validator described by this document is intended 
 
 Three ballot styles are represented as examples. PDFs that reproduce ballot styles used by ES&S and Hart Intercivic are included as well as a more comprehensive example using the NIST Ballot Definition Prototype. The vendor-specific ballots include only presidential contests in their ballot definitions files while the mCDF ballot includes all contests appearing on the ballot.
 
-> [!NOTE]
 > Any mention of commercial products is for information only; it does not imply recommendation or endorsement by NIST.
 
 While detailed documentation of the code will not be provided here, an XSLT file that can be used to transform custom ballot definition XML files into XFDF is included and instructions for executing it using SaxonJ follow at the [end of this document](#creating-custom-ballot-definition-overlays).
@@ -18,7 +17,7 @@ While detailed documentation of the code will not be provided here, an XSLT file
 
 ## Viewing the Example Ballots
 
-The PDF files provided in this repository, named `physical_ballot_def_1.pdf`, `physical_ballot_def_2.pdf`, and `physical_ballot_def_3.pdf` respectively, represent ballots produced by Hart (`physical_ballot_def_1*`), ES&S (`physical_ballot_def_2*`) and as part of the [Ballot Definition Prototype](../Ballot_Definition_Prototype.pdf),(`physical_ballot_def_3*`). Adobe Acrobat Reader or equivalent is required to view them and in order to render the XFDF annotations that overlay the ballot image.
+The PDF files provided in this repository, named `physical_ballot_def_1.pdf`, `physical_ballot_def_2.pdf`, and `physical_ballot_def_3.pdf` respectively, represent ballots produced by Hart (`physical_ballot_def_1*`), ES&S (`physical_ballot_def_2*`) and as part of the [Ballot Definition Prototype](../Ballot_Definition_Prototype.pdf), (`physical_ballot_def_3*`). Adobe Acrobat Reader or equivalent is required to view them and in order to render the XFDF annotations that overlay the ballot image.
 
 Target areas defined in the XML ballot definitions should be outlined in red and overlap those on the ballot. Mousing over a target area will display a snippet of ballot definition XML that is associated with it. This can also be viewed in the side panel by selecting View -> Tools -> Comment -> Open from the command bar.
 
@@ -31,7 +30,6 @@ The visual format and features of a ballot are defined in a ballot definition XM
 3. The structure of a single ballot style, and
 4. Metadata about the ballot such as issuer and date of election.
 
-> [!NOTE]
 > The sections below reference fragments of `physical_ballot_def_2.xml`.
 
 ### The `BallotFormat` Element
@@ -161,18 +159,19 @@ Metadata about the ballot issuer and related information follows at the end of t
 
 ## Creating Custom Ballot Definition Overlays
 
-The file named `bd_to_xfdf.xlsx` can be used to create overlays from custom ballot definition XML files. To run the XSLX template with a custom file, a XSLT 3.0 engine is required. The example below requires the use of:
+The file named `bd_to_xfdf.xlst` can be used to create overlays from custom ballot definition XML files. To run the XSLT template with a custom file, a XSLT 3.0 engine is required. The example below requires the use of:
 
 - [Java SE 8 (JDK 1.8) or later](https://developers.redhat.com/products/openjdk/overview)
 - [SaxonJ Home Edition 11](https://sourceforge.net/projects/saxon/files/Saxon-HE/11/) or later (frameworks other than Java are supported, but this document assumes the use of the Java version)
 
 1. Navigate to the `SaxonHE11-4J` folder contained in the ZIP file downloaded from the link above.
-2. In a terminal window or command prompt, execute the following command, where `<template>` is the path to the XSLX file in this repo and `<definition>` is the ballot definition file:
+2. In a terminal window or command prompt, execute the following command, where `<template>` is the path to the XSLT file in this repo and `<definition>` is the ballot definition file:
 
 ```bash
 java -jar './saxon-he-11.4.jar' -s:<definition> -xsl:<template> -o:<output_file>
 ```
+
 Limitations:
 
-- Only ballots using a ballot format with `Orientation = 'landscape'` are currently supported.
+- Only ballots using a ballot format with `Orientation = 'portrait'` are currently supported.
 - Only ballots using a ballot format with `MeasurementUnit = 'pt'` are currently supported.
