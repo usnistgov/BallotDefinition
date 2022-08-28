@@ -2,7 +2,7 @@
 <cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1">
 	<cdf:BallotFormat ObjectId="bf-1">
 		<cdf:ExternalIdentifier>
-			<cdf:Type>local-level</cdf:Type>
+			<cdf:Type>stable</cdf:Type>
 			<cdf:Value>BM1</cdf:Value>
 		</cdf:ExternalIdentifier>
 		<cdf:LongEdge>792</cdf:LongEdge>

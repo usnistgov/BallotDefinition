@@ -2,7 +2,7 @@
 <BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<BallotFormat ObjectId="bf-hart">
 		<ExternalIdentifier>
-			<Type>local-level</Type>
+			<Type>stable</Type>
 			<Value>H1</Value>
 		</ExternalIdentifier>
 		<LongEdge>1008</LongEdge>

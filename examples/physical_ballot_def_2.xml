@@ -2,8 +2,8 @@
 <BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<BallotFormat ObjectId="bf-ess">
 		<ExternalIdentifier>
-			<Type>local-level</Type>
-			<Value>H1</Value>
+			<Type>stable</Type>
+			<Value>E1</Value>
 		</ExternalIdentifier>
 		<FiducialMark>
 			<H>8.5</H>
