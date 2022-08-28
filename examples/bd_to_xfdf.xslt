@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- stylesheet to generate Adobe XFDF representations of PDF annotations from NIST Ballot Definition Common Data Format -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="fn" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1" version="3.0">
-	<xsl:param name="targetBallotStyle" required="yes" />
+	<!-- the Type of ExternalIdentifier used to lookup the BallotStyle, stable by default -->
+	<xsl:param name="targetBallotStyleType" required="no" select="'stable'"/>
+	<!-- input parameter, stable external identifier for target BallotStyle -->
+	<xsl:param name="targetBallotStyle" required="yes"/>
+	<!-- the Type of ExternalIdentifier used to lookup the BallotFormat, stable by default -->
+	<xsl:param name="targetBallotFormatType" required="no" select="'stable'"/>
+	<!-- input parameter, stable external identifier for target BallotFormat -->
+	<xsl:param name="targetBallotFormat" required="yes"/>
 	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 	<!-- begin consumptive templates -->
 	<xsl:template match="/">
 		<xfdf xmlns="http://ns.adobe.com/xfdf/">
 			<annots>
-				<xsl:apply-templates select="/cdf:BallotDefinition/cdf:Election/cdf:BallotStyle[cdf:ExternalIdentifier[cdf:Type = 'stable' and cdf:Value = $targetBallotStyle]]/cdf:OrderedContent/cdf:Physical"/>
-				<xsl:apply-templates select="/cdf:BallotDefinition/cdf:BallotFormat"/>
+				<xsl:variable name="ballotFormatId" select="/cdf:BallotDefinition/cdf:BallotFormat[cdf:ExternalIdentifier[cdf:Type = $targetBallotFormatType and cdf:Value = $targetBallotFormat]]/@ObjectId"/>
+				<xsl:apply-templates select="/cdf:BallotDefinition/cdf:Election/cdf:BallotStyle[cdf:ExternalIdentifier[cdf:Type = $targetBallotStyleType and cdf:Value = $targetBallotStyle]]/cdf:OrderedContent/cdf:Physical[cdf:BallotFormatId = $ballotFormatId]"/>
+				<xsl:apply-templates select="/cdf:BallotDefinition/cdf:BallotFormat[@ObjectId = $ballotFormatId]"/>
 			</annots>
 		</xfdf>
 	</xsl:template>
