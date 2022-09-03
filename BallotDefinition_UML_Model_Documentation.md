@@ -324,7 +324,7 @@ Name | Value
 
 ![Image of AnnotatedString](BallotDefinition_UML_Model_Documentation_files/_18_0_2_6340208_1497553224568_429892_4565.svg)
 
-Used as a type for character strings; it adds a 32-character annotation to a character string.
+Used as a type for character strings; it adds a 32-character annotation to a character string. AnnotatedString is a subtype of string.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -429,6 +429,15 @@ Property  | Multiplicity | Type | Property Description
 
 A class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.
 
+PhysicalContest includes [BoundedObject](#_19_0_4_43701b0_1638813504988_273981_4988).
+BoundedObject has three subclasses, used contextually:
+
+ *  [FiducialMark](#_19_0_4_43701b0_1658343993325_108021_5129), included by [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993)
+ *  [mCDFArea](#_19_0_4_43701b0_1638813504986_694762_4987), included by [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993)
+ *  [OptionPosition](#_19_0_4_43701b0_1638813504990_545136_4990), included by [PhysicalContestOption](#_19_0_4_43701b0_1638814789673_90932_5706)
+ *  [WriteInPosition](#_19_0_4_43701b0_1638813504998_266381_4995), included by [PhysicalContestOption ](#_19_0_4_43701b0_1638814789673_90932_5706)
+    
+
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1638813505007_72660_5006"></a>`H`|1|`float`|Height in ballot format measurement units.
@@ -455,7 +464,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of mCDFArea](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638813504986_694762_4987.svg)
 
-A part of the ballot containing an instantiation of the microCDF.
+A part of the ballot containing an instantiation of the microCDF. It inherits the properties of [BoundedObject](#_19_0_4_43701b0_1638813504988_273981_4988).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -467,7 +476,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of OptionPosition](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638813504990_545136_4990.svg)
 
-For associating a physical contest option to the location(s) where a selection can be indicated.
+For associating a physical contest option to the location(s) where a selection can be indicated. It inherits the properties of [BoundedObject](#_19_0_4_43701b0_1638813504988_273981_4988).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -499,7 +508,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of WriteInPosition](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638813504998_266381_4995.svg)
 
-Response area for representing a particular candidate, e.g. John Smith hand printed.
+Response area for representing a particular candidate, e.g. John Smith hand printed. It inherits the properties of [BoundedObject](#_19_0_4_43701b0_1638813504988_273981_4988).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -674,6 +683,8 @@ Property  | Multiplicity | Type | Property Description
 
 Use PartyContest for a contest that where voters choose a party on the ballot. When a selection in this contest causes other indirect selections, StraightPartyContest should be used instead.
 
+It inherits the attributes of [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400).
+
 
 
 
@@ -701,7 +712,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of ActivationSelection](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657540726121_302449_5703.svg)
 
-For the contest selections in an [ActivationContest](#_19_0_4_43701b0_1657644824107_634969_5936).It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
+For the contest selections in an [ActivationContest](#_19_0_4_43701b0_1657644824107_634969_5936). It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -1024,7 +1035,7 @@ OrderedContent is an abstract class with two subclasses that get used according 
 
 ![Image of OrderedContest](BallotDefinition_UML_Model_Documentation_files/_17_0_3_43401a7_1394476416139_808596_3142.svg)
 
-For the appearance of a contest on a particular ballot style.
+For the appearance of a contest on a particular ballot style.This property uses [OrderedContent](#_18_5_3_43701b0_1527684342715_643544_6146) as a superclass.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -1038,7 +1049,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of OrderedHeader](BallotDefinition_UML_Model_Documentation_files/_18_5_3_43701b0_1527684342714_129907_6145.svg)
 
-For the appearance of a header on a particular ballot style.
+For the appearance of a header on a particular ballot style.This property uses [OrderedContent](#_18_5_3_43701b0_1527684342715_643544_6146) as a superclass.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -1076,7 +1087,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of Coalition](BallotDefinition_UML_Model_Documentation_files/_18_0_2_6340208_1425647247631_162984_4712.svg)
 
-For defining a coalition, i.e., a collection of parties organized for the purpose of endorsing a candidate in a contest. It inherits the attributes and elements of [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460).
+For defining a coalition, i.e., a collection of parties organized for the purpose of endorsing a candidate in a contest. It inherits the properties of [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460).
 
 Coalition instances themselves are composed of multiple [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) references along with a reference to an associated [Contests](#_17_0_2_4_78e0236_1389366251994_876831_2400).
 
