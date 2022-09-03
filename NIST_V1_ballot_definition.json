@@ -30,6 +30,12 @@
         "BallotTitle": {
           "$ref": "#/definitions/BallotDefinition.InternationalizedText"
         },
+        "CandidateId": {
+          "type": "string",
+          "refTypes": [
+            "BallotDefinition.Candidate"
+          ]
+        },
         "ContestSelection": {
           "items": {
             "oneOf": [
@@ -561,10 +567,6 @@
           ],
           "type": "string"
         },
-        "DefinitionUri": {
-          "type": "string",
-          "format": "uri"
-        },
         "ExternalIdentifier": {
           "items": {
             "$ref": "#/definitions/BallotDefinition.ExternalIdentifier"
@@ -585,6 +587,13 @@
         "ImageUri": {
           "items": {
             "$ref": "#/definitions/BallotDefinition.AnnotatedUri"
+          },
+          "minItems": 0,
+          "type": "array"
+        },
+        "Language": {
+          "items": {
+            "type": "string"
           },
           "minItems": 0,
           "type": "array"
@@ -613,13 +622,21 @@
           },
           "minItems": 0,
           "type": "array"
+        },
+        "Purpose": {
+          "type": "string"
         }
       },
       "type": "object"
     },
     "BallotDefinition.BoundedObject": {
       "required": [
-        "@type"
+        "@type",
+        "H",
+        "Side",
+        "W",
+        "X",
+        "Y"
       ],
       "additionalProperties": false,
       "properties": {
@@ -811,6 +828,9 @@
           },
           "minItems": 0,
           "type": "array"
+        },
+        "RanksAllowed": {
+          "type": "integer"
         },
         "SequenceOrder": {
           "type": "integer"
@@ -1145,9 +1165,12 @@
           "type": "string",
           "format": "date"
         },
-        "ExternalIdentifier": {
+        "ExternalIdentifierIds": {
           "items": {
-            "$ref": "#/definitions/BallotDefinition.ExternalIdentifier"
+            "type": "string",
+            "refTypes": [
+              "BallotDefinition.ExternalIdentifier"
+            ]
           },
           "minItems": 0,
           "type": "array"
@@ -1213,12 +1236,16 @@
     },
     "BallotDefinition.ExternalIdentifier": {
       "required": [
+        "@id",
         "@type",
         "Type",
         "Value"
       ],
       "additionalProperties": false,
       "properties": {
+        "@id": {
+          "type": "string"
+        },
         "@type": {
           "enum": [
             "BallotDefinition.ExternalIdentifier"
@@ -1243,7 +1270,12 @@
     "BallotDefinition.FiducialMark": {
       "required": [
         "@type",
-        "GeometryId"
+        "GeometryId",
+        "H",
+        "Side",
+        "W",
+        "X",
+        "Y"
       ],
       "additionalProperties": false,
       "properties": {
@@ -1602,7 +1634,12 @@
     "BallotDefinition.OptionPosition": {
       "required": [
         "@type",
-        "NumberVotes"
+        "H",
+        "NumberVotes",
+        "Side",
+        "W",
+        "X",
+        "Y"
       ],
       "additionalProperties": false,
       "properties": {
@@ -1617,23 +1654,6 @@
         },
         "H": {
           "type": "number"
-        },
-        "IndicatorId": {
-          "type": "string",
-          "refTypes": [
-            "BallotDefinition.Geometry"
-          ]
-        },
-        "MarkIds": {
-          "items": {
-            "type": "string",
-            "refTypes": [
-              "TimingMarks.TimingMark"
-            ]
-          },
-          "maxItems": 4,
-          "minItems": 0,
-          "type": "array"
         },
         "NumberVotes": {
           "type": "integer"
@@ -2182,9 +2202,6 @@
               },
               {
                 "$ref": "#/definitions/BallotDefinition.mCDFArea"
-              },
-              {
-                "$ref": "#/definitions/TimingMarks.TimingMark"
               }
             ]
           },
@@ -2204,6 +2221,12 @@
           },
           "minItems": 0,
           "type": "array"
+        },
+        "PositionGeometryId": {
+          "type": "string",
+          "refTypes": [
+            "BallotDefinition.Geometry"
+          ]
         }
       },
       "type": "object"
@@ -2772,7 +2795,12 @@
     },
     "BallotDefinition.WriteInPosition": {
       "required": [
-        "@type"
+        "@type",
+        "H",
+        "Side",
+        "W",
+        "X",
+        "Y"
       ],
       "additionalProperties": false,
       "properties": {
@@ -2809,7 +2837,12 @@
     "BallotDefinition.mCDFArea": {
       "required": [
         "@type",
-        "Symbology"
+        "H",
+        "Side",
+        "Symbology",
+        "W",
+        "X",
+        "Y"
       ],
       "additionalProperties": false,
       "properties": {
@@ -2822,9 +2855,6 @@
         "H": {
           "type": "number"
         },
-        "IsOverflow": {
-          "type": "boolean"
-        },
         "Sheet": {
           "type": "integer"
         },
@@ -2834,9 +2864,6 @@
         "Symbology": {
           "type": "string"
         },
-        "SymbologyConfiguration": {
-          "type": "string"
-        },
         "W": {
           "type": "number"
         },
@@ -2849,22 +2876,7 @@
       },
       "type": "object"
     },
-    "TimingMarks.DirectionType": {
-      "enum": [
-        "lr",
-        "tb "
-      ],
-      "type": "string"
-    },
-    "TimingMarks.MarkType": {
-      "enum": [
-        "direct-under",
-        "front-edge",
-        "offset"
-      ],
-      "type": "string"
-    },
-    "TimingMarks.Matrix": {
+    "mCDF Extensions.Ballot Style Identification": {
       "required": [
         "@type"
       ],
@@ -2872,79 +2884,45 @@
       "properties": {
         "@type": {
           "enum": [
-            "TimingMarks.Matrix"
+            "mCDF Extensions.Ballot Style Identification"
           ],
           "type": "string"
-        },
-        "MarkMetricType": {
-
-        },
-        "Spacing": {
-
-        },
-        "TimingMark": {
-          "$ref": "#/definitions/TimingMarks.TimingMark"
         }
       },
       "type": "object"
     },
-    "TimingMarks.TimingMark": {
+    "mCDF Extensions.BallotStyle": {
       "required": [
-        "@id",
-        "@type"
+        "@type",
+        "Side"
       ],
       "additionalProperties": false,
       "properties": {
-        "@id": {
-          "type": "string"
-        },
         "@type": {
           "enum": [
-            "TimingMarks.TimingMark"
+            "mCDF Extensions.BallotStyle"
           ],
           "type": "string"
         },
-        "Code": {
-          "type": "string"
+        "BallotFormat Code": {
+          "items": {
+            "$ref": "#/definitions/BallotDefinition.ExternalIdentifier"
+          },
+          "minItems": 0,
+          "type": "array"
         },
-        "Direction": {
-          "$ref": "#/definitions/TimingMarks.DirectionType"
+        "BallotStyle": {
+          "$ref": "#/definitions/BallotDefinition.BallotStyle"
         },
-        "GeometryId": {
+        "DefinitionUri": {
           "type": "string",
-          "refTypes": [
-            "BallotDefinition.Geometry"
-          ]
-        },
-        "H": {
-          "type": "number"
-        },
-        "IsCodeMark": {
-          "type": "boolean"
-        },
-        "MirrorsId": {
-          "type": "string",
-          "refTypes": [
-            "TimingMarks.TimingMark"
-          ]
-        },
-        "Ordinal": {
-          "type": "integer"
+          "format": "uri"
         },
         "Sheet": {
           "type": "integer"
         },
         "Side": {
           "$ref": "#/definitions/BallotDefinition.BallotSideType"
-        },
-        "W": {
-          "type": "number"
-        },
-        "X": {
-          "type": "number"
-        },
-        "Y": {
-          "type": "number"
         }
       },
       "type": "object"
