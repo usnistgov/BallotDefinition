@@ -6,30 +6,30 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="1435" gradientUnits="userSpaceOnUse" x2="1564" y1="938" y2="977" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(255,204,153)" offset="0%"
+    ><linearGradient x1="1538" gradientUnits="userSpaceOnUse" x2="1667" y1="936" y2="975" id="linearGradient1" spreadMethod="pad"
+      ><stop stop-opacity="1" stop-color="rgb(255,255,153)" offset="0%"
         /><stop stop-opacity="1" stop-color="rgb(255,255,218)" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L159 0 L159 69 L0 69 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M1420 923 L1579 923 L1579 992 L1420 992 L1420 923 Z"
+      ><path d="M1523 921 L1682 921 L1682 990 L1523 990 L1523 921 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="159" height="69" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1438" y="941" transform="translate(-1420,-923)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="129" text-rendering="geometricPrecision" height="39" stroke="none"
-      /><rect x="1435" y="938" transform="translate(-1420,-923)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="129" text-rendering="geometricPrecision" height="39" stroke="none"
+      /><rect x="1541" y="939" transform="translate(-1523,-921)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="129" text-rendering="geometricPrecision" height="39" stroke="none"
+      /><rect x="1538" y="936" transform="translate(-1523,-921)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="129" text-rendering="geometricPrecision" height="39" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1420,-923)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="1435" width="129" height="39" y="938" clip-path="url(#clipPath2)"
-      /><line y2="956" fill="none" x1="1435" clip-path="url(#clipPath2)" x2="1564" y1="956"
-      /><text x="1438" font-size="11" y="968.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" transform="translate(-1523,-921)" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
+    ><rect fill="none" x="1538" width="129" height="39" y="936" clip-path="url(#clipPath2)"
+      /><line y2="954" fill="none" x1="1538" clip-path="url(#clipPath2)" x2="1667" y1="954"
+      /><text x="1541" font-size="11" y="966.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+IsWriteIn : Boolean [0..1]</text
     ></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1420,-923)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="1447.5" space="preserve" y="950.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1523,-921)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="1550.5" space="preserve" y="948.958" clip-path="url(#clipPath2)" stroke="none"
       >CandidateSelection</text
     ></g
   ></g
