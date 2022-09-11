@@ -351,7 +351,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of BallotDefinition](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389366195564_913164_2300.svg)
 
-For defining items pertaining to the status and format of the definition and when it was generated.
+For defining items pertaining to the issuer and version of the definition and when it was generated.
 
 BallotDefinition references the major elements that are not necessarily specific to an election and that therefore can exist in a logical ballot definition: [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380), [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) and [OfficeGroup](#_17_0_2_4_f71035d_1433183615993_866714_2239), [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460), [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567), and [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209).
 
@@ -361,7 +361,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1426102320351_976615_2363"></a>`{Election}`|0..*|`Election`|For associating elections with the definition.
 <a name="_17_0_2_4_f71035d_1430412040553_669909_2247"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
 <a name="_17_0_2_4_78e0236_1389733247429_431211_3338"></a>`GeneratedDate`|1|`DateTimeWithZone`|Identifies the date and time that the election report was generated.
-<a name="_19_0_4_43701b0_1638813505040_165532_5037"></a>`{Geometry}`|0..*|`Geometry`|
+<a name="_19_0_4_43701b0_1638813505040_165532_5037"></a>`{Geometry}`|0..*|`Geometry`|For associating parts of the ballot with geometric shapes.
 <a name="_17_0_2_4_f71035d_1426788982595_725441_2719"></a>`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
 <a name="_18_5_3_43701b0_1527684452231_716184_6305"></a>`{Header}`|0..*|`Header`|For associating headers with parts of a ballot style.
 <a name="_17_0_5_1_43401a7_1394578590416_259347_3759"></a>`Issuer`|1|`RichText`|Identification of the report issuer.
@@ -419,7 +419,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1428529376950_608184_2486"></a>`ImageUri`|0..*|`AnnotatedUri`|URI for a sample ballot image.
 <a name="_19_0_4_2a60152_1661003842070_234829_5208"></a>`Language`|0..*|`language`|For the written languages appearing on the ballot style.
 <a name="_17_0_2_4_f71035d_1426189065873_416235_2489"></a>`{OrderedContent}`|0..*|`OrderedContent`|For associating a ballot style with ballot content, such as contests or headers.
-<a name="_18_0_2_6340208_1427483833143_782361_4565"></a>`{Party}`|0..*|`Party`|Unique identifier for one or more Party instances. For associating one or more parties with the ballot style.
+<a name="_18_0_2_6340208_1427483833143_782361_4565"></a>`{Party}`|0..*|`Party`|For associating one or more parties with the ballot style.
 <a name="_19_0_4_2a60152_1661004135930_173238_5256"></a>`Purpose`|0..1|`RichText`|Freeform text to further describe the purpose (e.g. federal-only ballot) of the ballot style.
 
 
@@ -590,7 +590,6 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1426006769365_710376_2474"></a>`HasRotation`|0..1|`Boolean`|Boolean to indicate whether the selections in the contest are rotated. Assumed to be “no” if not present.
 <a name="_17_0_2_4_78e0236_1389712460582_306281_2220"></a>`Name`|1|`RichText`|Name of the contest, not necessarily as it appears on the ballot.
 <a name="_17_0_2_4_f71035d_1426083547931_912709_2690"></a>`SequenceOrder`|0..1|`Integer`|Orderering for listing the contest for purposes of display. If not present, no order is assumed.
-<a name="_17_0_2_4_d420315_1393508523463_695325_3041"></a>`SubUnitsReported`|0..1|`Integer`|Number of subunits, e.g., precincts, that have completed reporting votes for this contest.
 <a name="_17_0_2_4_d420315_1393508532825_910334_3045"></a>`TotalSubUnits`|0..1|`Integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
 <a name="_17_0_2_4_78e0236_1389798198604_276106_4268"></a>`VoteVariation`|0..1|`VoteVariation`|Vote variation associated with the contest, e.g., n-of-m.
 <a name="_17_0_2_4_f71035d_1426537329540_929122_2797"></a>`OtherVoteVariation`|0..1|`String`|For use when [VoteVariation](#_17_0_2_4_78e0236_1389798198604_276106_4268) is other.
@@ -1194,7 +1193,6 @@ Property  | Multiplicity | Type | Property Description
 <a name="_19_0_4_2a60152_1660153998117_501149_5154"></a>`{Extent}`|0..*|`BoundedObject`|The extent of the contest. If the contest spans multiple sections of the ballot (e.g. columns or pages), then multiple extents may be provided.
 <a name="_19_0_4_43701b0_1656516495505_103775_5123"></a>`{FiducialMark}`|0..*|`FiducialMark`|For associating a ordered physical contest with one or more local fiducial marks appearing near the contest.
 <a name="_19_0_4_43701b0_1654799520016_831963_5285"></a>`{PhysicalContestOption}`|0..*|`PhysicalContestOption`|The contest options associated with the contest, including physical details.
-<a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{PositionGeometry}`|0..1|`Geometry`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
 
 
 
@@ -1207,6 +1205,7 @@ For associating a [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestSelection}`|0..1|`ContestSelection`|For associating a PhysicalContestOption with a ContestSelection. This should always be provided unless the contest option is for a write-in.
+<a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{Indicator}`|0..1|`Geometry`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
 <a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|
 <a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..*|`WriteInPosition`|
 

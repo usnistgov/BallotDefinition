@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="684" gradientUnits="userSpaceOnUse" x2="859" y1="1118" y2="1174" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="686" gradientUnits="userSpaceOnUse" x2="861" y1="1071" y2="1127" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(204,204,255)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,19 +14,19 @@
       ><path d="M0 0 L205 0 L205 86 L0 86 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M669 1103 L874 1103 L874 1189 L669 1189 L669 1103 Z"
+      ><path d="M671 1056 L876 1056 L876 1142 L671 1142 L671 1056 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="205" height="86" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="687" y="1121" transform="translate(-669,-1103)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="175" text-rendering="geometricPrecision" height="56" stroke="none"
-      /><rect x="684" y="1118" transform="translate(-669,-1103)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="175" text-rendering="geometricPrecision" height="56" stroke="none"
+      /><rect x="689" y="1074" transform="translate(-671,-1056)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="175" text-rendering="geometricPrecision" height="56" stroke="none"
+      /><rect x="686" y="1071" transform="translate(-671,-1056)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="175" text-rendering="geometricPrecision" height="56" stroke="none"
     /></g
-    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" transform="translate(-669,-1103)" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
-    ><rect fill="none" x="684" width="175" height="56" y="1118" clip-path="url(#clipPath2)"
+    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" transform="translate(-671,-1056)" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
+    ><rect fill="none" x="686" width="175" height="56" y="1071" clip-path="url(#clipPath2)"
     /></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-669,-1103)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="738" space="preserve" y="1130.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-671,-1056)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="740" space="preserve" y="1083.958" clip-path="url(#clipPath2)" stroke="none"
       >FiducialMark</text
     ></g
   ></g

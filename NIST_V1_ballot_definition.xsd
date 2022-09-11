@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Version 1.0, NIST Ballot Definition CDF Specification, National Institute of Standards and Technology -->
-<xsd:schema elementFormDefault="qualified" targetNamespace="http://itl.nist.gov/ns/voting/1500-XXX/v1" version="1.0" xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema elementFormDefault="qualified" targetNamespace="http://itl.nist.gov/ns/voting/1500-20/v1" version="1.0" xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <!-- ========== Roots ========== -->
   <xsd:element name="BallotDefinition" type="BallotDefinition"/>
   <!-- ========== Primitives ========== -->
@@ -714,7 +714,7 @@
   </xsd:complexType>
   <xsd:complexType name="BallotDefinition">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">For defining items pertaining to the status and format of the definition and when it was generated.
+      <xsd:documentation xml:lang="en">For defining items pertaining to the issuer and version of the definition and when it was generated.
 
 BallotDefinition references the major elements that are not necessarily specific to an election and that therefore can exist in a logical ballot definition: GpUnit, Office and OfficeGroup, Party, Person, and Election.</xsd:documentation>
     </xsd:annotation>
@@ -739,7 +739,11 @@ BallotDefinition references the major elements that are not necessarily specific
           <xsd:documentation xml:lang="en">Identifies the date and time that the election report was generated.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="Geometry" type="Geometry" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="Geometry" type="Geometry" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating parts of the ballot with geometric shapes.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="GpUnit" type="GpUnit" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating geopolitical units with the report.</xsd:documentation>
@@ -990,7 +994,7 @@ BallotStyle references one or more GpUnit instances defined for the associated p
       </xsd:element>
       <xsd:element name="PartyIds" type="xsd:IDREFS" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Unique identifier for one or more Party instances.  For associating one or more parties with the ballot style.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating one or more parties with the ballot style.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Purpose" type="xsd:string" minOccurs="0">
@@ -1304,7 +1308,7 @@ PartyContest includes PartySelection
 
 RetentionContest includes BallotMeasureSelection
 
-`Contest includes a required ElectionDistrict reference to a GpUnit defined for the geographical scope of the contest. For example, in a state senate contest, ElectionDistrict would reference a GpUnit of type ReportingUnit element defined for the district associated with the contest. Office also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same GpUnit defined for the state or county, etc., can be re-used.
+Contest includes a required ElectionDistrict reference to a GpUnit defined for the geographical scope of the contest. For example, in a state senate contest, ElectionDistrict would reference a GpUnit of type ReportingUnit element defined for the district associated with the contest. Office also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same GpUnit defined for the state or county, etc., can be re-used.
 SequenceOrder is used for results display ordering, i.e., to display contests according to a particular ordering. For example, "100" may indicate a U.S. Senatorial contest, "200" may indicate a U.S. Congressional contest, etc. SequenceOrder is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the BallotStyle element, which associates ballot styles with their corresponding precincts or other geopolitical units.
 When including ExternalIdentifiers, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
     </xsd:annotation>
@@ -1352,11 +1356,6 @@ When including ExternalIdentifiers, if the type is not listed in enumeration Ide
       <xsd:element name="SequenceOrder" type="xsd:integer" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Orderering for listing the contest for purposes of display.  If not present, no order is assumed.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="SubUnitsReported" type="xsd:integer" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">Number of subunits, e.g., precincts, that have completed reporting votes for this contest.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="TotalSubUnits" type="xsd:integer" minOccurs="0">
@@ -2140,11 +2139,6 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
           <xsd:documentation xml:lang="en">The contest options associated with the contest, including physical details.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="PositionGeometryId" type="xsd:IDREF" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="PhysicalContestOption">
@@ -2155,6 +2149,11 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
       <xsd:element name="ContestSelectionId" type="xsd:IDREF" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating a PhysicalContestOption with a ContestSelection. This should always be provided unless the contest option is for a write-in.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="IndicatorId" type="xsd:IDREF" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="OptionPosition" type="OptionPosition" maxOccurs="unbounded"/>

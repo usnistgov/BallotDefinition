@@ -97,9 +97,6 @@
         "SequenceOrder": {
           "type": "integer"
         },
-        "SubUnitsReported": {
-          "type": "integer"
-        },
         "SummaryText": {
           "$ref": "#/definitions/BallotDefinition.InternationalizedText"
         },
@@ -486,9 +483,6 @@
         "SequenceOrder": {
           "type": "integer"
         },
-        "SubUnitsReported": {
-          "type": "integer"
-        },
         "SummaryText": {
           "$ref": "#/definitions/BallotDefinition.InternationalizedText"
         },
@@ -833,9 +827,6 @@
           "type": "integer"
         },
         "SequenceOrder": {
-          "type": "integer"
-        },
-        "SubUnitsReported": {
           "type": "integer"
         },
         "TotalSubUnits": {
@@ -1914,9 +1905,6 @@
         "SequenceOrder": {
           "type": "integer"
         },
-        "SubUnitsReported": {
-          "type": "integer"
-        },
         "TotalSubUnits": {
           "type": "integer"
         },
@@ -2013,9 +2001,6 @@
           "type": "string"
         },
         "SequenceOrder": {
-          "type": "integer"
-        },
-        "SubUnitsReported": {
           "type": "integer"
         },
         "TotalSubUnits": {
@@ -2221,12 +2206,6 @@
           },
           "minItems": 0,
           "type": "array"
-        },
-        "PositionGeometryId": {
-          "type": "string",
-          "refTypes": [
-            "BallotDefinition.Geometry"
-          ]
         }
       },
       "type": "object"
@@ -2251,6 +2230,12 @@
             "BallotDefinition.ActivationSelection",
             "BallotDefinition.BallotMeasureSelection",
             "BallotDefinition.CandidateSelection"
+          ]
+        },
+        "IndicatorId": {
+          "type": "string",
+          "refTypes": [
+            "BallotDefinition.Geometry"
           ]
         },
         "OptionPosition": {
@@ -2508,9 +2493,6 @@
         "SequenceOrder": {
           "type": "integer"
         },
-        "SubUnitsReported": {
-          "type": "integer"
-        },
         "SummaryText": {
           "$ref": "#/definitions/BallotDefinition.InternationalizedText"
         },
@@ -2722,9 +2704,6 @@
         },
         "StraightPartyRuleset": {
           "$ref": "#/definitions/BallotDefinition.StraightPartyRuleset"
-        },
-        "SubUnitsReported": {
-          "type": "integer"
         },
         "TotalSubUnits": {
           "type": "integer"
