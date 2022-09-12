@@ -1011,18 +1011,7 @@ BallotStyle references one or more GpUnit instances defined for the associated p
   </xsd:complexType>
   <xsd:complexType name="BoundedObject">
     <xsd:annotation>
-      <xsd:documentation xml:lang="en">A class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.
-
-PhysicalContest includes BoundedObject.
-BoundedObject has three subclasses, used contextually:
-
-FiducialMark, included by BallotFormat
-
-mCDFArea, included by BallotFormat
-
-OptionPosition, included by PhysicalContestOption
-
-WriteInPosition, included by PhysicalContestOption</xsd:documentation>
+      <xsd:documentation xml:lang="en">A class representing a bounding box. The box represents in absolute coordinate space its location and size. Its location is given by x,y coordinates, size by h,w values, the side of the sheet it appears on and the sheet number of the ballot style.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="H" type="xsd:float">
@@ -1565,6 +1554,36 @@ For elements that link to ExternalIdentifier instances, if the type is not liste
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="Geometry">
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">For defining a geometric shape. Geometry can be used to represent content on a physical ballot style, such as for associating an OptionPosition to its shape. It is also used by FiducialMark to define the shape it takes..
+
+Strokes when applied, are applied evenhanded.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="FillColor" type="HtmlColorString" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For fiducial marks only. If not specified, no fill is assumed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ShapeType" type="ShapeType">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The shape this Geometry represents.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="StrokeColor" type="HtmlColorString" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The color of the stroke. If no color is specified, assume black (what XFA does)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="StrokeWidth" type="xsd:integer" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">The width of the stroke in the measurement units of the BallotFormat associated with the PhysicalContest.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="ObjectId" type="xsd:ID" use="required"/>
   </xsd:complexType>
   <xsd:complexType name="GpUnit" abstract="true">
     <xsd:annotation>
