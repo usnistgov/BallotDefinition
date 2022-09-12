@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1">
+<cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-20/v1" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
 	<cdf:BallotFormat ObjectId="bf-1">
 		<cdf:ExternalIdentifier>
 			<cdf:Type>stable</cdf:Type>
@@ -23,7 +23,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1AEF</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1AEF</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -36,7 +36,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1AJK</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1AJK</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -49,7 +49,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1AAR</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1AAR</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -61,7 +61,7 @@
 							<cdf:NumberVotes>1</cdf:NumberVotes>
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
-					<cdf:PhysicalContestOption>						
+					<cdf:PhysicalContestOption>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -80,7 +80,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1BDP</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1BDP</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -93,7 +93,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1BMD</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1BMD</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -112,7 +112,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1CBB</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1CBB</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -125,7 +125,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1CJC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1CJC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -138,7 +138,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1CDY</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1CDY</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -157,7 +157,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1DJH</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1DJH</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -170,7 +170,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1DKK</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1DKK</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -183,7 +183,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1DNT</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1DNT</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -202,7 +202,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1ECP</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1ECP</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -215,7 +215,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1EJM</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1EJM</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -234,7 +234,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1FMZ</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1FMZ</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -247,7 +247,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1FMF</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1FMF</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -266,7 +266,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1GCB</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1GCB</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -279,7 +279,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1GES</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1GES</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -298,7 +298,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1HBR</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1HBR</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -311,7 +311,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1HIS</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1HIS</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -324,7 +324,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1HDW</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1HDW</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -337,7 +337,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1HJD</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1HJD</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -350,7 +350,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1HGH</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1HGH</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -363,7 +363,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1HSK</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1HSK</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -382,7 +382,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1IDS</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1IDS</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -395,7 +395,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1IMC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1IMC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -408,7 +408,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1ISF</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1ISF</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -421,7 +421,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1ISR</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1ISR</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -440,7 +440,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1JTL</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1JTL</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -453,7 +453,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1JSK</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1JSK</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -472,7 +472,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1KJO</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1KJO</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -485,7 +485,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1KJF</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1KJF</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -504,7 +504,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1LTL</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1LTL</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -517,7 +517,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1LEB</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1LEB</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -536,7 +536,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1MTO</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1MTO</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -549,7 +549,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1MRC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1MRC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -568,7 +568,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1NTG</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1NTG</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -581,7 +581,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1NLC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1NLC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -600,7 +600,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1OAM</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1OAM</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -613,7 +613,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1OLD</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1OLD</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -632,7 +632,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1PBW</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1PBW</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -645,7 +645,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1PMR</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1PMR</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -664,7 +664,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1QCC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1QCC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -677,7 +677,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1QJC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1QJC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -696,7 +696,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1RTP</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1RTP</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -709,7 +709,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1RRM</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1RRM</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -728,7 +728,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1SJO</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1SJO</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -741,7 +741,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1TM</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1TM</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -760,7 +760,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1TLT</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1TLT</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -773,7 +773,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1TJL</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1TJL</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -792,7 +792,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1UJQ</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1UJQ</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -805,7 +805,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1UKC</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1UKC</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -824,7 +824,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1VES</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1VES</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -837,7 +837,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1VKO</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1VKO</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -856,7 +856,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1DY</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1DY</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -869,7 +869,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS1DN</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS1DN</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -888,7 +888,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS2DY</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS2DY</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -901,7 +901,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS2DN</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS2DN</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>1</cdf:Sheet>
@@ -920,7 +920,7 @@
 				<cdf:Physical>
 					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS3DY</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS3DY</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>2</cdf:Sheet>
@@ -933,7 +933,7 @@
 						</cdf:OptionPosition>
 					</cdf:PhysicalContestOption>
 					<cdf:PhysicalContestOption>
-						<cdf:ContestSelectionId>_CS3DN</cdf:ContestSelectionId>
+						<cdf:ContestOptionId>_CS3DN</cdf:ContestOptionId>
 						<cdf:OptionPosition>
 							<cdf:H>10</cdf:H>
 							<cdf:Sheet>2</cdf:Sheet>
@@ -1460,15 +1460,15 @@
 			</cdf:ExternalIdentifier>
 		</cdf:Candidate>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_1GO">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1AEF">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1AEF">
 				<cdf:CandidateIds>_1AEF</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1AJK">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1AJK">
 				<cdf:CandidateIds>_1AJK</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1AAR">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1AAR">
 				<cdf:CandidateIds>_1AAR</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1480,12 +1480,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_2AG">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1BDP">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1BDP">
 				<cdf:CandidateIds>_1BDP</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1BMD">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1BMD">
 				<cdf:CandidateIds>_1BMD</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1497,15 +1497,15 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_3AS">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1CBB">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1CBB">
 				<cdf:CandidateIds>_1CBB</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1CJC">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1CJC">
 				<cdf:CandidateIds>_1CJC</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1CDY">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1CDY">
 				<cdf:CandidateIds>_1CDY</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1517,15 +1517,15 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_4SS">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1DJH">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1DJH">
 				<cdf:CandidateIds>_1DJH</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1DKK">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1DKK">
 				<cdf:CandidateIds>_1DKK</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1DNT">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1DNT">
 				<cdf:CandidateIds>_1DNT</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1537,12 +1537,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_5TS">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1ECP">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1ECP">
 				<cdf:CandidateIds>_1ECP</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1EJM">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1EJM">
 				<cdf:CandidateIds>_1EJM</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1554,12 +1554,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_6RC">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1FMZ">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1FMZ">
 				<cdf:CandidateIds>_1FMZ</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1FMF">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1FMF">
 				<cdf:CandidateIds>_1FMF</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1574,12 +1574,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_8SR34">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1GCB">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1GCB">
 				<cdf:CandidateIds>_1GCB</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1GES">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1GES">
 				<cdf:CandidateIds>_1GES</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1594,24 +1594,24 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_9CC">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1HBR">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HBR">
 				<cdf:CandidateIds>_1HBR</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1HIS">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HIS">
 				<cdf:CandidateIds>_1HIS</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1HDW">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HDW">
 				<cdf:CandidateIds>_1HDW</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1HJD">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HJD">
 				<cdf:CandidateIds>_1HJD</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1HGH">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HGH">
 				<cdf:CandidateIds>_1HGH</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1HSK">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HSK">
 				<cdf:CandidateIds>_1HSK</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1626,18 +1626,18 @@
 			<cdf:VotesAllowed>3</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_10SB">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1IDS">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1IDS">
 				<cdf:CandidateIds>_1IDS</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1IMC">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1IMC">
 				<cdf:CandidateIds>_1IMC</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1ISF">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1ISF">
 				<cdf:CandidateIds>_1ISF</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1ISR">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1ISR">
 				<cdf:CandidateIds>_1ISR</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1652,12 +1652,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_11JS1">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1JTL">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1JTL">
 				<cdf:CandidateIds>_1JTL</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1JSK">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1JSK">
 				<cdf:CandidateIds>_1JSK</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1673,12 +1673,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_11JS2">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1KJO">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1KJO">
 				<cdf:CandidateIds>_1KJO</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1KJF">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1KJF">
 				<cdf:CandidateIds>_1KJF</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1694,12 +1694,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_12CA9">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1LTL">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1LTL">
 				<cdf:CandidateIds>_1LTL</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1LEB">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1LEB">
 				<cdf:CandidateIds>_1LEB</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1716,12 +1716,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_13CP1">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1MTO">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1MTO">
 				<cdf:CandidateIds>_1MTO</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1MRC">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1MRC">
 				<cdf:CandidateIds>_1MRC</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1738,12 +1738,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_14CP2">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1NTG">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1NTG">
 				<cdf:CandidateIds>_1NTG</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1NLC">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1NLC">
 				<cdf:CandidateIds>_1NLC</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1760,12 +1760,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_15CP3">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1OAM">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1OAM">
 				<cdf:CandidateIds>_1OAM</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1OLD">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1OLD">
 				<cdf:CandidateIds>_1OLD</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1782,12 +1782,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_16CP4">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1PBW">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1PBW">
 				<cdf:CandidateIds>_1PBW</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1PMR">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1PMR">
 				<cdf:CandidateIds>_1PMR</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1804,12 +1804,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_17CP5">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1QCC">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1QCC">
 				<cdf:CandidateIds>_1QCC</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1QJC">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1QJC">
 				<cdf:CandidateIds>_1QJC</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1826,12 +1826,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_18CP6">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1RTP">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1RTP">
 				<cdf:CandidateIds>_1RTP</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1RRM">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1RRM">
 				<cdf:CandidateIds>_1RRM</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1848,12 +1848,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_19CP7">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1SJO">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1SJO">
 				<cdf:CandidateIds>_1SJO</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1TM">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1TM">
 				<cdf:CandidateIds>_1TM</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1870,12 +1870,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_20CP8">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1TLT">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1TLT">
 				<cdf:CandidateIds>_1TLT</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1TJL">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1TJL">
 				<cdf:CandidateIds>_1TJL</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1892,12 +1892,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_19CP9">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1UJQ">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1UJQ">
 				<cdf:CandidateIds>_1UJQ</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1UKC">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1UKC">
 				<cdf:CandidateIds>_1UKC</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1914,12 +1914,12 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_22CP10">
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1VES">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1VES">
 				<cdf:CandidateIds>_1VES</cdf:CandidateIds>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:CandidateSelection" ObjectId="_CS1VKO">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1VKO">
 				<cdf:CandidateIds>_1VKO</cdf:CandidateIds>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1936,16 +1936,16 @@
 			<cdf:VotesAllowed>1</cdf:VotesAllowed>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:BallotMeasureContest" ObjectId="_23ST">
-			<cdf:ContestSelection xsi:type="cdf:BallotMeasureSelection" ObjectId="_CS1DY">
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS1DY">
 				<cdf:Selection>
 					<cdf:Text Language="en">YES</cdf:Text>
 				</cdf:Selection>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:BallotMeasureSelection" ObjectId="_CS1DN">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS1DN">
 				<cdf:Selection>
 					<cdf:Text Language="en">NO</cdf:Text>
 				</cdf:Selection>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1962,16 +1962,16 @@
 			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:BallotMeasureContest" ObjectId="_24CA1">
-			<cdf:ContestSelection xsi:type="cdf:BallotMeasureSelection" ObjectId="_CS2DY">
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS2DY">
 				<cdf:Selection>
 					<cdf:Text Language="en">YES</cdf:Text>
 				</cdf:Selection>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:BallotMeasureSelection" ObjectId="_CS2DN">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS2DN">
 				<cdf:Selection>
 					<cdf:Text Language="en">NO</cdf:Text>
 				</cdf:Selection>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>
@@ -1988,16 +1988,16 @@
 			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
 		</cdf:Contest>
 		<cdf:Contest xsi:type="cdf:BallotMeasureContest" ObjectId="_25CA2">
-			<cdf:ContestSelection xsi:type="cdf:BallotMeasureSelection" ObjectId="_CS3DY">
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS3DY">
 				<cdf:Selection>
 					<cdf:Text Language="en">YES</cdf:Text>
 				</cdf:Selection>
-			</cdf:ContestSelection>
-			<cdf:ContestSelection xsi:type="cdf:BallotMeasureSelection" ObjectId="_CS3DN">
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS3DN">
 				<cdf:Selection>
 					<cdf:Text Language="en">NO</cdf:Text>
 				</cdf:Selection>
-			</cdf:ContestSelection>
+			</cdf:ContestOption>
 			<!--We don't have a real GpUnit for districts RN-->
 			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
 			<cdf:ExternalIdentifier>

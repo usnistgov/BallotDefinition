@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
 	<BallotFormat ObjectId="bf-ess">
 		<ExternalIdentifier>
 			<Type>stable</Type>
@@ -41,7 +41,7 @@
 				<Physical>
 					<BallotFormatId>bf-ess</BallotFormatId>
 					<PhysicalContestOption>
-						<ContestSelectionId>cs-biden-harris</ContestSelectionId>
+						<ContestOptionId>cs-biden-harris</ContestOptionId>
 						<OptionPosition>
 							<H>6</H>
 							<Sheet>1</Sheet>
@@ -54,7 +54,7 @@
 						</OptionPosition>
 					</PhysicalContestOption>
 					<PhysicalContestOption>
-						<ContestSelectionId>cs-hawkins-walker</ContestSelectionId>
+						<ContestOptionId>cs-hawkins-walker</ContestOptionId>
 						<OptionPosition>
 							<H>6</H>
 							<Sheet>1</Sheet>
@@ -67,7 +67,7 @@
 						</OptionPosition>
 					</PhysicalContestOption>
 					<PhysicalContestOption>
-						<ContestSelectionId>cs-jorgensen-cohen</ContestSelectionId>
+						<ContestOptionId>cs-jorgensen-cohen</ContestOptionId>
 						<OptionPosition>
 							<H>6</H>
 							<Sheet>1</Sheet>
@@ -80,7 +80,7 @@
 						</OptionPosition>
 					</PhysicalContestOption>
 					<PhysicalContestOption>
-						<ContestSelectionId>cs-trump-pence</ContestSelectionId>
+						<ContestOptionId>cs-trump-pence</ContestOptionId>
 						<OptionPosition>
 							<H>6</H>
 							<Sheet>1</Sheet>
@@ -166,18 +166,18 @@
 			</BallotName>
 		</Candidate>
 		<Contest ObjectId="cc-president" xsi:type="CandidateContest">
-			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-biden-harris">
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-biden-harris">
 				<CandidateIds>can-joseph-biden can-kamala-harris</CandidateIds>
-			</ContestSelection>
-			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-hawkins-walker">
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-hawkins-walker">
 				<CandidateIds>can-howie-hawkins can-angela-walker</CandidateIds>
-			</ContestSelection>
-			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-jorgensen-cohen">
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-jorgensen-cohen">
 				<CandidateIds>can-jo-jorgensen can-spike-cohen</CandidateIds>
-			</ContestSelection>
-			<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-trump-pence">
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-trump-pence">
 				<CandidateIds>can-donald-trump can-michael-pence</CandidateIds>
-			</ContestSelection>
+			</ContestOption>
 			<ElectionDistrictId>gpu-ohio</ElectionDistrictId>
 			<Name>PRESIDENT OF THE UNITED STATES</Name>
 			<VoteVariation>n-of-m</VoteVariation>

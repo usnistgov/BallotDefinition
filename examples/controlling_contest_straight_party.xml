@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/john/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+	<Election>
+		<Candidate ObjectId="can-joe-smith">
+			<BallotName>
+				<Text Language="en">Joe Smith</Text>
+			</BallotName>
+			<PartyId>par-dem</PartyId>
+		</Candidate>
+		<Candidate ObjectId="can-alex-mack">
+			<BallotName>
+				<Text Language="en">Alex Mack</Text>
+			</BallotName>
+			<PartyId>par-rep</PartyId>
+		</Candidate>
+		<Contest xsi:type="StraightPartyContest" ObjectId="cc-straight-party">
+			<ContestOption xsi:type="PartyOption" ObjectId="cs-straight-party-dem">
+				<PartyIds>par-dem</PartyIds>
+			</ContestOption>
+			<ContestOption xsi:type="PartyOption" ObjectId="cs-straight-party-rep">
+				<PartyIds>par-rep</PartyIds>
+			</ContestOption>
+			<ElectionDistrictId>ru-senate</ElectionDistrictId>
+			<Name>Straight Party</Name>
+			<ControlledContestIds>cc-senate</ControlledContestIds>
+			<StraightPartyRuleset>inclusive</StraightPartyRuleset>
+		</Contest>
+		<Contest xsi:type="CandidateContest" ObjectId="cc-senate">
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-alex-mack">
+				<CandidateIds>can-alex-mack</CandidateIds>
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-joe-smith">
+				<CandidateIds>can-joe-smith</CandidateIds>
+			</ContestOption>
+			<ElectionDistrictId>ru-senate</ElectionDistrictId>
+			<Name>Senate Contest for Republicans</Name>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<ElectionScopeId>ru-senate</ElectionScopeId>
+		<Name>
+			<Text Language="en">STATE GENERAL</Text>
+		</Name>
+		<StartDate>2022-08-02</StartDate>
+		<EndDate>2022-08-02</EndDate>
+		<Type>general</Type>
+	</Election>
+	<GeneratedDate>2022-07-12T00:00:00Z</GeneratedDate>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-senate">
+		<Name>
+			<Text Language="en">State Senate District 1</Text>
+		</Name>
+		<Type>state-senate</Type>
+	</GpUnit>
+	<Issuer>NIST POC</Issuer>
+	<IssuerAbbreviation>NIST</IssuerAbbreviation>
+	<Party ObjectId="par-rep">
+		<IsRecognizedParty>true</IsRecognizedParty>
+		<Name>
+			<Text Language="en">Republican</Text>
+		</Name>
+	</Party>
+	<Party ObjectId="par-dem">
+		<IsRecognizedParty>true</IsRecognizedParty>
+		<Name>
+			<Text Language="en">Democratic</Text>
+		</Name>
+	</Party>
+	<SequenceStart>1</SequenceStart>
+	<SequenceEnd>1</SequenceEnd>
+	<VendorApplicationId>Hand Written</VendorApplicationId>
+	<Version>1.0.0</Version>
+</BallotDefinition>
