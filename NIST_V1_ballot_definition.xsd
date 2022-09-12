@@ -1460,7 +1460,7 @@ Election includes a required reference to ElectionScope, which links to a GpUnit
           <xsd:documentation xml:lang="en">Unique identifier for a GpUnit element. For associating the election with a reporting unit that represents the geographical scope of the election, e.g., a state, a county, etc.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="ExternalIdentifierIds" type="xsd:IDREFS" minOccurs="0">
+      <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating IDs with the election.</xsd:documentation>
         </xsd:annotation>
@@ -1816,6 +1816,11 @@ Office includes an optional ElectionDistrict reference to a GpUnit for the purpo
               <xsd:documentation xml:lang="en">The proper fractional number of votes represented by the option position.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element name="IndicatorId" type="xsd:IDREF" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="NumberVotes" type="xsd:integer">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">The number of votes represented by the option position.</xsd:documentation>
@@ -2119,11 +2124,6 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
       <xsd:element name="ContestOptionId" type="xsd:IDREF" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For associating a PhysicalContestOption with a ContestOption. This should always be provided unless the contest option is for a write-in.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="IndicatorId" type="xsd:IDREF" minOccurs="0">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="OptionPosition" type="OptionPosition" maxOccurs="unbounded"/>
