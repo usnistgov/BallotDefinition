@@ -29,8 +29,8 @@
       >+IsWriteIn : Boolean [0..1]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-2400,-881)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="2463" space="preserve" y="908.958" clip-path="url(#clipPath2)" stroke="none"
-      >CandidateSelection</text
+    ><text x="2470.5" space="preserve" y="908.958" clip-path="url(#clipPath2)" stroke="none"
+      >CandidateOption</text
     ></g
   ></g
 ></svg

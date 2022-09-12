@@ -31,8 +31,8 @@
       >+ExternalIdentifier : ExternalIdentifier [0..*]</text
     ></g
     ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-2169,-881)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="2225.5" space="preserve" y="908.958" clip-path="url(#clipPath2)" stroke="none"
-      >BallotMeasureSelection</text
+    ><text x="2233" space="preserve" y="908.958" clip-path="url(#clipPath2)" stroke="none"
+      >BallotMeasureOption</text
     ></g
   ></g
 ></svg

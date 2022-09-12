@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="469" gradientUnits="userSpaceOnUse" x2="647" y1="952" y2="1049" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="336" gradientUnits="userSpaceOnUse" x2="514" y1="959" y2="1056" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,33 +14,33 @@
       ><path d="M0 0 L208 0 L208 127 L0 127 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M454 937 L662 937 L662 1064 L454 1064 L454 937 Z"
+      ><path d="M321 944 L529 944 L529 1071 L321 1071 L321 944 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="208" height="127" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="472" y="955" transform="translate(-454,-937)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="178" text-rendering="geometricPrecision" height="97" stroke="none"
-      /><rect x="469" y="952" transform="translate(-454,-937)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="178" text-rendering="geometricPrecision" height="97" stroke="none"
+      /><rect x="339" y="962" transform="translate(-321,-944)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="178" text-rendering="geometricPrecision" height="97" stroke="none"
+      /><rect x="336" y="959" transform="translate(-321,-944)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="178" text-rendering="geometricPrecision" height="97" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-454,-937)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="469" width="178" height="97" y="952" clip-path="url(#clipPath2)"
-      /><line y2="970" fill="none" x1="469" clip-path="url(#clipPath2)" x2="647" y1="970"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-321,-944)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="336" width="178" height="97" y="959" clip-path="url(#clipPath2)"
+      /><line y2="977" fill="none" x1="336" clip-path="url(#clipPath2)" x2="514" y1="977"
     /></g
-    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-454,-937)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="539" space="preserve" y="981.1475" clip-path="url(#clipPath2)" stroke="none"
+    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-321,-944)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="406" space="preserve" y="988.1475" clip-path="url(#clipPath2)" stroke="none"
       >attributes</text
     ></g
-    ><g font-size="11" stroke-linecap="butt" transform="translate(-454,-937)" fill="rgb(40,0,0)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="rgb(40,0,0)"
-    ><text x="472" space="preserve" y="1028.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g font-size="11" stroke-linecap="butt" transform="translate(-321,-944)" fill="rgb(40,0,0)" text-rendering="geometricPrecision" stroke-linejoin="round" stroke="rgb(40,0,0)"
+    ><text x="339" space="preserve" y="1035.958" clip-path="url(#clipPath2)" stroke="none"
       >+StrokeWidth : float [0..1]</text
-      ><text x="472" space="preserve" y="1016.958" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="339" space="preserve" y="1023.958" clip-path="url(#clipPath2)" stroke="none"
       >+StrokeColor : HtmlColorString [0..1]</text
-      ><text x="472" space="preserve" y="1004.958" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="339" space="preserve" y="1011.958" clip-path="url(#clipPath2)" stroke="none"
       >+ShapeType : ShapeType [1]</text
-      ><text x="472" space="preserve" y="992.958" clip-path="url(#clipPath2)" stroke="none"
+      ><text x="339" space="preserve" y="999.958" clip-path="url(#clipPath2)" stroke="none"
       >+FillColor : HtmlColorString [0..1]</text
-      ><text x="531" y="964.958" clip-path="url(#clipPath2)" fill="black" stroke="none" font-weight="bold" space="preserve"
-      >Geometry</text
+      ><text x="409" y="971.958" clip-path="url(#clipPath2)" fill="black" stroke="none" font-weight="bold" space="preserve"
+      >Shape</text
     ></g
   ></g
 ></svg

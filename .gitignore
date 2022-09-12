@@ -1,4 +1,5 @@
 *.xml.bak
 *.mdxml.bak
+*.mdzip.bak
 .DS_Store
 *.spp

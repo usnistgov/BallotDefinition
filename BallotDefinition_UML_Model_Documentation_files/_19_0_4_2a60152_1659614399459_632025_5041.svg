@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="1496" gradientUnits="userSpaceOnUse" x2="1575" y1="313" y2="337" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="1363" gradientUnits="userSpaceOnUse" x2="1442" y1="320" y2="344" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(204,255,255)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,19 +14,19 @@
       ><path d="M0 0 L109 0 L109 54 L0 54 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M1481 298 L1590 298 L1590 352 L1481 352 L1481 298 Z"
+      ><path d="M1348 305 L1457 305 L1457 359 L1348 359 L1348 305 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="109" height="54" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1499" y="316" transform="translate(-1481,-298)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="79" text-rendering="geometricPrecision" height="24" stroke="none"
-      /><rect x="1496" y="313" transform="translate(-1481,-298)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="79" text-rendering="geometricPrecision" height="24" stroke="none"
+      /><rect x="1366" y="323" transform="translate(-1348,-305)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="79" text-rendering="geometricPrecision" height="24" stroke="none"
+      /><rect x="1363" y="320" transform="translate(-1348,-305)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="79" text-rendering="geometricPrecision" height="24" stroke="none"
     /></g
-    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" transform="translate(-1481,-298)" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
-    ><rect fill="none" x="1496" width="79" height="24" y="313" clip-path="url(#clipPath2)"
+    ><g fill="rgb(66,66,66)" text-rendering="geometricPrecision" transform="translate(-1348,-305)" stroke-linecap="butt" stroke="rgb(66,66,66)" stroke-linejoin="round"
+    ><rect fill="none" x="1363" width="79" height="24" y="320" clip-path="url(#clipPath2)"
     /></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1481,-298)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="1500" space="preserve" y="325.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1348,-305)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="1367" space="preserve" y="332.958" clip-path="url(#clipPath2)" stroke="none"
       >PartyContest</text
     ></g
   ></g

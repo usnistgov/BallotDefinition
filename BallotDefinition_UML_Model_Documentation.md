@@ -21,22 +21,22 @@
     - *The **[VoteVariation](#_17_0_2_4_78e0236_1389798224990_11192_4272)** Enumeration*
   - Classes
     - *The **[ActivationContest](#_19_0_4_43701b0_1657644824107_634969_5936)** Class*
-    - *The **[ActivationSelection](#_19_0_4_43701b0_1657540726121_302449_5703)** Class*
+    - *The **[ActivationOption](#_19_0_4_43701b0_1657540726121_302449_5703)** Class*
     - *The **[AnnotatedString](#_18_0_2_6340208_1497553224568_429892_4565)** Class*
     - *The **[AnnotatedUri](#_18_0_2_6340208_1498658436378_308208_4565)** Class*
     - *The **[BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300)** Class*
     - *The **[BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993)** Class*
     - *The **[BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783)** Class*
-    - *The **[BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926)** Class*
+    - *The **[BallotMeasureOption](#_17_0_2_4_78e0236_1389372163799_981952_2926)** Class*
     - *The **[BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360)** Class*
     - *The **[BoundedObject](#_19_0_4_43701b0_1638813504988_273981_4988)** Class*
     - *The **[Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440)** Class*
     - *The **[CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806)** Class*
-    - *The **[CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562)** Class*
+    - *The **[CandidateOption](#_17_0_2_4_d420315_1392145640524_831493_2562)** Class*
     - *The **[Coalition](#_18_0_2_6340208_1425647247631_162984_4712)** Class*
     - *The **[ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637)** Class*
     - *The **[Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400)** Class*
-    - *The **[ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906)** Class*
+    - *The **[ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906)** Class*
     - *The **[ControllingContest](#_19_0_4_43701b0_1657539979421_509884_5407)** Class*
     - *The **[DateTimeWithZone](#_18_0_2_6340208_1519999692422_172889_4576)** Class*
     - *The **[Election](#_17_0_2_4_f71035d_1426101822599_430942_2209)** Class*
@@ -44,7 +44,6 @@
     - *The **[ExternalIdentifier](#_17_0_2_4_f71035d_1430405712653_451634_2410)** Class*
     - *The **[FiducialMark](#_19_0_4_43701b0_1658343993325_108021_5129)** Class*
     - *The **[FractionalNumber](#_19_0_4_43701b0_1654793467815_816834_5117)** Class*
-    - *The **[Geometry](#_19_0_4_43701b0_1638813504993_202084_4994)** Class*
     - *The **[GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380)** Class*
     - *The **[Header](#_18_5_3_43701b0_1527684342703_968085_6144)** Class*
     - *The **[Hours](#_18_0_2_6340208_1427122205989_885563_4602)** Class*
@@ -61,15 +60,16 @@
     - *The **[OrderedHeader](#_18_5_3_43701b0_1527684342714_129907_6145)** Class*
     - *The **[Party](#_17_0_2_4_78e0236_1389366278128_412819_2460)** Class*
     - *The **[PartyContest](#_19_0_4_2a60152_1659614399459_632025_5041)** Class*
+    - *The **[PartyOption](#_17_0_2_4_f71035d_1426519980658_594892_2511)** Class*
     - *The **[PartyPreferenceContest](#_19_0_4_43701b0_1657644855685_740858_5970)** Class*
     - *The **[PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826)** Class*
-    - *The **[PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)** Class*
     - *The **[Person](#_17_0_5_1_43401a7_1400623980732_100904_3567)** Class*
     - *The **[PhysicalContest](#_19_0_4_43701b0_1654799451085_749033_5240)** Class*
     - *The **[PhysicalContestOption](#_19_0_4_43701b0_1638814789673_90932_5706)** Class*
     - *The **[ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593)** Class*
     - *The **[RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554)** Class*
     - *The **[Schedule](#_18_0_2_6340208_1427122121448_198970_4547)** Class*
+    - *The **[Shape](#_19_0_4_43701b0_1638813504993_202084_4994)** Class*
     - *The **[ShortString](#_18_0_2_6340208_1499878618645_537953_4560)** Class*
     - *The **[SpatialDimension](#_17_0_2_4_f71035d_1407165065674_39189_2188)** Class*
     - *The **[SpatialExtent](#_17_0_2_4_f71035d_1409080246279_778720_2209)** Class*
@@ -150,7 +150,7 @@ Name | Value
 
 ![Image of ElectionType](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389734457182_720347_3938.svg)
 
-Enumeration for the type of election in the [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) class.
+Enumeration for the type of election in the [BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300) class.
 
 Name | Value
 ---- | -----
@@ -361,7 +361,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1426102320351_976615_2363"></a>`{Election}`|0..*|`Election`|For associating elections with the definition.
 <a name="_17_0_2_4_f71035d_1430412040553_669909_2247"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
 <a name="_17_0_2_4_78e0236_1389733247429_431211_3338"></a>`GeneratedDate`|1|`DateTimeWithZone`|Identifies the date and time that the election report was generated.
-<a name="_19_0_4_43701b0_1638813505040_165532_5037"></a>`{Geometry}`|0..*|`Geometry`|For associating parts of the ballot with geometric shapes.
+<a name="_19_0_4_43701b0_1638813505040_165532_5037"></a>`{Geometry}`|0..*|`Shape`|For associating parts of the ballot with geometric shapes.
 <a name="_17_0_2_4_f71035d_1426788982595_725441_2719"></a>`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
 <a name="_18_5_3_43701b0_1527684452231_716184_6305"></a>`{Header}`|0..*|`Header`|For associating headers with parts of a ballot style.
 <a name="_17_0_5_1_43401a7_1394578590416_259347_3759"></a>`Issuer`|1|`RichText`|Identification of the report issuer.
@@ -457,7 +457,7 @@ FiducialMark is a subclass of [BoundedObject](#_19_0_4_43701b0_1638813504988_273
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
-<a name="_19_0_4_43701b0_1658344152816_61585_5158"></a>`{Geometry}`|1|`Geometry`|For associating a FiducialMark with the geometric shape that represents it.
+<a name="_19_0_4_43701b0_1658344152816_61585_5158"></a>`{Geometry}`|1|`Shape`|For associating a FiducialMark with the geometric shape that represents it.
 
 
 
@@ -504,9 +504,9 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of Candidate](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389366272694_544359_2440.svg)
 
-For defining information about a candidate in a contest. [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562) references Candidate instances to associate one or more candidates with a contest selection. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Candidate.
+For defining information about a candidate in a contest. [CandidateOption](#_17_0_2_4_d420315_1392145640524_831493_2562) references Candidate instances to associate one or more candidates with a contest selection. [Election](#_17_0_2_4_f71035d_1426101822599_430942_2209) includes Candidate.
 
-Candidate uses the [Party](#_17_0_2_4_78e0236_1389366597377_433664_2698) association to reference the candidate’s political party. If the candidate is endorsed by other parties for a particular contest, the endorsing parties are referenced using the [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562) attribute.
+Candidate uses the [Party](#_17_0_2_4_78e0236_1389366597377_433664_2698) association to reference the candidate’s political party. If the candidate is endorsed by other parties for a particular contest, the endorsing parties are referenced using the [CandidateOption](#_17_0_2_4_d420315_1392145640524_831493_2562) attribute.
 
 [ExternalIdentifier](#_17_0_2_4_f71035d_1430405890311_465205_2454) can be used to associate IDs with the candidate. If the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
 
@@ -566,13 +566,13 @@ Contest is an abstract class with four subclasses that get used according to the
  *  [ControllingContest](#_19_0_4_43701b0_1657539979421_509884_5407), an abstract class used for a contest that affects contests under its control.
  *  [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554), used for a judicial or other type of retention contest 
 
-Contest includes [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) to link the selections on the ballot to the contest, e.g., to link one or more candidates to a candidate contest. Like Contest, [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) is also an abstract class and has subclasses that correspond to those of Contest, as follows: 
+Contest includes [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) to link the selections on the ballot to the contest, e.g., to link one or more candidates to a candidate contest. Like Contest, [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) is also an abstract class and has subclasses that correspond to those of Contest, as follows: 
 
- *  [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783) includes [BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926)
- *  [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806) includes [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562)
- *  The subtypes of [ControllingContest](#_19_0_4_43701b0_1657539979421_509884_5407) include either [ActivationSelection](#_19_0_4_43701b0_1657540726121_302449_5703) or [PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)
- *  [PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144) includes [PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511)
- *  [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554) includes [BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926)
+ *  [BallotMeasureContest](#_17_0_2_4_78e0236_1389366932057_929676_2783) includes [BallotMeasureOption](#_17_0_2_4_78e0236_1389372163799_981952_2926)
+ *  [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806) includes [CandidateOption](#_17_0_2_4_d420315_1392145640524_831493_2562)
+ *  The subtypes of [ControllingContest](#_19_0_4_43701b0_1657539979421_509884_5407) include either [ActivationOption](#_19_0_4_43701b0_1657540726121_302449_5703) or [PartyOption](#_17_0_2_4_f71035d_1426519980658_594892_2511)
+ *  [PartyContest](#_19_0_4_2a60152_1659614399459_632025_5041) includes [PartyOption](#_17_0_2_4_f71035d_1426519980658_594892_2511)
+ *  [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554) includes [BallotMeasureOption](#_17_0_2_4_78e0236_1389372163799_981952_2926)
 
 [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) includes a required [ElectionDistrict](#_17_0_2_4_78e0236_1389366667508_703141_2753) reference to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the geographical scope of the contest. For example, in a state senate contest, [ElectionDistrict](#_17_0_2_4_78e0236_1389366667508_703141_2753) would reference a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) of type [ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593) element defined for the district associated with the contest. [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the state or county, etc., can be re-used.
 [SequenceOrder](#_17_0_2_4_f71035d_1426083547931_912709_2690) is used for results display ordering, i.e., to display contests according to a particular ordering. For example, “100” may indicate a U.S. Senatorial contest, “200” may indicate a U.S. Congressional contest, etc. [SequenceOrder](#_17_0_2_4_f71035d_1426083547931_912709_2690) is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) element, which associates ballot styles with their corresponding precincts or other geopolitical units.
@@ -584,12 +584,12 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_5_1_43401a7_1395831571231_804795_3632"></a>`Abbreviation`|0..1|`String`|Abbreviation for the contest.
 <a name="_17_0_2_4_f71035d_1426519324658_821208_2483"></a>`BallotSubTitle`|0..1|`InternationalizedText`|Subtitle of the contest as it appears on the ballot.
 <a name="_17_0_2_4_f71035d_1426519300284_211849_2479"></a>`BallotTitle`|0..1|`InternationalizedText`|Title of the contest as it appears on the ballot.
-<a name="_17_0_2_4_78e0236_1389366541302_23458_2637"></a>`{ContestSelection}`|0..*|`ContestSelection`|For associating a contest selection for the contest, i.e., a candidate, a ballot measure.
+<a name="_17_0_2_4_78e0236_1389366541302_23458_2637"></a>`{ContestOption}`|0..*|`ContestOption`|For associating a contest selection for the contest, i.e., a candidate, a ballot measure.
 <a name="_17_0_2_4_78e0236_1389366667508_703141_2753"></a>`{ElectionDistrict}`|1|`ReportingUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 <a name="_17_0_2_4_f71035d_1430412090176_814999_2249"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the contest.
 <a name="_17_0_2_4_f71035d_1426006769365_710376_2474"></a>`HasRotation`|0..1|`Boolean`|Boolean to indicate whether the selections in the contest are rotated. Assumed to be “no” if not present.
 <a name="_17_0_2_4_78e0236_1389712460582_306281_2220"></a>`Name`|1|`RichText`|Name of the contest, not necessarily as it appears on the ballot.
-<a name="_17_0_2_4_f71035d_1426083547931_912709_2690"></a>`SequenceOrder`|0..1|`Integer`|Orderering for listing the contest for purposes of display. If not present, no order is assumed.
+<a name="_17_0_2_4_f71035d_1426083547931_912709_2690"></a>`SequenceOrder`|0..1|`Integer`|Ordering for listing the contest for purposes of display. If not present, no order is assumed.
 <a name="_17_0_2_4_d420315_1393508532825_910334_3045"></a>`TotalSubUnits`|0..1|`Integer`|Total number of subunits, e.g., precincts that have this contest on the ballot.
 <a name="_17_0_2_4_78e0236_1389798198604_276106_4268"></a>`VoteVariation`|0..1|`VoteVariation`|Vote variation associated with the contest, e.g., n-of-m.
 <a name="_17_0_2_4_f71035d_1426537329540_929122_2797"></a>`OtherVoteVariation`|0..1|`String`|For use when [VoteVariation](#_17_0_2_4_78e0236_1389798198604_276106_4268) is other.
@@ -641,7 +641,7 @@ For a contest that involves selecting one or more candidates. It inherits the at
 
 This class optionally references [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) and [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460). If the candidate contest is associated with a ticket (of candidates) and each candidate in the ticket is associated with a separate office, the [association to Office](#_17_0_5_1_43401a7_1400624734486_732685_3699) can reference each of the separate offices. For example, if the contest is for the state governor ticket but Governor and Lieutenant (Lt.) Governor are both separate offices, the association references first to the [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instance defined for the Governor’s office and then to the Lt. Governor’s office. In this case, it is expected that the generating application will list the multiple references according to a jurisdiction-defined ordering scheme, e.g., Governor first and Lt. Governor second.
 
-Note that when using the [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562) class to associate the candidates with a contest selection for the contest, the order of the candidates should match the order of offices. Again, using the example of the state governor ticket, if the offices are listed with Governor first and Lt. Governor second, then the order of the candidates in the [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) instance should be identical, with the Governor candidate first and the Lt. Governor candidate second.
+Note that when using the [CandidateOption](#_17_0_2_4_d420315_1392145640524_831493_2562) class to associate the candidates with a contest selection for the contest, the order of the candidates should match the order of offices. Again, using the example of the state governor ticket, if the offices are listed with Governor first and Lt. Governor second, then the order of the candidates in the [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) instance should be identical, with the Governor candidate first and the Lt. Governor candidate second.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -727,18 +727,18 @@ It inherits the attributes of [Contest](#_17_0_2_4_78e0236_1389366251994_876831_
 
 
 
-### <a name="_17_0_2_4_78e0236_1389372124445_11077_2906"></a>*The **ContestSelection** Class*
+### <a name="_17_0_2_4_78e0236_1389372124445_11077_2906"></a>*The **ContestOption** Class*
 
-![Image of ContestSelection](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389372124445_11077_2906.svg)
+![Image of ContestOption](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389372124445_11077_2906.svg)
 
-Used for the contest selections in a contest (e.g., for candidates, for ballot measures). [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) includes [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
+Used for the contest selections in a contest (e.g., for candidates, for ballot measures). [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) includes [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
-[ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) is an abstract class with four subclasses that get used according to the type of contest:
+[ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) is an abstract class with four subclasses that get used according to the type of contest:
 
- *  [ActivationSelection](#_19_0_4_43701b0_1657540726121_302449_5703), used if the contest type is for an activation contest
- *  [BallotMeasureSelection](#_17_0_2_4_78e0236_1389372163799_981952_2926), used if the contest type is for a ballot measure, including for retentions
- *  [CandidateSelection](#_17_0_2_4_d420315_1392145640524_831493_2562), used if the contest type is for one or more candidates, to link the contest selection to the candidate instances and endorsement parties; and
- *  [PartySelection](#_17_0_2_4_f71035d_1426519980658_594892_2511), used if the contest type is for a party, e.g., for a party list contest.
+ *  [ActivationOption](#_19_0_4_43701b0_1657540726121_302449_5703), used if the contest type is for an activation contest
+ *  [BallotMeasureOption](#_17_0_2_4_78e0236_1389372163799_981952_2926), used if the contest type is for a ballot measure, including for retentions
+ *  [CandidateOption](#_17_0_2_4_d420315_1392145640524_831493_2562), used if the contest type is for one or more candidates, to link the contest selection to the candidate instances and endorsement parties; and
+ *  [PartyOption](#_17_0_2_4_f71035d_1426519980658_594892_2511), used if the contest type is for a party, e.g., for a party list contest.
 
 [SequenceOrder](#_17_0_2_4_f71035d_1426296042287_22607_2200) is included to specify an ordering for the contest selections for purposes of display only. The original ballot ordering can be preserved, however, by using the [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) class.
 
@@ -747,11 +747,11 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1426296042287_22607_2200"></a>`SequenceOrder`|0..1|`Integer`|Order in which the candidate is listed on the ballot for purposes of display. If not present, no order is assumed.
 
 
-#### <a name="_19_0_4_43701b0_1657540726121_302449_5703"></a>*The **ActivationSelection** Class*
+#### <a name="_19_0_4_43701b0_1657540726121_302449_5703"></a>*The **ActivationOption** Class*
 
-![Image of ActivationSelection](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657540726121_302449_5703.svg)
+![Image of ActivationOption](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1657540726121_302449_5703.svg)
 
-For the contest selections in an [ActivationContest](#_19_0_4_43701b0_1657644824107_634969_5936). It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
+For the contest selections in an [ActivationContest](#_19_0_4_43701b0_1657644824107_634969_5936). It inherits the attributes of [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -760,11 +760,11 @@ Property  | Multiplicity | Type | Property Description
 
 
 
-#### <a name="_17_0_2_4_78e0236_1389372163799_981952_2926"></a>*The **BallotMeasureSelection** Class*
+#### <a name="_17_0_2_4_78e0236_1389372163799_981952_2926"></a>*The **BallotMeasureOption** Class*
 
-![Image of BallotMeasureSelection](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389372163799_981952_2926.svg)
+![Image of BallotMeasureOption](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389372163799_981952_2926.svg)
 
-For a contest selection in a ballot measure contest. Because judicial or other retention contests are often treated like ballot measure contests, this element can be used also for retention contests. It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
+For a contest selection in a ballot measure contest. Because judicial or other retention contests are often treated like ballot measure contests, this element can be used also for retention contests. It inherits the attributes of [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -773,11 +773,11 @@ Property  | Multiplicity | Type | Property Description
 
 
 
-#### <a name="_17_0_2_4_d420315_1392145640524_831493_2562"></a>*The **CandidateSelection** Class*
+#### <a name="_17_0_2_4_d420315_1392145640524_831493_2562"></a>*The **CandidateOption** Class*
 
-![Image of CandidateSelection](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_d420315_1392145640524_831493_2562.svg)
+![Image of CandidateOption](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_d420315_1392145640524_831493_2562.svg)
 
-For the contest selections in a candidate contest, including for write-ins. It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906). References to multiple [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instances can be included if necessary, e.g., when the contest selection would be for a ticket of candidates (unless the ticket itself is defined as a candidate).
+For the contest selections in a candidate contest, including for write-ins. It inherits the attributes of [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906). References to multiple [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) instances can be included if necessary, e.g., when the contest selection would be for a ticket of candidates (unless the ticket itself is defined as a candidate).
 
 [EndorsementParty](#_17_0_2_4_d420315_1391370669921_519404_2559) is used to reference any associated endorsement parties other than the specific party of the candidate ([Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440) references [Party](#_17_0_2_4_78e0236_1389366278128_412819_2460) for that purpose). For example, if a candidate of one party is also endorsed by a second party, use [EndorsementParty](#_17_0_2_4_d420315_1391370669921_519404_2559) to reference the second party. A second example would be for ballot fusion as used in some states, where the same candidate is listed multiple times in the same contest, but with different endorsement parties.
 
@@ -791,11 +791,11 @@ Property  | Multiplicity | Type | Property Description
 
 
 
-#### <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>*The **PartySelection** Class*
+#### <a name="_17_0_2_4_f71035d_1426519980658_594892_2511"></a>*The **PartyOption** Class*
 
-![Image of PartySelection](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_f71035d_1426519980658_594892_2511.svg)
+![Image of PartyOption](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_f71035d_1426519980658_594892_2511.svg)
 
-For a contest selection involving a party such as for a party list selection or straight party selection on the ballot. It inherits the attributes of [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906).
+For a contest selection involving a party such as for a party list selection or straight party selection on the ballot. It inherits the attributes of [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906).
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -860,25 +860,6 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1430405763078_743585_2433"></a>`Type`|1|`IdentifierType`|An identifier type, e.g., FIPS.
 <a name="_17_0_2_4_f71035d_1430405732252_109247_2429"></a>`OtherType`|0..1|`String`|Used when [IdentifierType](#_17_0_2_4_f71035d_1430405763078_743585_2433) value is other.
 <a name="_17_0_2_4_f71035d_1430405785820_123111_2437"></a>`Value`|1|`String`|The identifier used by the jurisdiction.
-
-
-
-### <a name="_19_0_4_43701b0_1638813504993_202084_4994"></a>*The **Geometry** Class*
-
-![Image of Geometry](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638813504993_202084_4994.svg)
-
-For defining a geometric shape. Geometry can be used to represent content on a physical ballot style, such as for associating an [OptionPosition](#_19_0_4_43701b0_1638813504990_545136_4990) to its shape. It is also used by [FiducialMark](#_19_0_4_43701b0_1658343993325_108021_5129) to define the shape it takes..
-
- 
-
-Strokes when applied, are applied evenhanded.
-
-Property  | Multiplicity | Type | Property Description
---------- | ------------ | ---- | ---------------------
-<a name="_19_0_4_43701b0_1656513867120_25918_5112"></a>`FillColor`|0..1|`HtmlColorString`|For fiducial marks only. If not specified, no fill is assumed.
-<a name="_19_0_4_43701b0_1657564755655_784075_5843"></a>`ShapeType`|1|`ShapeType`|The shape this Geometry represents.
-<a name="_19_0_4_43701b0_1638824437354_427069_5934"></a>`StrokeColor`|0..1|`HtmlColorString`|The color of the stroke. If no color is specified, assume black (what XFA does)
-<a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|0..1|`float`|The width of the stroke in the measurement units of the [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993) associated with the [PhysicalContest](#_19_0_4_43701b0_1654799451085_749033_5240).
 
 
 
@@ -1023,9 +1004,9 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of Office](BallotDefinition_UML_Model_Documentation_files/_17_0_5_1_43401a7_1400623830572_164081_3518.svg)
 
-For defining an office and information associated with a contest and/or a district. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Office. [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806) and [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554) reference Office.
+For defining an office and information associated with a contest and/or a district. [BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Office. [CandidateContest](#_17_0_2_4_78e0236_1389366970084_183781_2806) and [RetentionContest](#_18_0_2_6340208_1425646217522_163181_4554) reference Office.
 
-Office includes [Term](#_17_0_2_4_f71035d_1428489072598_282236_2217) for defining details about the term of an office such as start/end dates and the type of term. [OfficeGroup](#_17_0_2_4_f71035d_1433183615993_866714_2239) is included from [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) to assign a name to a grouping of office definitions.
+Office includes [Term](#_17_0_2_4_f71035d_1428489072598_282236_2217) for defining details about the term of an office such as start/end dates and the type of term. [OfficeGroup](#_17_0_2_4_f71035d_1433183615993_866714_2239) is included from [BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300) to assign a name to a grouping of office definitions.
 
 Office includes an optional [ElectionDistrict](#_17_0_5_1_43401a7_1400701616170_933421_3684) reference to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) for the purpose of identifying the geographical scope of the office. For example, for an office for a state senate seat, [ElectionDistrict](#_17_0_5_1_43401a7_1400701616170_933421_3684) would include a reference to the [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the district associated with that office.
 
@@ -1047,7 +1028,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of OfficeGroup](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_f71035d_1433183615993_866714_2239.svg)
 
-Used to assign a name to a grouping of office definitions. It includes references to [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes OfficeGroup.
+Used to assign a name to a grouping of office definitions. It includes references to [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) instances and a name to identify the grouping of references, e.g., “Judicial” or “Statewide”, etc. SubOfficeGroup can be used to create a nested hierarchy of groupings. [BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes OfficeGroup.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
@@ -1079,7 +1060,7 @@ For the appearance of a contest on a particular ballot style.This property uses 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_3_43401a7_1394477833535_563732_3249"></a>`{Contest}`|1|`Contest`|The contest associated represented by OrderedContest.
-<a name="_17_0_3_43401a7_1394477871277_951066_3270"></a>`{OrderedContestSelection}`|0..*|`ContestSelection`|The contest selections for the ballot.
+<a name="_17_0_3_43401a7_1394477871277_951066_3270"></a>`{OrderedContestOption}`|0..*|`ContestOption`|The contest selections for the ballot.
 <a name="_19_0_4_2a60152_1659786637432_429182_5111"></a>`{Physical}`|0..*|`PhysicalContest`|For describing the physical aspects of the contest.
 
 
@@ -1102,7 +1083,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of Party](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_78e0236_1389366278128_412819_2460.svg)
 
-Used to describe a political party that can then be referenced in other elements. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Party. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440), [PartyContest](#_17_0_2_4_d420315_1393514218965_55008_3144), [PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826), and [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) reference Party.
+Used to describe a political party that can then be referenced in other elements. [BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Party. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440), [PartyRegistration](#_17_0_2_4_78e0236_1394566839296_58362_2826), and [Person](#_17_0_5_1_43401a7_1400623980732_100904_3567) reference Party.
 
 Party is an abstract type with one subtype [Coalition](#_18_0_2_6340208_1425647247631_162984_4712), used to define coalitions.
 
@@ -1157,7 +1138,7 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of Person](BallotDefinition_UML_Model_Documentation_files/_17_0_5_1_43401a7_1400623980732_100904_3567.svg)
 
-For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. [ElectionReport](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Person. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440), [ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433) and
+For defining information about a person; the person may be a candidate, election official, authority for a reporting unit, etc. [BallotDefinition](#_17_0_2_4_78e0236_1389366195564_913164_2300) includes Person. [Candidate](#_17_0_2_4_78e0236_1389366272694_544359_2440), [ElectionAdministration](#_18_0_2_6340208_1441311877439_710008_4433) and
 [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) references Person. Person optionally references [ContactInformation](#_17_0_5_1_43401a7_1400624327407_326048_3637) for associating contact information.
 
 Multiple occurrences of the MiddleName attribute can be used as needed, e.g., for names such as “John Andrew Winston Smith”.
@@ -1200,12 +1181,12 @@ Property  | Multiplicity | Type | Property Description
 
 ![Image of PhysicalContestOption](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638814789673_90932_5706.svg)
 
-For associating a [ContestSelection](#_17_0_2_4_78e0236_1389372124445_11077_2906) to its physical manifestation. Each PhysicalContestOption is specified in terms of a particular [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993). A PhysicalContestOption may have multiple [OptionPosition](#_19_0_4_43701b0_1638813504990_545136_4990) instances, for voting methods that require it (e.g. rank choice voting). [WriteInPosition](#_19_0_4_43701b0_1638813504998_266381_4995) specifies the response area where name(s) may written-in.
+For associating a [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) to its physical manifestation. Each PhysicalContestOption is specified in terms of a particular [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993). A PhysicalContestOption may have multiple [OptionPosition](#_19_0_4_43701b0_1638813504990_545136_4990) instances, for voting methods that require it (e.g. rank choice voting). [WriteInPosition](#_19_0_4_43701b0_1638813504998_266381_4995) specifies the response area where name(s) may written-in.
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
-<a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestSelection}`|0..1|`ContestSelection`|For associating a PhysicalContestOption with a ContestSelection. This should always be provided unless the contest option is for a write-in.
-<a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{Indicator}`|0..1|`Geometry`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
+<a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestOption}`|0..1|`ContestOption`|For associating a PhysicalContestOption with a ContestOption. This should always be provided unless the contest option is for a write-in.
+<a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{Indicator}`|0..1|`Shape`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
 <a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|
 <a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..*|`WriteInPosition`|
 
@@ -1226,6 +1207,25 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_f71035d_1441362119057_984284_2224"></a>`Label`|0..1|`String`|For use as needed and compatibility with the VIP schema.
 <a name="_18_0_2_6340208_1427122157536_969193_4595"></a>`StartDate`|0..1|`date`|For the starting date of the schedule.
 <a name="_18_0_2_6340208_1427122178673_228183_4597"></a>`EndDate`|0..1|`date`|For the ending date of the schedule.
+
+
+
+### <a name="_19_0_4_43701b0_1638813504993_202084_4994"></a>*The **Shape** Class*
+
+![Image of Shape](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1638813504993_202084_4994.svg)
+
+For defining a geometric shape. Geometry can be used to represent content on a physical ballot style, such as for associating an [OptionPosition](#_19_0_4_43701b0_1638813504990_545136_4990) to its shape. It is also used by [FiducialMark](#_19_0_4_43701b0_1658343993325_108021_5129) to define the shape it takes..
+
+ 
+
+Strokes when applied, are applied evenhanded.
+
+Property  | Multiplicity | Type | Property Description
+--------- | ------------ | ---- | ---------------------
+<a name="_19_0_4_43701b0_1656513867120_25918_5112"></a>`FillColor`|0..1|`HtmlColorString`|For fiducial marks only. If not specified, no fill is assumed.
+<a name="_19_0_4_43701b0_1657564755655_784075_5843"></a>`ShapeType`|1|`ShapeType`|The shape this Geometry represents.
+<a name="_19_0_4_43701b0_1638824437354_427069_5934"></a>`StrokeColor`|0..1|`HtmlColorString`|The color of the stroke. If no color is specified, assume black (what XFA does)
+<a name="_19_0_4_43701b0_1638824320308_540725_5932"></a>`StrokeWidth`|0..1|`float`|The width of the stroke in the measurement units of the [BallotFormat](#_19_0_4_43701b0_1638813504993_325485_4993) associated with the [PhysicalContest](#_19_0_4_43701b0_1654799451085_749033_5240).
 
 
 

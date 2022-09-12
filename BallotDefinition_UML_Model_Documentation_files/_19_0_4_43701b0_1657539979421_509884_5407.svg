@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="1699" gradientUnits="userSpaceOnUse" x2="1888" y1="530" y2="600" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="1566" gradientUnits="userSpaceOnUse" x2="1755" y1="537" y2="607" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,19 +14,19 @@
       ><path d="M0 0 L219 0 L219 100 L0 100 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M1684 515 L1903 515 L1903 615 L1684 615 L1684 515 Z"
+      ><path d="M1551 522 L1770 522 L1770 622 L1551 622 L1551 522 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="219" height="100" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1702" y="533" transform="translate(-1684,-515)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="189" text-rendering="geometricPrecision" height="70" stroke="none"
-      /><rect x="1699" y="530" transform="translate(-1684,-515)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="189" text-rendering="geometricPrecision" height="70" stroke="none"
+      /><rect x="1569" y="540" transform="translate(-1551,-522)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="189" text-rendering="geometricPrecision" height="70" stroke="none"
+      /><rect x="1566" y="537" transform="translate(-1551,-522)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="189" text-rendering="geometricPrecision" height="70" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1684,-515)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="1699" width="189" height="70" y="530" clip-path="url(#clipPath2)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1551,-522)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="1566" width="189" height="70" y="537" clip-path="url(#clipPath2)"
     /></g
-    ><g font-size="11" stroke-linecap="butt" transform="translate(-1684,-515)" text-rendering="geometricPrecision" stroke-linejoin="round" font-style="italic" font-weight="bold"
-    ><text x="1741.5" space="preserve" y="542.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g font-size="11" stroke-linecap="butt" transform="translate(-1551,-522)" text-rendering="geometricPrecision" stroke-linejoin="round" font-style="italic" font-weight="bold"
+    ><text x="1608.5" space="preserve" y="549.958" clip-path="url(#clipPath2)" stroke="none"
       >ControllingContest</text
     ></g
   ></g

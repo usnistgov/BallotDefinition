@@ -29,8 +29,8 @@
       >+SequenceOrder : Integer [0..1]</text
     ></g
     ><g font-size="11" stroke-linecap="butt" transform="translate(-2127,-979)" text-rendering="geometricPrecision" stroke-linejoin="round" font-style="italic" font-weight="bold"
-    ><text x="2254.5" space="preserve" y="1006.958" clip-path="url(#clipPath2)" stroke="none"
-      >ContestSelection</text
+    ><text x="2261" space="preserve" y="1006.958" clip-path="url(#clipPath2)" stroke="none"
+      >ContestOption</text
     ></g
   ></g
 ></svg
