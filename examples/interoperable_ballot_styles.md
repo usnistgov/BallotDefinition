@@ -91,7 +91,7 @@ The `PhysicalContestOption` element contains information about individual target
 
 ```xml
 <PhysicalContestOption>
-	<ContestSelectionId>cs-biden-harris</ContestSelectionId>
+	<ContestOptionId>cs-biden-harris</ContestOptionId>
 	<OptionPosition>
 		<H>13.5</H>
 		<Sheet>1</Sheet>
@@ -121,18 +121,18 @@ The `Contest` element includes information about each contest and the contest se
 
 ```xml
 <Contest ObjectId="cc-president" xsi:type="CandidateContest">
-	<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-biden-harris">
+	<ContestOption xsi:type="CandidateOption" ObjectId="cs-biden-harris">
 		<CandidateIds>can-joseph-biden can-kamala-harris</CandidateIds>
-	</ContestSelection>
-	<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-hawkins-walker">
+	</ContestOption>
+	<ContestOption xsi:type="CandidateOption" ObjectId="cs-hawkins-walker">
 		<CandidateIds>can-howie-hawkins can-angela-walker</CandidateIds>
-	</ContestSelection>
-	<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-jorgensen-cohen">
+	</ContestOption>
+	<ContestOption xsi:type="CandidateOption" ObjectId="cs-jorgensen-cohen">
 		<CandidateIds>can-jo-jorgensen can-spike-cohen</CandidateIds>
-	</ContestSelection>
-	<ContestSelection xsi:type="CandidateSelection" ObjectId="cs-trump-pence">
+	</ContestOption>
+	<ContestOption xsi:type="CandidateOption" ObjectId="cs-trump-pence">
 		<CandidateIds>can-donald-trump can-michael-pence</CandidateIds>
-	</ContestSelection>
+	</ContestOption>
 	<ElectionDistrictId>gpu-ohio</ElectionDistrictId>
 	<Name>PRESIDENT OF THE UNITED STATES</Name>
 	<VoteVariation>n-of-m</VoteVariation>

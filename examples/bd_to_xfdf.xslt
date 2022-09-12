@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- stylesheet to generate Adobe XFDF representations of PDF annotations from NIST Ballot Definition Common Data Format -->
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="fn" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1" version="3.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="fn" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-20/v1" version="3.0">
 	<!-- the Type of ExternalIdentifier used to lookup the BallotStyle, stable by default -->
 	<xsl:param name="targetBallotStyleType" required="no" select="'stable'"/>
 	<!-- input parameter, stable external identifier for target BallotStyle -->
@@ -87,7 +87,7 @@
 			<xsl:attribute name="fringe">0,0,0,0</xsl:attribute>
 			<!-- assumes all have a front and back -->
 			<xsl:attribute name="page" select="(cdf:Sheet*2) - 2 + (if(cdf:Side = 'front') then 0 else 1)"/>
-			<xsl:attribute name="title" select="concat($representationOf,' for ',../cdf:ContestSelectionId)"/>
+			<xsl:attribute name="title" select="concat($representationOf,' for ',../cdf:ContestOptionId)"/>
 			<xsl:attribute name="name" select="fn:generate-id(.)"/>
 			<!-- Rect is x bot-left, y bot-left, x top-right, y top-right -->
 			<xsl:attribute name="rect"><xsl:value-of select="cdf:X"/>,<xsl:value-of select="$longEdge - cdf:Y"/>,<xsl:value-of select="cdf:X + cdf:W"/>,<xsl:value-of select="$longEdge - cdf:Y - cdf:H"/></xsl:attribute>
