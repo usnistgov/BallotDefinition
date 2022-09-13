@@ -482,6 +482,7 @@ For associating a physical contest option to the location(s) where a selection c
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1644416632980_218913_5044"></a>`FractionalVotes`|0..1|`FractionalNumber`|The proper fractional number of votes represented by the option position.
+<a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{Indicator}`|0..1|`Shape`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
 <a name="_19_0_4_43701b0_1638813505007_354025_5007"></a>`NumberVotes`|1|`Integer`|The number of votes represented by the option position.
 <a name="_19_0_4_43701b0_1638813505009_80371_5008"></a>`Rank`|0..1|`Integer`|The rank represented by the option position, if a RCV contest.
 
@@ -1186,7 +1187,6 @@ For associating a [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) t
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestOption}`|0..1|`ContestOption`|For associating a PhysicalContestOption with a ContestOption. This should always be provided unless the contest option is for a write-in.
-<a name="_19_0_4_43701b0_1638889227376_664701_6275"></a>`{Indicator}`|0..1|`Shape`|For associating an OptionPosition with the shape that conveys the expected location of a mark.
 <a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|
 <a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..*|`WriteInPosition`|
 

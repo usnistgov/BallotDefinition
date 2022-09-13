@@ -26,9 +26,9 @@
     ><rect fill="none" x="1132" width="212" height="61" y="943" clip-path="url(#clipPath2)"
       /><line y2="961" fill="none" x1="1132" clip-path="url(#clipPath2)" x2="1344" y1="961"
       /><text x="1135" font-size="11" y="995.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-CausesActivation : Boolean [1]</text
+      >+Selection : InternationalizedText [1]</text
       ><text x="1135" font-size="11" y="983.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >-Selection : InternationalizedText [1]</text
+      >+CausesActivation : Boolean [1]</text
     ></g
     ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-1117,-928)" stroke-linecap="butt" stroke-linejoin="round"
     ><text x="1219" space="preserve" y="972.1475" clip-path="url(#clipPath2)" stroke="none"
