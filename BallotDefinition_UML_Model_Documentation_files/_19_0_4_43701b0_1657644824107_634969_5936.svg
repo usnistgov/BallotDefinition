@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="1524" gradientUnits="userSpaceOnUse" x2="1736" y1="705" y2="754" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="1750" gradientUnits="userSpaceOnUse" x2="1962" y1="644" y2="693" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,24 +14,24 @@
       ><path d="M0 0 L242 0 L242 79 L0 79 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M1509 690 L1751 690 L1751 769 L1509 769 L1509 690 Z"
+      ><path d="M1735 629 L1977 629 L1977 708 L1735 708 L1735 629 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="242" height="79" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1527" y="708" transform="translate(-1509,-690)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="212" text-rendering="geometricPrecision" height="49" stroke="none"
-      /><rect x="1524" y="705" transform="translate(-1509,-690)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="212" text-rendering="geometricPrecision" height="49" stroke="none"
+      /><rect x="1753" y="647" transform="translate(-1735,-629)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="212" text-rendering="geometricPrecision" height="49" stroke="none"
+      /><rect x="1750" y="644" transform="translate(-1735,-629)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="212" text-rendering="geometricPrecision" height="49" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1509,-690)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="1524" width="212" height="49" y="705" clip-path="url(#clipPath2)"
-      /><line y2="723" fill="none" x1="1524" clip-path="url(#clipPath2)" x2="1736" y1="723"
-      /><text x="1527" font-size="11" y="745.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1735,-629)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="1750" width="212" height="49" y="644" clip-path="url(#clipPath2)"
+      /><line y2="662" fill="none" x1="1750" clip-path="url(#clipPath2)" x2="1962" y1="662"
+      /><text x="1753" font-size="11" y="684.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >-SummaryText : InternationalizedText [0..1]</text
     ></g
-    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-1509,-690)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="1611" space="preserve" y="734.1475" clip-path="url(#clipPath2)" stroke="none"
+    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-1735,-629)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="1837" space="preserve" y="673.1475" clip-path="url(#clipPath2)" stroke="none"
       >attributes</text
-      ><text x="1581" font-size="11" y="717.958" clip-path="url(#clipPath2)" font-style="normal" stroke="none" font-weight="bold" space="preserve"
+      ><text x="1807" font-size="11" y="656.958" clip-path="url(#clipPath2)" font-style="normal" stroke="none" font-weight="bold" space="preserve"
       >ActivationContest</text
     ></g
   ></g
