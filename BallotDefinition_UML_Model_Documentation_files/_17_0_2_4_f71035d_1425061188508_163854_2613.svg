@@ -25,12 +25,10 @@
     ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-671,-2050)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
     ><rect fill="none" x="686" width="220" height="142" y="2065" clip-path="url(#clipPath2)"
       /><line y2="2114" fill="none" x1="686" clip-path="url(#clipPath2)" x2="906" y1="2114"
-      /><text x="689" font-size="11" y="2198.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«mCDFLookup»other{Identifier = "7"}</text
-      ><text x="689" font-size="11" y="2186.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«mCDFLookup»state-level{Identifier = "6"}</text
+      /><text x="689" font-size="11" y="2186.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      >«mCDFLookup»other{Identifier = "6"}</text
       ><text x="689" font-size="11" y="2174.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
-      >«mCDFLookup»stable{Identifier = "5"}</text
+      >«mCDFLookup»state-level{Identifier = "5"}</text
       ><text x="689" font-size="11" y="2162.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >«mCDFLookup»ocd-id{Identifier = "4"}</text
       ><text x="689" font-size="11" y="2150.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"

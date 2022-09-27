@@ -303,7 +303,6 @@
           <xsd:documentation xml:lang="en">For Open Civic Data identifiers.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
-      <xsd:enumeration value="stable"/>
       <xsd:enumeration value="state-level">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">For a code that is specific to a state.</xsd:documentation>
@@ -373,20 +372,6 @@
       <xsd:enumeration value="portrait">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Orient the sheet so that the ballot content print across the short edge of the paper.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-    </xsd:restriction>
-  </xsd:simpleType>
-  <xsd:simpleType name="ReadMethodType">
-    <xsd:restriction base="xsd:string">
-      <xsd:enumeration value="encoded-text">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For a read method that uses text encoded using a symbology.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:enumeration>
-      <xsd:enumeration value="omr">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For a read method that uses optical mark recognition.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -539,6 +524,20 @@
       <xsd:enumeration value="other">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Used for other types of reporting units not included in this enumeration.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SelectionCaptureMethod">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="mcdf">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For a read method that uses the mCDF encoded using a symbology.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="omr">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For a read method that uses optical mark recognition.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
     </xsd:restriction>
@@ -731,22 +730,17 @@ BallotDefinition references the major elements that are not necessarily specific
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating an ID with the report.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating an ID with the definition.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="GeneratedDate" type="DateTimeWithZone">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Identifies the date and time that the election report was generated.</xsd:documentation>
-        </xsd:annotation>
-      </xsd:element>
-      <xsd:element name="Geometry" type="Shape" minOccurs="0" maxOccurs="unbounded">
-        <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating parts of the ballot with geometric shapes.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Identifies the date and time that the ballot definition was generated.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="GpUnit" type="GpUnit" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating geopolitical units with the report.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating geopolitical units with the definition.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Header" type="Header" minOccurs="0" maxOccurs="unbounded">
@@ -756,17 +750,17 @@ BallotDefinition references the major elements that are not necessarily specific
       </xsd:element>
       <xsd:element name="Issuer" type="xsd:string">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Identification of the report issuer.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Identification of the definition issuer.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="IssuerAbbreviation" type="xsd:string">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">An abbreviation of the report issuer such as the 2-character U.S. Census Bureau abbreviation of the state providing the election definition, e.g., AL, TX, MN, etc.</xsd:documentation>
+          <xsd:documentation xml:lang="en">An abbreviation of the definition issuer such as the 2-character U.S. Census Bureau abbreviation of the state providing the election definition, e.g., AL, TX, MN, etc.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="IsTest" type="xsd:boolean" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Used to indicate whether the report is a test report. Assumed to be “false” if not present.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Used to indicate whether the definition is a test. Assumed to be “false” if not present.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Notes" type="xsd:string" minOccurs="0">
@@ -776,22 +770,22 @@ BallotDefinition references the major elements that are not necessarily specific
       </xsd:element>
       <xsd:element name="Office" type="Office" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating offices with the report.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating offices with the definition.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="OfficeGroup" type="OfficeGroup" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating a name for a grouping of offices with the report.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating a name for a grouping of offices with the definition.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Party" type="Party" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating parties with the report.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating parties with the definition.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="Person" type="Person" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating persons with the report.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating persons with the definition.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="SequenceStart" type="xsd:integer">
@@ -802,6 +796,11 @@ BallotDefinition references the major elements that are not necessarily specific
       <xsd:element name="SequenceEnd" type="xsd:integer">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The upper bound of the sequence; e.g., “1” if there is only 1 report, “2” if there are two reports in the sequence, etc.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="Shape" type="Shape" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating parts of the ballot with geometric shapes.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="TestType" type="xsd:string" minOccurs="0">
@@ -830,7 +829,7 @@ BallotFormat sets the MeasurementUnit appropriate for the marking surface used.<
     <xsd:sequence>
       <xsd:element name="Application" type="xsd:string" minOccurs="0">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">The application associated with the ballot format.</xsd:documentation>
+          <xsd:documentation xml:lang="en">The application that generates ballots in the ballot format.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" maxOccurs="unbounded">
@@ -868,7 +867,7 @@ BallotFormat sets the MeasurementUnit appropriate for the marking surface used.<
           <xsd:documentation xml:lang="en">Orientation of the page relative to the coordinate plane.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="ReadMethod" type="ReadMethodType">
+      <xsd:element name="SelectionCaptureMethod" type="SelectionCaptureMethod">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">The method used to read contest selections or indications on the ballot.</xsd:documentation>
         </xsd:annotation>
@@ -946,11 +945,6 @@ If the type of ballot measure is not listed in enumeration BallotMeasureType, us
     <xsd:complexContent>
       <xsd:extension base="ContestOption">
         <xsd:sequence>
-          <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
-            <xsd:annotation>
-              <xsd:documentation xml:lang="en">For associating an ID with the ballot measure selection.</xsd:documentation>
-            </xsd:annotation>
-          </xsd:element>
           <xsd:element name="Selection" type="InternationalizedText">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">Contains the text used to indicate a vote for or against the ballot measure, e.g., “yes”, “no”.</xsd:documentation>
@@ -1078,7 +1072,7 @@ ExternalIdentifier can be used to associate IDs with the candidate. If the type 
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating codes with the candidate.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating IDs with the candidate.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="FileDate" type="xsd:date" minOccurs="0">
@@ -1310,7 +1304,7 @@ RetentionContest includes BallotMeasureOption
 
 Contest includes a required ElectionDistrict reference to a GpUnit defined for the geographical scope of the contest. For example, in a state senate contest, ElectionDistrict would reference a GpUnit of type ReportingUnit element defined for the district associated with the contest. Office also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same GpUnit defined for the state or county, etc., can be re-used.
 SequenceOrder is used for results display ordering, i.e., to display contests according to a particular ordering. For example, "100" may indicate a U.S. Senatorial contest, "200" may indicate a U.S. Congressional contest, etc. SequenceOrder is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the BallotStyle element, which associates ballot styles with their corresponding precincts or other geopolitical units.
-When including ExternalIdentifiers, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
+When including ExternalIdentifier elements, if the type is not listed in enumeration IdentifierType, use other and include the type (that is not listed in the enumeration) in OtherType.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
       <xsd:element name="Abbreviation" type="xsd:string" minOccurs="0">
@@ -1330,7 +1324,7 @@ When including ExternalIdentifiers, if the type is not listed in enumeration Ide
       </xsd:element>
       <xsd:element name="ContestOption" type="ContestOption" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating a contest selection for the contest, i.e., a candidate, a ballot measure.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating contest options for the contest, e.g., candidates,  ballot measure options.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="ElectionDistrictId" type="xsd:IDREF">
@@ -1393,6 +1387,11 @@ PartyOption, used if the contest type is for a party, e.g., for a party list con
 SequenceOrder is included to specify an ordering for the contest selections for purposes of display only. The original ballot ordering can be preserved, however, by using the BallotStyle class.</xsd:documentation>
     </xsd:annotation>
     <xsd:sequence>
+      <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For associating an ID with the contest option.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
       <xsd:element name="SequenceOrder" type="xsd:integer" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation xml:lang="en">Order in which the candidate is listed on the ballot for purposes of display. If not present, no order is assumed.</xsd:documentation>
@@ -1552,7 +1551,7 @@ For elements that link to ExternalIdentifier instances, if the type is not liste
     <xsd:complexContent>
       <xsd:extension base="BoundedObject">
         <xsd:sequence>
-          <xsd:element name="GeometryId" type="xsd:IDREF">
+          <xsd:element name="ShapeId" type="xsd:IDREF">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For associating a FiducialMark with the geometric shape that represents it.</xsd:documentation>
             </xsd:annotation>
@@ -2028,7 +2027,7 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
       </xsd:element>
       <xsd:element name="ExternalIdentifier" type="ExternalIdentifier" minOccurs="0" maxOccurs="unbounded">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">For associating codes with the person.</xsd:documentation>
+          <xsd:documentation xml:lang="en">For associating IDs with the person.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
       <xsd:element name="FirstName" type="xsd:string" minOccurs="0">

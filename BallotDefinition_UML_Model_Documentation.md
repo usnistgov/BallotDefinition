@@ -14,8 +14,8 @@
     - *The **[MeasurementUnitType](#_19_0_4_43701b0_1644432449846_831106_5074)** Enumeration*
     - *The **[OfficeTermType](#_17_0_2_4_f71035d_1425314816880_411605_2504)** Enumeration*
     - *The **[OrientationType](#_19_0_4_43701b0_1654872700628_375746_5104)** Enumeration*
-    - *The **[ReadMethodType](#_19_0_4_43701b0_1656439060260_881241_16237)** Enumeration*
     - *The **[ReportingUnitType](#_17_0_2_4_f71035d_1431607637366_785815_2242)** Enumeration*
+    - *The **[SelectionCaptureMethod](#_19_0_4_43701b0_1656439060260_881241_16237)** Enumeration*
     - *The **[ShapeType](#_19_0_4_43701b0_1657558418384_602517_5820)** Enumeration*
     - *The **[StraightPartyRuleset](#_19_0_4_43701b0_1657644674655_50560_5899)** Enumeration*
     - *The **[VoteVariation](#_17_0_2_4_78e0236_1389798224990_11192_4272)** Enumeration*
@@ -188,7 +188,6 @@ Name | Value
 `local-level`|For a code that is specific to a county or other similar locality.
 `national-level`|For a code that is used at the national level other than “fips” or “ocd-id”.
 `ocd-id`|For Open Civic Data identifiers.
-`stable`|
 `state-level`|For a code that is specific to a state.
 `other`|Used when the type of code is not included in this enumeration.
 
@@ -227,17 +226,6 @@ Name | Value
 `landscape`|Orient the sheet so that the ballot content print across the long edge of the paper.
 `portrait`|Orient the sheet so that the ballot content print across the short edge of the paper.
 
-### <a name="_19_0_4_43701b0_1656439060260_881241_16237"></a>*The **ReadMethodType** Enumeration*
-
-![Image of ReadMethodType](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1656439060260_881241_16237.svg)
-
-
-
-Name | Value
----- | -----
-`encoded-text`|For a read method that uses text encoded using a symbology.
-`omr`|For a read method that uses optical mark recognition.
-
 ### <a name="_17_0_2_4_f71035d_1431607637366_785815_2242"></a>*The **ReportingUnitType** Enumeration*
 
 ![Image of ReportingUnitType](BallotDefinition_UML_Model_Documentation_files/_17_0_2_4_f71035d_1431607637366_785815_2242.svg)
@@ -275,6 +263,17 @@ Name | Value
 `ward`|Used for combinations or groupings of precincts or other units.
 `water`|Used for a water district.
 `other`|Used for other types of reporting units not included in this enumeration.
+
+### <a name="_19_0_4_43701b0_1656439060260_881241_16237"></a>*The **SelectionCaptureMethod** Enumeration*
+
+![Image of SelectionCaptureMethod](BallotDefinition_UML_Model_Documentation_files/_19_0_4_43701b0_1656439060260_881241_16237.svg)
+
+
+
+Name | Value
+---- | -----
+`mcdf`|For a read method that uses the mCDF encoded using a symbology.
+`omr`|For a read method that uses optical mark recognition.
 
 ### <a name="_19_0_4_43701b0_1657558418384_602517_5820"></a>*The **ShapeType** Enumeration*
 
@@ -359,21 +358,21 @@ Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1638813505041_459512_5041"></a>`{BallotFormat}`|0..*|`BallotFormat`|For associating ballot formats with the definition.
 <a name="_17_0_2_4_f71035d_1426102320351_976615_2363"></a>`{Election}`|0..*|`Election`|For associating elections with the definition.
-<a name="_17_0_2_4_f71035d_1430412040553_669909_2247"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the report.
-<a name="_17_0_2_4_78e0236_1389733247429_431211_3338"></a>`GeneratedDate`|1|`DateTimeWithZone`|Identifies the date and time that the election report was generated.
-<a name="_19_0_4_43701b0_1638813505040_165532_5037"></a>`{Geometry}`|0..*|`Shape`|For associating parts of the ballot with geometric shapes.
-<a name="_17_0_2_4_f71035d_1426788982595_725441_2719"></a>`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the report.
+<a name="_17_0_2_4_f71035d_1430412040553_669909_2247"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the definition.
+<a name="_17_0_2_4_78e0236_1389733247429_431211_3338"></a>`GeneratedDate`|1|`DateTimeWithZone`|Identifies the date and time that the ballot definition was generated.
+<a name="_17_0_2_4_f71035d_1426788982595_725441_2719"></a>`{GpUnit}`|0..*|`GpUnit`|For associating geopolitical units with the definition.
 <a name="_18_5_3_43701b0_1527684452231_716184_6305"></a>`{Header}`|0..*|`Header`|For associating headers with parts of a ballot style.
-<a name="_17_0_5_1_43401a7_1394578590416_259347_3759"></a>`Issuer`|1|`RichText`|Identification of the report issuer.
-<a name="_17_0_2_4_f71035d_1426542944036_608477_2211"></a>`IssuerAbbreviation`|1|`RichText`|An abbreviation of the report issuer such as the 2-character U.S. Census Bureau abbreviation of the state providing the election definition, e.g., AL, TX, MN, etc.
-<a name="_18_0_2_6340208_1425917205849_590264_4699"></a>`IsTest`|0..1|`Boolean`|Used to indicate whether the report is a test report. Assumed to be “false” if not present.
+<a name="_17_0_5_1_43401a7_1394578590416_259347_3759"></a>`Issuer`|1|`RichText`|Identification of the definition issuer.
+<a name="_17_0_2_4_f71035d_1426542944036_608477_2211"></a>`IssuerAbbreviation`|1|`RichText`|An abbreviation of the definition issuer such as the 2-character U.S. Census Bureau abbreviation of the state providing the election definition, e.g., AL, TX, MN, etc.
+<a name="_18_0_2_6340208_1425917205849_590264_4699"></a>`IsTest`|0..1|`Boolean`|Used to indicate whether the definition is a test. Assumed to be “false” if not present.
 <a name="_17_0_2_4_f71035d_1400594737789_912202_2453"></a>`Notes`|0..1|`RichText`|For including an arbitrary message with the definition.
-<a name="_17_0_2_4_f71035d_1426788177421_963220_2552"></a>`{Office}`|0..*|`Office`|For associating offices with the report.
-<a name="_17_0_2_4_f71035d_1433183761792_828366_2293"></a>`{OfficeGroup}`|0..*|`OfficeGroup`|For associating a name for a grouping of offices with the report.
-<a name="_17_0_2_4_f71035d_1426788475880_621446_2579"></a>`{Party}`|0..*|`Party`|For associating parties with the report.
-<a name="_17_0_2_4_f71035d_1426788901070_281905_2692"></a>`{Person}`|0..*|`Person`|For associating persons with the report.
+<a name="_17_0_2_4_f71035d_1426788177421_963220_2552"></a>`{Office}`|0..*|`Office`|For associating offices with the definition.
+<a name="_17_0_2_4_f71035d_1433183761792_828366_2293"></a>`{OfficeGroup}`|0..*|`OfficeGroup`|For associating a name for a grouping of offices with the definition.
+<a name="_17_0_2_4_f71035d_1426788475880_621446_2579"></a>`{Party}`|0..*|`Party`|For associating parties with the definition.
+<a name="_17_0_2_4_f71035d_1426788901070_281905_2692"></a>`{Person}`|0..*|`Person`|For associating persons with the definition.
 <a name="_17_0_2_4_78e0236_1389734122703_834255_3892"></a>`SequenceStart`|1|`Integer`|The report’s number as part of a sequence of reports, used with [SequenceEnd](#_17_0_3_43401a7_1390917636239_792774_2880) so as to be read as, e.g., 1 of 1, 1 of 2, 2 of 2, etc.  Starts with “1”.
 <a name="_17_0_3_43401a7_1390917636239_792774_2880"></a>`SequenceEnd`|1|`Integer`|The upper bound of the sequence; e.g., “1” if there is only 1 report, “2” if there are two reports in the sequence, etc.
+<a name="_19_0_4_43701b0_1638813505040_165532_5037"></a>`{Shape}`|0..*|`Shape`|For associating parts of the ballot with geometric shapes.
 <a name="_17_0_2_4_f71035d_1428427515312_561619_2215"></a>`TestType`|0..1|`String`|A description of the type of test, e.g., pre-election, logic and accuracy, etc.
 <a name="_17_0_2_4_78e0236_1389733233791_999255_3335"></a>`VendorApplicationId`|1|`String`|An identifier of the vendor application generating the ballot definition, e.g., X-EMS version 3.1.a.
 <a name="_19_0_4_2a60152_1659798525588_52670_5175"></a>`Version`|1|`BallotDefinitionVersion`|To identify the version of the BD specification being used, i.e., version 1.0.0. This will need to be updated for different versions of the specification.
@@ -391,7 +390,7 @@ BallotFormat sets the [MeasurementUnit](#_19_0_4_43701b0_1644432420684_862271_50
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
-<a name="_19_0_4_43701b0_1644416765920_868492_5058"></a>`Application`|0..1|`String`|The application associated with the ballot format.
+<a name="_19_0_4_43701b0_1644416765920_868492_5058"></a>`Application`|0..1|`String`|The application that generates ballots in the ballot format.
 <a name="_19_0_4_43701b0_1654704956084_328829_4972"></a>`ExternalIdentifier`|1..*|`ExternalIdentifier`|For associating IDs with the ballot format.
 <a name="_19_0_4_43701b0_1656430562032_266351_16158"></a>`{FiducialMark}`|0..*|`FiducialMark`|For associating a ballot format with one or more global fiducial marks appearing on a ballot.
 <a name="_19_0_4_43701b0_1644443744943_743823_5101"></a>`LongEdge`|1|`float`|Measurement of the long edge of the ballot sheet.
@@ -399,7 +398,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_19_0_4_43701b0_1638814322895_950323_5680"></a>`{mCDFArea}`|0..*|`mCDFArea`|For locating the data encoded using a mCDF Profile (e.g. mCDF Profile for Contest Selection Capture).
 <a name="_19_0_4_43701b0_1644432420684_862271_5068"></a>`MeasurementUnit`|1|`MeasurementUnitType`|The measurement units used to express locations of ballot content, such as contest option positions.
 <a name="_19_0_4_43701b0_1644869744155_852258_4966"></a>`Orientation`|1|`OrientationType`|Orientation of the page relative to the coordinate plane.
-<a name="_19_0_4_43701b0_1656439040649_609126_16227"></a>`ReadMethod`|1|`ReadMethodType`|The method used to read contest selections or indications on the ballot.
+<a name="_19_0_4_43701b0_1656439040649_609126_16227"></a>`SelectionCaptureMethod`|1|`SelectionCaptureMethod`|The method used to read contest selections or indications on the ballot.
 <a name="_19_0_4_43701b0_1644443719202_478120_5099"></a>`ShortEdge`|1|`float`|Measurement of the short edge of the ballot sheet.
 
 
@@ -457,7 +456,7 @@ FiducialMark is a subclass of [BoundedObject](#_19_0_4_43701b0_1638813504988_273
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
-<a name="_19_0_4_43701b0_1658344152816_61585_5158"></a>`{Geometry}`|1|`Shape`|For associating a FiducialMark with the geometric shape that represents it.
+<a name="_19_0_4_43701b0_1658344152816_61585_5158"></a>`{Shape}`|1|`Shape`|For associating a FiducialMark with the geometric shape that represents it.
 
 
 
@@ -516,7 +515,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_2_4_78e0236_1389710816659_20227_2170"></a>`BallotName`|1|`InternationalizedText`|For the candidate’s name as listed on the ballot.
 <a name="_19_0_2_43701b0_1576187672054_587470_4958"></a>`CampaignSlogan`|0..1|`InternationalizedText`|The slogan or motto used by the candidate in their campaign.
 <a name="_18_0_2_6340208_1498659302196_151943_4608"></a>`{ContactInformation}`|0..1|`ContactInformation`|For associating contact information for the candidate.
-<a name="_17_0_2_4_f71035d_1430405890311_465205_2454"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating codes with the candidate.
+<a name="_17_0_2_4_f71035d_1430405890311_465205_2454"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating IDs with the candidate.
 <a name="_17_0_2_4_f71035d_1400615133498_375109_2704"></a>`FileDate`|0..1|`date`|Date when the candidate filed for the contest.
 <a name="_17_0_2_4_f71035d_1401280462978_833890_2462"></a>`IsIncumbent`|0..1|`Boolean`|Boolean to indicate whether the candidate is the incumbent for the office associated with the contest. Assumed to be “false” if not present.
 <a name="_17_0_2_4_f71035d_1403276277476_329066_2190"></a>`IsTopTicket`|0..1|`Boolean`|Boolean to indicate whether the candidate is the top of a ticket that includes multiple candidates. Assumed to be “false” if not present.
@@ -577,7 +576,7 @@ Contest includes [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) to
 
 [Contest](#_17_0_2_4_78e0236_1389366251994_876831_2400) includes a required [ElectionDistrict](#_17_0_2_4_78e0236_1389366667508_703141_2753) reference to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the geographical scope of the contest. For example, in a state senate contest, [ElectionDistrict](#_17_0_2_4_78e0236_1389366667508_703141_2753) would reference a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) of type [ReportingUnit](#_17_0_2_4_f71035d_1400606476166_735297_2593) element defined for the district associated with the contest. [Office](#_17_0_5_1_43401a7_1400623830572_164081_3518) also includes an optional reference that serves the same purpose. Note that for contests that are state-wide or county-wide and so forth, the same [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) defined for the state or county, etc., can be re-used.
 [SequenceOrder](#_17_0_2_4_f71035d_1426083547931_912709_2690) is used for results display ordering, i.e., to display contests according to a particular ordering. For example, “100” may indicate a U.S. Senatorial contest, “200” may indicate a U.S. Congressional contest, etc. [SequenceOrder](#_17_0_2_4_f71035d_1426083547931_912709_2690) is not appropriate to use as the contest order on the ballot; contest order on each ballot can be preserved, however, using the [BallotStyle](#_17_0_2_4_78e0236_1389366224561_797289_2360) element, which associates ballot styles with their corresponding precincts or other geopolitical units.
-When including [ExternalIdentifiers](#_17_0_2_4_f71035d_1430405712653_451634_2410), if the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
+When including [ExternalIdentifier](#_17_0_2_4_f71035d_1430405712653_451634_2410) elements, if the type is not listed in enumeration [IdentifierType](#_17_0_2_4_f71035d_1425061188508_163854_2613), use other and include the type (that is not listed in the enumeration) in [OtherType](#_17_0_2_4_f71035d_1430405732252_109247_2429).
 
 
 Property  | Multiplicity | Type | Property Description
@@ -585,7 +584,7 @@ Property  | Multiplicity | Type | Property Description
 <a name="_17_0_5_1_43401a7_1395831571231_804795_3632"></a>`Abbreviation`|0..1|`String`|Abbreviation for the contest.
 <a name="_17_0_2_4_f71035d_1426519324658_821208_2483"></a>`BallotSubTitle`|0..1|`InternationalizedText`|Subtitle of the contest as it appears on the ballot.
 <a name="_17_0_2_4_f71035d_1426519300284_211849_2479"></a>`BallotTitle`|0..1|`InternationalizedText`|Title of the contest as it appears on the ballot.
-<a name="_17_0_2_4_78e0236_1389366541302_23458_2637"></a>`{ContestOption}`|0..*|`ContestOption`|For associating a contest selection for the contest, i.e., a candidate, a ballot measure.
+<a name="_17_0_2_4_78e0236_1389366541302_23458_2637"></a>`{ContestOption}`|0..*|`ContestOption`|For associating contest options for the contest, e.g., candidates, ballot measure options.
 <a name="_17_0_2_4_78e0236_1389366667508_703141_2753"></a>`{ElectionDistrict}`|1|`ReportingUnit`|Link to a [GpUnit](#_17_0_2_4_78e0236_1389366233346_42391_2380) instance. For associating the contest with a reporting unit that represents the geographical scope of the contest, e.g., a district, etc.
 <a name="_17_0_2_4_f71035d_1430412090176_814999_2249"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the contest.
 <a name="_17_0_2_4_f71035d_1426006769365_710376_2474"></a>`HasRotation`|0..1|`Boolean`|Boolean to indicate whether the selections in the contest are rotated. Assumed to be “no” if not present.
@@ -745,6 +744,7 @@ Used for the contest selections in a contest (e.g., for candidates, for ballot m
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
+<a name="_19_0_2_43701b0_1576350241608_897910_4990"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the contest option.
 <a name="_17_0_2_4_f71035d_1426296042287_22607_2200"></a>`SequenceOrder`|0..1|`Integer`|Order in which the candidate is listed on the ballot for purposes of display. If not present, no order is assumed.
 
 
@@ -769,7 +769,6 @@ For a contest selection in a ballot measure contest. Because judicial or other r
 
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
-<a name="_19_0_2_43701b0_1576350241608_897910_4990"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating an ID with the ballot measure selection.
 <a name="_17_0_2_4_78e0236_1389710917151_765889_2176"></a>`Selection`|1|`InternationalizedText`|Contains the text used to indicate a vote for or against the ballot measure, e.g., “yes”, “no”.
 
 
@@ -1148,7 +1147,7 @@ Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_17_0_2_4_f71035d_1409158807179_27867_2211"></a>`{ContactInformation}`|0..*|`ContactInformation`|For associating contact information with the person.
 <a name="_18_0_2_6340208_1425648435033_458578_4893"></a>`DateOfBirth`|0..1|`date`|Person’s date of birth.
-<a name="_18_0_2_6340208_1498659439219_798023_4630"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating codes with the person.
+<a name="_18_0_2_6340208_1498659439219_798023_4630"></a>`ExternalIdentifier`|0..*|`ExternalIdentifier`|For associating IDs with the person.
 <a name="_17_0_2_4_f71035d_1400615204010_564458_2712"></a>`FirstName`|0..1|`RichText`|Person’s first (given) name.
 <a name="_17_0_2_4_f71035d_1430494058940_208317_2499"></a>`FullName`|0..1|`InternationalizedText`|Person’s full name.
 <a name="_17_0_2_4_f71035d_1434470206427_617716_2233"></a>`Gender`|0..1|`RichText`|Person’s gender.
