@@ -1,0 +1,186 @@
+{
+	"Election": [
+		{
+			"Candidate": [
+				{
+					"@id": "can-alex-mack",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Alex Mack",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"PartyId": "par-rep",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-ray-alverado",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Ray Alvarado",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"PartyId": "par-rep",
+					"@type": "BallotDefinition.Candidate"
+				}
+			],
+			"Contest": [
+				{
+					"SummaryText": {
+						"Text": [
+							{
+								"Content": "Shall Danielle Atron be recalled as mayor of St. Ignace?",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.ActivationContest",
+					"ControlledContestIds": [
+						"cc-replacements"
+					],
+					"@id": "cc-activation-contest",
+					"ContestOption": [
+						{
+							"CausesActivation": true,
+							"Selection": {
+								"Text": [
+									{
+										"Content": "YES",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.ActivationOption",
+							"@id": "cs-activation-yes"
+						},
+						{
+							"CausesActivation": false,
+							"Selection": {
+								"Text": [
+									{
+										"Content": "NO",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.ActivationOption",
+							"@id": "cs-activation-no"
+						}
+					],
+					"ElectionDistrictId": "ru-st-ignace",
+					"Name": "St. Ignace Mayoral Recall"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "cc-replacements",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"can-alex-mack"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-alex-mack"
+						},
+						{
+							"CandidateIds": [
+								"can-ray-alverado"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-ray-alverado"
+						}
+					],
+					"ElectionDistrictId": "ru-st-ignace",
+					"Name": "Replacement for St. Ignance Mayor"
+				}
+			],
+			"ElectionScopeId": "ru-st-ignace",
+			"EndDate": "2022-08-02",
+			"Name": {
+				"Text": [
+					{
+						"Content": "SPECIAL RECALL ELECTION",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"StartDate": "2022-08-02",
+			"Type": "special",
+			"@type": "BallotDefinition.Election"
+		}
+	],
+	"GeneratedDate": "2022-07-12T00:00:00Z",
+	"GpUnit": [
+		{
+			"Type": "state-senate",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "ru-st-ignace",
+			"Name": {
+				"Text": [
+					{
+						"Content": "City of St. Ignace",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			}
+		}
+	],
+	"Issuer": "NIST POC",
+	"IssuerAbbreviation": "NIST",
+	"Party": [
+		{
+			"@id": "par-rep",
+			"IsRecognizedParty": true,
+			"Name": {
+				"Text": [
+					{
+						"Content": "Republican",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		},
+		{
+			"@id": "par-dem",
+			"IsRecognizedParty": true,
+			"Name": {
+				"Text": [
+					{
+						"Content": "Democratic",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		}
+	],
+	"SequenceEnd": 1,
+	"SequenceStart": 1,
+	"VendorApplicationId": "Hand Written",
+	"Version": "1.0.0",
+	"@type": "BallotDefinition.BallotDefinition"
+}

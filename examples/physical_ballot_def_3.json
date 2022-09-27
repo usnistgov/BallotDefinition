@@ -1,0 +1,3501 @@
+{
+	"BallotFormat": [
+		{
+			"@id": "bf-1",
+			"ExternalIdentifier": [
+				{
+					"@id": "",
+					"Type": "stable",
+					"Value": "BM1",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			],
+			"LongEdge": 792,
+			"MeasurementUnit": "pt",
+			"Orientation": "portrait",
+			"ReadMethod": "omr",
+			"ShortEdge": 612,
+			"@type": "BallotDefinition.BallotFormat"
+		}
+	],
+	"Election": [
+		{
+			"BallotStyle": [
+				{
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "stable",
+							"Value": "01-0052-01",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"GpUnitIds": [
+						"gpu-precinct"
+					],
+					"OrderedContent": [
+						{
+							"ContestId": "_1GO",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1AEF",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 409.5962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1AJK",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 455.9962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1AAR",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 496.3962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 86.4,
+													"Y": 529.3002
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_2AG",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1BDP",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 598.4972
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1BMD",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 632.8972
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_3AS",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1CBB",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 108.9452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1CJC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 143.3452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1CDY",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 177.7452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_4SS",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1DJH",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 248.3962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1DKK",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 282.7962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1DNT",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 317.1962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_5TS",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1ECP",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 387.8472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1EJM",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 422.2472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_6RC",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1FMZ",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 504.8982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1FMF",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 539.2982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_8SR34",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1GCB",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 621.9492
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1GES",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 250.16,
+													"Y": 656.3492
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_9CC",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1HBR",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 120.9452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1HIS",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 155.3452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1HDW",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 189.7452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1HJD",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 224.1452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1HGH",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 258.5452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1HSK",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 292.9452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_10SB",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1IDS",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 382.5962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1IMC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 406.9962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1ISF",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 431.3962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1ISR",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 455.7962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_11JS1",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1JTL",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 528.4471
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1JSK",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 552.8472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_11JS2",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1KJO",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 625.4982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1KJF",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 649.8982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_12CA9",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1LTL",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 127.9452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1LEB",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 152.3452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_13CP1",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1MTO",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 236.9962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1MRC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 261.3962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_14CP2",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1NTG",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 346.0472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1NLC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 370.4472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_15CP3",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1OAM",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 455.0982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1OLD",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 479.4982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_16CP4",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1PBW",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 564.1492
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1PMR",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 588.5492
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_17CP5",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1QCC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 673.2002
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1QJC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 697.6002
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_18CP6",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1RTP",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 127.9452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1RRM",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 152.3452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_19CP7",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1SJO",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 236.9962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1TM",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 261.3962
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_20CP8",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1TLT",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 358.0472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1TJL",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 382.4472
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_19CP9",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1UJQ",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 479.0982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1UKC",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 503.4982
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_22CP10",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1VES",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 600.1492
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1VKO",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 250.16,
+													"Y": 624.5492
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_23ST",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1DY",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 414.68,
+													"Y": 301.3282
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1DN",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 414.68,
+													"Y": 325.7282
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_24CA1",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS2DY",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 414.68,
+													"Y": 506.9622
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS2DN",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "back",
+													"W": 10,
+													"X": 414.68,
+													"Y": 531.3622
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						},
+						{
+							"ContestId": "_25CA2",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS3DY",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 2,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 224.5282
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS3DN",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 2,
+													"Side": "front",
+													"W": 10,
+													"X": 85.64003,
+													"Y": 248.9282
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						}
+					],
+					"@type": "BallotDefinition.BallotStyle"
+				}
+			],
+			"Candidate": [
+				{
+					"@id": "_1AEF",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Edward FitzGerald and Sharen\n\t\t\t\t\t\t\t\t\tSwartz Neuhardt",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1AEF",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1AJK",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "\n\t\t\t\t\t\t\t\t\t\tJohn Kasich and \n\t\t\t\t\t\t\t\t\t\tMary Taylor\n\t\t\t\t\t\t\t\t\t",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1AJK",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1AAR",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Anita Rios and Bob\n\t\t\t\t\t\t\t\t\tFitrakis",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1AAR",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Green",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1BDP",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "David Pepper",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1BDP",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1BMD",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Mike DeWine",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1BMD",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1CBB",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Bob Bridges",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1CBB",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Libertarian",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1CJC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "John Patrick\n\t\t\t\t\t\t\t\t\tCarney",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1CJC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1CDY",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "David Yost",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1CDY",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1DJH",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Jon Husted",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1DJH",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1DKK",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Kevin Knedler",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1DKK",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Libertarian",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1DNT",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Nina Turner",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1DNT",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1ECP",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Connie Pillich",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1ECP",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1EJM",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Josh Mandel",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1EJM",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1FMZ",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Mark Zetzer",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1FMZ",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1FMF",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Marcia L. Fudge",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1FMF",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1GCB",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Cynthia D. Blake",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1GCB",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1GES",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Emilia Sykes",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1GES",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1HBR",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Bill Roemer",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1HBR",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1HIS",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Ilene Shapiro",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1HIS",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1HDW",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Debbie Walsh",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1HDW",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Republican",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1HJD",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "John A. Donofrio",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1HJD",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1HGH",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Gary Hagen",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1HGH",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1HSK",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Sandra Kurt",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1HSK",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"PartyId": "_Democratic",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1IDS",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "David A. Spencer",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1IDS",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1IMC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Michael Charney",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1IMC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1ISF",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Sarah E. Fowler",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1ISF",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1ISR",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Sarah Freeman",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1ISR",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1JTL",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Tom Letson",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1JTL",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1JSK",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Sharon Kennedy",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1JSK",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1KJO",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "John P. O'Donnell",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1KJO",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1KJF",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Judi French",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1KJF",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1LTL",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Julie A. Schafer",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1LTL",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1LEB",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Eve Belfance",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1LEB",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1MTO",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Tammy O'Brien",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1MTO",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1MRC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Ron Cable",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1MRC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1NTG",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Tavia Baxter\n\t\t\t\t\t\t\t\t\tGalonski",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1NTG",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1NLC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Lynne S. Callahan",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1NLC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1OAM",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Alison McCarty",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1OAM",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1OLD",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Lisa Dean",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1OLD",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1PBW",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Beth Whitmore",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1PBW",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1PMR",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Mary Margaret\n\t\t\t\t\t\t\t\t\tRowlands",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1PMR",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1QCC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Christine Croce",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1QCC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1QJC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "John Clark",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1QJC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1RTP",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Tom Parker",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1RTP",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1RRM",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Rob McCarty",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1RRM",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1SJO",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Jon Oldham",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1SJO",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1TM",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Todd McKenney",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1TM",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1TLT",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Linda Tucci\n\t\t\t\t\t\t\t\t\tTeodosio",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1TLT",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1TJL",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Jill Flagg\n\t\t\t\t\t\t\t\t\tLanzinger",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1TJL",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1UJQ",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "John P. Quinn",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1UJQ",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1UKC",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Katarina Cook",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1UKC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1VES",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Elinore Marsh\n\t\t\t\t\t\t\t\t\tStormer",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1VES",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "_1VKO",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Kandi S. C'Connor",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1VKO",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"@type": "BallotDefinition.Candidate"
+				}
+			],
+			"Contest": [
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_1GO",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1AEF"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1AEF"
+						},
+						{
+							"CandidateIds": [
+								"_1AJK"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1AJK"
+						},
+						{
+							"CandidateIds": [
+								"_1AAR"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1AAR"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "1GO",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "For Governor and Lieutenant Governor",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_2AG",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1BDP"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1BDP"
+						},
+						{
+							"CandidateIds": [
+								"_1BMD"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1BMD"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "2AG",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "For Attorney General",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_3AS",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1CBB"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1CBB"
+						},
+						{
+							"CandidateIds": [
+								"_1CJC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1CJC"
+						},
+						{
+							"CandidateIds": [
+								"_1CDY"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1CDY"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "3AS",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "For Auditor of State",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_4SS",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1DJH"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1DJH"
+						},
+						{
+							"CandidateIds": [
+								"_1DKK"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1DKK"
+						},
+						{
+							"CandidateIds": [
+								"_1DNT"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1DNT"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "4SS",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "For Secretary of State",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_5TS",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1ECP"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1ECP"
+						},
+						{
+							"CandidateIds": [
+								"_1EJM"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1EJM"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "5TS",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "For Treasurer of State",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_6RC",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1FMZ"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1FMZ"
+						},
+						{
+							"CandidateIds": [
+								"_1FMF"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1FMF"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "6RC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Representative to\n\t\t\t\t\t\t\t\tCongress(11th District)\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_8SR34",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1GCB"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1GCB"
+						},
+						{
+							"CandidateIds": [
+								"_1GES"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1GES"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "8SR34",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor State\n\t\t\t\t\t\t\t\tRepresentative(34th District)\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 3,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_9CC",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1HBR"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HBR"
+						},
+						{
+							"CandidateIds": [
+								"_1HIS"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HIS"
+						},
+						{
+							"CandidateIds": [
+								"_1HDW"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HDW"
+						},
+						{
+							"CandidateIds": [
+								"_1HJD"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HJD"
+						},
+						{
+							"CandidateIds": [
+								"_1HGH"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HGH"
+						},
+						{
+							"CandidateIds": [
+								"_1HSK"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HSK"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "9CC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Member of  County\n\t\t\t\t\t\t\t\tCouncil at Large\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_10SB",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1IDS"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1IDS"
+						},
+						{
+							"CandidateIds": [
+								"_1IMC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1IMC"
+						},
+						{
+							"CandidateIds": [
+								"_1ISF"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1ISF"
+						},
+						{
+							"CandidateIds": [
+								"_1ISR"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1ISR"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "10SB",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Member of State Board of\n\t\t\t\t\t\t\t\tEducation(7th District)\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_11JS1",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1JTL"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1JTL"
+						},
+						{
+							"CandidateIds": [
+								"_1JSK"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1JSK"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "11JS1",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Justice of the Supreme Court\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/1/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_11JS2",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1KJO"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1KJO"
+						},
+						{
+							"CandidateIds": [
+								"_1KJF"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1KJF"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "11JS2",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Justice of the Supreme Court\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/2/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_12CA9",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1LTL"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1LTL"
+						},
+						{
+							"CandidateIds": [
+								"_1LEB"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1LEB"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "12CA9",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\tAppeals(9th District)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 2/9/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_13CP1",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1MTO"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1MTO"
+						},
+						{
+							"CandidateIds": [
+								"_1MRC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1MRC"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "13CP1",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/2/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_14CP2",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1NTG"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1NTG"
+						},
+						{
+							"CandidateIds": [
+								"_1NLC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1NLC"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "14CP2",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/3/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_15CP3",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1OAM"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1OAM"
+						},
+						{
+							"CandidateIds": [
+								"_1OLD"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1OLD"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "15CP3",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/5/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_16CP4",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1PBW"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1PBW"
+						},
+						{
+							"CandidateIds": [
+								"_1PMR"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1PMR"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "16CP4",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/6/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_17CP5",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1QCC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1QCC"
+						},
+						{
+							"CandidateIds": [
+								"_1QJC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1QJC"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "17CP5",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 2/9/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_18CP6",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1RTP"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1RTP"
+						},
+						{
+							"CandidateIds": [
+								"_1RRM"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1RRM"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "18CP6",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 5/1/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_19CP7",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1SJO"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1SJO"
+						},
+						{
+							"CandidateIds": [
+								"_1TM"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1TM"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "19CP7",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/4/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_20CP8",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1TLT"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1TLT"
+						},
+						{
+							"CandidateIds": [
+								"_1TJL"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1TJL"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "20CP8",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas(Juvenile Division)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/1/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_19CP9",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1UJQ"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1UJQ"
+						},
+						{
+							"CandidateIds": [
+								"_1UKC"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1UKC"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "19CP9",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas(Domestic Relations Division)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/4/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_22CP10",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"_1VES"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1VES"
+						},
+						{
+							"CandidateIds": [
+								"_1VKO"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1VKO"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "22CP10",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\tFor Judge of the Court of\n\t\t\t\t\t\t\t\t Common Pleas(Probate Division)\n\t\t\t\t\t\t\t\t\tFull Term Commencing 1/4/2015\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m"
+				},
+				{
+					"@id": "_23ST",
+					"ContestOption": [
+						{
+							"Selection": {
+								"Text": [
+									{
+										"Content": "YES",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.BallotMeasureOption",
+							"@id": "_CS1DY"
+						},
+						{
+							"Selection": {
+								"Text": [
+									{
+										"Content": "NO",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.BallotMeasureOption",
+							"@id": "_CS1DN"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "23ST",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t12 Proposed\n\t\t\t\t\t\t\t\t\tSales and Use Tax County of Summit \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m",
+					"@type": "BallotDefinition.BallotMeasureContest"
+				},
+				{
+					"@id": "_24CA1",
+					"ContestOption": [
+						{
+							"Selection": {
+								"Text": [
+									{
+										"Content": "YES",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.BallotMeasureOption",
+							"@id": "_CS2DY"
+						},
+						{
+							"Selection": {
+								"Text": [
+									{
+										"Content": "NO",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.BallotMeasureOption",
+							"@id": "_CS2DN"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "24CA1",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t13  Proposed\n\t\t\t\t\t\t\t\t\tCharter Amendment  County of Summit \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m",
+					"@type": "BallotDefinition.BallotMeasureContest"
+				},
+				{
+					"@id": "_25CA2",
+					"ContestOption": [
+						{
+							"Selection": {
+								"Text": [
+									{
+										"Content": "YES",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.BallotMeasureOption",
+							"@id": "_CS3DY"
+						},
+						{
+							"Selection": {
+								"Text": [
+									{
+										"Content": "NO",
+										"Language": "en",
+										"@type": "BallotDefinition.LanguageString"
+									}
+								],
+								"@type": "BallotDefinition.InternationalizedText"
+							},
+							"@type": "BallotDefinition.BallotMeasureOption",
+							"@id": "_CS3DN"
+						}
+					],
+					"ElectionDistrictId": "gpu-precinct",
+					"ExternalIdentifier": [
+						{
+							"@id": "",
+							"Type": "local-level",
+							"Value": "25CA2",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t14  Proposed\n\t\t\t\t\t\t\t\t\tCharter Amendment  County of Summit \n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t",
+					"VoteVariation": "n-of-m",
+					"@type": "BallotDefinition.BallotMeasureContest"
+				}
+			],
+			"ElectionScopeId": "gpu-precinct",
+			"EndDate": "2014-11-04",
+			"Name": {
+				"Text": [
+					{
+						"Content": "2014 General Election",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"StartDate": "2014-11-04",
+			"Type": "general",
+			"@type": "BallotDefinition.Election"
+		}
+	],
+	"GeneratedDate": "2018-07-15T00:00:00Z",
+	"Geometry": [
+		{
+			"@id": "geo-oval",
+			"ShapeType": "ellipse",
+			"StrokeWidth": 1,
+			"@type": "BallotDefinition.Shape"
+		}
+	],
+	"GpUnit": [
+		{
+			"Type": "precinct",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "gpu-precinct",
+			"ExternalIdentifier": [
+				{
+					"@id": "",
+					"Type": "local-level",
+					"Value": "77",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			]
+		}
+	],
+	"Issuer": "The Turnout LLC",
+	"IssuerAbbreviation": "The Turnout",
+	"Party": [
+		{
+			"@id": "_Democratic",
+			"Name": {
+				"Text": [
+					{
+						"Content": "Democratic",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		},
+		{
+			"@id": "_Republican",
+			"Name": {
+				"Text": [
+					{
+						"Content": "Republican",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		},
+		{
+			"@id": "_Green",
+			"Name": {
+				"Text": [
+					{
+						"Content": "Green",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		},
+		{
+			"@id": "_Libertarian",
+			"Name": {
+				"Text": [
+					{
+						"Content": "Libertarian",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		}
+	],
+	"SequenceEnd": 1,
+	"SequenceStart": 1,
+	"VendorApplicationId": "NIST POC",
+	"Version": "1.0.0",
+	"@type": "BallotDefinition.BallotDefinition"
+}

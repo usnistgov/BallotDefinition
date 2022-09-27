@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-20/v1" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+	<cdf:BallotFormat ObjectId="bf-1">
+		<cdf:ExternalIdentifier>
+			<cdf:Type>stable</cdf:Type>
+			<cdf:Value>BM1</cdf:Value>
+		</cdf:ExternalIdentifier>
+		<cdf:LongEdge>792</cdf:LongEdge>
+		<cdf:MeasurementUnit>pt</cdf:MeasurementUnit>
+		<cdf:Orientation>portrait</cdf:Orientation>
+		<cdf:ReadMethod>omr</cdf:ReadMethod>
+		<cdf:ShortEdge>612</cdf:ShortEdge>
+	</cdf:BallotFormat>
+	<cdf:Election>
+		<cdf:BallotStyle>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>stable</cdf:Type>
+				<cdf:Value>01-0052-01</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:GpUnitIds>gpu-precinct</cdf:GpUnitIds>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_1GO</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1AEF</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>409.59617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1AJK</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>455.99617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1AAR</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>496.39617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>86.40000002</cdf:X>
+							<cdf:Y>529.30017325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_2AG</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1BDP</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>598.49717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1BMD</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>632.89717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_3AS</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1CBB</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>108.94517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1CJC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>143.34517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1CDY</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>177.74517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_4SS</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1DJH</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>248.39617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1DKK</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>282.79617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1DNT</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>317.19617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_5TS</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1ECP</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>387.84717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1EJM</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>422.24717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_6RC</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1FMZ</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>504.89817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1FMF</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>539.29817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_8SR34</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1GCB</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>621.94917325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1GES</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>656.34917325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_9CC</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1HBR</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>120.94517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1HIS</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>155.34517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1HDW</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>189.74517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1HJD</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>224.14517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1HGH</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>258.54517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1HSK</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>292.94517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_10SB</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1IDS</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>382.59617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1IMC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>406.99617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1ISF</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>431.39617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1ISR</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>455.79617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_11JS1</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1JTL</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>528.44717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1JSK</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>552.84717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_11JS2</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1KJO</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>625.49817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1KJF</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>649.89817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_12CA9</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1LTL</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>127.94517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1LEB</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>152.34517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_13CP1</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1MTO</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>236.99617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1MRC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>261.39617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_14CP2</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1NTG</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>346.04717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1NLC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>370.44717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_15CP3</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1OAM</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>455.09817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1OLD</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>479.49817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_16CP4</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1PBW</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>564.14917325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1PMR</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>588.54917325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_17CP5</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1QCC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>673.20017325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1QJC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>697.60017325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_18CP6</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1RTP</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>127.94517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1RRM</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>152.34517325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_19CP7</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1SJO</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>236.99617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1TM</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>261.39617325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_20CP8</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1TLT</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>358.04717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1TJL</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>382.44717325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_19CP9</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1UJQ</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>479.09817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1UKC</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>503.49817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_22CP10</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1VES</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>600.14917325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1VKO</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>250.16003156</cdf:X>
+							<cdf:Y>624.54917325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_23ST</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1DY</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>301.32817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS1DN</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>325.72817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_24CA1</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS2DY</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>506.96217325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS2DN</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>1</cdf:Sheet>
+							<cdf:Side>back</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>414.6800316</cdf:X>
+							<cdf:Y>531.36217325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+			<cdf:OrderedContent xsi:type="cdf:OrderedContest">
+				<cdf:ContestId>_25CA2</cdf:ContestId>
+				<cdf:Physical>
+					<cdf:BallotFormatId>bf-1</cdf:BallotFormatId>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS3DY</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>2</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>224.52817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+					<cdf:PhysicalContestOption>
+						<cdf:ContestOptionId>_CS3DN</cdf:ContestOptionId>
+						<cdf:OptionPosition>
+							<cdf:H>10</cdf:H>
+							<cdf:Sheet>2</cdf:Sheet>
+							<cdf:Side>front</cdf:Side>
+							<cdf:W>10</cdf:W>
+							<cdf:X>85.64003152</cdf:X>
+							<cdf:Y>248.92817325</cdf:Y>
+							<cdf:IndicatorId>geo-oval</cdf:IndicatorId>
+							<cdf:NumberVotes>1</cdf:NumberVotes>
+						</cdf:OptionPosition>
+					</cdf:PhysicalContestOption>
+				</cdf:Physical>
+			</cdf:OrderedContent>
+		</cdf:BallotStyle>
+		<cdf:Candidate ObjectId="_1AEF">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Edward FitzGerald and Sharen
+									Swartz Neuhardt</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1AEF</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1AJK">
+			<cdf:BallotName>
+				<cdf:Text Language="en">
+										John Kasich and 
+										Mary Taylor
+									</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1AJK</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1AAR">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Anita Rios and Bob
+									Fitrakis</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1AAR</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Green</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1BDP">
+			<cdf:BallotName>
+				<cdf:Text Language="en">David Pepper</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1BDP</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1BMD">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Mike DeWine</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1BMD</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1CBB">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Bob Bridges</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1CBB</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Libertarian</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1CJC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">John Patrick
+									Carney</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1CJC</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1CDY">
+			<cdf:BallotName>
+				<cdf:Text Language="en">David Yost</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1CDY</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1DJH">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Jon Husted</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1DJH</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1DKK">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Kevin Knedler</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1DKK</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Libertarian</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1DNT">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Nina Turner</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1DNT</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1ECP">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Connie Pillich</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1ECP</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1EJM">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Josh Mandel</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1EJM</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1FMZ">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Mark Zetzer</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1FMZ</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1FMF">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Marcia L. Fudge</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1FMF</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1GCB">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Cynthia D. Blake</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1GCB</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1GES">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Emilia Sykes</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1GES</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1HBR">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Bill Roemer</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1HBR</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1HIS">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Ilene Shapiro</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1HIS</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1HDW">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Debbie Walsh</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1HDW</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Republican</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1HJD">
+			<cdf:BallotName>
+				<cdf:Text Language="en">John A. Donofrio</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1HJD</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1HGH">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Gary Hagen</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1HGH</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1HSK">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Sandra Kurt</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1HSK</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:PartyId>_Democratic</cdf:PartyId>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1IDS">
+			<cdf:BallotName>
+				<cdf:Text Language="en">David A. Spencer</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1IDS</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1IMC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Michael Charney</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1IMC</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1ISF">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Sarah E. Fowler</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1ISF</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1ISR">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Sarah Freeman</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1ISR</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1JTL">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Tom Letson</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1JTL</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1JSK">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Sharon Kennedy</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1JSK</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1KJO">
+			<cdf:BallotName>
+				<cdf:Text Language="en">John P. O'Donnell</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1KJO</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1KJF">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Judi French</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1KJF</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1LTL">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Julie A. Schafer</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1LTL</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1LEB">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Eve Belfance</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1LEB</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1MTO">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Tammy O'Brien</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1MTO</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1MRC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Ron Cable</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1MRC</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1NTG">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Tavia Baxter
+									Galonski</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1NTG</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1NLC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Lynne S. Callahan</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1NLC</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1OAM">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Alison McCarty</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1OAM</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1OLD">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Lisa Dean</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1OLD</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1PBW">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Beth Whitmore</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1PBW</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1PMR">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Mary Margaret
+									Rowlands</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1PMR</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1QCC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Christine Croce</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1QCC</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1QJC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">John Clark</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1QJC</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1RTP">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Tom Parker</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1RTP</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1RRM">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Rob McCarty</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1RRM</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1SJO">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Jon Oldham</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1SJO</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1TM">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Todd McKenney</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1TM</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1TLT">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Linda Tucci
+									Teodosio</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1TLT</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1TJL">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Jill Flagg
+									Lanzinger</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1TJL</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1UJQ">
+			<cdf:BallotName>
+				<cdf:Text Language="en">John P. Quinn</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1UJQ</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1UKC">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Katarina Cook</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1UKC</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1VES">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Elinore Marsh
+									Stormer</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1VES</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Candidate ObjectId="_1VKO">
+			<cdf:BallotName>
+				<cdf:Text Language="en">Kandi S. C'Connor</cdf:Text>
+			</cdf:BallotName>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1VKO</cdf:Value>
+			</cdf:ExternalIdentifier>
+		</cdf:Candidate>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_1GO">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1AEF">
+				<cdf:CandidateIds>_1AEF</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1AJK">
+				<cdf:CandidateIds>_1AJK</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1AAR">
+				<cdf:CandidateIds>_1AAR</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>1GO</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>For Governor and Lieutenant Governor</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_2AG">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1BDP">
+				<cdf:CandidateIds>_1BDP</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1BMD">
+				<cdf:CandidateIds>_1BMD</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>2AG</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>For Attorney General</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_3AS">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1CBB">
+				<cdf:CandidateIds>_1CBB</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1CJC">
+				<cdf:CandidateIds>_1CJC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1CDY">
+				<cdf:CandidateIds>_1CDY</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>3AS</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>For Auditor of State</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_4SS">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1DJH">
+				<cdf:CandidateIds>_1DJH</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1DKK">
+				<cdf:CandidateIds>_1DKK</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1DNT">
+				<cdf:CandidateIds>_1DNT</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>4SS</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>For Secretary of State</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_5TS">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1ECP">
+				<cdf:CandidateIds>_1ECP</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1EJM">
+				<cdf:CandidateIds>_1EJM</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>5TS</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>For Treasurer of State</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_6RC">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1FMZ">
+				<cdf:CandidateIds>_1FMZ</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1FMF">
+				<cdf:CandidateIds>_1FMF</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>6RC</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Representative to
+								Congress(11th District)
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_8SR34">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1GCB">
+				<cdf:CandidateIds>_1GCB</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1GES">
+				<cdf:CandidateIds>_1GES</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>8SR34</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For State
+								Representative(34th District)
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_9CC">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HBR">
+				<cdf:CandidateIds>_1HBR</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HIS">
+				<cdf:CandidateIds>_1HIS</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HDW">
+				<cdf:CandidateIds>_1HDW</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HJD">
+				<cdf:CandidateIds>_1HJD</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HGH">
+				<cdf:CandidateIds>_1HGH</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1HSK">
+				<cdf:CandidateIds>_1HSK</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>9CC</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Member of  County
+								Council at Large
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>3</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_10SB">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1IDS">
+				<cdf:CandidateIds>_1IDS</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1IMC">
+				<cdf:CandidateIds>_1IMC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1ISF">
+				<cdf:CandidateIds>_1ISF</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1ISR">
+				<cdf:CandidateIds>_1ISR</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>10SB</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Member of State Board of
+								Education(7th District)
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_11JS1">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1JTL">
+				<cdf:CandidateIds>_1JTL</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1JSK">
+				<cdf:CandidateIds>_1JSK</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>11JS1</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Justice of the Supreme Court
+									Full Term Commencing 1/1/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_11JS2">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1KJO">
+				<cdf:CandidateIds>_1KJO</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1KJF">
+				<cdf:CandidateIds>_1KJF</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>11JS2</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Justice of the Supreme Court
+									Full Term Commencing 1/2/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_12CA9">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1LTL">
+				<cdf:CandidateIds>_1LTL</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1LEB">
+				<cdf:CandidateIds>_1LEB</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>12CA9</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								Appeals(9th District)
+									Full Term Commencing 2/9/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_13CP1">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1MTO">
+				<cdf:CandidateIds>_1MTO</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1MRC">
+				<cdf:CandidateIds>_1MRC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>13CP1</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 1/2/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_14CP2">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1NTG">
+				<cdf:CandidateIds>_1NTG</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1NLC">
+				<cdf:CandidateIds>_1NLC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>14CP2</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 1/3/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_15CP3">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1OAM">
+				<cdf:CandidateIds>_1OAM</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1OLD">
+				<cdf:CandidateIds>_1OLD</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>15CP3</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 1/5/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_16CP4">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1PBW">
+				<cdf:CandidateIds>_1PBW</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1PMR">
+				<cdf:CandidateIds>_1PMR</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>16CP4</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 1/6/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_17CP5">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1QCC">
+				<cdf:CandidateIds>_1QCC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1QJC">
+				<cdf:CandidateIds>_1QJC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>17CP5</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 2/9/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_18CP6">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1RTP">
+				<cdf:CandidateIds>_1RTP</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1RRM">
+				<cdf:CandidateIds>_1RRM</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>18CP6</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 5/1/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_19CP7">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1SJO">
+				<cdf:CandidateIds>_1SJO</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1TM">
+				<cdf:CandidateIds>_1TM</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>19CP7</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas
+									Full Term Commencing 1/4/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_20CP8">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1TLT">
+				<cdf:CandidateIds>_1TLT</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1TJL">
+				<cdf:CandidateIds>_1TJL</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>20CP8</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas(Juvenile Division)
+									Full Term Commencing 1/1/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_19CP9">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1UJQ">
+				<cdf:CandidateIds>_1UJQ</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1UKC">
+				<cdf:CandidateIds>_1UKC</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>19CP9</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas(Domestic Relations Division)
+									Full Term Commencing 1/4/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:CandidateContest" ObjectId="_22CP10">
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1VES">
+				<cdf:CandidateIds>_1VES</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:CandidateOption" ObjectId="_CS1VKO">
+				<cdf:CandidateIds>_1VKO</cdf:CandidateIds>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>22CP10</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								For Judge of the Court of
+								 Common Pleas(Probate Division)
+									Full Term Commencing 1/4/2015
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+			<cdf:VotesAllowed>1</cdf:VotesAllowed>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:BallotMeasureContest" ObjectId="_23ST">
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS1DY">
+				<cdf:Selection>
+					<cdf:Text Language="en">YES</cdf:Text>
+				</cdf:Selection>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS1DN">
+				<cdf:Selection>
+					<cdf:Text Language="en">NO</cdf:Text>
+				</cdf:Selection>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>23ST</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								
+									12 Proposed
+									Sales and Use Tax County of Summit 
+									
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:BallotMeasureContest" ObjectId="_24CA1">
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS2DY">
+				<cdf:Selection>
+					<cdf:Text Language="en">YES</cdf:Text>
+				</cdf:Selection>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS2DN">
+				<cdf:Selection>
+					<cdf:Text Language="en">NO</cdf:Text>
+				</cdf:Selection>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>24CA1</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								
+									13  Proposed
+									Charter Amendment  County of Summit 
+									
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+		</cdf:Contest>
+		<cdf:Contest xsi:type="cdf:BallotMeasureContest" ObjectId="_25CA2">
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS3DY">
+				<cdf:Selection>
+					<cdf:Text Language="en">YES</cdf:Text>
+				</cdf:Selection>
+			</cdf:ContestOption>
+			<cdf:ContestOption xsi:type="cdf:BallotMeasureOption" ObjectId="_CS3DN">
+				<cdf:Selection>
+					<cdf:Text Language="en">NO</cdf:Text>
+				</cdf:Selection>
+			</cdf:ContestOption>
+			<!--We don't have a real GpUnit for districts RN-->
+			<cdf:ElectionDistrictId>gpu-precinct</cdf:ElectionDistrictId>
+			<cdf:ExternalIdentifier>
+				<cdf:Type>local-level</cdf:Type>
+				<cdf:Value>25CA2</cdf:Value>
+			</cdf:ExternalIdentifier>
+			<cdf:Name>
+								
+									14  Proposed
+									Charter Amendment  County of Summit 
+									
+								
+							</cdf:Name>
+			<cdf:VoteVariation>n-of-m</cdf:VoteVariation>
+		</cdf:Contest>
+		<cdf:ElectionScopeId>gpu-precinct</cdf:ElectionScopeId>
+		<cdf:ExternalIdentifier>
+			<cdf:Type>local-level</cdf:Type>
+			<cdf:Value>2014-11-04G</cdf:Value>
+		</cdf:ExternalIdentifier>
+		<cdf:Name>
+			<cdf:Text Language="en">2014 General Election</cdf:Text>
+		</cdf:Name>
+		<cdf:StartDate>2014-11-04</cdf:StartDate>
+		<cdf:EndDate>2014-11-04</cdf:EndDate>
+		<cdf:Type>general</cdf:Type>
+	</cdf:Election>
+	<cdf:GeneratedDate>2018-07-15T00:00:00Z</cdf:GeneratedDate>
+	<cdf:Geometry ObjectId="geo-oval">
+		<cdf:ShapeType>ellipse</cdf:ShapeType>
+		<cdf:StrokeWidth>1</cdf:StrokeWidth>
+	</cdf:Geometry>
+	<cdf:GpUnit xsi:type="cdf:ReportingUnit" ObjectId="gpu-precinct">
+		<cdf:ExternalIdentifier>
+			<cdf:Type>local-level</cdf:Type>
+			<cdf:Value>77</cdf:Value>
+		</cdf:ExternalIdentifier>
+		<cdf:Type>precinct</cdf:Type>
+	</cdf:GpUnit>
+	<cdf:Issuer>The Turnout LLC</cdf:Issuer>
+	<cdf:IssuerAbbreviation>The Turnout</cdf:IssuerAbbreviation>
+	<cdf:Party ObjectId="_Democratic">
+		<cdf:Name>
+			<cdf:Text Language="en">Democratic</cdf:Text>
+		</cdf:Name>
+	</cdf:Party>
+	<cdf:Party ObjectId="_Republican">
+		<cdf:Name>
+			<cdf:Text Language="en">Republican</cdf:Text>
+		</cdf:Name>
+	</cdf:Party>
+	<cdf:Party ObjectId="_Green">
+		<cdf:Name>
+			<cdf:Text Language="en">Green</cdf:Text>
+		</cdf:Name>
+	</cdf:Party>
+	<cdf:Party ObjectId="_Libertarian">
+		<cdf:Name>
+			<cdf:Text Language="en">Libertarian</cdf:Text>
+		</cdf:Name>
+	</cdf:Party>
+	<cdf:SequenceStart>1</cdf:SequenceStart>
+	<cdf:SequenceEnd>1</cdf:SequenceEnd>
+	<cdf:VendorApplicationId>NIST POC</cdf:VendorApplicationId>
+	<cdf:Version>1.0.0</cdf:Version>
+</cdf:BallotDefinition>

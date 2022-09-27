@@ -1,0 +1,220 @@
+{
+	"Election": [
+		{
+			"Candidate": [
+				{
+					"@id": "can-joe-smith",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Joe Smith",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"PartyId": "par-dem",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-maria-duty",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Maria Duty",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"PartyId": "par-dem",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-alex-mack",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Alex Mack",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"PartyId": "par-rep",
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-ray-alverado",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Ray Alvarado",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"PartyId": "par-rep",
+					"@type": "BallotDefinition.Candidate"
+				}
+			],
+			"Contest": [
+				{
+					"@type": "BallotDefinition.PartyPreferenceContest",
+					"ControlledContestIds": [
+						"cc-senate-rep",
+						"cc-senate-dem"
+					],
+					"@id": "cc-party-preference",
+					"ContestOption": [
+						{
+							"PartyIds": [
+								"par-dem"
+							],
+							"@type": "BallotDefinition.PartyOption",
+							"@id": "cs-party-preference-dem"
+						},
+						{
+							"PartyIds": [
+								"par-rep"
+							],
+							"@type": "BallotDefinition.PartyOption",
+							"@id": "cs-party-preference-rep"
+						}
+					],
+					"ElectionDistrictId": "ru-senate",
+					"Name": "Open Primary"
+				},
+				{
+					"PrimaryPartyIds": [
+						"par-rep"
+					],
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "cc-senate-rep",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"can-alex-mack"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-alex-mack"
+						},
+						{
+							"CandidateIds": [
+								"can-ray-alverado"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-ray-alverado"
+						}
+					],
+					"ElectionDistrictId": "ru-senate",
+					"Name": "Senate Contest for Republicans"
+				},
+				{
+					"PrimaryPartyIds": [
+						"par-dem"
+					],
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "cc-senate-dem",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"can-joe-smith"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-joe-smith"
+						},
+						{
+							"CandidateIds": [
+								"can-maria-duty"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-maria-duty"
+						}
+					],
+					"ElectionDistrictId": "ru-senate",
+					"Name": "Senate Contest for Democrats"
+				}
+			],
+			"ElectionScopeId": "ru-senate",
+			"EndDate": "2022-08-02",
+			"Name": {
+				"Text": [
+					{
+						"Content": "STATE PRIMARY",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"StartDate": "2022-08-02",
+			"Type": "partisan-primary-open",
+			"@type": "BallotDefinition.Election"
+		}
+	],
+	"GeneratedDate": "2022-07-12T00:00:00Z",
+	"GpUnit": [
+		{
+			"Type": "state-senate",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "ru-senate",
+			"Name": {
+				"Text": [
+					{
+						"Content": "State Senate District 1",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			}
+		}
+	],
+	"Issuer": "NIST POC",
+	"IssuerAbbreviation": "NIST",
+	"Party": [
+		{
+			"@id": "par-rep",
+			"IsRecognizedParty": true,
+			"Name": {
+				"Text": [
+					{
+						"Content": "Republican",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		},
+		{
+			"@id": "par-dem",
+			"IsRecognizedParty": true,
+			"Name": {
+				"Text": [
+					{
+						"Content": "Democratic",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"@type": "BallotDefinition.Party"
+		}
+	],
+	"SequenceEnd": 1,
+	"SequenceStart": 1,
+	"VendorApplicationId": "Hand Written",
+	"Version": "1.0.0",
+	"@type": "BallotDefinition.BallotDefinition"
+}
