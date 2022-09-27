@@ -2,19 +2,19 @@
 <cdf:BallotDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-20/v1" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
 	<cdf:BallotFormat ObjectId="bf-1">
 		<cdf:ExternalIdentifier>
-			<cdf:Type>stable</cdf:Type>
+			<cdf:Type>local-level</cdf:Type>
 			<cdf:Value>BM1</cdf:Value>
 		</cdf:ExternalIdentifier>
 		<cdf:LongEdge>792</cdf:LongEdge>
 		<cdf:MeasurementUnit>pt</cdf:MeasurementUnit>
 		<cdf:Orientation>portrait</cdf:Orientation>
-		<cdf:ReadMethod>omr</cdf:ReadMethod>
+		<cdf:SelectionCaptureMethod>omr</cdf:SelectionCaptureMethod>
 		<cdf:ShortEdge>612</cdf:ShortEdge>
 	</cdf:BallotFormat>
 	<cdf:Election>
 		<cdf:BallotStyle>
 			<cdf:ExternalIdentifier>
-				<cdf:Type>stable</cdf:Type>
+				<cdf:Type>local-level</cdf:Type>
 				<cdf:Value>01-0052-01</cdf:Value>
 			</cdf:ExternalIdentifier>
 			<cdf:GpUnitIds>gpu-precinct</cdf:GpUnitIds>
@@ -2026,10 +2026,7 @@
 		<cdf:Type>general</cdf:Type>
 	</cdf:Election>
 	<cdf:GeneratedDate>2018-07-15T00:00:00Z</cdf:GeneratedDate>
-	<cdf:Geometry ObjectId="geo-oval">
-		<cdf:ShapeType>ellipse</cdf:ShapeType>
-		<cdf:StrokeWidth>1</cdf:StrokeWidth>
-	</cdf:Geometry>
+	
 	<cdf:GpUnit xsi:type="cdf:ReportingUnit" ObjectId="gpu-precinct">
 		<cdf:ExternalIdentifier>
 			<cdf:Type>local-level</cdf:Type>
@@ -2061,6 +2058,10 @@
 	</cdf:Party>
 	<cdf:SequenceStart>1</cdf:SequenceStart>
 	<cdf:SequenceEnd>1</cdf:SequenceEnd>
+	<cdf:Shape ObjectId="geo-oval">
+		<cdf:ShapeType>ellipse</cdf:ShapeType>
+		<cdf:StrokeWidth>1</cdf:StrokeWidth>
+	</cdf:Shape>
 	<cdf:VendorApplicationId>NIST POC</cdf:VendorApplicationId>
 	<cdf:Version>1.0.0</cdf:Version>
 </cdf:BallotDefinition>

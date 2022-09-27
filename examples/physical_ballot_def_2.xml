@@ -2,7 +2,7 @@
 <BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
 	<BallotFormat ObjectId="bf-ess">
 		<ExternalIdentifier>
-			<Type>stable</Type>
+			<Type>local-level</Type>
 			<Value>E1</Value>
 		</ExternalIdentifier>
 		<FiducialMark>
@@ -12,7 +12,7 @@
 			<W>11.5</W>
 			<X>39.5</X>
 			<Y>95.6</Y>
-			<GeometryId>g-2</GeometryId>
+			<ShapeId>g-2</ShapeId>
 		</FiducialMark>
 		<LongEdge>1080</LongEdge>
 		<mCDFArea>
@@ -26,13 +26,13 @@
 		</mCDFArea>
 		<MeasurementUnit>pt</MeasurementUnit>
 		<Orientation>portrait</Orientation>
-		<ReadMethod>omr</ReadMethod>
+		<SelectionCaptureMethod>omr</SelectionCaptureMethod>
 		<ShortEdge>612</ShortEdge>
 	</BallotFormat>
 	<Election>
 		<BallotStyle>
 			<ExternalIdentifier>
-				<Type>stable</Type>
+				<Type>local-level</Type>
 				<Value>brk-a</Value>
 			</ExternalIdentifier>
 			<GpUnitIds>gpu-p-brk-a</GpUnitIds>
@@ -193,13 +193,6 @@
 		<Type>general</Type>
 	</Election>
 	<GeneratedDate>2022-08-16T00:00:00Z</GeneratedDate>
-	<Geometry ObjectId="g-1">
-		<ShapeType>ellipse</ShapeType>
-		<StrokeWidth>0.33</StrokeWidth>
-	</Geometry>
-	<Geometry ObjectId="g-2">
-		<ShapeType>rectangle</ShapeType>
-	</Geometry>
 	<GpUnit ObjectId="gpu-ohio" xsi:type="ReportingUnit">
 		<Name>
 			<Text Language="en">STATE OF OHIO</Text>
@@ -216,6 +209,13 @@
 	<IssuerAbbreviation>NIST</IssuerAbbreviation>
 	<SequenceStart>1</SequenceStart>
 	<SequenceEnd>1</SequenceEnd>
+	<Shape ObjectId="g-1">
+		<ShapeType>ellipse</ShapeType>
+		<StrokeWidth>0.33</StrokeWidth>
+	</Shape>
+	<Shape ObjectId="g-2">
+		<ShapeType>rectangle</ShapeType>
+	</Shape>
 	<VendorApplicationId>Hand Written</VendorApplicationId>
 	<Version>1.0.0</Version>
 </BallotDefinition>

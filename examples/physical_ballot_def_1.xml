@@ -2,19 +2,19 @@
 <BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
 	<BallotFormat ObjectId="bf-hart">
 		<ExternalIdentifier>
-			<Type>stable</Type>
+			<Type>local-level</Type>
 			<Value>H1</Value>
 		</ExternalIdentifier>
 		<LongEdge>1008</LongEdge>
 		<MeasurementUnit>pt</MeasurementUnit>
 		<Orientation>portrait</Orientation>
-		<ReadMethod>omr</ReadMethod>
+		<SelectionCaptureMethod>omr</SelectionCaptureMethod>
 		<ShortEdge>612</ShortEdge>
 	</BallotFormat>
 	<Election>
 		<BallotStyle>
 			<ExternalIdentifier>
-				<Type>stable</Type>
+				<Type>local-level</Type>
 				<Value>001-bra</Value>
 			</ExternalIdentifier>
 			<GpUnitIds>gpu-p-001-BRA</GpUnitIds>
@@ -183,13 +183,6 @@
 		<Type>general</Type>
 	</Election>
 	<GeneratedDate>2022-08-16T00:00:00Z</GeneratedDate>
-	<Geometry ObjectId="g-1">
-		<ShapeType>rectangle</ShapeType>
-		<StrokeWidth>2.25</StrokeWidth>
-	</Geometry>
-	<Geometry ObjectId="g-2">
-		<ShapeType>rectangle</ShapeType>
-	</Geometry>
 	<GpUnit ObjectId="gpu-ohio" xsi:type="ReportingUnit">
 		<Name>
 			<Text Language="en">STATE OF OHIO</Text>
@@ -206,6 +199,13 @@
 	<IssuerAbbreviation>NIST</IssuerAbbreviation>
 	<SequenceStart>1</SequenceStart>
 	<SequenceEnd>1</SequenceEnd>
+	<Shape ObjectId="g-1">
+		<ShapeType>rectangle</ShapeType>
+		<StrokeWidth>2.25</StrokeWidth>
+	</Shape>
+	<Shape ObjectId="g-2">
+		<ShapeType>rectangle</ShapeType>
+	</Shape>
 	<VendorApplicationId>Hand Written</VendorApplicationId>
 	<Version>1.0.0</Version>
 </BallotDefinition>
