@@ -3,3 +3,4 @@
 *.mdzip.bak
 .DS_Store
 *.spp
+.vscode
