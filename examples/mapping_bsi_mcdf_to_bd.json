@@ -1,0 +1,177 @@
+{
+	"BallotFormat": [
+		{
+			"@id": "bf-1",
+			"ExternalIdentifier": [
+				{
+					"Type": "local-level",
+					"Value": "BF1",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			],
+			"LongEdge": 1224,
+			"MeasurementUnit": "pt",
+			"Orientation": "portrait",
+			"SelectionCaptureMethod": "omr",
+			"ShortEdge": 612,
+			"@type": "BallotDefinition.BallotFormat"
+		}
+	],
+	"Election": [
+		{
+			"BallotStyle": [
+				{
+					"ExternalIdentifier": [
+						{
+							"Type": "local-level",
+							"Value": "052001",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"GpUnitIds": [
+						"prec-52"
+					],
+					"OrderedContent": [
+						{
+							"ContestId": "_9CC",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-1",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "_CS1HBR",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 120.9452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "_CS1HIS",
+											"OptionPosition": [
+												{
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 10,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 10,
+													"X": 414.68,
+													"Y": 155.3452
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						}
+					],
+					"@type": "BallotDefinition.BallotStyle"
+				}
+			],
+			"Contest": [
+				{
+					"VotesAllowed": 3,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "_9CC",
+					"ContestOption": [
+						{
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HBR"
+						},
+						{
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HIS"
+						},
+						{
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HDW"
+						},
+						{
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HJD"
+						},
+						{
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HGH"
+						},
+						{
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "_CS1HSK"
+						}
+					],
+					"ElectionDistrictId": "prec-52",
+					"ExternalIdentifier": [
+						{
+							"Type": "local-level",
+							"Value": "9CC",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"Name": "For Member of  County Council at Large",
+					"VoteVariation": "n-of-m"
+				}
+			],
+			"ElectionScopeId": "gpu-39153",
+			"EndDate": "2022-11-08",
+			"ExternalIdentifier": [
+				{
+					"Type": "local-level",
+					"Value": "2014-11-04G",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			],
+			"Name": {
+				"Text": [
+					{
+						"Content": "Example General Election",
+						"Language": "en-US",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"StartDate": "2022-11-08",
+			"Type": "general",
+			"@type": "BallotDefinition.Election"
+		}
+	],
+	"GeneratedDate": "2022-09-24T00:00:00Z",
+	"GpUnit": [
+		{
+			"Type": "county",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "gpu-39153",
+			"ExternalIdentifier": [
+				{
+					"Type": "local-level",
+					"Value": "39153",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			]
+		},
+		{
+			"Type": "precinct",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "prec-52"
+		}
+	],
+	"Issuer": "The Turnout LLC",
+	"IssuerAbbreviation": "Turnout",
+	"SequenceEnd": 1,
+	"SequenceStart": 1,
+	"VendorApplicationId": "Hand written",
+	"Version": "1.0.0",
+	"@type": "BallotDefinition.BallotDefinition"
+}

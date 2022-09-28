@@ -41,7 +41,7 @@ The layout of a ballot is defined at the top of the file within the `BallotForma
 ```xml
 <BallotFormat ObjectId="bf-ess">
 	<ExternalIdentifier>
-		<Type>stable</Type>
+		<Type>local-level</Type>
 		<Value>E1</Value>
 	</ExternalIdentifier>
 	...
@@ -171,10 +171,10 @@ The file `bd_to_xfdf.xlst` can be used to create overlays from custom ballot def
 - [SaxonJ Home Edition 11](https://sourceforge.net/projects/saxon/files/Saxon-HE/11/) or later (frameworks other than Java are supported, but this document assumes the use of the Java version)
 
 1. Navigate to the `SaxonHE11-4J` folder contained in the extracted ZIP file downloaded from the link above.
-2. In a terminal window or command prompt, execute the following command, where `<template>` is the path to the XSLT file in this repo, `<definition>` is the ballot definition file, `<bf_stable_id>` is the `stable` `ExternalIdentifier` for the target `BalltoFormat`, and `<bs_stable_id>` is the `stable` `ExternalIdentifier` for the target `BallotStyle`:
+2. In a terminal window or command prompt, execute the following command, where `<template>` is the path to the XSLT file in this repo, `<definition>` is the ballot definition file, `<bf_local_level_id>` is the `local-level` `ExternalIdentifier` for the target `BalltoFormat`, and `<bs_local_level_id>` is the `local-level` `ExternalIdentifier` for the target `BallotStyle`:
 
 ```bash
-java -jar './saxon-he-11.4.jar' -s:<definition> -xsl:<template> -o:<output_file> targetBallotFormat=<bf_stable_id> targetBallotStyle=<bs_stable_id>
+java -jar './saxon-he-11.4.jar' -s:<definition> -xsl:<template> -o:<output_file> targetBallotFormat=<bf_local_level_id> targetBallotStyle=<bs_local_level_id>
 ```
 
 NB: If a different kind of `ExternalIdentifier` type is used (e.g. `local-level`, `state-level`, etc.) then you may provide that type using the additional optional parameters `targetBallotFormatType` and `targetBallotStyleType`.

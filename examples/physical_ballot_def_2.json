@@ -4,15 +4,14 @@
 			"@id": "bf-ess",
 			"ExternalIdentifier": [
 				{
-					"@id": "",
-					"Type": "stable",
+					"Type": "local-level",
 					"Value": "E1",
 					"@type": "BallotDefinition.ExternalIdentifier"
 				}
 			],
 			"FiducialMark": [
 				{
-					"GeometryId": "g-2",
+					"ShapeId": "g-2",
 					"@type": "BallotDefinition.FiducialMark",
 					"H": 8.5,
 					"Sheet": 1,
@@ -37,7 +36,7 @@
 			],
 			"MeasurementUnit": "pt",
 			"Orientation": "portrait",
-			"ReadMethod": "omr",
+			"SelectionCaptureMethod": "omr",
 			"ShortEdge": 612,
 			"@type": "BallotDefinition.BallotFormat"
 		}
@@ -48,8 +47,7 @@
 				{
 					"ExternalIdentifier": [
 						{
-							"@id": "",
-							"Type": "stable",
+							"Type": "local-level",
 							"Value": "brk-a",
 							"@type": "BallotDefinition.ExternalIdentifier"
 						}
@@ -68,6 +66,7 @@
 											"ContestOptionId": "cs-biden-harris",
 											"OptionPosition": [
 												{
+													"IndicatorId": "g-1",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 6,
@@ -84,6 +83,7 @@
 											"ContestOptionId": "cs-hawkins-walker",
 											"OptionPosition": [
 												{
+													"IndicatorId": "g-1",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 6,
@@ -100,6 +100,7 @@
 											"ContestOptionId": "cs-jorgensen-cohen",
 											"OptionPosition": [
 												{
+													"IndicatorId": "g-1",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 6,
@@ -116,6 +117,7 @@
 											"ContestOptionId": "cs-trump-pence",
 											"OptionPosition": [
 												{
+													"IndicatorId": "g-1",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 6,
@@ -131,6 +133,7 @@
 										{
 											"OptionPosition": [
 												{
+													"IndicatorId": "g-1",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 6,
@@ -352,19 +355,6 @@
 		}
 	],
 	"GeneratedDate": "2022-08-16T00:00:00Z",
-	"Geometry": [
-		{
-			"@id": "g-1",
-			"ShapeType": "ellipse",
-			"StrokeWidth": 0.33,
-			"@type": "BallotDefinition.Shape"
-		},
-		{
-			"@id": "g-2",
-			"ShapeType": "rectangle",
-			"@type": "BallotDefinition.Shape"
-		}
-	],
 	"GpUnit": [
 		{
 			"Type": "state",
@@ -401,6 +391,19 @@
 	"IssuerAbbreviation": "NIST",
 	"SequenceEnd": 1,
 	"SequenceStart": 1,
+	"Shape": [
+		{
+			"@id": "g-1",
+			"ShapeType": "ellipse",
+			"StrokeWidth": 0.33,
+			"@type": "BallotDefinition.Shape"
+		},
+		{
+			"@id": "g-2",
+			"ShapeType": "rectangle",
+			"@type": "BallotDefinition.Shape"
+		}
+	],
 	"VendorApplicationId": "Hand Written",
 	"Version": "1.0.0",
 	"@type": "BallotDefinition.BallotDefinition"

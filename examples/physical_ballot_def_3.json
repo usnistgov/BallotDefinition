@@ -4,8 +4,7 @@
 			"@id": "bf-1",
 			"ExternalIdentifier": [
 				{
-					"@id": "",
-					"Type": "stable",
+					"Type": "local-level",
 					"Value": "BM1",
 					"@type": "BallotDefinition.ExternalIdentifier"
 				}
@@ -13,7 +12,7 @@
 			"LongEdge": 792,
 			"MeasurementUnit": "pt",
 			"Orientation": "portrait",
-			"ReadMethod": "omr",
+			"SelectionCaptureMethod": "omr",
 			"ShortEdge": 612,
 			"@type": "BallotDefinition.BallotFormat"
 		}
@@ -24,8 +23,7 @@
 				{
 					"ExternalIdentifier": [
 						{
-							"@id": "",
-							"Type": "stable",
+							"Type": "local-level",
 							"Value": "01-0052-01",
 							"@type": "BallotDefinition.ExternalIdentifier"
 						}
@@ -44,6 +42,7 @@
 											"ContestOptionId": "_CS1AEF",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -60,6 +59,7 @@
 											"ContestOptionId": "_CS1AJK",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -76,6 +76,7 @@
 											"ContestOptionId": "_CS1AAR",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -91,6 +92,7 @@
 										{
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -119,6 +121,7 @@
 											"ContestOptionId": "_CS1BDP",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -135,6 +138,7 @@
 											"ContestOptionId": "_CS1BMD",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -163,6 +167,7 @@
 											"ContestOptionId": "_CS1CBB",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -179,6 +184,7 @@
 											"ContestOptionId": "_CS1CJC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -195,6 +201,7 @@
 											"ContestOptionId": "_CS1CDY",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -223,6 +230,7 @@
 											"ContestOptionId": "_CS1DJH",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -239,6 +247,7 @@
 											"ContestOptionId": "_CS1DKK",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -255,6 +264,7 @@
 											"ContestOptionId": "_CS1DNT",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -283,6 +293,7 @@
 											"ContestOptionId": "_CS1ECP",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -299,6 +310,7 @@
 											"ContestOptionId": "_CS1EJM",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -327,6 +339,7 @@
 											"ContestOptionId": "_CS1FMZ",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -343,6 +356,7 @@
 											"ContestOptionId": "_CS1FMF",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -371,6 +385,7 @@
 											"ContestOptionId": "_CS1GCB",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -387,6 +402,7 @@
 											"ContestOptionId": "_CS1GES",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -415,6 +431,7 @@
 											"ContestOptionId": "_CS1HBR",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -431,6 +448,7 @@
 											"ContestOptionId": "_CS1HIS",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -447,6 +465,7 @@
 											"ContestOptionId": "_CS1HDW",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -463,6 +482,7 @@
 											"ContestOptionId": "_CS1HJD",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -479,6 +499,7 @@
 											"ContestOptionId": "_CS1HGH",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -495,6 +516,7 @@
 											"ContestOptionId": "_CS1HSK",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -523,6 +545,7 @@
 											"ContestOptionId": "_CS1IDS",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -539,6 +562,7 @@
 											"ContestOptionId": "_CS1IMC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -555,6 +579,7 @@
 											"ContestOptionId": "_CS1ISF",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -571,6 +596,7 @@
 											"ContestOptionId": "_CS1ISR",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -599,6 +625,7 @@
 											"ContestOptionId": "_CS1JTL",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -615,6 +642,7 @@
 											"ContestOptionId": "_CS1JSK",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -643,6 +671,7 @@
 											"ContestOptionId": "_CS1KJO",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -659,6 +688,7 @@
 											"ContestOptionId": "_CS1KJF",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -687,6 +717,7 @@
 											"ContestOptionId": "_CS1LTL",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -703,6 +734,7 @@
 											"ContestOptionId": "_CS1LEB",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -731,6 +763,7 @@
 											"ContestOptionId": "_CS1MTO",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -747,6 +780,7 @@
 											"ContestOptionId": "_CS1MRC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -775,6 +809,7 @@
 											"ContestOptionId": "_CS1NTG",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -791,6 +826,7 @@
 											"ContestOptionId": "_CS1NLC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -819,6 +855,7 @@
 											"ContestOptionId": "_CS1OAM",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -835,6 +872,7 @@
 											"ContestOptionId": "_CS1OLD",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -863,6 +901,7 @@
 											"ContestOptionId": "_CS1PBW",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -879,6 +918,7 @@
 											"ContestOptionId": "_CS1PMR",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -907,6 +947,7 @@
 											"ContestOptionId": "_CS1QCC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -923,6 +964,7 @@
 											"ContestOptionId": "_CS1QJC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -951,6 +993,7 @@
 											"ContestOptionId": "_CS1RTP",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -967,6 +1010,7 @@
 											"ContestOptionId": "_CS1RRM",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -995,6 +1039,7 @@
 											"ContestOptionId": "_CS1SJO",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1011,6 +1056,7 @@
 											"ContestOptionId": "_CS1TM",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1039,6 +1085,7 @@
 											"ContestOptionId": "_CS1TLT",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1055,6 +1102,7 @@
 											"ContestOptionId": "_CS1TJL",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1083,6 +1131,7 @@
 											"ContestOptionId": "_CS1UJQ",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1099,6 +1148,7 @@
 											"ContestOptionId": "_CS1UKC",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1127,6 +1177,7 @@
 											"ContestOptionId": "_CS1VES",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1143,6 +1194,7 @@
 											"ContestOptionId": "_CS1VKO",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1171,6 +1223,7 @@
 											"ContestOptionId": "_CS1DY",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1187,6 +1240,7 @@
 											"ContestOptionId": "_CS1DN",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1215,6 +1269,7 @@
 											"ContestOptionId": "_CS2DY",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1231,6 +1286,7 @@
 											"ContestOptionId": "_CS2DN",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1259,6 +1315,7 @@
 											"ContestOptionId": "_CS3DY",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1275,6 +1332,7 @@
 											"ContestOptionId": "_CS3DN",
 											"OptionPosition": [
 												{
+													"IndicatorId": "geo-oval",
 													"NumberVotes": 1,
 													"@type": "BallotDefinition.OptionPosition",
 													"H": 10,
@@ -1312,7 +1370,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1AEF",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1335,7 +1392,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1AJK",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1358,7 +1414,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1AAR",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1381,7 +1436,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1BDP",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1404,7 +1458,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1BMD",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1427,7 +1480,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1CBB",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1450,7 +1502,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1CJC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1473,7 +1524,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1CDY",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1496,7 +1546,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1DJH",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1519,7 +1568,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1DKK",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1542,7 +1590,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1DNT",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1565,7 +1612,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1ECP",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1588,7 +1634,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1EJM",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1611,7 +1656,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1FMZ",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1634,7 +1678,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1FMF",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1657,7 +1700,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1GCB",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1680,7 +1722,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1GES",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1703,7 +1744,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1HBR",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1726,7 +1766,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1HIS",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1749,7 +1788,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1HDW",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1772,7 +1810,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1HJD",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1795,7 +1832,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1HGH",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1818,7 +1854,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1HSK",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1841,7 +1876,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1IDS",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1863,7 +1897,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1IMC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1885,7 +1918,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1ISF",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1907,7 +1939,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1ISR",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1929,7 +1960,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1JTL",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1951,7 +1981,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1JSK",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1973,7 +2002,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1KJO",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -1995,7 +2023,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1KJF",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2017,7 +2044,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1LTL",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2039,7 +2065,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1LEB",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2061,7 +2086,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1MTO",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2083,7 +2107,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1MRC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2105,7 +2128,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1NTG",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2127,7 +2149,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1NLC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2149,7 +2170,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1OAM",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2171,7 +2191,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1OLD",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2193,7 +2212,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1PBW",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2215,7 +2233,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1PMR",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2237,7 +2254,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1QCC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2259,7 +2275,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1QJC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2281,7 +2296,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1RTP",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2303,7 +2317,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1RRM",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2325,7 +2338,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1SJO",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2347,7 +2359,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1TM",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2369,7 +2380,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1TLT",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2391,7 +2401,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1TJL",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2413,7 +2422,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1UJQ",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2435,7 +2443,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1UKC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2457,7 +2464,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1VES",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2479,7 +2485,6 @@
 					},
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1VKO",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2519,7 +2524,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "1GO",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2551,7 +2555,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "2AG",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2590,7 +2593,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "3AS",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2629,7 +2631,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "4SS",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2661,7 +2662,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "5TS",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2693,7 +2693,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "6RC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2725,7 +2724,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "8SR34",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2785,7 +2783,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "9CC",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2831,7 +2828,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "10SB",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2863,7 +2859,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "11JS1",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2895,7 +2890,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "11JS2",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2927,7 +2921,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "12CA9",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2959,7 +2952,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "13CP1",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -2991,7 +2983,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "14CP2",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3023,7 +3014,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "15CP3",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3055,7 +3045,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "16CP4",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3087,7 +3076,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "17CP5",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3119,7 +3107,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "18CP6",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3151,7 +3138,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "19CP7",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3183,7 +3169,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "20CP8",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3215,7 +3200,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "19CP9",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3247,7 +3231,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "22CP10",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3291,7 +3274,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "23ST",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3336,7 +3318,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "24CA1",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3381,7 +3362,6 @@
 					"ElectionDistrictId": "gpu-precinct",
 					"ExternalIdentifier": [
 						{
-							"@id": "",
 							"Type": "local-level",
 							"Value": "25CA2",
 							"@type": "BallotDefinition.ExternalIdentifier"
@@ -3394,6 +3374,13 @@
 			],
 			"ElectionScopeId": "gpu-precinct",
 			"EndDate": "2014-11-04",
+			"ExternalIdentifier": [
+				{
+					"Type": "local-level",
+					"Value": "2014-11-04G",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			],
 			"Name": {
 				"Text": [
 					{
@@ -3410,14 +3397,6 @@
 		}
 	],
 	"GeneratedDate": "2018-07-15T00:00:00Z",
-	"Geometry": [
-		{
-			"@id": "geo-oval",
-			"ShapeType": "ellipse",
-			"StrokeWidth": 1,
-			"@type": "BallotDefinition.Shape"
-		}
-	],
 	"GpUnit": [
 		{
 			"Type": "precinct",
@@ -3425,7 +3404,6 @@
 			"@id": "gpu-precinct",
 			"ExternalIdentifier": [
 				{
-					"@id": "",
 					"Type": "local-level",
 					"Value": "77",
 					"@type": "BallotDefinition.ExternalIdentifier"
@@ -3495,6 +3473,14 @@
 	],
 	"SequenceEnd": 1,
 	"SequenceStart": 1,
+	"Shape": [
+		{
+			"@id": "geo-oval",
+			"ShapeType": "ellipse",
+			"StrokeWidth": 1,
+			"@type": "BallotDefinition.Shape"
+		}
+	],
 	"VendorApplicationId": "NIST POC",
 	"Version": "1.0.0",
 	"@type": "BallotDefinition.BallotDefinition"
