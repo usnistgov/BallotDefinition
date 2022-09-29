@@ -30,7 +30,7 @@
 							<Side>front</Side>
 							<W>10</W>
 							<X>414.6800316</X>
-							<Y>120.94517325</Y>							
+							<Y>120.94517325</Y>
 							<NumberVotes>1</NumberVotes>
 						</OptionPosition>
 					</PhysicalContestOption>
@@ -42,7 +42,7 @@
 							<Side>front</Side>
 							<W>10</W>
 							<X>414.6800316</X>
-							<Y>155.34517325</Y>							
+							<Y>155.34517325</Y>
 							<NumberVotes>1</NumberVotes>
 						</OptionPosition>
 					</PhysicalContestOption>
@@ -50,7 +50,7 @@
 			</OrderedContent>
 		</BallotStyle>
 		<Contest xsi:type="CandidateContest" ObjectId="_9CC">
-			<ContestOption xsi:type="CandidateOption" ObjectId="_CS1HBR" />			
+			<ContestOption xsi:type="CandidateOption" ObjectId="_CS1HBR"/>
 			<ContestOption xsi:type="CandidateOption" ObjectId="_CS1HIS"/>
 			<ContestOption xsi:type="CandidateOption" ObjectId="_CS1HDW"/>
 			<ContestOption xsi:type="CandidateOption" ObjectId="_CS1HJD"/>

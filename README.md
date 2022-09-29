@@ -13,9 +13,10 @@ Please contact [John Dziurlaj](mailto:john@turnout.rocks) for questions and more
 | BallotDefinition UML Model.xml                 | MagicDraw UML Model                                   |
 | BallotDefinition_UML_Model_Documentation.md    | UML Documentation                                     |
 | BallotDefinition_UML_Model_Documentation_files | Images of UML Classes                                 |
-| examples/                                      | Full listing of examples reference in specification   |
+| examples/                                      | Full listing of examples referenced in specification  |
 | json2xml.xsl                                   | Converter from JSON BD to XML BD                      |
 | mCDF_BSI.xml                                   | mCDF BSI message definition                           |
+| NIST.SP.1500-20.docx                           | Word version of BD specification                      |
 | NIST_V1_ballot_definition.json                 | BD JSON Schema                                        |
 | NIST_V1_ballot_definition.xsd                  | BD XML Schema                                         |
 | xml2json.xsl                                   | Converter from XML BD to JSON BD                      |
