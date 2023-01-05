@@ -6,7 +6,7 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="140" gradientUnits="userSpaceOnUse" x2="320" y1="1141" y2="1223" id="linearGradient1" spreadMethod="pad"
+    ><linearGradient x1="1253" gradientUnits="userSpaceOnUse" x2="1433" y1="203" y2="285" id="linearGradient1" spreadMethod="pad"
       ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
         /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
@@ -14,28 +14,28 @@
       ><path d="M0 0 L210 0 L210 112 L0 112 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M125 1126 L335 1126 L335 1238 L125 1238 L125 1126 Z"
+      ><path d="M1238 188 L1448 188 L1448 300 L1238 300 L1238 188 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="210" height="112" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="143" y="1144" transform="translate(-125,-1126)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="180" text-rendering="geometricPrecision" height="82" stroke="none"
-      /><rect x="140" y="1141" transform="translate(-125,-1126)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="180" text-rendering="geometricPrecision" height="82" stroke="none"
+      /><rect x="1256" y="206" transform="translate(-1238,-188)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="180" text-rendering="geometricPrecision" height="82" stroke="none"
+      /><rect x="1253" y="203" transform="translate(-1238,-188)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="180" text-rendering="geometricPrecision" height="82" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-125,-1126)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="140" width="180" height="82" y="1141" clip-path="url(#clipPath2)"
-      /><line y2="1190" fill="none" x1="140" clip-path="url(#clipPath2)" x2="320" y1="1190"
-      /><text x="143" font-size="11" y="1214.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1238,-188)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="1253" width="180" height="82" y="203" clip-path="url(#clipPath2)"
+      /><line y2="252" fill="none" x1="1253" clip-path="url(#clipPath2)" x2="1433" y1="252"
+      /><text x="1256" font-size="11" y="276.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >«mCDFLookup»front{Identifier = "1"}</text
-      ><text x="143" font-size="11" y="1202.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="1256" font-size="11" y="264.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >«mCDFLookup»back{Identifier = "2"}</text
     ></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-125,-1126)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="190.5" space="preserve" y="1168.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1238,-188)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="1303.5" space="preserve" y="230.958" clip-path="url(#clipPath2)" stroke="none"
       >BallotSideType</text
-      ><text x="197.5" space="preserve" y="1153.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
+      ><text x="1310.5" space="preserve" y="215.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
       >«mCDFTable»</text
-      ><text x="214" font-size="10" y="1184" clip-path="url(#clipPath2)" text-rendering="optimizeLegibility" stroke="none" font-weight="normal" xml:space="preserve"
+      ><text x="1327" font-size="10" y="246" clip-path="url(#clipPath2)" text-rendering="optimizeLegibility" stroke="none" font-weight="normal" xml:space="preserve"
       >{Table Name = "BST"}</text
     ></g
   ></g

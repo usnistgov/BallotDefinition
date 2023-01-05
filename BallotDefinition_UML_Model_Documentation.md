@@ -1186,8 +1186,8 @@ For associating a [ContestOption](#_17_0_2_4_78e0236_1389372124445_11077_2906) t
 Property  | Multiplicity | Type | Property Description
 --------- | ------------ | ---- | ---------------------
 <a name="_19_0_4_43701b0_1654799537803_971013_5298"></a>`{ContestOption}`|0..1|`ContestOption`|For associating a PhysicalContestOption with a ContestOption. This should always be provided unless the contest option is for a write-in.
-<a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|
-<a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..*|`WriteInPosition`|
+<a name="_19_0_4_43701b0_1638813505039_881242_5034"></a>`{OptionPosition}`|1..*|`OptionPosition`|For defining locations where a selection can be indicated.
+<a name="_19_0_4_43701b0_1638813505039_765156_5035"></a>`{WriteInPosition}`|0..*|`WriteInPosition`|For defining locations where a name can be hand-written.
 
 
 

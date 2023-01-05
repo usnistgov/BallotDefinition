@@ -6,27 +6,27 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="1806" gradientUnits="userSpaceOnUse" x2="1947" y1="602" y2="626" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
+    ><linearGradient x1="742" gradientUnits="userSpaceOnUse" x2="883" y1="518" y2="542" id="linearGradient1" spreadMethod="pad"
+      ><stop stop-opacity="1" stop-color="rgb(153,158,255)" offset="0%"
+        /><stop stop-opacity="1" stop-color="rgb(218,225,255)" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L171 0 L171 54 L0 54 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M1791 587 L1962 587 L1962 641 L1791 641 L1791 587 Z"
+      ><path d="M727 503 L898 503 L898 557 L727 557 L727 503 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="171" height="54" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1809" y="605" transform="translate(-1791,-587)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="141" text-rendering="geometricPrecision" height="24" stroke="none"
-      /><rect x="1806" y="602" transform="translate(-1791,-587)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="141" text-rendering="geometricPrecision" height="24" stroke="none"
+      /><rect x="745" y="521" transform="translate(-727,-503)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="141" text-rendering="geometricPrecision" height="24" stroke="none"
+      /><rect x="742" y="518" transform="translate(-727,-503)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="141" text-rendering="geometricPrecision" height="24" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1791,-587)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="1806" width="141" height="24" y="602" clip-path="url(#clipPath2)"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-727,-503)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="742" width="141" height="24" y="518" clip-path="url(#clipPath2)"
     /></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-1791,-587)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="1810" space="preserve" y="614.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-727,-503)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="746" space="preserve" y="530.958" clip-path="url(#clipPath2)" stroke="none"
       >PartyPreferenceContest</text
     ></g
   ></g

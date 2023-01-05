@@ -7,8 +7,8 @@
   /><g
   ><defs id="defs1"
     ><linearGradient x1="294" gradientUnits="userSpaceOnUse" x2="549" y1="777" y2="862" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
+      ><stop stop-opacity="1" stop-color="rgb(153,158,255)" offset="0%"
+        /><stop stop-opacity="1" stop-color="rgb(218,225,255)" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L285 0 L285 115 L0 115 L0 0 Z"

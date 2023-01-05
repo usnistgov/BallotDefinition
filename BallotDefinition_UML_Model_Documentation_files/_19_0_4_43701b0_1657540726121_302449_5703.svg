@@ -6,34 +6,34 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="1526" gradientUnits="userSpaceOnUse" x2="1738" y1="826" y2="887" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
-        /><stop stop-opacity="1" stop-color="white" offset="100%"
+    ><linearGradient x1="924" gradientUnits="userSpaceOnUse" x2="1136" y1="280" y2="341" id="linearGradient1" spreadMethod="pad"
+      ><stop stop-opacity="1" stop-color="rgb(153,158,255)" offset="0%"
+        /><stop stop-opacity="1" stop-color="rgb(218,225,255)" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L242 0 L242 91 L0 91 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M1511 811 L1753 811 L1753 902 L1511 902 L1511 811 Z"
+      ><path d="M909 265 L1151 265 L1151 356 L909 356 L909 265 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="242" height="91" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="1529" y="829" transform="translate(-1511,-811)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="212" text-rendering="geometricPrecision" height="61" stroke="none"
-      /><rect x="1526" y="826" transform="translate(-1511,-811)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="212" text-rendering="geometricPrecision" height="61" stroke="none"
+      /><rect x="927" y="283" transform="translate(-909,-265)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="212" text-rendering="geometricPrecision" height="61" stroke="none"
+      /><rect x="924" y="280" transform="translate(-909,-265)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="212" text-rendering="geometricPrecision" height="61" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-1511,-811)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="1526" width="212" height="61" y="826" clip-path="url(#clipPath2)"
-      /><line y2="844" fill="none" x1="1526" clip-path="url(#clipPath2)" x2="1738" y1="844"
-      /><text x="1529" font-size="11" y="878.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-909,-265)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="924" width="212" height="61" y="280" clip-path="url(#clipPath2)"
+      /><line y2="298" fill="none" x1="924" clip-path="url(#clipPath2)" x2="1136" y1="298"
+      /><text x="927" font-size="11" y="332.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+Selection : InternationalizedText [1]</text
-      ><text x="1529" font-size="11" y="866.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="927" font-size="11" y="320.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+CausesActivation : Boolean [1]</text
     ></g
-    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-1511,-811)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="1613" space="preserve" y="855.1475" clip-path="url(#clipPath2)" stroke="none"
+    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-909,-265)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="1011" space="preserve" y="309.1475" clip-path="url(#clipPath2)" stroke="none"
       >attributes</text
-      ><text x="1587.5" font-size="11" y="838.958" clip-path="url(#clipPath2)" font-style="normal" stroke="none" font-weight="bold" space="preserve"
+      ><text x="985.5" font-size="11" y="292.958" clip-path="url(#clipPath2)" font-style="normal" stroke="none" font-weight="bold" space="preserve"
       >ActivationOption</text
     ></g
   ></g
