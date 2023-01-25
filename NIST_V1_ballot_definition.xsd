@@ -194,7 +194,7 @@
       </xsd:enumeration>
       <xsd:enumeration value="weekday">
         <xsd:annotation>
-          <xsd:documentation xml:lang="en">Used for any day of the week.</xsd:documentation>
+          <xsd:documentation xml:lang="en">Used for any day of the week except Saturday and Sunday.</xsd:documentation>
         </xsd:annotation>
       </xsd:enumeration>
       <xsd:enumeration value="weekend">
@@ -2125,8 +2125,16 @@ Multiple occurrences of the MiddleName attribute can be used as needed, e.g., fo
           <xsd:documentation xml:lang="en">For associating a PhysicalContestOption with a ContestOption. This should always be provided unless the contest option is for a write-in.</xsd:documentation>
         </xsd:annotation>
       </xsd:element>
-      <xsd:element name="OptionPosition" type="OptionPosition" maxOccurs="unbounded"/>
-      <xsd:element name="WriteInPosition" type="WriteInPosition" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="OptionPosition" type="OptionPosition" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For defining locations where a selection can be indicated.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="WriteInPosition" type="WriteInPosition" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation xml:lang="en">For defining locations where a name can be hand-written.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
   <xsd:complexType name="ReportingUnit">

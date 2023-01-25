@@ -143,7 +143,8 @@ Name | Value
 `thursday`|Used if day of week is Thursday.
 `friday`|Used if day of week is Friday.
 `saturday`|Used if day of week is Saturday.
-`weekday`|Used for any day of the week.
+`weekday`|Used for any day of the week except Saturday and Sunday.
+
 `weekend`|Used for both Saturday and Sunday.
 
 ### <a name="_17_0_2_4_78e0236_1389734457182_720347_3938"></a>*The **ElectionType** Enumeration*

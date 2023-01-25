@@ -6,34 +6,34 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="889" gradientUnits="userSpaceOnUse" x2="984" y1="1008" y2="1074" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(153,158,255)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(218,225,255)" offset="100%"
+    ><linearGradient x1="602" gradientUnits="userSpaceOnUse" x2="697" y1="1169" y2="1235" id="linearGradient1" spreadMethod="pad"
+      ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
+        /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L125 0 L125 96 L0 96 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M874 993 L999 993 L999 1089 L874 1089 L874 993 Z"
+      ><path d="M587 1154 L712 1154 L712 1250 L587 1250 L587 1154 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="125" height="96" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="892" y="1011" transform="translate(-874,-993)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="95" text-rendering="geometricPrecision" height="66" stroke="none"
-      /><rect x="889" y="1008" transform="translate(-874,-993)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="95" text-rendering="geometricPrecision" height="66" stroke="none"
+      /><rect x="605" y="1172" transform="translate(-587,-1154)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="95" text-rendering="geometricPrecision" height="66" stroke="none"
+      /><rect x="602" y="1169" transform="translate(-587,-1154)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="95" text-rendering="geometricPrecision" height="66" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-874,-993)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="889" width="95" height="66" y="1008" clip-path="url(#clipPath2)"
-      /><line y2="1041" fill="none" x1="889" clip-path="url(#clipPath2)" x2="984" y1="1041"
-      /><text x="892" font-size="11" y="1065.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-587,-1154)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="602" width="95" height="66" y="1169" clip-path="url(#clipPath2)"
+      /><line y2="1202" fill="none" x1="602" clip-path="url(#clipPath2)" x2="697" y1="1202"
+      /><text x="605" font-size="11" y="1226.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >portrait</text
-      ><text x="892" font-size="11" y="1053.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="605" font-size="11" y="1214.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >landscape</text
     ></g
-    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-874,-993)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="893.5" space="preserve" y="1035.958" clip-path="url(#clipPath2)" stroke="none"
+    ><g text-rendering="geometricPrecision" font-size="11" font-weight="bold" transform="translate(-587,-1154)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="606.5" space="preserve" y="1196.958" clip-path="url(#clipPath2)" stroke="none"
       >OrientationType</text
-      ><text x="901.5" space="preserve" y="1020.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
+      ><text x="614.5" space="preserve" y="1181.958" clip-path="url(#clipPath2)" font-weight="normal" stroke="none"
       >«enumeration»</text
     ></g
   ></g

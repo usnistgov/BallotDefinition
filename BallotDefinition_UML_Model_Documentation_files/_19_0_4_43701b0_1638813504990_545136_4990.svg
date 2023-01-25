@@ -6,36 +6,36 @@
  This is MagicDraw diagram.--><defs id="genericDefs"
   /><g
   ><defs id="defs1"
-    ><linearGradient x1="567" gradientUnits="userSpaceOnUse" x2="776" y1="756" y2="903" id="linearGradient1" spreadMethod="pad"
-      ><stop stop-opacity="1" stop-color="rgb(153,158,255)" offset="0%"
-        /><stop stop-opacity="1" stop-color="rgb(218,225,255)" offset="100%"
+    ><linearGradient x1="432" gradientUnits="userSpaceOnUse" x2="641" y1="761" y2="908" id="linearGradient1" spreadMethod="pad"
+      ><stop stop-opacity="1" stop-color="rgb(180,180,180)" offset="0%"
+        /><stop stop-opacity="1" stop-color="white" offset="100%"
       /></linearGradient
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath1"
       ><path d="M0 0 L239 0 L239 177 L0 177 L0 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath2"
-      ><path d="M552 741 L791 741 L791 918 L552 918 L552 741 Z"
+      ><path d="M417 746 L656 746 L656 923 L417 923 L417 746 Z"
       /></clipPath
     ></defs
     ><g fill="white" stroke="white"
     ><rect x="0" width="239" height="177" y="0" clip-path="url(#clipPath1)" stroke="none"
-      /><rect x="570" y="759" transform="translate(-552,-741)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="209" text-rendering="geometricPrecision" height="147" stroke="none"
-      /><rect x="567" y="756" transform="translate(-552,-741)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="209" text-rendering="geometricPrecision" height="147" stroke="none"
+      /><rect x="435" y="764" transform="translate(-417,-746)" clip-path="url(#clipPath2)" fill="rgb(178,178,178)" width="209" text-rendering="geometricPrecision" height="147" stroke="none"
+      /><rect x="432" y="761" transform="translate(-417,-746)" clip-path="url(#clipPath2)" fill="url(#linearGradient1)" width="209" text-rendering="geometricPrecision" height="147" stroke="none"
     /></g
-    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-552,-741)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
-    ><rect fill="none" x="567" width="209" height="147" y="756" clip-path="url(#clipPath2)"
-      /><line y2="774" fill="none" x1="567" clip-path="url(#clipPath2)" x2="776" y1="774"
-      /><text x="570" font-size="11" y="820.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+    ><g fill="rgb(153,121,92)" text-rendering="geometricPrecision" transform="translate(-417,-746)" stroke-linecap="butt" stroke="rgb(153,121,92)" stroke-linejoin="round"
+    ><rect fill="none" x="432" width="209" height="147" y="761" clip-path="url(#clipPath2)"
+      /><line y2="779" fill="none" x1="432" clip-path="url(#clipPath2)" x2="641" y1="779"
+      /><text x="435" font-size="11" y="825.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+Rank : Integer [0..1]</text
-      ><text x="570" font-size="11" y="808.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="435" font-size="11" y="813.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+NumberVotes : Integer [1]</text
-      ><text x="570" font-size="11" y="796.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
+      ><text x="435" font-size="11" y="801.958" clip-path="url(#clipPath2)" fill="rgb(40,0,0)" stroke="none" space="preserve"
       >+FractionalVotes : FractionalNumber [0..1]</text
     ></g
-    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-552,-741)" stroke-linecap="butt" stroke-linejoin="round"
-    ><text x="652.5" space="preserve" y="785.1475" clip-path="url(#clipPath2)" stroke="none"
+    ><g font-style="italic" text-rendering="geometricPrecision" font-size="9" transform="translate(-417,-746)" stroke-linecap="butt" stroke-linejoin="round"
+    ><text x="517.5" space="preserve" y="790.1475" clip-path="url(#clipPath2)" stroke="none"
       >attributes</text
-      ><text x="631.5" font-size="11" y="768.958" clip-path="url(#clipPath2)" font-style="normal" stroke="none" font-weight="bold" space="preserve"
+      ><text x="496.5" font-size="11" y="773.958" clip-path="url(#clipPath2)" font-style="normal" stroke="none" font-weight="bold" space="preserve"
       >OptionPosition</text
     ></g
   ></g
