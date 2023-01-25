@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+	<Election>
+		<Candidate ObjectId="can-alex-mack">
+			<BallotName>
+				<Text Language="en">Alex Mack</Text>
+			</BallotName>
+			<PartyId>par-rep</PartyId>
+		</Candidate>
+		<Candidate ObjectId="can-ray-alverado">
+			<BallotName>
+				<Text Language="en">Ray Alvarado</Text>
+			</BallotName>
+			<PartyId>par-rep</PartyId>
+		</Candidate>
+		<Contest xsi:type="ActivationContest" ObjectId="cc-activation-contest">
+			<ContestOption xsi:type="ActivationOption" ObjectId="cs-activation-yes">
+				<CausesActivation>true</CausesActivation>
+				<Selection>
+					<Text Language="en">YES</Text>
+				</Selection>
+			</ContestOption>
+			<ContestOption xsi:type="ActivationOption" ObjectId="cs-activation-no">
+				<CausesActivation>false</CausesActivation>
+				<Selection>
+					<Text Language="en">NO</Text>
+				</Selection>
+			</ContestOption>
+			<!--incorrect-->
+			<ElectionDistrictId>ru-st-ignace</ElectionDistrictId>
+			<Name>St. Ignace Mayoral Recall</Name>
+			<ControlledContestIds>cc-replacements</ControlledContestIds>
+			<SummaryText>
+				<Text Language="en">Shall Danielle Atron be recalled as mayor of St. Ignace?</Text>
+			</SummaryText>
+		</Contest>
+		<Contest xsi:type="CandidateContest" ObjectId="cc-replacements">
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-alex-mack">
+				<CandidateIds>can-alex-mack</CandidateIds>
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-ray-alverado">
+				<CandidateIds>can-ray-alverado</CandidateIds>
+			</ContestOption>
+			<ElectionDistrictId>ru-st-ignace</ElectionDistrictId>
+			<Name>Replacement for St. Ignance Mayor</Name>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<ElectionScopeId>ru-st-ignace</ElectionScopeId>
+		<Name>
+			<Text Language="en">SPECIAL RECALL ELECTION</Text>
+		</Name>
+		<StartDate>2022-08-02</StartDate>
+		<EndDate>2022-08-02</EndDate>
+		<Type>special</Type>
+	</Election>
+	<GeneratedDate>2022-07-12T00:00:00Z</GeneratedDate>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-st-ignace">
+		<Name>
+			<Text Language="en">City of St. Ignace</Text>
+		</Name>
+		<Type>state-senate</Type>
+	</GpUnit>
+	<Issuer>NIST POC</Issuer>
+	<IssuerAbbreviation>NIST</IssuerAbbreviation>
+	<Party ObjectId="par-rep">
+		<IsRecognizedParty>true</IsRecognizedParty>
+		<Name>
+			<Text Language="en">Republican</Text>
+		</Name>
+	</Party>
+	<Party ObjectId="par-dem">
+		<IsRecognizedParty>true</IsRecognizedParty>
+		<Name>
+			<Text Language="en">Democratic</Text>
+		</Name>
+	</Party>
+	<SequenceStart>1</SequenceStart>
+	<SequenceEnd>1</SequenceEnd>
+	<VendorApplicationId>Hand Written</VendorApplicationId>
+	<Version>1.0.0</Version>
+</BallotDefinition>

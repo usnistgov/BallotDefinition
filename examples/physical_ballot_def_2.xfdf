@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cdf="http://itl.nist.gov/ns/voting/1500-XXX/v1">
+	<annots>
+		<circle xmlns="" color="#881600" width="0.33" fringe="0,0,0,0" page="0" title="OptionPosition for cs-biden-harris" name="idelem3x62" rect="222.2,801.8,230.95,795.8">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OptionPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;6&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;8.75&lt;/W&gt;&lt;X&gt;222.2&lt;/X&gt;&lt;Y&gt;278.20&lt;/Y&gt;&lt;IndicatorId&gt;g-1&lt;/IndicatorId&gt;&lt;NumberVotes&gt;1&lt;/NumberVotes&gt;&lt;/OptionPosition&gt;</contents>
+		</circle>
+		<circle xmlns="" color="#881600" width="0.33" fringe="0,0,0,0" page="0" title="OptionPosition for cs-hawkins-walker" name="idelem3x82" rect="222.2,733.8,230.95,727.8">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OptionPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;6&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;8.75&lt;/W&gt;&lt;X&gt;222.2&lt;/X&gt;&lt;Y&gt;346.2&lt;/Y&gt;&lt;IndicatorId&gt;g-1&lt;/IndicatorId&gt;&lt;NumberVotes&gt;1&lt;/NumberVotes&gt;&lt;/OptionPosition&gt;</contents>
+		</circle>
+		<circle xmlns="" color="#881600" width="0.33" fringe="0,0,0,0" page="0" title="OptionPosition for cs-jorgensen-cohen" name="idelem3x102" rect="222.2,665.75,230.95,659.75">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OptionPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;6&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;8.75&lt;/W&gt;&lt;X&gt;222.2&lt;/X&gt;&lt;Y&gt;414.25&lt;/Y&gt;&lt;IndicatorId&gt;g-1&lt;/IndicatorId&gt;&lt;NumberVotes&gt;1&lt;/NumberVotes&gt;&lt;/OptionPosition&gt;</contents>
+		</circle>
+		<circle xmlns="" color="#881600" width="0.33" fringe="0,0,0,0" page="0" title="OptionPosition for cs-trump-pence" name="idelem3x122" rect="222.2,597.75,230.95,591.75">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OptionPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;6&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;8.75&lt;/W&gt;&lt;X&gt;222.2&lt;/X&gt;&lt;Y&gt;482.25&lt;/Y&gt;&lt;IndicatorId&gt;g-1&lt;/IndicatorId&gt;&lt;NumberVotes&gt;1&lt;/NumberVotes&gt;&lt;/OptionPosition&gt;</contents>
+		</circle>
+		<circle xmlns="" color="#881600" width="0.33" fringe="0,0,0,0" page="0" title="OptionPosition for " name="idelem3x140" rect="222.2,529.75,230.95,523.75">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;OptionPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;6&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;8.75&lt;/W&gt;&lt;X&gt;222.2&lt;/X&gt;&lt;Y&gt;550.25&lt;/Y&gt;&lt;IndicatorId&gt;g-1&lt;/IndicatorId&gt;&lt;NumberVotes&gt;1&lt;/NumberVotes&gt;&lt;/OptionPosition&gt;</contents>
+		</circle>
+		<square xmlns="" color="#C16200" width="1" fringe="0,0,0,0" page="0" title="WriteInPosition for " name="idelem3x157" rect="237.8,520,387.8,497.75">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WriteInPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;22.25&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;150&lt;/W&gt;&lt;X&gt;237.80&lt;/X&gt;&lt;Y&gt;560&lt;/Y&gt;&lt;SelectionRequired&gt;true&lt;/SelectionRequired&gt;&lt;/WriteInPosition&gt;</contents>
+		</square>
+		<square xmlns="" color="#C16200" width="1" fringe="0,0,0,0" page="0" title="WriteInPosition for " name="idelem3x172" rect="237.8,470,387.8,447.75">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;WriteInPosition xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;22.25&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;150&lt;/W&gt;&lt;X&gt;237.80&lt;/X&gt;&lt;Y&gt;610&lt;/Y&gt;&lt;SelectionRequired&gt;true&lt;/SelectionRequired&gt;&lt;/WriteInPosition&gt;</contents>
+		</square>
+		<square xmlns="" color="#8C93A8" width="1" fringe="0,0,0,0" page="0" title="FiducialMark for " name="idelem3x8" rect="39.5,984.4,51,975.9">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;FiducialMark xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;8.5&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;11.5&lt;/W&gt;&lt;X&gt;39.5&lt;/X&gt;&lt;Y&gt;95.6&lt;/Y&gt;&lt;GeometryId&gt;g-2&lt;/GeometryId&gt;&lt;/FiducialMark&gt;</contents>
+		</square>
+		<square xmlns="" color="#B5C2B7" width="1" fringe="0,0,0,0" page="0" title="mCDFArea for " name="idelem3x25" rect="125,955,225,855">
+			<contents>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;mCDFArea xmlns="http://itl.nist.gov/ns/voting/1500-XXX/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;H&gt;100&lt;/H&gt;&lt;Sheet&gt;1&lt;/Sheet&gt;&lt;Side&gt;front&lt;/Side&gt;&lt;W&gt;100&lt;/W&gt;&lt;X&gt;125&lt;/X&gt;&lt;Y&gt;125&lt;/Y&gt;&lt;Symbology&gt;AAA&lt;/Symbology&gt;&lt;/mCDFArea&gt;</contents>
+		</square>
+	</annots>
+	<f href="./physical_ballot_def_2.pdf"/>
+</xfdf>

@@ -1,0 +1,410 @@
+{
+	"BallotFormat": [
+		{
+			"@id": "bf-ess",
+			"ExternalIdentifier": [
+				{
+					"Type": "local-level",
+					"Value": "E1",
+					"@type": "BallotDefinition.ExternalIdentifier"
+				}
+			],
+			"FiducialMark": [
+				{
+					"ShapeId": "g-2",
+					"@type": "BallotDefinition.FiducialMark",
+					"H": 8.5,
+					"Sheet": 1,
+					"Side": "front",
+					"W": 11.5,
+					"X": 39.5,
+					"Y": 95.6
+				}
+			],
+			"LongEdge": 1080,
+			"mCDFArea": [
+				{
+					"Symbology": "AAA",
+					"@type": "BallotDefinition.mCDFArea",
+					"H": 100,
+					"Sheet": 1,
+					"Side": "front",
+					"W": 100,
+					"X": 125,
+					"Y": 125
+				}
+			],
+			"MeasurementUnit": "pt",
+			"Orientation": "portrait",
+			"SelectionCaptureMethod": "omr",
+			"ShortEdge": 612,
+			"@type": "BallotDefinition.BallotFormat"
+		}
+	],
+	"Election": [
+		{
+			"BallotStyle": [
+				{
+					"ExternalIdentifier": [
+						{
+							"Type": "local-level",
+							"Value": "brk-a",
+							"@type": "BallotDefinition.ExternalIdentifier"
+						}
+					],
+					"GpUnitIds": [
+						"gpu-p-brk-a"
+					],
+					"OrderedContent": [
+						{
+							"ContestId": "cc-president",
+							"Physical": [
+								{
+									"BallotFormatId": "bf-ess",
+									"PhysicalContestOption": [
+										{
+											"ContestOptionId": "cs-biden-harris",
+											"OptionPosition": [
+												{
+													"IndicatorId": "g-1",
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 6,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 8.75,
+													"X": 222.2,
+													"Y": 278.2
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "cs-hawkins-walker",
+											"OptionPosition": [
+												{
+													"IndicatorId": "g-1",
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 6,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 8.75,
+													"X": 222.2,
+													"Y": 346.2
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "cs-jorgensen-cohen",
+											"OptionPosition": [
+												{
+													"IndicatorId": "g-1",
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 6,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 8.75,
+													"X": 222.2,
+													"Y": 414.25
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"ContestOptionId": "cs-trump-pence",
+											"OptionPosition": [
+												{
+													"IndicatorId": "g-1",
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 6,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 8.75,
+													"X": 222.2,
+													"Y": 482.25
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										},
+										{
+											"OptionPosition": [
+												{
+													"IndicatorId": "g-1",
+													"NumberVotes": 1,
+													"@type": "BallotDefinition.OptionPosition",
+													"H": 6,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 8.75,
+													"X": 222.2,
+													"Y": 550.25
+												}
+											],
+											"WriteInPosition": [
+												{
+													"SelectionRequired": true,
+													"@type": "BallotDefinition.WriteInPosition",
+													"H": 22.25,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 150,
+													"X": 237.8,
+													"Y": 560
+												},
+												{
+													"SelectionRequired": true,
+													"@type": "BallotDefinition.WriteInPosition",
+													"H": 22.25,
+													"Sheet": 1,
+													"Side": "front",
+													"W": 150,
+													"X": 237.8,
+													"Y": 610
+												}
+											],
+											"@type": "BallotDefinition.PhysicalContestOption"
+										}
+									],
+									"@type": "BallotDefinition.PhysicalContest"
+								}
+							],
+							"@type": "BallotDefinition.OrderedContest"
+						}
+					],
+					"@type": "BallotDefinition.BallotStyle"
+				}
+			],
+			"Candidate": [
+				{
+					"@id": "can-kamala-harris",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Kamala D. Harris",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-joseph-biden",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Joseph R. Biden",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-donald-trump",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Donald J. Trump",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-michael-pence",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Michael R. Pence",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-jo-jorgensen",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Jo Jorgensen",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-spike-cohen",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Spike Cohen",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-howie-hawkins",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Howie Hawkins",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				},
+				{
+					"@id": "can-angela-walker",
+					"BallotName": {
+						"Text": [
+							{
+								"Content": "Angela Walker",
+								"Language": "en",
+								"@type": "BallotDefinition.LanguageString"
+							}
+						],
+						"@type": "BallotDefinition.InternationalizedText"
+					},
+					"@type": "BallotDefinition.Candidate"
+				}
+			],
+			"Contest": [
+				{
+					"NumberElected": 1,
+					"VotesAllowed": 1,
+					"@type": "BallotDefinition.CandidateContest",
+					"@id": "cc-president",
+					"ContestOption": [
+						{
+							"CandidateIds": [
+								"can-joseph-biden",
+								"can-kamala-harris"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-biden-harris"
+						},
+						{
+							"CandidateIds": [
+								"can-howie-hawkins",
+								"can-angela-walker"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-hawkins-walker"
+						},
+						{
+							"CandidateIds": [
+								"can-jo-jorgensen",
+								"can-spike-cohen"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-jorgensen-cohen"
+						},
+						{
+							"CandidateIds": [
+								"can-donald-trump",
+								"can-michael-pence"
+							],
+							"@type": "BallotDefinition.CandidateOption",
+							"@id": "cs-trump-pence"
+						}
+					],
+					"ElectionDistrictId": "gpu-ohio",
+					"Name": "PRESIDENT OF THE UNITED STATES",
+					"VoteVariation": "n-of-m"
+				}
+			],
+			"ElectionScopeId": "gpu-ohio",
+			"EndDate": "2020-11-03",
+			"Name": {
+				"Text": [
+					{
+						"Content": "2020 General Election",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			},
+			"StartDate": "2020-11-03",
+			"Type": "general",
+			"@type": "BallotDefinition.Election"
+		}
+	],
+	"GeneratedDate": "2022-08-16T00:00:00Z",
+	"GpUnit": [
+		{
+			"Type": "state",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "gpu-ohio",
+			"Name": {
+				"Text": [
+					{
+						"Content": "STATE OF OHIO",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			}
+		},
+		{
+			"Type": "split-precinct",
+			"@type": "BallotDefinition.ReportingUnit",
+			"@id": "gpu-p-brk-a",
+			"Name": {
+				"Text": [
+					{
+						"Content": "BRK-A",
+						"Language": "en",
+						"@type": "BallotDefinition.LanguageString"
+					}
+				],
+				"@type": "BallotDefinition.InternationalizedText"
+			}
+		}
+	],
+	"Issuer": "NIST POC",
+	"IssuerAbbreviation": "NIST",
+	"SequenceEnd": 1,
+	"SequenceStart": 1,
+	"Shape": [
+		{
+			"@id": "g-1",
+			"ShapeType": "ellipse",
+			"StrokeWidth": 0.33,
+			"@type": "BallotDefinition.Shape"
+		},
+		{
+			"@id": "g-2",
+			"ShapeType": "rectangle",
+			"@type": "BallotDefinition.Shape"
+		}
+	],
+	"VendorApplicationId": "Hand Written",
+	"Version": "1.0.0",
+	"@type": "BallotDefinition.BallotDefinition"
+}

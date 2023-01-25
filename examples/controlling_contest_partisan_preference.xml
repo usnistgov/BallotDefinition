@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BallotDefinition xmlns="http://itl.nist.gov/ns/voting/1500-20/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://itl.nist.gov/ns/voting/1500-20/v1 file:///C:/Users/John/Documents/GitHub/BallotDefinition/NIST_V1_ballot_definition.xsd">
+	<Election>
+		<Candidate ObjectId="can-joe-smith">
+			<BallotName>
+				<Text Language="en">Joe Smith</Text>
+			</BallotName>
+			<PartyId>par-dem</PartyId>
+		</Candidate>
+		<Candidate ObjectId="can-maria-duty">
+			<BallotName>
+				<Text Language="en">Maria Duty</Text>
+			</BallotName>
+			<PartyId>par-dem</PartyId>
+		</Candidate>
+		<Candidate ObjectId="can-alex-mack">
+			<BallotName>
+				<Text Language="en">Alex Mack</Text>
+			</BallotName>
+			<PartyId>par-rep</PartyId>
+		</Candidate>
+		<Candidate ObjectId="can-ray-alverado">
+			<BallotName>
+				<Text Language="en">Ray Alvarado</Text>
+			</BallotName>
+			<PartyId>par-rep</PartyId>
+		</Candidate>
+		<Contest xsi:type="PartyPreferenceContest" ObjectId="cc-party-preference">
+			<ContestOption xsi:type="PartyOption" ObjectId="cs-party-preference-dem">
+				<PartyIds>par-dem</PartyIds>
+			</ContestOption>
+			<ContestOption xsi:type="PartyOption" ObjectId="cs-party-preference-rep">
+				<PartyIds>par-rep</PartyIds>
+			</ContestOption>
+			<ElectionDistrictId>ru-senate</ElectionDistrictId>
+			<Name>Open Primary</Name>
+			<ControlledContestIds>cc-senate-rep cc-senate-dem</ControlledContestIds>
+		</Contest>
+		<Contest xsi:type="CandidateContest" ObjectId="cc-senate-rep">
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-alex-mack">
+				<CandidateIds>can-alex-mack</CandidateIds>
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-ray-alverado">
+				<CandidateIds>can-ray-alverado</CandidateIds>
+			</ContestOption>
+			<ElectionDistrictId>ru-senate</ElectionDistrictId>
+			<Name>Senate Contest for Republicans</Name>
+			<PrimaryPartyIds>par-rep</PrimaryPartyIds>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<Contest xsi:type="CandidateContest" ObjectId="cc-senate-dem">
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-joe-smith">
+				<CandidateIds>can-joe-smith</CandidateIds>
+			</ContestOption>
+			<ContestOption xsi:type="CandidateOption" ObjectId="cs-maria-duty">
+				<CandidateIds>can-maria-duty</CandidateIds>
+			</ContestOption>
+			<ElectionDistrictId>ru-senate</ElectionDistrictId>
+			<Name>Senate Contest for Democrats</Name>
+			<PrimaryPartyIds>par-dem</PrimaryPartyIds>
+			<VotesAllowed>1</VotesAllowed>
+		</Contest>
+		<ElectionScopeId>ru-senate</ElectionScopeId>
+		<Name>
+			<Text Language="en">STATE PRIMARY</Text>
+		</Name>
+		<StartDate>2022-08-02</StartDate>
+		<EndDate>2022-08-02</EndDate>
+		<Type>partisan-primary-open</Type>
+	</Election>
+	<GeneratedDate>2022-07-12T00:00:00Z</GeneratedDate>
+	<GpUnit xsi:type="ReportingUnit" ObjectId="ru-senate">
+		<Name>
+			<Text Language="en">State Senate District 1</Text>
+		</Name>
+		<Type>state-senate</Type>
+	</GpUnit>
+	<Issuer>NIST POC</Issuer>
+	<IssuerAbbreviation>NIST</IssuerAbbreviation>
+	<Party ObjectId="par-rep">
+		<IsRecognizedParty>true</IsRecognizedParty>
+		<Name>
+			<Text Language="en">Republican</Text>
+		</Name>
+	</Party>
+	<Party ObjectId="par-dem">
+		<IsRecognizedParty>true</IsRecognizedParty>
+		<Name>
+			<Text Language="en">Democratic</Text>
+		</Name>
+	</Party>
+	<SequenceStart>1</SequenceStart>
+	<SequenceEnd>1</SequenceEnd>
+	<VendorApplicationId>Hand Written</VendorApplicationId>
+	<Version>1.0.0</Version>
+</BallotDefinition>
