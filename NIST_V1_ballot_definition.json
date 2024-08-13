@@ -1646,6 +1646,12 @@
         },
         "Y": {
           "type": "number"
+        },
+        "GridX": {
+          "type": "integer"
+        },
+        "GridY": {
+          "type": "integer"
         }
       },
       "type": "object"

@@ -1815,6 +1815,16 @@ Office includes an optional ElectionDistrict reference to a GpUnit for the purpo
               <xsd:documentation xml:lang="en">The proper fractional number of votes represented by the option position.</xsd:documentation>
             </xsd:annotation>
           </xsd:element>
+          <xsd:element name="GridX" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">X coordinate in timing mark grid.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element name="GridY" type="xsd:integer" minOccurs="0">
+            <xsd:annotation>
+              <xsd:documentation xml:lang="en">Y coordinate in timing mark grid.</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
           <xsd:element name="IndicatorId" type="xsd:IDREF" minOccurs="0">
             <xsd:annotation>
               <xsd:documentation xml:lang="en">For associating an OptionPosition with the shape that conveys the expected location of a mark.</xsd:documentation>
